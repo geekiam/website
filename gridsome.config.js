@@ -6,5 +6,12 @@
 
 module.exports = {
   siteName: 'Geek I Am',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-151978506-1'
+      }
+    }
+  ]
 };
