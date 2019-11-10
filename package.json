@@ -1,0 +1,31 @@
+{
+  "name": "geekiam",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
+  },
+  "description": "This is the project you get when you run `gridsome create new-project`.",
+  "version": "1.0.0",
+  "main": "gridsome.config.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/garywoodfine/geekiam.git"
+  },
+  "keywords": [
+    "geek",
+    "tech",
+    "reviews"
+  ],
+  "author": "Gary & Lucia Woodfine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garywoodfine/geekiam/issues"
+  },
+  "homepage": "https://github.com/garywoodfine/geekiam#readme"
+}
