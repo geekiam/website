@@ -11,7 +11,7 @@
 
     <h3>Improve</h3>
     <p>While playing the game I noticed a lot of glitches, which was quite frustrating.</p>
-    <p>There should be a lot of things to do like, battles, wars, actually talk instead of speech bubbles drive aeroplanes so you can look out of the window and see the howl place. Making houses in villages. visit other people’s houses to get ideas  dying should be included. flying so they can find their house. building sky-scrapers. Choose to be on survival or creative.play hide and seek and tag because its fun.eat to get energy.</p>
+    <p>There should be a lot of things to do like, battles, wars, actually talk instead of speech bubbles drive aeroplanes so you can look out of the window and see the whole place. Making houses in villages. visit other people’s houses to get ideas  dying should be included. flying so they can find their house. building sky-scrapers. Choose to be on survival or creative.play hide and seek and tag because its fun.eat to get energy.</p>
 
     <h3>Good</h3>
     <p>Skiing is fun ,which means more people will play. driving cars is good fun and tricky. driving speed boat is good fun as well. racing people is a lot of  fun and tricky .having different vehicles to choose from  . playing with your friends. choosing different  places. having  towns.</p>
