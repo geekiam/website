@@ -28,7 +28,8 @@
       Make them go to the doctors because everyone's sick sometimes. make them cold sometimes and sometimes make them hot otherwise it will be less fun  . have birthdays to unlock more games . Have all the special occasions just to make it fun.</p>
 
     <p>I recommend this can be played by six year olds and above because its a very tricky game to play and some younger people might not understand it .</p>
-    <p>Written by lucia woodfine. hope you liked it .Thank you for reading.</p>
+
+    <p>Written by Lucia Woodfine. hope you liked it .Thank you for reading.</p>
 
 
 
