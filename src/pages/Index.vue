@@ -27,7 +27,7 @@
      <p> Go on water slides to make it fun and scary.go to go ape/obstacles in trees to make it tricky. Go to Trampoline park ‘s that is also part of doing exercise. phones to make calls with if you get hurt call for help.go to the shops for food.get a job like an explorer. Make your people sick sometimes to make it realistic.
       Make them go to the doctors because everyone's sick sometimes. make them cold sometimes and sometimes make them hot otherwise it will be less fun  . have birthdays to unlock more games . Have all the special occasions just to make it fun.</p>
 
-    <p>I recommend this can be played by six year olds and above because its a very tricky game to play and some younger people might not understand it .</p>
+    <p>I recommend this can be played by six year-olds and above because its a very tricky game to play and some younger people might not understand it .</p>
 
     <p>Written by Lucia Woodfine. hope you liked it .Thank you for reading.</p>
 
