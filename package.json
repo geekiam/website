@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@gridsome/plugin-google-analytics": "^0.1.0",
+        "dotenv": "^8.2.0",
         "gridsome": "^0.7.12",
         "mdbvue": "git+https://oauth2:{MDB_VUE_PRO_ID}@git.mdbootstrap.com/mdb/vue/vu-pro.git"
     },
