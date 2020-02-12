@@ -1,33 +1,35 @@
 {
-  "name": "geekiam",
-  "private": true,
-  "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
-  },
-  "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.0",
-    "gridsome": "^0.7.12",
-    "mdbvue": "git+https://oauth2:{MDB_VUE_PRO_ID}@git.mdbootstrap.com/mdb/vue/vu-pro.git"
-  },
-  "description": "Game review site from Lucia Woodfine.",
-  "version": "1.0.0",
-  "main": "gridsome.config.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/garywoodfine/geekiam.git"
-  },
-  "keywords": [
-    "geek",
-    "tech",
-    "reviews"
-  ],
-  "author": "Gary & Lucia Woodfine",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/garywoodfine/geekiam/issues"
-  },
-  "homepage": "https://github.com/garywoodfine/geekiam#readme"
+    "name": "geekiam",
+    "private": true,
+    "scripts": {
+        "preinstall": "node preinstall.js",
+        "postinstall": "node postinstall.js",
+        "build": "gridsome build",
+        "develop": "gridsome develop",
+        "explore": "gridsome explore"
+    },
+    "dependencies": {
+        "@gridsome/plugin-google-analytics": "^0.1.0",
+        "gridsome": "^0.7.12",
+        "mdbvue": "git+https://oauth2:{MDB_VUE_PRO_ID}@git.mdbootstrap.com/mdb/vue/vu-pro.git"
+    },
+    "description": "Game review site from Lucia Woodfine.",
+    "version": "1.0.0",
+    "main": "gridsome.config.js",
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/garywoodfine/geekiam.git"
+    },
+    "keywords": [
+        "geek",
+        "tech",
+        "reviews"
+    ],
+    "author": "Gary & Lucia Woodfine",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/garywoodfine/geekiam/issues"
+    },
+    "homepage": "https://github.com/garywoodfine/geekiam#readme"
 }
