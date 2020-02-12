@@ -53,7 +53,7 @@
 
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Hello, world!',
     components: {
       mdbContainer,
       mdbRow,
