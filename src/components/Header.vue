@@ -8,7 +8,7 @@
 
     >
         <mdb-navbar-brand href="https://sourcelink.co.uk" style="padding-left: 150px" target="_blank">
-            <h1>Fuck</h1>
+
         </mdb-navbar-brand>
 
         <mdb-navbar-nav class="nav-flex-icons" right>
