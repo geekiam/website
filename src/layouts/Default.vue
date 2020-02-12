@@ -1,7 +1,14 @@
 <template>
-  <div class="layout">
+  <div>
    <Header></Header>
-    <slot/>
+      <div
+
+              class="layout"
+      >
+          <br/>
+          <br/>
+    <slot class="mt-5 p-5"/>
+      </div>
   </div>
 </template>
 
@@ -28,17 +35,6 @@ body {
   padding-right: 20px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>
 <script>
   import Header from "../components/Header.vue";
