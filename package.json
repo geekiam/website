@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.12"
   },
-  "description": "This is the project you get when you run `gridsome create new-project`.",
+  "description": "Game review site from Lucia Woodfine.",
   "version": "1.0.0",
   "main": "gridsome.config.js",
   "devDependencies": {},
