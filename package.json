@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
-    "gridsome": "^0.7.12"
+    "gridsome": "^0.7.12",
+    "mdbvue": "git+https://oauth2:{MDB_VUE_PRO_ID}@git.mdbootstrap.com/mdb/vue/vu-pro.git"
   },
   "description": "Game review site from Lucia Woodfine.",
   "version": "1.0.0",
