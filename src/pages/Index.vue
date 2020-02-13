@@ -1,9 +1,6 @@
 <template>
   <Layout>
-    <mdb-container class="mt-5 p-5">
-      <mdb-row class="mt-5 p-5">
-        <mdb-col  class="mt-5 p-5">
-            <h1>Go Vacation Game Review</h1>
+             <h1>Go Vacation Game Review</h1>
 
             <p>The Go vacation is a sports and party game . Players can explore all the places riding all the animals activities and finding new places .</p>
 
@@ -29,33 +26,17 @@
             <p>I recommend this can be played by six year-olds and above because its a very tricky game to play and some younger people might not understand it .</p>
 
             <p>Written by Lucia Woodfine. hope you liked it .Thank you for reading.</p>
-        </mdb-col>
-      </mdb-row>
-    </mdb-container>
+
   </Layout>
 </template>
 
 <script>
-  import {
-    mdbContainer,
-    mdbRow,
-    mdbCol,
-    mdbIcon,
-    mdbBtn
-  } from 'mdbvue'
+
 
 export default {
   metaInfo: {
     title: 'Hello, world!',
-    components: {
-      mdbContainer,
-      mdbRow,
-      mdbCol,
-      mdbIcon,
-      mdbBtn
-
-    },
-  }
+   }
 }
 </script>
 
