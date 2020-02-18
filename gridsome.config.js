@@ -5,7 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Geek I Am',
+  siteName: 'GeekIAm',
+  siteDescription: "Computer game reviews for kids by a kid",
+  siteUrl: 'https://geekiam.co.uk',
+  titleTemplate: `%s | Geek I Am`,
+  icon: 'src/favicon.png',
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
