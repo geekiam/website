@@ -1,6 +1,6 @@
 backend:
     name: github
-    repo: threenine/rea-intelligence
+    repo: garywoodfine/geekiam
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -17,9 +17,7 @@ collections:
           - {label: "Publish Date", name: "date", widget: "date"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Author", name: "author", widget: "string"}
-          - {label: "Fullscreen", name: "fullscreen", widget: "boolean" }
           - label: "Tags"
             name: "tags"
             widget: list
             field: { label: "Tag", name: "tag", widget: "string" }
-          - {label: "Cover", name: "cover", widget: "image"}
