@@ -13,12 +13,20 @@
 
 <script>
 
-
     export default {
-        name: "Header",
+        name: "SiteHeader",
     }
 </script>
 
 <style scoped>
 
 </style>
+
+<static-query>
+   query {
+   metadata {
+   siteName
+   }
+   }
+</static-query>
+

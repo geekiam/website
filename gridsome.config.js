@@ -5,10 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'GeekIAm',
+  siteName: 'Geek.I.Am',
   siteDescription: "Computer game reviews for kids by a kid",
   siteUrl: 'https://geekiam.co.uk',
-  titleTemplate: `%s | Geek I Am`,
+  titleTemplate: `%s | Geek.I.Am`,
   icon: 'src/favicon.png',
   plugins: [
     {
@@ -23,7 +23,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/posts/**/*.md',
+        path: 'static/posts/*.md',
         typeName: 'Post',
         remark: {
           plugins: [
