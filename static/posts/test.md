@@ -6,4 +6,6 @@ author: lucia
 tags:
   - test
 ---
+![](/uploads/gammon.jpg)
+
 test
