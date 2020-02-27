@@ -25,11 +25,16 @@ module.exports = {
       options: {
         path: 'static/posts/*.md',
         typeName: 'Post',
-        remark: {
-          plugins: [
-            // ...local plugins
-          ]
-        }
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true,
+          },
+          author: {
+            typeName: 'Author',
+            create: true,
+          },
+        },
       }
     },
     {
@@ -38,5 +43,10 @@ module.exports = {
         publicPath: `/admin`
       }
     },
-  ]
+  ],
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id',
+    Author: '/author/:id',
+  },
 };

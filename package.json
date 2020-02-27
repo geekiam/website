@@ -14,6 +14,7 @@
         "gridsome": "^0.7.12",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-tailwindcss": "^2.2.27",
+        "moment": "^2.24.0",
         "netlify-cms": "^2.10.23",
         "vue-loader": "^15.9.0"
     },
