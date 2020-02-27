@@ -1,20 +1,26 @@
 <template>
   <div>
       <site-header class="mb-5"/>
-      <div class="flex mt-5">
-          <div class="w-full bg-gray h-12">
+      <div>
+          <div>
               <slot />
           </div>
 
       </div>
+      <site-footer class="py-8 sm:py-16" />
   </div>
 </template>
 
+<style src="~/assets/css/main.css"></style>
 
 <script>
   import SiteHeader from "../components/SiteHeader.vue";
+  import SiteFooter from "../components/SiteFooter";
   export default {
-    components: {SiteHeader}
+    components: {
+        SiteHeader,
+        SiteFooter
+    }
   }
 </script>
 
