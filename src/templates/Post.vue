@@ -21,7 +21,7 @@
 </template>
 
 <script>
-    import moment from 'moment'
+
     export default {
         name: "Post",
         computed: {
@@ -34,17 +34,17 @@
 
 <page-query>
     query Post ($path: String) {
-    post (path: $path) {
-    title
-    path
-    content
-    description
-    timeToRead
-    tags {
-    id
-    title
-    path
-    }
-    }
+        post (path: $path) {
+            title
+            path
+            content
+            description
+            timeToRead
+            tags {
+                id
+                title
+                path
+            }
+        }
     }
 </page-query>
