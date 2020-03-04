@@ -1,35 +1,28 @@
 <template>
-    <Layout class="bg-white">
+    <Layout >
         <main>
             <section>
                 <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
             </section>
-
+            <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1" />
         </main>
-
     </Layout>
 </template>
 
 <script>
-    import config from '~/.temp/config.js'
-    import PostItem from '@/components/PostItem'
+     import PostItem from '@/components/PostItem'
+     import Pagination from '@/components/Pagination'
 
     export default {
         components: {
             PostItem,
-
+            Pagination
         },
         metaInfo() {
             return {
                 title: this.$static.metadata.siteName,
             }
         },
-        computed:
-            {
-                config() {
-                    return config
-                },
-            }
     }
 </script>
 
