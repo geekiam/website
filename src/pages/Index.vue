@@ -17,12 +17,7 @@
         components: {
             PostItem,
             Pagination
-        },
-        metaInfo() {
-            return {
-                title: this.$static.metadata.siteName,
-            }
-        },
+        }
     }
 </script>
 
@@ -49,17 +44,7 @@
                             path
                         }
                     }
-                }
+
         }
     }
 </page-query>
-
-<static-query>
-    query {
-        metadata {
-            siteName
-            siteUrl
-            siteDescription
-        }
-    }
-</static-query>
