@@ -3,7 +3,8 @@
         <nav role="navigation" aria-label="pagination">
             <ul class="flex items-center justify-between sm:text-lg lg:text-xl">
                 <li class="lg:w-1/5">
-                    <g-link :to="previousPage(info.currentPage)" :class="{'pointer-events-none opacity-0': info.currentPage === 1}" class="text-gray-700 hover:text-black px-4 py-2 transition-color" :rel="info.currentPage === 1 ? 'nofollow' : 'prev'">
+                    <g-link :to="previousPage(info.currentPage)"
+                            :class="{'pointer-events-none opacity-0': info.currentPage === 1}" class="text-gray-700 hover:text-black px-4 py-2 transition-color" :rel="info.currentPage === 1 ? 'nofollow' : 'prev'">
                         &larr; Previous
                     </g-link>
                 </li>

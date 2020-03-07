@@ -2,9 +2,12 @@
     <Layout >
         <main>
             <section>
-                <post-item v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+                <post-item v-for="edge in $page.posts.edges"
+                           :key="edge.node.id"
+                           :post="edge.node"/>
             </section>
-            <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1" />
+            <pagination :info="$page.posts.pageInfo"
+                        v-if="$page.posts.pageInfo.totalPages > 1" />
         </main>
     </Layout>
 </template>
@@ -17,11 +20,6 @@
         components: {
             PostItem,
             Pagination
-        },
-        metaInfo() {
-            return {
-                title: this.$static.metadata.siteName,
-            }
         },
     }
 </script>
@@ -47,19 +45,10 @@
                             id
                             title
                             path
-                        }
                     }
                 }
+            }
         }
     }
 </page-query>
 
-<static-query>
-    query {
-        metadata {
-            siteName
-            siteUrl
-            siteDescription
-        }
-    }
-</static-query>
