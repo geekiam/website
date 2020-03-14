@@ -10,6 +10,10 @@ module.exports = {
       colors: {
 
       },
+      spacing: {
+        '80': '20rem',
+        '108': '27rem',
+      },
     },
   },
   variants: {},
