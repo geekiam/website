@@ -30,7 +30,7 @@
         props: ['author'],
         computed: {
             avatar () {
-                return `/images/authors/${this.author.id}.png`
+                return `/authors/images/${this.author.id}.png`
             },
         },
         methods: {
