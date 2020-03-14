@@ -39,4 +39,3 @@ Make them go to the doctors because everyone's sick sometimes. make them cold so
 
 I recommend this can be played by six year-olds and above because its a very tricky game to play and some younger people might not understand it.
 
-Written by Lucia Woodfine. hope you liked it .Thank you for reading.

@@ -8,12 +8,13 @@
                 <div :class="{'pb-10': $page.post.author || $page.post.tags}"
                      class="text-lg leading-normal text-gray-700"
                      v-html="$page.post.content" />
+
                 <footer v-if="$page.post.author || $page.post.tags"
                         class="flex flex-wrap pb-10 sm:pb-16">
                     <div>
                         <g-link v-for="tag in $page.post.tags"
                                 :key="tag.id" :to="`${tag.path}/`"
-                                class="inline-block text-orange-400 hover:text-white hover:bg-orange-400 border border-orange-400 font-sans font-bold text-xs sm:text-sm px-4 py-2 mr-4 mb-2 rounded-full transition-color transition-bg">
+                                class="inline-block text-green-400 hover:text-white hover:bg-green-400 border border-green-400 font-sans font-bold text-xs sm:text-sm px-4 py-2 mr-4 mb-2 rounded-full transition-color transition-bg">
                             <svg class="inline w-3 fill-current align-middle mr-1"
                                  xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 20 20"
@@ -21,6 +22,7 @@
                             {{ tag.title }}
                         </g-link>
                     </div>
+                    <author :author="$page.post.author"/>
                 </footer>
             </article>
         </main>
@@ -28,7 +30,11 @@
 </template>
 
 <script>
+    import Author from "@/components/Author";
     export default {
+        components: {
+            Author
+        },
         name: "Post",
     }
 </script>
@@ -41,6 +47,11 @@
             content
             description
             timeToRead
+            author {
+                   id
+                   title
+                   path
+            }
             tags {
                 id
                 title

@@ -27,7 +27,7 @@
 <script>
     export default {
         name: "Author",
-        props: ['post'],
+        props: ['author'],
         computed: {
             avatar () {
                 return `/images/authors/${this.author.id}.png`
@@ -41,7 +41,7 @@
                     .join(' ')
             },
             imageLoadError (e) {
-                e.target.src = `/images/authors/default.png`
+                e.target.src = `/authors/images/default.png`
             },
         },
     }
