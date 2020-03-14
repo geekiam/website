@@ -12,7 +12,7 @@
         <div class="px-4 sm:w-4/5 text-center sm:text-left">
             <h4 class="font-sans font-bold text-lg sm:text-xl mb-2 sm:mb-4">
                 <g-link :to="`${author.path}/`"
-                        class="text-black hover:text-gray-600 capitalize border-b-2 border-transparent transition-color">
+                        class="text-green-700 hover:text-green-500 capitalize border-b-2 border-transparent transition-color">
                     {{ titleCase(author.title) }}</g-link>
             </h4>
             <p class="leading-normal">
