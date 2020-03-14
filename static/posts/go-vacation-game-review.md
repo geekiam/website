@@ -27,7 +27,7 @@ Skiing is fun ,which means more people will play. driving cars is good fun and t
 
 ### New idea
 
-Change the weather because it’s  always sunny and i would like it to be night sometimes.  have injuries sometimes just to make it life like. steel things to get better things for your house. fall over again make it life like. cry when you  fall over to make it real life. break a bone just to make it more fun.have headache to make it realistitick. lose  energy to make it intaning. Exercise by going to the gym and lift weights and go on
+Change the weather because it’s  always sunny and i would like it to be night sometimes.  have injuries sometimes just to make it life like. steel things to get better things for your house. fall over again make it life like. cry when you  fall over to make it real life. break a bone just to make it more fun.have headache to make it realistic. lose  energy to make it intaning. Exercise by going to the gym and lift weights and go on
 
 Treadmill and cross-trainer and use the rower to. have different things to do which makes it more fun. spy on people and follow them to there house to collect things for your house . make food to eat.go to swimming pools to play. go to the cinema and theatre to get entertainment . go to sleep to get energy. Go bowling for fun. Play football and rugby to get more people to play .play the radio and music to listen to . play with the animals to make the animals and  exercise.
 
@@ -39,4 +39,3 @@ Make them go to the doctors because everyone's sick sometimes. make them cold so
 
 I recommend this can be played by six year-olds and above because its a very tricky game to play and some younger people might not understand it.
 
-Written by Lucia Woodfine. hope you liked it .Thank you for reading.

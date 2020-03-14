@@ -1,13 +1,13 @@
 <template>
   <div>
-      <site-header class="mb-5"/>
+      <site-header/>
       <div>
           <div>
               <slot />
           </div>
 
       </div>
-      <site-footer class="py-8 sm:py-16" />
+      <site-footer  />
   </div>
 </template>
 

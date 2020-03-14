@@ -5,7 +5,7 @@
                 <header class="text-center mb-8">
                     <time :datetime="post.datetime"
                           class="text-gray-700 text-xs mb-2 uppercase">{{ formatPublishDate(post.datetime) }}</time>
-                    <h2 class="text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
+                    <h2 class="text-green-700 text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
                         <g-link :to="`${post.path}/`"
                                 class="text-black font-bold">{{ post.title }}</g-link>
                     </h2>
@@ -20,7 +20,7 @@
                         <span>{{ post.timeToRead }} min read</span>
                     </p>
                 </header>
-                <p class="leading-normal text-gray-700 text-lg px-2 sm:px-4 md:px-10" >{{ post.description }}</p>
+                <div class="text-lg leading-normal text-gray-800" v-html="post.description"></div>
             </div>
         </div>
     </article>
