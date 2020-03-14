@@ -20,7 +20,7 @@
                         <span>{{ post.timeToRead }} min read</span>
                     </p>
                 </header>
-                <p class="leading-normal text-gray-700 text-lg px-2 sm:px-4 md:px-10" >{{ post.description }}</p>
+                <div class="markdown text-lg leading-normal text-gray-700" v-html="post.description"></div>
             </div>
         </div>
     </article>

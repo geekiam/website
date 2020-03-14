@@ -13,7 +13,6 @@
         "dotenv": "^8.2.0",
         "gridsome": "^0.7.12",
         "gridsome-plugin-netlify-cms": "^1.0.9",
-        "gridsome-plugin-tailwindcss": "^2.2.27",
         "moment": "^2.24.0",
         "netlify-cms": "^2.10.23",
         "vue-loader": "^15.9.0"
@@ -21,7 +20,10 @@
     "description": "Game review site from Lucia Woodfine.",
     "version": "1.0.0",
     "main": "gridsome.config.js",
-    "devDependencies": {},
+    "devDependencies": {
+        "gridsome-plugin-tailwindcss": "^2.2.43",
+        "tailwindcss-transitions": "^2.1.0"
+    },
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/garywoodfine/geekiam.git"
@@ -31,7 +33,7 @@
         "tech",
         "reviews"
     ],
-    "author": "Gary & Lucia Woodfine",
+    "author": "Gary Woodfine",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/garywoodfine/geekiam/issues"
