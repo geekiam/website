@@ -9,10 +9,10 @@ So we both started working on a [fun side project](https://garywoodfine.com/the-
 learn more about writing, blogging and the internet and fun for me as I get to play with a whole lot of new stuff I have
 not been previously familiar with.
 
-Along the way, I have been writing a series of articles on my blog [garywoodfine.com](https://garywoodfine.com) 
-about what I have learned playing with the new stuff.
+### Girdsome Tutorial series 
 
-This will more than likely inspire a whole raft of blog posts etc. 
+Along the way, I have been writing a series of articles on my blog [garywoodfine.com](https://garywoodfine.com) 
+about what I have learned playing with Gridsome & Netlify
 
 * [Gridsome – VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
 * [Gridsome – More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
