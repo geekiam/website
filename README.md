@@ -9,7 +9,7 @@ So we both started working on a [fun side project](https://garywoodfine.com/the-
 learn more about writing, blogging and the internet and fun for me as I get to play with a whole lot of new stuff I have
 not been previously familiar with.
 
-### Girdsome Tutorial series 
+### Gridsome Tutorial series 
 
 Along the way, I have been writing a series of articles on my blog [garywoodfine.com](https://garywoodfine.com) 
 about what I have learned playing with Gridsome & Netlify
