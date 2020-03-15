@@ -17,6 +17,6 @@ This will more than likely inspire a whole raft of blog posts etc.
 * [Gridsome – VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
 * [Gridsome – More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
 * [Gridsome - Using file system markdown files ](https://garywoodfine.com/gridsome-using-file-system-markdown-files/) 
- 
+* [Gridsome – Configuring Custom Tailwindcss ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
  ### Developed, Sponsored and Supported 
 [![threenine logo](http://static.threenine.co.uk/img/github_footer.png)](https://threenine.co.uk/)
