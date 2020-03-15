@@ -7,7 +7,9 @@
                           class="text-green-700 text-xs mb-2 uppercase">{{ formatPublishDate(post.datetime) }}</time>
                     <h2 class="text-green-700 text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
                         <g-link :to="`${post.path}/`"
-                                class="text-green-700 font-bold">{{ post.title }}</g-link>
+
+                                class=" text-green-700 font-bold">{{ post.title }}</g-link>
+
                     </h2>
                     <p class="text-green-700 leading-normal text-sm sm:text-base">
                         <span v-if="post.author">by
