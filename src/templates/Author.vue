@@ -17,14 +17,12 @@
 
 <script>
     import PostItem from '@/components/PostItem'
-    import SiteFooter from '@/components/SiteFooter'
     import Pagination from '@/components/Pagination'
     import moment from "moment";
     export default {
         name: "Author",
         components: {
             PostItem,
-            SiteFooter,
             Pagination
         },
         methods: {
