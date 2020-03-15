@@ -7,7 +7,7 @@
           </div>
 
       </div>
-      <site-footer  />
+      <site-footer class="py-8 sm:py-16" />
   </div>
 </template>
 
