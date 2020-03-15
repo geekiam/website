@@ -553,6 +553,7 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
+    color: #2f855a;
     font-weight: 600;
     line-height: 1.25;
     margin-bottom: 1.5rem;
