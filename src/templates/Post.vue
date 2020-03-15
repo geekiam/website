@@ -13,7 +13,7 @@
                     <div>
                         <g-link v-for="tag in $page.post.tags"
                                 :key="tag.id" :to="`${tag.path}/`"
-                                class="inline-block text-green-700 hover:text-white hover:bg-green-500 border border-green-700 font-sans font-bold text-xs sm:text-sm px-4 py-2 mr-4 mb-2 rounded-full transition-color transition-bg">
+                                class="inline-block text-green-700 hover:text-white hover:bg-green-700 border border-green-700 font-sans font-bold text-xs sm:text-sm px-4 py-2 mr-4 mb-2 rounded-full transition-color transition-bg">
                             <svg class="inline w-3 fill-current align-middle mr-1"
                                  xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 20 20"

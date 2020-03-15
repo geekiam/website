@@ -1,6 +1,6 @@
 ---
 title: ' Go Vacation Game Review'
-description: 'Game Review for go vacation'
+description: 'My first ever game review for Go Vacation casual sports game for the Nintendo Switch which includes of a number of mini-games and exploration activities'
 date: 2020-02-23T15:30:17.283Z
 author: lucia-woodfine
 tags: 
@@ -33,7 +33,7 @@ Treadmill and cross-trainer and use the rower to. have different things to do wh
 
 Chat to friends to make it fun. Drink water go to restaurant for more fun. Make shows for fun and to have better things to do
 
-Go on water slides to make it fun and scary.go to go ape/obstacles in trees to make it tricky. Go to Trampoline park ‘s that is also part of doing exercise. phones to make calls with if you get hurt call for help.go to the shops for food.get a job like an explorer. Make your people sick sometimes to make it realistic.
+Go on water slides to make it fun and scary.  Go to Go Ape/obstacles in trees to make it tricky. Go to Trampoline park ‘s that is also part of doing exercise. phones to make calls with if you get hurt call for help.go to the shops for food.get a job like an explorer. Make your people sick sometimes to make it realistic.
 
 Make them go to the doctors because everyone's sick sometimes. make them cold sometimes and sometimes make them hot otherwise it will be less fun  . have birthdays to unlock more games . Have all the special occasions just to make it fun.
 
