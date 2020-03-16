@@ -4,7 +4,7 @@
          <div class="container mx-auto flex items-center">
             <div class="flex text-white font-extrabold">
                <g-link to="/" class="flex text-white text-base no-underline hover:text-white hover:no-underline">
-                  <g-image src="~/assets/images/geekiam-header.png" width="500"/></g-link>
+                  <g-image src="~/assets/images/logo.png" alt="Geek.I.Am" width="500"/></g-link>
             </div>
          </div>
       </div>
