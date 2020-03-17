@@ -1,6 +1,3 @@
-## Github/JIRA Ticket 
-
-[URL Link to Ticket]
 
 ## Overview: 
 [A summary of what you did in no more than one paragraph]
