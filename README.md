@@ -20,4 +20,5 @@ about what I have learned playing with Gridsome & Netlify
 * [Gridsome – Configuring Custom Tailwindcss ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
  
  ### Developed, Sponsored and Supported 
+ 
 [![threenine logo](http://static.threenine.co.uk/img/github_footer.png)](https://threenine.co.uk/)
