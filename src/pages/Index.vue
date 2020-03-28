@@ -21,6 +21,11 @@
             PostItem,
             Pagination
         },
+        metaInfo() {
+            return {
+                title: "poo",
+            }
+        }
     }
 </script>
 
@@ -41,6 +46,7 @@
                     excerpt
                     description
                     path
+                    date  (format: "D MMMM Y")
                     tags {
                             id
                             title
