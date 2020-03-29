@@ -41,13 +41,12 @@
         },
         computed: {
             postUrl () {
-                let siteUrl = this.$static.metadata.siteUrl
-                let postPath = this.$page.post.path
+                let siteUrl = this.$static.metadata.siteUrl;
+                let postPath = this.$page.post.path;
 
-                return postPath ? `${siteUrl}${postPath}` : `${siteUrl}/${slugify(this.$page.post.title)}/`
+                return postPath ? `${siteUrl}${postPath}` : `${siteUrl}/${slugify(this.$page.post.title)}/`;
             }
         }
-
     }
 </script>
 

@@ -25,7 +25,7 @@ export default function (Vue, { head }) {
       },
 
       { name: 'copyright', content: copyRightNotice},
-      { key:"og:type",  property: "og:type", content: 'article' },
+      { key:"og:type",  property: "og:type", content: 'website' },
       { key:"og:description",  property: "og:description", content: config.siteDescription },
       { key:"og:image", property: "og:image", content: 'https://geekiam.co.uk/assets/static/logo.png' },
       { property: "og:site_name", content: config.siteName }
