@@ -18,7 +18,8 @@ about what I have learned playing with Gridsome & Netlify
 * [Gridsome – More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
 * [Gridsome - Using file system markdown files ](https://garywoodfine.com/gridsome-using-file-system-markdown-files/) 
 * [Gridsome – Configuring Custom Tailwindcss ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
- 
+* [Gridsome – Configure Basic On-Page SEO ](https://garywoodfine.com/gridsome-configure-basic-on-page-seo/)
+
  ### Developed, Sponsored and Supported 
  
 [![threenine logo](http://static.threenine.co.uk/img/github_footer.png)](https://threenine.co.uk/)
