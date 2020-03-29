@@ -2,8 +2,11 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import '~/assets/css/main.css'
 import DefaultLayout from '~/layouts/Default.vue'
+import config from '../gridsome.config'
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { head }) {
+
+  let copyRightNotice = `\u00a9 threenine.co.uk, ${ new Date().getFullYear() }. All rights reserved`;
 
   head.meta.push(
       {
@@ -14,10 +17,11 @@ export default function (Vue, { router, head, isClient }) {
         name: 'author',
         content: 'threenine.co.uk'
       },
+      {name: 'copyright', content: copyRightNotice},
       { property: "og:type", content: 'article' },
-      { property: "og:description", content: 'Toys, Games and Book reviews for kids by kids' },
-      { property: "og:image", content: 'somewhere.jpg' },
-      { property: "og:site_name", content:"Geek.I.Am" }
+      { property: "og:description", content: config.siteDescription },
+      { property: "og:image", content: 'https://geekiam.co.uk/assets/static/logo.png' },
+      { property: "og:site_name", content: config.siteName }
 
       );
 
