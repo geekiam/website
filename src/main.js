@@ -22,7 +22,6 @@ export default function (Vue, { head }) {
       { property: "og:description", content: config.siteDescription },
       { property: "og:image", content: 'https://geekiam.co.uk/assets/static/logo.png' },
       { property: "og:site_name", content: config.siteName }
-
       );
 
   Vue.component('Layout', DefaultLayout)

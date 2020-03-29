@@ -38,6 +38,7 @@
             content
             description
             timeToRead
+            summary
             date (format: "D MMMM Y")
             author {
                    id

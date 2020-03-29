@@ -22,7 +22,7 @@
                         <span class="text-gray-700">{{ post.timeToRead }} min read</span>
                     </p>
                 </header>
-                <div class="text-lg leading-normal text-gray-800" v-html="post.description"></div>
+                <div class="text-lg leading-normal text-gray-800" v-html="post.summary"></div>
                 <div class="mt-8 mb-8">
                     <g-link :to="post.path" class="text-green-700 font-bold uppercase">Read More</g-link>
                 </div>
