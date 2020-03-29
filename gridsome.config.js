@@ -29,7 +29,7 @@ module.exports = {
           tags: {
             typeName: 'Tag',
             create: true,
-          },oppurtunity
+          },
           author: {
             typeName: 'Author',
             create: true,
