@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
       <site-header/>
       <div>
           <div>
@@ -12,8 +12,9 @@
 </template>
 
 <script>
-  import SiteHeader from "../components/SiteHeader.vue";
+  import SiteHeader from "../components/SiteHeader";
   import SiteFooter from "../components/SiteFooter";
+
   export default {
     components: {
         SiteHeader,

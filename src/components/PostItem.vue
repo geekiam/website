@@ -3,8 +3,8 @@
         <div class="mx-auto max-w-3xl px-6">
             <div class="py-8 sm:py-20 border-b border-gray-300">
                 <header class="text-center mb-8">
-                    <time :datetime="post.datetime"
-                          class="text-green-700 text-xs mb-2 uppercase">{{ formatPublishDate(post.datetime) }}</time>
+                    <time :datetime="post.date"
+                          class="text-green-700 text-xs mb-2 uppercase">{{ post.date }}</time>
                     <h2 class="text-green-700 text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
                         <g-link :to="`${post.path}/`"
 
@@ -22,7 +22,7 @@
                         <span class="text-gray-700">{{ post.timeToRead }} min read</span>
                     </p>
                 </header>
-                <div class="text-lg leading-normal text-gray-800" v-html="post.description"></div>
+                <div class="text-lg leading-normal text-gray-800" v-html="post.summary"></div>
                 <div class="mt-8 mb-8">
                     <g-link :to="post.path" class="text-green-700 font-bold uppercase">Read More</g-link>
                 </div>
@@ -32,15 +32,10 @@
 </template>
 
 <script>
-    import moment from 'moment'
-
     export default {
         props: ['post'],
         methods: {
-            formatPublishDate(date) {
-                return moment(date).format('DD MMMM, YYYY');
-            },
-            titleCase(str) {
+             titleCase(str) {
                 return str.replace('-', ' ').split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
             }
         },

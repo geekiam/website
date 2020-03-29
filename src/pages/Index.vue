@@ -21,11 +21,14 @@
             PostItem,
             Pagination
         },
+        metaInfo: {
+            title: 'Toys, Games and Book reviews for kids by kids'
+        }
     }
 </script>
 
 <page-query>
-    query Home ($page: Int) {
+    query ($page: Int) {
         posts: allPost (page: $page, perPage: 6) @paginate {
             totalCount
             pageInfo {
@@ -38,9 +41,9 @@
                     title
                     timeToRead
                     content
-                    excerpt
-                    description
+                    summary
                     path
+                    date  (format: "D MMMM Y")
                     tags {
                             id
                             title
