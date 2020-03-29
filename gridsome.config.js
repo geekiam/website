@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Geek.I.Am',
-  siteDescription: "Computer game reviews for kids by a kid",
+  siteDescription: 'Toys, Games and Book reviews for kids by kids',
   siteUrl: 'https://geekiam.co.uk',
   titleTemplate: `%s | Geek.I.Am`,
   icon: 'src/favicon.png',
@@ -29,7 +29,7 @@ module.exports = {
           tags: {
             typeName: 'Tag',
             create: true,
-          },
+          },oppurtunity
           author: {
             typeName: 'Author',
             create: true,
