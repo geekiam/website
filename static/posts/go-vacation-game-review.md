@@ -2,6 +2,7 @@
 title: ' Go Vacation Game Review'
 summary: 'My first ever game review for Go Vacation casual sports game for the Nintendo Switch which includes of a number of mini-games and exploration activities'
 description: 'Game review of Go Vacation - casual sports game for the Nintendo Switch'
+keywords: 'Nintendo Switch, Go Vocation'
 date: 2020-02-23T15:30:17.283Z
 author: lucia-woodfine
 tags: 

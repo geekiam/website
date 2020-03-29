@@ -2,6 +2,7 @@
 title: PlayMobil
 summary: 'Toy Review of PlayMobil a line of toys produced by the Brandstätter Group '
 description: 'A toy review of my favourite toys'
+keywords: 'PlayMobil, toys'
 date: 2020-03-15T20:29:50.183Z
 author: lucia-woodfine
 tags:

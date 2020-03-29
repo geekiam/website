@@ -10,17 +10,24 @@ export default function (Vue, { head }) {
 
   head.meta.push(
       {
-        name: 'keywords',
-        content: 'Toys, Games, Computer Games, product reviews, '
+          key: 'keywords',
+          name: 'keywords',
+          content: 'Toys, Games, Computer Games, product reviews, '
       },
       {
         name: 'author',
         content: 'threenine.co.uk'
       },
-      {name: 'copyright', content: copyRightNotice},
-      { property: "og:type", content: 'article' },
-      { property: "og:description", content: config.siteDescription },
-      { property: "og:image", content: 'https://geekiam.co.uk/assets/static/logo.png' },
+      {
+          key: 'description',
+          name: 'description',
+          content: config.siteDescription
+      },
+
+      { name: 'copyright', content: copyRightNotice},
+      { key:"og:type",  property: "og:type", content: 'article' },
+      { key:"og:description",  property: "og:description", content: config.siteDescription },
+      { key:"og:image", property: "og:image", content: 'https://geekiam.co.uk/assets/static/logo.png' },
       { property: "og:site_name", content: config.siteName }
       );
 
