@@ -31,6 +31,6 @@ Make their mouth not brown because no one has a brown mouth. Make them have brac
 
 It was my birthday and my nanny got me PlayMobil I really liked it but i didn't like all the rapper it was in because it didn't need it it's just wasteful and doesn't help the planet so think about that.How about you try making them look a bit realistic and flexible so people  can make there games more fun . 
 
-You could possibly add in electricity  for detail and so you could look at things clearly so you don't break things.How about making computors that actilly works.
+You could possibly add in electricity  for detail and so you could look at things clearly so you don't break things.How about making computers that actually works.
 
 There could be a chance that you could make towers as tall as a nine year old so there back doesn't hurt and it doesn't stop us from playing our fabulous games of PlayMobil .
