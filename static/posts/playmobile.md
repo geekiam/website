@@ -11,9 +11,9 @@ tags:
 
 It’s a thing that you play with and it’s really fun but their needs to be improvements.
 
-New ideas .
+### New ideas 
 
-Make the little girls hear better because it’s always short and it’s a bit annoying.
+Make the little girls hair better because it’s always short and it’s a bit annoying.
 
 And put more people in a pack.
 
