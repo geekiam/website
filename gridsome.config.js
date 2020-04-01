@@ -74,6 +74,18 @@ module.exports = {
         })
       }
     },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+         config: {
+          '/': {
+            changefreq: 'weekly',
+            priority: 1.0
+          },
+
+        }
+      }
+    },
   ],
   templates: {
     Post: '/:title',
