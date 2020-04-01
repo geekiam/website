@@ -5,15 +5,16 @@ description: 'A toy review of my favourite toys'
 keywords: 'PlayMobil, toys'
 date: 2020-03-15T20:29:50.183Z
 author: lucia-woodfine
+draft: false
 tags:
   - Toy Review
 ---
 
 It’s a thing that you play with and it’s really fun but their needs to be improvements.
 
-New ideas .
+### New ideas 
 
-Make the little girls hear better because it’s always short and it’s a bit annoying.
+Make the little girls hair better because it’s always short and it’s a bit annoying.
 
 And put more people in a pack.
 
@@ -31,6 +32,6 @@ Make their mouth not brown because no one has a brown mouth. Make them have brac
 
 It was my birthday and my nanny got me PlayMobil I really liked it but i didn't like all the rapper it was in because it didn't need it it's just wasteful and doesn't help the planet so think about that.How about you try making them look a bit realistic and flexible so people  can make there games more fun . 
 
-You could possibly add in electricity  for detail and so you could look at things clearly so you don't break things.How about making computors that actilly works.
+You could possibly add in electricity  for detail and so you could look at things clearly so you don't break things.How about making computers that actually works.
 
 There could be a chance that you could make towers as tall as a nine year old so there back doesn't hurt and it doesn't stop us from playing our fabulous games of PlayMobil .

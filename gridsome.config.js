@@ -43,6 +43,50 @@ module.exports = {
         publicPath: `/admin`
       }
     },
+    {
+      use: 'gridsome-plugin-feed',
+      options: {
+        contentTypes: ['Post'],
+        feedOptions: {
+          title: 'Geek.I.Am ',
+          description: 'Geek blog',
+          link: "https://geekiam.co.uk"
+        },
+        rss: {
+          enabled: true,
+          output: '/feed.xml'
+        },
+        atom: {
+          enabled: false,
+          output: '/feed.atom'
+        },
+        json: {
+          enabled: true,
+          output: '/feed.json'
+        },
+
+        maxItems: 25,
+        filterNodes: node => node.draft === false,
+        nodeToFeedItem: node => ({
+          title: node.title,
+          date: node.date,
+          content: node.summary
+        })
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+        exclude: ['/exclude-me'],
+        config: {
+          '/*': {
+            changefreq: 'weekly',
+            priority: 0.5
+          }
+        }
+      }
+    },
   ],
   templates: {
     Post: '/:title',
