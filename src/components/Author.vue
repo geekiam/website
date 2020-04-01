@@ -29,7 +29,7 @@
         name: "Author",
         props: ['author'],
         computed: {
-            avatar () {
+            avatar() {
                 return `/authors/images/${this.author.id}.png`
             },
         },
