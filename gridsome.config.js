@@ -46,16 +46,12 @@ module.exports = {
     {
       use: 'gridsome-plugin-feed',
       options: {
-
         contentTypes: ['Post'],
-
         feedOptions: {
           title: 'Geek.I.Am ',
           description: 'Geek blog',
           link: "https://geekiam.co.uk"
         },
-        // === All options after this point show their default values ===
-        // Optional; opt into which feeds you wish to generate, and set their output path
         rss: {
           enabled: true,
           output: '/feed.xml'
