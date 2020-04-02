@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Geek.I.Am',
-  siteDescription: 'Toys, Games and Book reviews for kids by kids',
+  siteDescription: 'Enabling young people globally to have fun, learn and master software engineering',
   siteUrl: 'https://geekiam.co.uk',
   titleTemplate: `%s | Geek.I.Am`,
   icon: 'src/favicon.png',
@@ -49,8 +49,8 @@ module.exports = {
         contentTypes: ['Post'],
         feedOptions: {
           title: 'Geek.I.Am ',
-          description: 'Geek blog',
-          link: "https://geekiam.co.uk"
+          description: 'Enabling young people globally to have fun, learn and master software engineering',
+          link: 'https://geekiam.co.uk'
         },
         rss: {
           enabled: true,
@@ -66,7 +66,7 @@ module.exports = {
         },
 
         maxItems: 25,
-        filterNodes: node => node.draft === false,
+        filterNodes: node => true,
         nodeToFeedItem: node => ({
           title: node.title,
           date: node.date,
