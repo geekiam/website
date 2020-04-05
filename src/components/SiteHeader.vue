@@ -2,7 +2,7 @@
     <header class=" bg-black">
         <div class="flex items-center px-4 py-4">
             <div>
-                <g-link to="/" class="flex text-white text-base no-underline hover:text-white hover:no-underline">
+                <g-link to="/" class="text-green-800 text-base no-underline hover:text-green-600 hover:no-underline">
                     <g-image src="~/assets/images/logo.png" :alt="$static.metadata.siteName" class="h-9"/>
                 </g-link>
             </div>
