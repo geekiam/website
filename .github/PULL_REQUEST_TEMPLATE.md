@@ -2,7 +2,6 @@
 ## Overview: 
 [A summary of what you did in no more than one paragraph]
 
-
 ## Work carried out:
 
 [A list of work you have done, use markdown checklist format,
