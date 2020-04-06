@@ -93,4 +93,11 @@ module.exports = {
     Tag: '/tag/:id',
     Author: '/author/:id',
   },
+  transformers: {
+    remark: {
+      plugins: [
+        [ 'gridsome-plugin-remark-shiki', { theme: 'monokai', skipInline: true } ]
+      ]
+    }
+  }
 };
