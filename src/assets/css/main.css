@@ -1,6 +1,7 @@
 
 
 @import "markdown.css";
+@import "post-title.css";
 
 @tailwind base;
 @tailwind components;

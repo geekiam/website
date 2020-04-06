@@ -7,7 +7,7 @@ date: 2020-03-15T20:29:50.183Z
 author: gary-woodfine
 tags:
   - git
-  - version control
+  - GitHub
 ---
 
 ```javascript
