@@ -62,5 +62,14 @@ which is proprietary - meaning code that is for sale.
 
 ### Public Source Code Repositories
 
+A public source code repository is used by developers to share code with anybody, essentially the _**Public**_ in this 
+context.  Typically, software project which make use of Public Source Code Repositories are termed as **Open Source
+Projects**, which loosely means the source code is free to see, read and share by anyone.
+
+There are different licensing models available which sometimes could restrict you or even require payment for
+you to use the software, but generally most Open Source Projects can be free to use too.
+
+
+
 
 
