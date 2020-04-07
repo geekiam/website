@@ -18,7 +18,7 @@
         "netlify-cms": "^2.10.23",
         "vue-loader": "^15.9.0"
     },
-    "description": "Toys, Games and Book reviews for kids by kids",
+    "description": "Enabling young people globally to have fun, learn and master software engineering",
     "version": "1.0.0",
     "main": "gridsome.config.js",
     "devDependencies": {
