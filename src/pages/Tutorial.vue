@@ -1,12 +1,12 @@
 <template>
 <layout>
-    <h1>Index</h1>
+    <h1>Tutorial</h1>
 </layout>
 </template>
 
 <script>
     export default {
-        name: "Index"
+        name: "Tutorial"
     }
 </script>
 
