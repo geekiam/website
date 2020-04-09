@@ -14,8 +14,10 @@ to write good code fast.  The truth is, that in order to write good code, you fi
 and understand code written by others. 
 
 It's also a common misconception that software developers are geeks or hackers working in isolation on their own
-tapping furiously on their keyboards whilst solving deep and complex problems.  The reality is,  probably only 10% of
-their time would be spent doing this.  
+tapping furiously on their keyboards whilst solving deep and complex problems.  
+
+The reality is, developers probably only 10% of their time actually writing code.   This fact is also discussed 
+[The Mythical Man-Month: Essays on Software Engineering](https://threenine.co.uk) 
 
 The other 90% of their time, is spent:
  * Reading
