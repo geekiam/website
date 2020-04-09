@@ -17,9 +17,14 @@ It's also a common misconception that software developers are geeks or hackers w
 tapping furiously on their keyboards whilst solving deep and complex problems.  
 
 The reality is, developers probably only 10% of their time actually writing code.   This fact is also discussed 
-[The Mythical Man-Month: Essays on Software Engineering](https://threenine.co.uk) 
+[The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64).  
 
-The other 90% of their time, is spent:
+Professional Software Developers, will confirm that there is a significant rate between add new lines of code to an
+existing large project against starting a new project from scratch.  The difference being that when adding new lines to 
+large project, a majority of developer time is spent figuring out relationships between constituent parts of the
+application code.  
+
+Therefore the other 90% of developer time, is spent:
  * Reading
  * Interacting
  * Engaging
@@ -29,9 +34,9 @@ The other 90% of their time, is spent:
  * Re-engineering
  * Rewriting 
  
-code developed by other software developers from all over the world.
+This may be code developed by other software developers from all over the world.
 
-In all likelihood that on any given project, the majority of the code contained in it, will be code from many different 
+In all likelihood, on any given project, the majority of the code contained in it, will be code from many different 
 sources. You will invariably make use of Libraries, Frameworks, Components, Shared Code and at time Copy and Pasted code
 from other sources. Even the programming language you choose to develop your software is based on code developed by
 others.

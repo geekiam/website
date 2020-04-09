@@ -5,3 +5,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+a {
+    @apply text-green-700 font-bold;
+}
+
+a:hover {
+    @apply text-green-800;
+}
+
+.container-inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .container-inner {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-inner {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-inner {
+        max-width: 800px;
+    }
+}
