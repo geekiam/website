@@ -5,7 +5,11 @@
             <g-image src="~/assets/images/geek-i-am-intro.png"></g-image>
 
         </div>
-        <div><h1>Learning to code is fun</h1></div>
+        <div><p class="text-4xl font-bold text-center text-green-800">Programming &amp; Coding is fun</p>
+        <p class="text-1xl text-gray-700 text-center">Learning to code</p>
+            <p class="text-1xl text-gray-700 text-center">Or doing to make a living</p>
+            <p class="text-1xl text-gray-700 text-center">   can be boring and tedious</p>
+        </div>
     </div>
 </layout>
 </template>
