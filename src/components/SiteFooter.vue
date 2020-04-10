@@ -5,7 +5,7 @@
 
 
                 <div class="mb-3"><p>&copy Copyright {{ new Date().getFullYear() }} . All rights reserved.</p>
-                    <p>Built by <a href="https://threenine.co.uk" class="text-orange-700  border-b border-transparent hover:border-orange-400 transition-border-color">threenine.co.uk</a> with <a href="https://gridsome.org" class="border-b border-transparent hover:border-gray-400 transition-border-color">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:border-gray-400 transition-border-color">Tailwind CSS</a>.</p>
+                    <p>Developed by <a href="https://threenine.co.uk" class="text-orange-700  border-b border-transparent hover:border-orange-400 transition-border-color">threenine.co.uk</a> with <a href="https://gridsome.org" class="border-b border-transparent hover:border-gray-400 transition-border-color">Gridsome</a> &amp; <a href="https://tailwindcss.com/" class="border-b border-transparent hover:border-gray-400 transition-border-color">Tailwind CSS</a>.</p>
 
                 </div>
                 <div class="mb-3">

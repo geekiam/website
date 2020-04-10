@@ -1,7 +1,11 @@
 <template>
   <Layout>
+    <div class="container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
+
+
+
     <h1>About us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    </div>
   </Layout>
 </template>
 
