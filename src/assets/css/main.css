@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-    @apply text-green-800;
+    @apply text-green-600;
 }
 
 .container-inner {
