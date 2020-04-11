@@ -676,7 +676,7 @@
 
 .markdown-body code {
     background-color: rgba(27,31,35,.05);
-    border-radius: 3px;
+    border-radius: 30px;
     font-size: 85%;
     margin: 0;
     padding: .2em .4em;
@@ -708,11 +708,12 @@
 .markdown-body .highlight pre,
 .markdown-body pre {
     background-color: #f6f8fa;
-    border-radius: 3px;
+    border-radius: 15px;
     font-size: 75%;
     line-height: 1.5;
     overflow: auto;
-    padding: 16px;
+    padding: 20px;
+    margin: 10px;
 }
 
 .markdown-body pre code {

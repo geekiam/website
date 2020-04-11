@@ -1,57 +1,27 @@
 <template>
-    <Layout >
-        <main>
-            <section>
-                <post-item v-for="edge in $page.posts.edges"
-                           :key="edge.node.id"
-                           :post="edge.node"/>
-            </section>
-            <pagination :info="$page.posts.pageInfo"
-                        v-if="$page.posts.pageInfo.totalPages > 1" />
-        </main>
-    </Layout>
+<layout>
+    <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
+        <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
+            <g-image src="~/assets/images/geek-i-am-intro.png" width="380" ></g-image>
+
+        </div>
+        <div><p class="tracking-wide text-4xl font-bold text-center text-green-800">Learn to code</p>
+        <p class="tracking-wide text-2xl text-gray-700 ">Discover basics.</p>
+            <p class="tracking-wide text-2xl text-gray-700 ">Build Projects</p>
+            <p class="tracking-wide text-2xl text-gray-700 ">Develop Skills</p>
+            <p class="tracking-wide text-2xl text-gray-700">Enhance careers</p>
+        </div>
+    </div>
+
+</layout>
 </template>
 
 <script>
-     import PostItem from '@/components/PostItem'
-     import Pagination from '@/components/Pagination'
-
     export default {
-        components: {
-            PostItem,
-            Pagination
-        },
-        metaInfo: {
-            title: 'Toys, Games and Book reviews for kids by kids'
-        }
+        name: "Index"
     }
 </script>
 
-<page-query>
-    query ($page: Int) {
-        posts: allPost (page: $page, perPage: 6) @paginate {
-            totalCount
-            pageInfo {
-                totalPages
-                currentPage
-                }
-            edges {
-                node {
-                    id
-                    title
-                    timeToRead
-                    content
-                    summary
-                    path
-                    date  (format: "D MMMM Y")
-                    tags {
-                            id
-                            title
-                            path
-                    }
-                }
-            }
-        }
-    }
-</page-query>
+<style scoped>
 
+</style>

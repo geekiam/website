@@ -14,11 +14,11 @@ not been previously familiar with.
 Along the way, I have been writing a series of articles on my blog [garywoodfine.com](https://garywoodfine.com) 
 about what I have learned playing with Gridsome & Netlify
 
-* [Gridsome – VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
-* [Gridsome – More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
+* [Gridsome - VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
+* [Gridsome - More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
 * [Gridsome - Using file system markdown files ](https://garywoodfine.com/gridsome-using-file-system-markdown-files/) 
-* [Gridsome – Configuring Custom TailwindCSS ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
-* [Gridsome – Configure Basic On-Page SEO ](https://garywoodfine.com/gridsome-configure-basic-on-page-seo/)
+* [Gridsome - Configuring Custom TailwindCSS ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
+* [Gridsome - Configure Basic On-Page SEO ](https://garywoodfine.com/gridsome-configure-basic-on-page-seo/)
 * [Gridsome - Implement Additional SEO ](https://garywoodfine.com/gridsome-implement-additional-seo/)
 
  ### Developed, Sponsored and Supported 

@@ -1,8 +1,8 @@
 <template>
-  <div >
+  <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen" >
       <site-header/>
       <div>
-          <div>
+          <div class="flex-grow">
               <slot />
           </div>
 

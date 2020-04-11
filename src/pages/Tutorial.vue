@@ -1,18 +1,17 @@
 <template>
-  <Layout>
+<layout>
     <div class="container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
-
-
-
-    <h1>About us</h1>
+    <h1>Tutorial</h1>
     </div>
-  </Layout>
+</layout>
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'About us'
-  }
-}
+    export default {
+        name: "Tutorial"
+    }
 </script>
+
+<style scoped>
+
+</style>

@@ -23,7 +23,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'static/posts/*.md',
+        path: 'static/posts/**/*.md',
         typeName: 'Post',
         refs: {
           tags: {
@@ -32,6 +32,10 @@ module.exports = {
           },
           author: {
             typeName: 'Author',
+            create: true,
+          },
+          categories: {
+            typeName: 'Category',
             create: true,
           },
         },
@@ -92,5 +96,13 @@ module.exports = {
     Post: '/:title',
     Tag: '/tag/:id',
     Author: '/author/:id',
+    Category: '/category/:id'
   },
+  transformers: {
+    remark: {
+      plugins: [
+        [ 'gridsome-plugin-remark-shiki', { theme: 'monokai', skipInline: true } ]
+      ]
+    }
+  }
 };
