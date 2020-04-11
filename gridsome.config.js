@@ -34,6 +34,10 @@ module.exports = {
             typeName: 'Author',
             create: true,
           },
+          categories: {
+            typeName: 'Category',
+            create: true,
+          },
         },
       }
     },
@@ -92,6 +96,7 @@ module.exports = {
     Post: '/:title',
     Tag: '/tag/:id',
     Author: '/author/:id',
+    Category: '/category/:id'
   },
   transformers: {
     remark: {

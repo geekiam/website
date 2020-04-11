@@ -1,5 +1,5 @@
 ---
-title: 'Git: Learning the basics to become a master'
+title: 'Version Control: Learn the basics to become a master'
 summary: 'The first in the series of how to use and master git version control system '
 description: 'How to tutorial series on how to use and master git version control'
 keywords: 'git, version control, github, source code repository, source control'
@@ -8,6 +8,9 @@ author: gary-woodfine
 tags:
   - git
   - GitHub
+categories:
+  - version-control
+  - collaboration
 ---
 Many people believe that in order to become a good software developer, engineer or coder that you will need to be able 
 to write good code fast.  The truth is, that in order to write good code, you first need to be able read, comprehend

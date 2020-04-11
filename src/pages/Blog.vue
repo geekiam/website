@@ -22,7 +22,7 @@
             Pagination
         },
         metaInfo: {
-            title: 'Toys, Games and Book reviews for kids by kids'
+            title: 'Enabling young people globally to have fun, learn and master software engineering'
         }
     }
 </script>
@@ -44,7 +44,7 @@
                     summary
                     path
                     date  (format: "D MMMM Y")
-                    tags {
+                    categories {
                             id
                             title
                             path

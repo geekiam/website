@@ -16,9 +16,9 @@
                             <g-link :to="`${post.author.path}/`"
                                     class="text-green-800 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
                                     v-if="post.author">{{ titleCase(post.author.title) }}</g-link></span>
-                        <span v-if="post.tags && post.tags.length > 0"> in <g-link :to="`${post.tags[0].path}/`"
-                                                                                   class="text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color">{{ titleCase(post.tags[0].title) }}</g-link></span>
-                        <span v-if="post.author || (post.tags && post.tags.length > 0)"> · </span>
+                        <span v-if="post.categories && post.categories.length > 0"> in <g-link :to="`${post.categories[0].path}/`"
+                                                                                   class="text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color">{{ titleCase(post.categories[0].title) }}</g-link></span>
+                        <span v-if="post.author || (post.categories && post.categories.length > 0)"> · </span>
                         <span class="text-gray-700">{{ post.timeToRead }} min read</span>
                     </p>
                 </header>
