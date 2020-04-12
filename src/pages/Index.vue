@@ -7,9 +7,9 @@
         </div>
         <div><p class="tracking-wide text-4xl font-bold text-center text-green-800">Learn to code</p>
         <p class="tracking-wide text-2xl text-gray-700 ">Discover basics.</p>
-            <p class="tracking-wide text-2xl text-gray-700 ">Build Projects</p>
-            <p class="tracking-wide text-2xl text-gray-700 ">Develop Skills</p>
-            <p class="tracking-wide text-2xl text-gray-700">Enhance careers</p>
+            <p class="tracking-wide text-2xl text-gray-700 ">Build Projects.</p>
+            <p class="tracking-wide text-2xl text-gray-700 ">Develop Skills.</p>
+            <p class="tracking-wide text-2xl text-gray-700">Enhance careers.</p>
         </div>
 
     </div>
