@@ -52,7 +52,7 @@ physically see, is their code.
 ## Source Code Repository
 
 The primary means developers interact with another and code, is through what is called a **_Source Code Repository_**
-and there are many different types.  Source Code Repositories can be either _Public_ or _Private_ and sometimes they
+and there are different types.  Source Code Repositories can be either _Public_ or _Private_ and sometimes they
 can be a mixture of both.
 
 > repository 
@@ -73,7 +73,7 @@ which is proprietary - meaning code that is for sale.
 
 ### Public Source Code Repositories
 
-A public source code repository is used by developers to share code with anybody, essentially the _**Public**_ in this 
+A public source code repositories, are used by developers to share code with anybody, essentially the _**Public**_ in this 
 context.  Typically, software project which make use of Public Source Code Repositories are termed as **Open Source
 Projects**, which loosely means the source code is free to see, read and share by anyone.
 
