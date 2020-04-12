@@ -9,6 +9,7 @@ author: gary-woodfine
 tags:
   - git
   - GitHub
+  - subversion
 categories:
   - version-control
   - collaboration
@@ -25,10 +26,10 @@ The reality is, developers probably only 10% of their time actually writing code
 
 Professional Software Developers, will confirm that there is a significant rate between add new lines of code to an
 existing large project against starting a new project from scratch.  The difference being that when adding new lines to 
-large project, a majority of developer time is spent figuring out relationships between constituent parts of the
+large project, a majority of developer time, is typically spent figuring out relationships between constituent parts of the
 application code.  
 
-Therefore the other 90% of developer time, is spent:
+Therefore, 90% of developer time, is spent:
  * Reading
  * Interacting
  * Engaging
