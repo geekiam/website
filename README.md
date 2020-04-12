@@ -2,12 +2,14 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8efb3bdf-7233-4af4-8ce4-4ef961592200/deploy-status)](https://app.netlify.com/sites/geekiam/deploys)
 
-The gradual evolution of potentially a new business. 
+The gradual evolution of potentially a new business.  Initially inspired on boring rainy Saturday afternoon, then 
+gradually germinating into a full fledged business idea. Read the full story 
+[Times they are a changing – hopefully for the better](https://garywoodfine.com/times-they-are-a-changing-hopefully-for-the-better/)
 
 ### Gridsome Tutorial series 
 
-Along the way, I have been writing a series of articles on my blog [garywoodfine.com](https://garywoodfine.com) 
-about what I have learned playing with Gridsome & Netlify
+Along the way, we have also documented the journey of building Geek.I.Am in a series of tutorials about what we have 
+learned developing with Gridsome & Netlify
 
 * [Gridsome - VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
 * [Gridsome - More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
