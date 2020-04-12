@@ -1,7 +1,8 @@
 ---
 title: 'Version Control: Learn the basics to become a master'
-summary: 'The first in the series of how to use and master git version control system '
-description: 'How to tutorial series on how to use and master git version control'
+summary: 'Probably one of the most important skills a software developer needs to learn is how to use and master version
+control.'
+description: 'Important skills for software developer is how to use and master version control systems'
 keywords: 'git, version control, github, source code repository, source control'
 date: 2020-03-15T20:29:50.183Z
 author: gary-woodfine
