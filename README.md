@@ -9,7 +9,7 @@ gradually germinating into a full fledged business idea. Read the full story
 ### Gridsome Tutorial series 
 
 Along the way, we have also documented the journey of building Geek.I.Am in a series of tutorials about what we have 
-learned developing with Gridsome & Netlify
+learned developing with Gridsome, Netlify, TailwindCSS, JavaScript and much more!
 
 * [Gridsome - VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
 * [Gridsome - More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
