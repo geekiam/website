@@ -12,7 +12,7 @@ export default function (Vue, { head }) {
       {
           key: 'keywords',
           name: 'keywords',
-          content: 'Toys, Games, Computer Games, product reviews, '
+          content: 'code, tutorials, learn, HTML, CSS, JavaScript, blockchain, cryptocurrency '
       },
       {
         name: 'author',

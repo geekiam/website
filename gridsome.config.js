@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Geek.I.Am',
-  siteDescription: 'Enabling young people globally to have fun, learn and master software engineering',
+  siteDescription: 'Learn software development skills you need to be a professional software developer',
   siteUrl: 'https://geekiam.co.uk',
   titleTemplate: `%s | Geek.I.Am`,
   icon: 'src/favicon.png',
