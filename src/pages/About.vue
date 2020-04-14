@@ -5,7 +5,7 @@
 
 
     <h1>About us</h1>
-      <p>Coming soon</p>
+      <p>Checking out the git flow feature</p>
     </div>
   </Layout>
 </template>
