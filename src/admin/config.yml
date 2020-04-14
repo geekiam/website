@@ -1,6 +1,6 @@
 backend:
     name: github
-    repo: garywoodfine/geekiam
+    repo: threenine/geekiam
 
 site_url: https://geekiam.co.uk
 display_url: https://geekiam.co.uk

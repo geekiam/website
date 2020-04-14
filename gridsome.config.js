@@ -53,7 +53,7 @@ module.exports = {
         contentTypes: ['Post'],
         feedOptions: {
           title: 'Geek.I.Am ',
-          description: 'Enabling young people globally to have fun, learn and master software engineering',
+          description: 'Learn software development skills you need to be a professional software developer',
           link: 'https://geekiam.co.uk'
         },
         rss: {
