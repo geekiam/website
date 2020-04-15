@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     @apply text-green-700 font-bold;
 }
