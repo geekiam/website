@@ -21,8 +21,9 @@ and understand code written by others.
 It's also a common misconception that software developers are geeks or hackers working in isolation on their own
 tapping furiously on their keyboards whilst solving deep and complex problems.  
 
-The reality is, developers probably only 10% of their time actually writing code.   This fact is also discussed 
-[The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64).  
+The reality is, developers probably spend only 10% of their time actually writing code.   This fact, is also discussed 
+in [The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64), whereby the average developer
+will generally contribute on average 10 lines of code a day.  
 
 Professional Software Developers, will confirm that there is a significant rate between add new lines of code to an
 existing large project against starting a new project from scratch.  The difference being that when adding new lines to 
@@ -81,7 +82,11 @@ Projects**, which loosely means the source code is free to see, read and share b
 There are different licensing models available which sometimes could restrict you or even require payment for
 you to use the software, but generally most Open Source Projects can be free to use too.
 
+### Why use a version control system
 
-
+Version control systems are a category of software tools that help software teams manage change to source code 
+over time. Version control software keeps track of every modification to the code in a special kind of database. If 
+mistakes are made, developers are able to revert changes to essentially turn back time and compare earlier versions of 
+code to not disrupt the code base while minimizing disruption to all team members.
 
 
