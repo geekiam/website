@@ -10,8 +10,7 @@
           <p class="tracking-wide mb-3 text-xl ">
             An education company, with one ambition and vision to change the world of education.</p>
           <p class="tracking-wide mb-3 text-xl">We’re committed to building the best a truly innovative and
-            transformative
-            learning experiences.</p>
+            transformative learning experiences.</p>
           <p class="tracking-wide mb-3 text-xl">We don't necessarily want Geek.I.Am to be the best place for our team to
             learn, teach,
             and create the online learning experience, but we want the people you learn, teach and create with Geek.I.Am
