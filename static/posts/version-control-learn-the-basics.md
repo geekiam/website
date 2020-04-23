@@ -25,8 +25,8 @@ The reality is, developers probably spend only 10% of their time actually writin
 in [The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64), whereby the average developer
 will generally contribute on average 10 lines of code a day.  
 
-Professional Software Developers, will attest that there is a significant difference in the rate between add new lines 
-of code to an existing large project against starting a new project from scratch.  The difference being that when 
+Professional Software Developers, will attest that there is a significant difference in the rate between adding new 
+lines of code to an existing large project against starting a new project from scratch.  The difference being that when 
 adding new lines to large project, a majority of developer time, is typically spent figuring out relationships between 
 constituent parts of the application code.  
 
