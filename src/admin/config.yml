@@ -1,5 +1,5 @@
 backend:
-    name: github
+    name: git-gateway
     repo: threenine/geekiam
 
 site_url: https://geekiam.co.uk
