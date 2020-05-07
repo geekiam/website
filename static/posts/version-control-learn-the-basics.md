@@ -110,7 +110,10 @@ developers has become Git which is a distributed version control system for trac
 software development. It has been specifically been designed for coordinating work among programmers, but can also be 
 used to track changes to any set of files!
 
-One of the advantages offered by git, is that every git directory on every computer is a full fledged repository with 
+One of the advantages offered by git, is that every git directory on every computer is a full-fledged repository with 
 a complete history and full version-tracking abilities independent of network access or a central server. Git is also 
 free and open source.
 
+### Central Version Control Repositories
+
+When working with git you will often need a central repository 
