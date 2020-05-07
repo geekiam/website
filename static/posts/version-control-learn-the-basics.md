@@ -116,4 +116,19 @@ free and open source.
 
 ### Central Version Control Repositories
 
-When working with git you will often need a central repository 
+When working with git you will often need a central repository that will act as a source of truth for all developers to 
+to sync up to.  In most cases this may be a Cloud-based service such as GitHug, GitLab, BitBucket or a private server
+on the internet.  Whichever one your team uses, the role of this cnetral repository is to provide your team with a 
+*Remote* centrally located server for your team to *Push* and *Pull* changes to source code.
+
+Software teams owe the introduction of easy to manage *pull requests* to Git.
+
+### What are Pull Requests
+
+Pull requests are requests created by a software developer to combine changes they created with the main project. The 
+process includes reviewing those changes. Reviewers can insert comments on code they think could be improved, changed,
+removed as unnecessary.
+
+After receiving feedback, the creator can respond to it, either by creating a discussion, or simply follow it and 
+change their code accordingly.
+
