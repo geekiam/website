@@ -132,3 +132,34 @@ removed as unnecessary.
 After receiving feedback, the creator can respond to it, either by creating a discussion, or simply follow it and 
 change their code accordingly.
 
+ ### What are the benefits of version control systems
+ 
+ One of the biggest benefits of version control systems is that they dramatically reduce risks of developers losing or 
+ corrupting source code. It also helps developers to collaborate with each other more efficiently and effectively. By 
+ enabling developers to quickly and easily share code. 
+ 
+ There are some a number of additional benefits of using Version Control systems, however I will discuss just 2 of the 
+ most important aspects.
+ 
+ 1. *Branching and merging*
+  Having team members work concurrently is of fundamental importance, however even lone individuals can benefit from the
+   ability to work on independent streams of changes. 
+   
+   Creating a "branch" in VCS tools keeps multiple streams of work independent and separate from each other while also 
+   providing the facility to merge that work back together, enabling developers to verify that the changes on each 
+   branch do not conflict. 
+   
+   Many software teams adopt a practice of branching for each feature or perhaps branching for each release, or both. 
+   There are many different workflows that teams can choose from when they decide how to make use of branching and 
+   merging facilities in VCS.
+ 
+ 2. *Traceability*. 
+ 
+ Being able to trace each change made to the software and connect it to project management and bug tracking software 
+ such as [Jetbrains Space](https://www.jetbrains.com/space/), and being able to annotate each change with a message 
+ describing the purpose and intent of the change can help not only with root cause analysis and other forensics.
+  
+  Having the annotated history of the code at your fingertips when you are reading the code, trying to understand what 
+  it is doing and why it is so designed can enable developers to make correct and harmonious changes that are in accord 
+  with the intended long-term design of the system. This can be especially important for working effectively with 
+  legacy code and is crucial in enabling developers to estimate future work with any accuracy.
