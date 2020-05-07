@@ -84,18 +84,26 @@ you to use the software, but generally most Open Source Projects can be free to 
 
 ### Why use a version control system
 
-Version control systems are a category of software tools that help software teams manage change to source code  over time. Version control software keeps track of every modification to the code in a special kind of database. If 
-mistakes are made, developers are able to revert changes to essentially turn back time and compare earlier versions of code to not disrupt the code base while minimizing disruption to all team members.
+Version control systems are a category of software tools that help software teams manage change to source code  over 
+time. Version control software keeps track of every modification to the code in a special kind of database. If 
+mistakes are made, developers are able to revert changes to essentially turn back time and compare earlier versions of 
+code to not disrupt the code base while minimizing disruption to all team members.
 
-In order to develop quality software, software teams need to be able to track all changes and reverse them if necessary. Version control systems fill that role by tracking project history and helping to merge changes made by multiple people.  They also assist in helping to speed up work and help teams to find bugs easier.
+In order to develop quality software, software teams need to be able to track all changes and reverse them if necessary.
+Version control systems fill that role by tracking project history and helping to merge changes made by multiple people.
+They also assist in helping to speed up work and help teams to find bugs easier.
 
-Working in distributed teams was made possible thanks to Version Control systems, because they enable developers to work on different parts of the project at the same time and later merge all their work into a single product.
+Working in distributed teams was made possible thanks to Version Control systems, because they enable developers to 
+work on different parts of the project at the same time and later merge all their work into a single product.
 
 ### How version control systems changed the software development world
 
-Before version control systems were adopted by software teams, many teams relied on manually backing up previous versions of projects. Manually copying modified files in order to incorporate work conducted by multiple developers on the same project.
+Before version control systems were adopted by software teams, many teams relied on manually backing up previous 
+versions of projects. Manually copying modified files in order to incorporate work conducted by multiple developers on 
+the same project.
 
-Most developers will tell you that any manual task, is going to be error prone, and the manual based task of copying files was indeed very error prone! 
+Most developers will tell you that any manual task, is going to be error prone, and the manual based task of copying 
+files was indeed very error prone! 
 
 Over the years there have been several advancements in version control systems, currently the most popular one among
 developers has become Git which is a distributed version control system for tracking changes in source code during
