@@ -84,8 +84,8 @@ you to use the software, but generally most Open Source Projects can be free to 
 
 ### Why use a version control system
 
-Version control systems are a category of software tools that help software teams manage change to source code  over 
-time. Version control software keeps track of every modification to the code in a special kind of database. If 
+Version control systems are a category of software tools that help software teams manage change to source code 
+over time. Version control software keeps track of every modification to the code in a special kind of database. If 
 mistakes are made, developers are able to revert changes to essentially turn back time and compare earlier versions of 
 code to not disrupt the code base while minimizing disruption to all team members.
 
