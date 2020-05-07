@@ -18,15 +18,15 @@ Many people believe that in order to become a good software developer, engineer 
 to write good code fast.  The truth is, that in order to write good code, you first need to be able read, comprehend
 and understand code written by others. 
 
-It's also a common misconception that software developers are geeks or hackers working in isolation on their own
-tapping furiously on their keyboards whilst solving deep and complex problems.  
+It's also a common misconception that software developers are geeks or hackers working in isolation tapping furiously 
+on their keyboards whilst solving deep and complex problems.  
 
 The reality is, developers probably spend only 10% of their time actually writing code.   This fact, is also discussed 
 in [The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64), whereby the average developer
 will generally contribute on average 10 lines of code a day.  
 
-Professional Software Developers, will confirm that there is a significant rate between add new lines of code to an
-existing large project against starting a new project from scratch.  The difference being that when adding new lines to 
+Professional Software Developers, know that there is a significant difference in rate between adding new lines of code to an
+existing large project, against starting a new project from scratch.  The difference being that when adding new lines to 
 large project, a majority of developer time, is typically spent figuring out relationships between constituent parts of the
 application code.  
 
