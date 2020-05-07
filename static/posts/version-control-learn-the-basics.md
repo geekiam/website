@@ -18,15 +18,15 @@ Many people believe that in order to become a good software developer, engineer 
 to write good code fast.  The truth is, that in order to write good code, you first need to be able read, comprehend
 and understand code written by others. 
 
-It's also a common misconception that software developers are geeks or hackers working in isolation on their own
-tapping furiously on their keyboards whilst solving deep and complex problems.  
+It's also a common misconception that software developers are geeks or hackers working in isolation tapping furiously 
+on their keyboards whilst solving deep and complex problems.  
 
 The reality is, developers probably spend only 10% of their time actually writing code.   This fact, is also discussed 
 in [The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64), whereby the average developer
 will generally contribute on average 10 lines of code a day.  
 
-Professional Software Developers, will confirm that there is a significant rate between add new lines of code to an
-existing large project against starting a new project from scratch.  The difference being that when adding new lines to 
+Professional Software Developers, know that there is a significant difference in rate between adding new lines of code to an
+existing large project, against starting a new project from scratch.  The difference being that when adding new lines to 
 large project, a majority of developer time, is typically spent figuring out relationships between constituent parts of the
 application code.  
 
@@ -110,7 +110,56 @@ developers has become Git which is a distributed version control system for trac
 software development. It has been specifically been designed for coordinating work among programmers, but can also be 
 used to track changes to any set of files!
 
-One of the advantages offered by git, is that every git directory on every computer is a full fledged repository with 
+One of the advantages offered by git, is that every git directory on every computer is a full-fledged repository with 
 a complete history and full version-tracking abilities independent of network access or a central server. Git is also 
 free and open source.
 
+### Central Version Control Repositories
+
+When working with git you will often need a central repository that will act as a source of truth for all developers to 
+to sync up to.  In most cases this may be a Cloud-based service such as GitHug, GitLab, BitBucket or a private server
+on the internet.  Whichever one your team uses, the role of this cnetral repository is to provide your team with a 
+*Remote* centrally located server for your team to *Push* and *Pull* changes to source code.
+
+Software teams owe the introduction of easy to manage *pull requests* to Git.
+
+### What are Pull Requests
+
+Pull requests are requests created by a software developer to combine changes they created with the main project. The 
+process includes reviewing those changes. Reviewers can insert comments on code they think could be improved, changed,
+removed as unnecessary.
+
+After receiving feedback, the creator can respond to it, either by creating a discussion, or simply follow it and 
+change their code accordingly.
+
+ ### What are the benefits of version control systems
+ 
+ One of the biggest benefits of version control systems is that they dramatically reduce risks of developers losing or 
+ corrupting source code. It also helps developers to collaborate with each other more efficiently and effectively. By 
+ enabling developers to quickly and easily share code. 
+ 
+ There are some a number of additional benefits of using Version Control systems, however I will discuss just 2 of the 
+ most important aspects.
+ 
+ 1. *Branching and merging*
+  Having team members work concurrently is of fundamental importance, however even lone individuals can benefit from the
+   ability to work on independent streams of changes. 
+   
+   Creating a "branch" in VCS tools keeps multiple streams of work independent and separate from each other while also 
+   providing the facility to merge that work back together, enabling developers to verify that the changes on each 
+   branch do not conflict. 
+   
+   Many software teams adopt a practice of branching for each feature or perhaps branching for each release, or both. 
+   There are many different workflows that teams can choose from when they decide how to make use of branching and 
+   merging facilities in VCS.
+ 
+ 2. *Traceability*. 
+ 
+ Being able to trace each change made to the software and connect it to project management and bug tracking software 
+ such as [Jetbrains Space](https://www.jetbrains.com/space/), and being able to annotate each change with a message 
+ describing the purpose and intent of the change can help not only with root cause analysis and other forensics.
+  
+  Having the annotated history of the code at your fingertips when you are reading the code, trying to understand what 
+  it is doing and why it is so designed can enable developers to make correct and harmonious changes that are in accord 
+  with the intended long-term design of the system. This can be especially important for working effectively with 
+  legacy code and is crucial in enabling developers to estimate future work with any accuracy.
