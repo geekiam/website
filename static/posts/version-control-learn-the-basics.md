@@ -1,5 +1,5 @@
 ---
-title: Version Control: Learn the basics to become a master
+title: Learn the basics of version control to become a master
 summary: The most important skills a software developer needs to learn is how to use and master version control.
 description: Important skills for software developer is how to use and master version control systems
 date: 2020-03-15T20:29:50.183Z
