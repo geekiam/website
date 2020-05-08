@@ -142,16 +142,17 @@ change their code accordingly.
  most important aspects.
  
  1. *Branching and merging*
+ 
   Having team members work concurrently is of fundamental importance, however even lone individuals can benefit from the
-   ability to work on independent streams of changes. 
+  ability to work on independent streams of changes. 
    
-   Creating a "branch" in VCS tools keeps multiple streams of work independent and separate from each other while also 
-   providing the facility to merge that work back together, enabling developers to verify that the changes on each 
-   branch do not conflict. 
+ Creating a "branch" in VCS tools keeps multiple streams of work independent and separate from each other while also 
+ providing the facility to merge that work back together, enabling developers to verify that the changes on each 
+ branch do not conflict. 
    
-   Many software teams adopt a practice of branching for each feature or perhaps branching for each release, or both. 
-   There are many different workflows that teams can choose from when they decide how to make use of branching and 
-   merging facilities in VCS.
+ Many software teams adopt a practice of branching for each feature or perhaps branching for each release, or both. 
+ There are many different workflows that teams can choose from when they decide how to make use of branching and 
+ merging facilities in VCS.
  
  2. *Traceability*. 
  
