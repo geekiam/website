@@ -94,9 +94,145 @@ Switched to a new branch 'feature/hello-world'
 
 Summary of actions:
 - A new branch 'feature/hello-world' was created, based on 'develop'
+
 - You are now on branch 'feature/hello-world'
 
 Now, start committing on your feature. When done, use:
 
-     git flow feature finish authentication
+     git flow feature finish hello-world
 ```
+A new feature branch has been created, and you’re automatically switched to it. Implement your feature on this branch 
+while using git like you normally would, making use of the usual git commands such as `git add `, `git commit` and 
+`git push`.
+
+Once you've finished implementing your desired feature you can commit close the feature using the feature finish.
+
+```shell script
+ git flow feature finish hello-world
+
+Switched to branch 'develop'
+Updating 9060376..00bafe4
+Fast-forward
+ hello-world.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello-world.txt
+Deleted branch feature/hello-world (was 00bafe4).
+
+Summary of actions:
+- The feature branch 'feature/hello-world' was merged into 'develop'
+- Feature branch 'feature/hello-world' has been removed
+- You are now on branch 'develop'
+```
+Your feature branch will be merged and you’re taken back to your develop branch. Internally, git-flow used 
+`git merge --no-ff feature/hello-world` to make sure you don’t lose any historical information about your 
+feature branch before it is removed.
+
+### How to create versioned releases with git-flow
+
+To create tagged and versioned releases, you can use git-flow’s release branches to start a new branch when you’re 
+ready to deploy a new version to production.
+          
+Like everything else in git-flow, you don’t have to use release branches if you don’t want to. 
+
+if you to prefer to manually `git merge --no-ff develop` into master without tagging? No problem. However, if you’re working 
+on a versioned API or library, release branches might be really useful, and they work exactly like you’d expect.
+
+```shell script
+git flow release start 0.1.0
+
+Switched to a new branch 'release/0.1.0'
+
+Summary of actions:
+- A new branch 'release/0.1.0' was created, based on 'develop'
+- You are now on branch 'release/0.1.0'
+
+Follow-up actions:
+- Bump the version number now!
+- Start committing last-minute fixes in preparing your release
+- When done, run:
+
+     git flow release finish '0.1.0'
+```
+
+Increment the version number and commit all the code required to release your project in the release branch. Try to 
+refrain from adding any last minute fixes, but if you do, git-flow will make sure everything is correctly merged 
+into both master and develop. 
+
+Once you've finished adding all your code then, finish the release:
+
+```shell script
+
+git flow release finish 0.1.0
+Switched to branch 'master'
+Merge made by the 'recursive' strategy.
+ authentication.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 authentication.txt
+Deleted branch release/0.1.0 (was 1b26f7c).
+
+Summary of actions:
+- Latest objects have been fetched from 'origin'
+- Release branch has been merged into 'master'
+- The release was tagged '0.1.0'
+- Release branch has been back-merged into 'develop'
+- Release branch 'release/0.1.0' has been deleted
+
+```
+git-flow pulls from origin, merges the release branch into master, tags the release and back-merges everything 
+back into develop before removing the release branch.
+
+You’re still on master, so you can deploy before going back to your develop branch, which git-flow made sure to update 
+with the release changes in master.
+
+### How to apply Hot Fixes to production code
+
+The master branch always in sync with production or your live release, therefore it is easy to quickly fix any issues 
+and deploy them straight to production.
+
+For example, if your CSS aren’t loading on production, you’d roll back your deploy and start a hotfix branch:
+
+```shell script
+git flow hotfix start css-patch-fix
+Switched to a new branch 'hotfix/css-patch-fix'
+
+Summary of actions:
+- A new branch 'hotfix/css-patch-fix' was created, based on 'master'
+- You are now on branch 'hotfix/css-patch-fix'
+
+Follow-up actions:
+- Bump the version number now!
+- Start committing your hot fixes
+- When done, run:
+
+     git flow hotfix finish 'css-patch-fix'
+```
+Hotfix branches are a lot like release branches, except they’re based on master instead of develop. You’re 
+automatically switched to the new hotfix branch so you can start fixing the issue and incrementing the minor version 
+number.
+
+Once you finished applying your hot fix, you can simply
+
+```shell script
+git flow hotfix finish css-patch-fix
+Switched to branch 'master'
+Merge made by the 'recursive' strategy.
+ css-patch-fix.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 css-patch-fix.txt
+Switched to branch 'develop'
+Merge made by the 'recursive' strategy.
+ css-patch-fix.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 css-patch-fix.txt
+Deleted branch hotfix/css-patch-fix (was 08edb94).
+
+Summary of actions:
+- Latest objects have been fetched from 'origin'
+- Hotfix branch has been merged into 'master'
+- The hotfix was tagged '0.1.1'
+- Hotfix branch has been back-merged into 'develop'
+- Hotfix branch 'hotfix/css-patch-fix' has been deleted
+```
+
+Similar to when finishing a release branch, the hotfix branch gets merged into both master and develop. The release 
+is tagged and the hotfix branch is removed.
