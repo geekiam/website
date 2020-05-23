@@ -15,7 +15,7 @@
         "gridsome-plugin-feed": "^1.0.2",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-remark-shiki": "^0.3.1",
-        "netlify-cms": "^2.10.48",
+        "netlify-cms": "^2.10.49",
         "vue-loader": "^15.9.2"
     },
     "description": "Enabling young people globally to have fun, learn and master software engineering",
