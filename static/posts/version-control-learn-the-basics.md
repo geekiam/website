@@ -115,7 +115,7 @@ free and open source.
 ### Central Version Control Repositories
 
 When working with git you will often need a central repository that will act as a source of truth for all developers to 
-to sync up to.  In most cases this may be a Cloud-based service such as GitHug, GitLab, BitBucket or a private server
+to sync up to.  In most cases this may be a Cloud-based service such as Github, Gitlab, BitBucket or a private server
 on the internet.  Whichever one your team uses, the role of this cnetral repository is to provide your team with a 
 *Remote* centrally located server for your team to *Push* and *Pull* changes to source code.
 
@@ -162,3 +162,42 @@ change their code accordingly.
   it is doing and why it is so designed can enable developers to make correct and harmonious changes that are in accord 
   with the intended long-term design of the system. This can be especially important for working effectively with 
   legacy code and is crucial in enabling developers to estimate future work with any accuracy.
+
+### Basic Concepts of version control
+
+#### Tracking changes
+
+The primary and most crucial function of version control systems is to track changes that happen with directories and 
+files within a software development project. Depending on the version control system, this could vary from knowing a 
+file changed to knowing specific characters or bytes in a file that have changed.
+
+In most cases, you specify a directory or set of files that should have their changes tracked by version control. 
+This can happen by checking out (or cloning) a repository from a host, or by telling the software which of your files 
+you wish to have under version control.
+
+The set of files or directories that are under version control are more commonly called a repository.
+
+Each change you make to a file will be tracked behind the scenes.  Once you are finished making your changes, and prepare
+to save your changes to a repository, a process commonly refered to as *Commit* or *Check-In* , then you version control
+system will enable you to review your changes and compare them against the existing files.
+
+#### Commit
+
+Each change to a file is tracked automatically, this may include editing a file, moving a file, deleting a file, 
+reformatting a file or just about any change that could be made to a file.  Instead of recording each change 
+individually, the version control system will wait for you to submit your changes as a single collection of actions. 
+
+As mentioned previously, in version control, this collection of actions is known as a *commit*.
+
+#### Revisions and Changesets
+
+After a Commit has been completed, then the changes are recorded in what is referred to as a *ChangeSet* and assigned a
+unique revision ID.   The ID may be in the form of a simple incremented number i.e. (1, 2, 3 ......... 1234567708 etc), but typically in git and other popular
+distributed version control systems it is a Unique Hash code i.e 39abc87d1234cr890u8sd9709sdfa9878d9s0df. 
+
+A changset will include a reference to the person who made the commit, when the change was made, the files or 
+directories affected, a comment and even the changes that happened within the files. 
+
+For collaboration,  having the ability to view past revisions and changesets is a valuable feature to see how a  
+project has evolved and to changes to the code base. Each version control system has a formatted way to view a 
+complete history of each revision and changeset in the repository.
