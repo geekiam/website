@@ -1,19 +1,17 @@
 ---
-title: 'How to revert a git commit'
-summary: 'How to revert a git commit when accidentally commit code'
-description: 'How to use the git cli to revert an accidental commit'
+title: How to revert a git commit
+description: How to use the git cli to revert an accidental commit
+summary: How to revert a git commit when accidentally commit code
 date: 2020-05-23T15:29:50.183Z
 author: gary-woodfine
 tags:
   - git
-  
 categories:
   - version-control
   - collaboration
 ---
 
-This should come as no surprise that software developers are humans and are just like other humans in that they make
-mistakes.  I would be the first to admit that as a software developer I make mistakes almost daily. 
+This should come as no surprise that software developers are humans and are just like other humans in that they make mistakes.  I would be the first to admit that as a software developer I make mistakes almost daily. 
 
 The fortunate thing, is that as software developers we have the ability to develop tools and processes that can help us 
 overcome issues when we make mistakes. I have previously discussed, [how learning the basics of Version Control will help
