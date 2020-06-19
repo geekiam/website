@@ -13,10 +13,8 @@ categories:
 
 This should come as no surprise that software developers are humans and are just like other humans in that they make mistakes.  I would be the first to admit that as a software developer I make mistakes almost daily. 
 
-The fortunate thing, is that as software developers we have the ability to develop tools and processes that can help us 
-overcome issues when we make mistakes. I have previously discussed, [how learning the basics of Version Control will help
-you to become a master](https://geekiam.co.uk/learn-the-basics-of-version-control-to-become-a-master).  Using version 
-control correctly can also help you recover and mitigate against making mistakes.
+The fortunate thing, is that as software developers we have the ability to develop tools and processes that can help us overcome issues when we make mistakes. I have previously discussed, [how learning the basics of Version Control will help
+you to become a master](https://geekiam.co.uk/learn-the-basics-of-version-control-to-become-a-master).  Using version control correctly can also help you recover and mitigate against making mistakes.
 
 Having the ability to roll back to previous versions, of your code i.e. the version which previously worked can be 
 really useful, in order to help you compare and contrast different versions of code.
