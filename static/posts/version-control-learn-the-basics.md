@@ -201,3 +201,33 @@ directories affected, a comment and even the changes that happened within the fi
 For collaboration,  having the ability to view past revisions and changesets is a valuable feature to see how a  
 project has evolved and to changes to the code base. Each version control system has a formatted way to view a 
 complete history of each revision and changeset in the repository.
+
+#### Updates
+To ensure you are always working with the latest version of the code, you will need to ensure you always update your 
+local repository. Getting the latest changes from a repository is as simple as doing a pull or update from another 
+computer. When an *Update* or *Pull* is requested, only the changes since your last request are downloaded.
+
+#### Conflicts
+
+There may be instances, when a colleague, team member or other collaborator makes to a change to the same file(s) that 
+you are working on.  Version control systems provide a way to view the difference between the conflicting versions and 
+enabling you to make a choice. You can either edit the files manually to merge the options, or allow one revision 
+to win over the other, or carry out a mix of both in a process which is referred to as *Conflict Resolution* 
+
+#### Branching and Merging
+
+There are some cases when you want to experiment or commit changes to the repo that could break things elsewhere in 
+your code in what is referred to as *Feature* development. Instead of committing this code directly to the main set 
+of files usually referred to as *trunk* , *master* , *default* or *main*, you can create something called a *Branch*.
+
+A *branch* enables you to create a copy of the repository that you can modify in parallel without altering the 
+main set. You can continue to commit new changes to the branch as you work, while others commit to their branches or the
+ main code repository without changes affecting each other.
+ 
+ Once you’re satisfied with the experimental code, you want to make it part of the trunk or master again. 
+ This is where *merging* comes in. Since the version control system has recorded every change so far, it knows 
+ how each file has been altered. 
+ 
+ Merging a branch with the trunk or master or other  branches, your version control system will attempt to 
+ seamlessly merge each file and line of code automatically. Once a branch is merged it then updates the Main branch 
+ with the latest files.
