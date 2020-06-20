@@ -33,7 +33,7 @@ Github also provides a really rich set of Application Programming Interface (API
 
 ### Create Github repository using the API
 
-It is fairly easy, but unfortunately a verbose to create a Github repository using the API using the terminal window. All that is required is using a library like [CuRL - A command-line tool for transferring data using various network protocols](https://curl.haxx.se/) and reading understanding and remembering the API structure.
+It is fairly easy, but unfortunately a verbose method to create a Github repository using the API using the terminal window. All that is required is using a library like [CuRL - A command-line tool for transferring data using various network protocols](https://curl.haxx.se/) and reading understanding and remembering the API structure.
 
 In order to use the Github API's you will be required to create a [Creating a personal access token for the command line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) 
 
@@ -50,4 +50,15 @@ This is quite a lot to remember, and if you're anything like me you're going to 
 ### What is Github hub ?
 
 *hub* is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.
+
+### How to install Hub
+
+platform | manager | command to run
+---------|---------|---------------
+macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub`
+Windows | [Scoop](http://scoop.sh/) | `scoop install hub`
+Windows | [Chocolatey](https://chocolatey.org/) | `choco install hub`
+Fedora Linux | [DNF](https://fedoraproject.org/wiki/DNF) | `sudo dnf install hub`
+Debian | [apt(8)](https://manpages.debian.org/buster/apt/apt.8.en.html) | `sudo apt install hub`
+Ubuntu | [Snap](https://snapcraft.io) | `sudo snap install hub --classic`
 
