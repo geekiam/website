@@ -39,10 +39,8 @@ In order to use the Github API's you will be required to create a [Creating a pe
 
 Once you're registered your Personal Access Token, you can use the following command to create your repository.
 
-
 ```shell
 curl -H 'Authorization: token some_token-id' https://api.github.com/user/repos  -d '{"name":"somerepositoryname"}'
-
 ```
 
 This is quite a lot to remember, and if you're anything like me you're going to forget this almost immediately.  Fortunately, Github realise most developers have goldfish memories and have spent time developing an easier to use command line tool to help developers called Hub.
@@ -53,13 +51,25 @@ This is quite a lot to remember, and if you're anything like me you're going to 
 
 ### How to install Hub
 
-platform | manager | command to run
----------|---------|---------------
-macOS, Linux | [Homebrew](https://docs.brew.sh/Installation) | `brew install hub`
-Windows | [Scoop](http://scoop.sh/) | `scoop install hub`
-Windows | [Chocolatey](https://chocolatey.org/) | `choco install hub`
-Fedora Linux | [DNF](https://fedoraproject.org/wiki/DNF) | `sudo dnf install hub`
-Debian | [apt(8)](https://manpages.debian.org/buster/apt/apt.8.en.html) | `sudo apt install hub`
-Ubuntu | [Snap](https://snapcraft.io) | `sudo snap install hub --classic`
+| platform     | manager                                                        | command to run                    |
+| ------------ | -------------------------------------------------------------- | --------------------------------- |
+| macOS, Linux | [Homebrew](https://docs.brew.sh/Installation)                  | `brew install hub`                |
+| Windows      | [Scoop](http://scoop.sh/)                                      | `scoop install hub`               |
+| Windows      | [Chocolatey](https://chocolatey.org/)                          | `choco install hub`               |
+| Fedora Linux | [DNF](https://fedoraproject.org/wiki/DNF)                      | `sudo dnf install hub`            |
+| Debian       | [apt(8)](https://manpages.debian.org/buster/apt/apt.8.en.html) | `sudo apt install hub`            |
+| Ubuntu       | [Snap](https://snapcraft.io)                                   | `sudo snap install hub --classic` |
 
-After you have installed hub, I always prefer to ensure that I have I have my ssh keys installed and that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that 
+After you have installed hub, I always prefer to ensure that I have I have my ssh keys installed and that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that I configure hub to authenticate and execute commands using ssh.
+
+```shell
+git config --global hub.protocol ssh
+```
+
+if you want to read the *hub* help files you can use the following commands
+
+```shell
+hub help hub
+```
+
+![hub help files](/uploads/hub-help-hub.png "hub help files")
