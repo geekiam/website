@@ -73,3 +73,68 @@ hub help hub
 ```
 
 ![hub help files](/uploads/hub-help-hub.png "hub help files")
+
+It is worth taking a little time and having a read through the help files to get acquainted with some of the terms and commands that are available.
+
+### How to create Github repository using terminal commands
+
+We now go ahead and create our repository and add our files then we create our repository on Github.
+
+In this example we will create a very simple repository with one file.  
+
+```shell
+
+# create a directory and name it geekiam
+mkdir geekiam
+
+# change into the directory
+cd geekiam
+
+# create a directory and name it version-control-tutorial
+mkdir version-control-tutorial
+
+# change into the version-control-tutorial
+cd version-control-tutorial
+
+# Initialise the git repository
+git init
+
+# then we will create another folder
+mkdir create-remote-repo
+
+# change into the new directory
+cd create-remote-repo
+
+# We will create a new file name it README.MD
+touch README.md
+
+# now we will edit the file and add whatever content we need
+nano README.md
+
+```
+After you have added whatever data you want to the README.md file simply save and exit the file using ctrl + x
+
+we can now add the files to our respository and commit them
+
+```shell
+
+# add the files to the repository
+git add .
+
+# commit the changes to our local repository
+git commit -m "This is the first commit"
+
+```
+
+We can now use *hub* to create out remote repository.  The default action hub will perform if you don't supply and organisation name, it will create a new repository with the name of the root folder you're adding under your username on Github.  However, in my case I want to create the repository  under the Gee-I-Am organisation so I will supply the organisation name and the repository name I want to use.
+
+```shell
+# create the remote repository
+hub create Geek-I-Am/version-control-tutorial
+
+# you will be notified of the success of the creation.
+# We can now push our changes to the remote repository
+
+git push -u origin master
+
+```
