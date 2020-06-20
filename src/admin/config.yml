@@ -6,7 +6,7 @@ site_url: https://geekiam.co.uk
 display_url: https://geekiam.co.uk
 media_folder: "static/uploads"
 public_folder: "/uploads"
-
+publish_mode: editorial_workflow
 collections:
     - name: "posts"
       label: "Posts"
