@@ -33,10 +33,108 @@ Github also provides a really rich set of Application Programming Interface (API
 
 ### Create Github repository using the API
 
-It is fairly easy, but unfortunately a verbose to create a Github repository using the API using the terminal window. All that is required is using a library like [CuRL - A command-line tool for transferring data using various network protocols](https://curl.haxx.se/) and reading understanding and remembering the API structure.
+It is fairly easy, but unfortunately a verbose method to create a Github repository using the API using the terminal window. All that is required is using a library like [CuRL - A command-line tool for transferring data using various network protocols](https://curl.haxx.se/) and reading understanding and remembering the API structure.
+
+In order to use the Github API's you will be required to create a [Creating a personal access token for the command line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) 
+
+Once you're registered your Personal Access Token, you can use the following command to create your repository.
 
 ```shell
-curl -u 'garywoodfine' https://api.github.com/user/repos -d '{"name":"somerepositoryname"}'
+curl -H 'Authorization: token some_token-id' https://api.github.com/user/repos  -d '{"name":"somerepositoryname"}'
+```
+
+This is quite a lot to remember, and if you're anything like me you're going to forget this almost immediately.  Fortunately, Github realise most developers have goldfish memories and have spent time developing an easier to use command line tool to help developers called Hub.
+
+### What is Github hub ?
+
+*hub* is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.
+
+### How to install Hub
+
+| platform     | manager                                                        | command to run                    |
+| ------------ | -------------------------------------------------------------- | --------------------------------- |
+| macOS, Linux | [Homebrew](https://docs.brew.sh/Installation)                  | `brew install hub`                |
+| Windows      | [Scoop](http://scoop.sh/)                                      | `scoop install hub`               |
+| Windows      | [Chocolatey](https://chocolatey.org/)                          | `choco install hub`               |
+| Fedora Linux | [DNF](https://fedoraproject.org/wiki/DNF)                      | `sudo dnf install hub`            |
+| Debian       | [apt(8)](https://manpages.debian.org/buster/apt/apt.8.en.html) | `sudo apt install hub`            |
+| Ubuntu       | [Snap](https://snapcraft.io)                                   | `sudo snap install hub --classic` |
+
+After you have installed hub, I always prefer to ensure that I have I have my ssh keys installed and that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that I configure hub to authenticate and execute commands using ssh.
+
+```shell
+git config --global hub.protocol ssh
+```
+
+if you want to read the *hub* help files you can use the following commands
+
+```shell
+hub help hub
+```
+
+![hub help files](/uploads/hub-help-hub.png "hub help files")
+
+It is worth taking a little time and having a read through the help files to get acquainted with some of the terms and commands that are available.
+
+### How to create Github repository using terminal commands
+
+We now go ahead and create our repository and add our files then we create our repository on Github.
+
+In this example we will create a very simple repository with one file.  
+
+```shell
+
+# create a directory and name it geekiam
+mkdir geekiam
+
+# change into the directory
+cd geekiam
+
+# create a directory and name it version-control-tutorial
+mkdir version-control-tutorial
+
+# change into the version-control-tutorial
+cd version-control-tutorial
+
+# Initialise the git repository
+git init
+
+# then we will create another folder
+mkdir create-remote-repo
+
+# change into the new directory
+cd create-remote-repo
+
+# We will create a new file name it README.MD
+touch README.md
+
+# now we will edit the file and add whatever content we need
+nano README.md
+
+```
+After you have added whatever data you want to the README.md file simply save and exit the file using ctrl + x
+
+we can now add the files to our respository and commit them
+
+```shell
+
+# add the files to the repository
+git add .
+
+# commit the changes to our local repository
+git commit -m "This is the first commit"
 
 ```
 
+We can now use *hub* to create out remote repository.  The default action hub will perform if you don't supply and organisation name, it will create a new repository with the name of the root folder you're adding under your username on Github.  However, in my case I want to create the repository  under the Gee-I-Am organisation so I will supply the organisation name and the repository name I want to use.
+
+```shell
+# create the remote repository
+hub create Geek-I-Am/version-control-tutorial
+
+# you will be notified of the success of the creation.
+# We can now push our changes to the remote repository
+
+git push -u origin master
+
+```
