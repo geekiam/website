@@ -35,8 +35,19 @@ Github also provides a really rich set of Application Programming Interface (API
 
 It is fairly easy, but unfortunately a verbose to create a Github repository using the API using the terminal window. All that is required is using a library like [CuRL - A command-line tool for transferring data using various network protocols](https://curl.haxx.se/) and reading understanding and remembering the API structure.
 
+In order to use the Github API's you will be required to create a [Creating a personal access token for the command line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) 
+
+Once you're registered your Personal Access Token, you can use the following command to create your repository.
+
+
 ```shell
-curl -u 'garywoodfine' https://api.github.com/user/repos -d '{"name":"somerepositoryname"}'
+curl -H 'Authorization: token some_token-id' https://api.github.com/user/repos  -d '{"name":"somerepositoryname"}'
 
 ```
+
+This is quite a lot to remember, and if you're anything like me you're going to forget this almost immediately.  Fortunately, Github realise most developers have goldfish memories and have spent time developing an easier to use command line tool to help developers called Hub.
+
+### What is Github hub ?
+
+*hub* is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.
 
