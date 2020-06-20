@@ -62,4 +62,4 @@ Fedora Linux | [DNF](https://fedoraproject.org/wiki/DNF) | `sudo dnf install hub
 Debian | [apt(8)](https://manpages.debian.org/buster/apt/apt.8.en.html) | `sudo apt install hub`
 Ubuntu | [Snap](https://snapcraft.io) | `sudo snap install hub --classic`
 
-After you have installed hub, I always prefer to ensure that I have I have my ssh keys installed and that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/)
+After you have installed hub, I always prefer to ensure that I have I have my ssh keys installed and that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that 
