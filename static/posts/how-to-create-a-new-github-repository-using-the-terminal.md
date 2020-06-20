@@ -49,6 +49,10 @@ This is quite a lot to remember, and if you're anything like me you're going to 
 
 *hub* is a command line tool that wraps git in order to extend it with extra features and commands that make working with GitHub easier.
 
+[hub is an extension to command-line git](https://hub.github.com/#developer) that helps you do everyday GitHub tasks without ever leaving the terminal.  
+
+
+
 ### How to install Hub
 
 | platform     | manager                                                        | command to run                    |
