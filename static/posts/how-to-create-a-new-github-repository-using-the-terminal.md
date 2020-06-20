@@ -22,3 +22,5 @@ Version control systems not only help you in keeping track of changes and overco
 GitHub is a code hosting platform for collaboration and version control, which not only enables you and others work together on projects, but it also enables you to safely store your code online, so you don't have to worry about servers and managing them. Despite Github being a for profit company they provide free access to developers to host and share code with over 50 millions other developers world-wide
 
 ![Github front page screenshot](/uploads/github-screenshot.png "Github front page screenshot")
+
+[Registering an account with Github](https://github.com/) enables developers to create Public and Private remote repositories to store their code. 
