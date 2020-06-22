@@ -13,7 +13,9 @@
                 </div>
                 <ul class="uppercase tracking-wide font-bold w-full flex-grow lg:flex lg:flex-initial lg:w-auto
                 items-center mt-8 lg:mt-0 " :class="expand ? 'block' : 'hidden'" >
-                    <li class="mr-8 mb-6 lg:mb-0 text-green-800"><g-link to="/blog" class="text-copy-primary hover:text-gray-600">Blog</g-link></li>
+                    <li class="mr-8 mb-6 lg:mb-0 text-green-800">
+                      <g-link class="text-copy-primary hover:text-gray-600" to="/blog">Articles</g-link>
+                    </li>
                     <li class="mr-8 mb-6 lg:mb-0 text-green-800"><g-link to="/tutorial" class="text-copy-primary hover:text-gray-600">Tutorials</g-link></li>
                     <li class="mr-8 mb-6 lg:mb-0 text-green-800"><g-link to="/about" class="text-copy-primary hover:text-gray-600">About</g-link></li>
                 </ul>

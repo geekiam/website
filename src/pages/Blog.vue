@@ -13,18 +13,18 @@
 </template>
 
 <script>
-     import PostItem from '@/components/PostItem'
-     import Pagination from '@/components/Pagination'
+import PostItem from '@/components/PostItem'
+import Pagination from '@/components/Pagination'
 
-    export default {
-        components: {
-            PostItem,
-            Pagination
-        },
-        metaInfo: {
-            title: 'Enabling young people globally to have fun, learn and master software engineering'
-        }
-    }
+export default {
+  components: {
+    PostItem,
+    Pagination
+  },
+  metaInfo: {
+    title: 'In depth Articles and mini tutorials and stories for a world of learning'
+  }
+}
 </script>
 
 <page-query>
