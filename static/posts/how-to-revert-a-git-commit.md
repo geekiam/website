@@ -2,6 +2,10 @@
 title: How to revert a git commit
 description: How to use the git cli to revert an accidental commit
 summary: How to revert a git commit when accidentally commit code
+Keywords: dsfasdfsa
+mainImage:
+  image: /uploads/home-office.jpg
+  imageAlt: Garys home office
 date: 2020-05-23T15:29:50.183Z
 author: gary-woodfine
 tags:
