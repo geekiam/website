@@ -9,6 +9,5 @@
 ## Overview: 
 [A summary of what you did in no more than one paragraph]
 
-
 ## Developer Notes:
 [Sometimes, extra notes are needed to add clarity to a PR, add them here]
