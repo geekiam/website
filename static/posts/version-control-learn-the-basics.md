@@ -1,7 +1,13 @@
 ---
 title: Learn the basics of version control to become a master
-summary: The most important skills a software developer needs to learn is how to use and master version control.
-description: Important skills for software developer is how to use and master version control systems
+description: Important skills for software developer is how to use and master
+  version control systems
+summary: The most important skills a software developer needs to learn is how to
+  use and master version control.
+Keywords: Version Control
+mainImage:
+  image: /uploads/github-screenshot.png
+  imageAlt: Version Control Systems
 date: 2020-03-15T20:29:50.183Z
 author: gary-woodfine
 tags:
@@ -48,6 +54,15 @@ others.
 Software development, is very much a team sport, the difference being that in all probability you will never meet or 
 even know everybody on your team or contributing to your project.  The only aspect of those people you're ever going to 
 physically see, is their code.
+
+In the book [Pragmatic Programmer - Your Journey to mastery](https://amzn.to/2V8LmK8) - [Read Review](https://garywoodfine.com/book-review-the-pragmatic-programmer/) the authors also stress the importance of learning how to use Version Control Systems, as a virtual project wide time machine to enable you to view and return your project to a state when it actually was able to compile and run!
+
+> Version control systems keep track of every change you make
+in your source code and documentation. With a properly
+configured source code control system, you can always go
+back to a previous version of your software.
+>
+> [Pragmatic Programmer - Your journey to mastery](https://amzn.to/2V8LmK8)
 
 ## Source Code Repository
 
