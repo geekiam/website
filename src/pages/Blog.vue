@@ -30,34 +30,34 @@ export default {
 </script>
 
 <page-query>
-    query ($page: Int) {
-        posts: allPost (page: $page, perPage: 6) @paginate {
-            totalCount
-            pageInfo {
-                totalPages
-                currentPage
-    }
-    edges {
-    node {
-    id
-    title
-    timeToRead
-    content
-    summary
-    path
-    date (format: "D MMMM Y")
-    featureImage {
-    image(width:400)
-    imageAlt
-    }
-    categories {
-    id
-    title
-    path
-    }
-    }
-    }
-    }
-    }
+query ($page: Int) {
+posts: allPost (page: $page, perPage: 6) @paginate {
+totalCount
+pageInfo {
+totalPages
+currentPage
+}
+edges {
+node {
+id
+title
+timeToRead
+content
+summary
+path
+date (format: "D MMMM Y")
+featureImage {
+image(width:400)
+imageAlt
+}
+categories {
+id
+title
+path
+}
+}
+}
+}
+}
 </page-query>
 
