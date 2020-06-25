@@ -8,8 +8,8 @@ summary: "How to create a Github repository from a local terminal Update :
   using  the terminal"
 Keywords: Keywords are cool!
 featureImage:
-  image: /uploads/home-office.jpg
-  imageAlt: Some picture of a home office
+  image: /uploads/version-control.png
+  imageAlt: Version Control
 date: 2020-06-20T10:34:39.798Z
 author: gary-woodfine
 tags:
