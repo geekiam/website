@@ -3,8 +3,10 @@
         <div class="mx-auto max-w-3xl px-6">
             <div class="py-8 sm:py-20 border-b border-gray-300">
                 <header class="text-center mb-8">
-
-                <time :datetime="post.date"
+                    <g-image :alt="featureImage.imageAlt"
+                             :src="featureImage.image"
+                    />
+                    <time :datetime="post.date"
                           class="text-gray-700 text-xs mb-2 uppercase">{{ post.date }}
                     </time>
                     <h2 class="text-green-800 text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
