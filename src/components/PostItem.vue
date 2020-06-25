@@ -3,12 +3,17 @@
         <div class="mx-auto max-w-3xl px-6">
             <div class="py-8 sm:py-20 border-b border-gray-300">
                 <header class="text-center mb-8">
+                    <g-image :alt="featureImage.imageAlt"
+                             :src="featureImage.image"
+                    />
                     <time :datetime="post.date"
-                          class="text-gray-700 text-xs mb-2 uppercase">{{ post.date }}</time>
+                          class="text-gray-700 text-xs mb-2 uppercase">{{ post.date }}
+                    </time>
                     <h2 class="text-green-800 text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
                         <g-link :to="`${post.path}/`"
 
-                                class=" text-green-700 font-bold">{{ post.title }}</g-link>
+                                class=" text-green-700 font-bold">{{ post.title }}
+                        </g-link>
 
                     </h2>
                     <p class="text-green-800 leading-normal text-sm sm:text-base">
@@ -33,9 +38,9 @@
 
 <script>
     export default {
-        props: ['post'],
+        props: ['post', 'featureImage'],
         methods: {
-             titleCase(str) {
+            titleCase(str) {
                 return str.replace('-', ' ').split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
             }
         },
