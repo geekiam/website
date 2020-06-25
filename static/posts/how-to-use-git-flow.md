@@ -1,7 +1,11 @@
 ---
-title: 'How to use git flow'
-summary: 'Using git-flow CLI to automate a popular git branching and merging strategy .'
-description: 'Using git-flow CLI to automate a popular git branching and merging strategy'
+title: How to use git flow
+description: Using git-flow CLI to automate a popular git branching and merging strategy
+summary: Using git-flow CLI to automate a popular git branching and merging strategy .
+Keywords: gitflow
+featureImage:
+  image: /uploads/version-control.png
+  imageAlt: How to use Git Flow
 date: 2020-05-10T20:29:50.183Z
 author: gary-woodfine
 tags:
