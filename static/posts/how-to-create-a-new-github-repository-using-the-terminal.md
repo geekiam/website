@@ -6,6 +6,10 @@ description: "How to create a Github repository from a local terminal Update :
 summary: "How to create a Github repository from a local terminal Update :
   Create a new repository and upload the data from one application to github all
   using  the terminal"
+Keywords: Keywords are cool!
+featureImage:
+  image: /uploads/home-office.jpg
+  imageAlt: Some picture of a home office
 date: 2020-06-20T10:34:39.798Z
 author: gary-woodfine
 tags:
