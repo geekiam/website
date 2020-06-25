@@ -5,7 +5,7 @@ description: Important skills for software developer is how to use and master
 summary: The most important skills a software developer needs to learn is how to
   use and master version control.
 Keywords: Version Control
-mainImage:
+featureImage:
   image: /uploads/github-screenshot.png
   imageAlt: Version Control Systems
 date: 2020-03-15T20:29:50.183Z
