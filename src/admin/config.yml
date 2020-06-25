@@ -28,10 +28,10 @@ collections:
             { label: "Image", name: "image", widget: "image" },
             { label: "Description", name: "imageAlt", widget: "string" },
             ],
-          }
-          - {label: "Publish Date", name: "date", widget: "date"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Author", name: "author", widget: "string"}
+        }
+          - {label: "Publish Date", name: "date", widget: "date" }
+          - {label: "Body", name: "body", widget: "markdown" }
+          - {label: "Author", name: "author", widget: "string" }
           - label: "Tags"
             name: "tags"
             widget: list
