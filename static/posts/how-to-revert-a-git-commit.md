@@ -1,7 +1,4 @@
 ---
-mainImage:
-  image: /uploads/home-office.jpg
-  imageAlt: Garys home office
 title: How to revert a git commit
 description: How to use the git cli to revert an accidental commit
 summary: How to revert a git commit when accidentally commit code
