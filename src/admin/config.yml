@@ -9,26 +9,26 @@ public_folder: "/uploads"
 publish_mode: editorial_workflow
 
 collections:
-    -   name: "posts"
+    - name: "posts"
       label: "Posts"
       folder: "static/posts"
       create: true
       slug: "{{slug}}"
       fields:
-          - {label: "Title", name: "title", widget: "string", required: true }
-          - {label: "Description", name: "description", widget: "string", required: true}
-          - {label: "Summary" , name: "summary", widget: "string" }
-          - {label: "Keywords", name: "Keywords", widget: "string" }
-          - {
-            label: "Feature Image",
-            name: "featureImage",
-            widget: "object",
-            fields:
-              [
-              { label: "Image", name: "image", widget: "image" },
-              { label: "Description", name: "imageAlt", widget: "string" },
-              ],
-          }
+        - {label: "Title", name: "title", widget: "string", required: true }
+        - {label: "Description", name: "description", widget: "string", required: true}
+        - {label: "Summary" , name: "summary", widget: "string" }
+        - {label: "Keywords", name: "Keywords", widget: "string" }
+        - {
+          label: "Feature Image",
+          name: "featureImage",
+          widget: "object",
+          fields:
+            [
+            { label: "Image", name: "image", widget: "image" },
+            { label: "Description", name: "imageAlt", widget: "string" },
+            ],
+        }
           - {label: "Publish Date", name: "date", widget: "date"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Author", name: "author", widget: "string"}
