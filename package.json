@@ -7,16 +7,16 @@
         "explore": "gridsome explore"
     },
     "dependencies": {
-      "@gridsome/plugin-google-analytics": "^0.1.1",
-      "@gridsome/plugin-sitemap": "^0.2.3",
-      "@gridsome/source-filesystem": "^0.6.2",
-      "@gridsome/transformer-remark": "^0.5.0",
-      "gridsome": "^0.7.14",
-      "gridsome-plugin-feed": "^1.0.2",
-      "gridsome-plugin-netlify-cms": "^1.0.9",
-      "gridsome-plugin-remark-shiki": "^0.3.1",
-      "netlify-cms": "^2.10.49",
-      "vue-loader": "^15.9.2"
+        "@gridsome/plugin-google-analytics": "^0.1.1",
+        "@gridsome/plugin-sitemap": "^0.2.3",
+        "@gridsome/source-filesystem": "^0.6.2",
+        "@gridsome/transformer-remark": "^0.5.0",
+        "gridsome": "^0.7.17",
+        "gridsome-plugin-feed": "^1.0.2",
+        "gridsome-plugin-netlify-cms": "^1.0.9",
+        "gridsome-plugin-remark-shiki": "^0.3.1",
+        "netlify-cms": "^2.10.51",
+        "vue-loader": "^15.9.3"
     },
     "description": "Enabling young people globally to have fun, learn and master software engineering",
     "version": "1.0.0",
