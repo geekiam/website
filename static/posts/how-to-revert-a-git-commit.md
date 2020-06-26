@@ -103,3 +103,7 @@ git commit -am "added all the initial test files"
 We won't push them to the Github remote repository at this stage. However we will take a look at `git reflog` if it contains out change.
 
 ![git reflog](/uploads/git-reflog-1.png "git reflog screen shot")
+
+We will now got to another machine and use `git log` to take a look at the current state of the Remote repository and see that our change that we made on the other machine is not there.
+
+![Git log ](/uploads/git-log1.png "git log screenshot")
