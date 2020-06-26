@@ -91,6 +91,15 @@ This is the content for the test2
 ## You should use ctrl + d to get back to the terminal 
 ```
 
-
-
 ![Git Revert git reflog](/uploads/git-revert-1.png "git revert git reflog")
+
+Once we have finished creating all the test files. We can go ahead and add them to git and commit them to the local repository.
+
+```shell
+git add .
+git commit -am "added all the initial test files"
+```
+
+We won't push them to the Github remote repository at this stage. However we will take a look at `git reflog` if it contains out change.
+
+![git reflog](/uploads/git-reflog-1.png "git reflog screen shot")
