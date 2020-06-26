@@ -3,8 +3,8 @@
         <div class="mx-auto max-w-3xl px-6">
             <div class="py-8 sm:py-20 border-b border-gray-300">
                 <header class="text-center mb-8">
-                    <g-image :alt="featureImage.imageAlt"
-                             :src="featureImage.image"
+                    <g-image :alt="feature.alt"
+                             :src="feature.image"
                     />
                     <time :datetime="post.date"
                           class="text-gray-700 text-xs mb-2 uppercase">{{ post.date }}
@@ -38,9 +38,9 @@
 
 <script>
     export default {
-        props: ['post', 'featureImage'],
+        props: ['post', 'feature'],
         methods: {
-            titleCase(str) {
+            titleCase (str) {
                 return str.replace('-', ' ').split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')
             }
         },

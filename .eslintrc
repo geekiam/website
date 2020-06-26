@@ -24,7 +24,10 @@
         "no-undef": 2,
         "indent": [
             "error",
-            4
+            4,
+            {
+                "SwitchCase": 1
+            }
         ],
         "quotes": [
             "error",
@@ -32,9 +35,6 @@
         ],
         "max-len": "off",
         "no-return-await": "off",
-        "space-before-function-paren": [
-            "error",
-            "always"
-        ]
+        "space-before-function-paren": "error"
     }
 }

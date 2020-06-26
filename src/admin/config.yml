@@ -20,14 +20,14 @@ collections:
         - {label: "Summary" , name: "summary", widget: "string" }
         - {label: "Keywords", name: "Keywords", widget: "string" }
         - {
-          label: "Feature Image",
-          name: "featureImage",
-          widget: "object",
-          fields:
-            [
-            { label: "Image", name: "image", widget: "image" },
-            { label: "Description", name: "imageAlt", widget: "string" },
-            ],
+            label: "Feature",
+            name: "feature",
+            widget: "object",
+            fields:
+              [
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Description", name: "alt", widget: "string" },
+              ],
         }
         - {label: "Publish Date", name: "date", widget: "date" }
         - {label: "Body", name: "body", widget: "markdown" }
