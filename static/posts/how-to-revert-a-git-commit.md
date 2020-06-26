@@ -32,11 +32,27 @@ changes.
 
 ### How to revert a git commit
 
-You can easily revert changes to your git repository making use of the git CLI. In just a few commands you can get back
+There are a number of ways you can easily revert changes to your git repository making use of the git CLI. In just a few commands you can get back
 to where you need to be.
 
-If you want to roll back a specific commit to your repository, use `git log`  to track you commit and get the hash code.
+If you want to roll back a specific commit to your repository, use `git log` or `git reflog`  to track you commit and get the hash code.
 
-The [git log](https://www.git-scm.com/docs/git-log) command shows the commit logs.
+These two commands may seem to be two similarly named commands to provide insights into a git repository's commit history. It is important to understand that these two commands do have a slightly different features, which can cause confusion as regards which to use when.
+
+### What is git log ?
+
+The command takes options applicable to the git revision list(`git rev-list`) which lists objects in their reverse chronological order. The log presented with this command is *public accessible* commit history of the commits to repository.  It is part of the git repository and is replicated after a `push`, `fetch` or `pull`.
+
+Git log provides a branch's historical traversal of commits that starts from the most recent commit and ends at the very first commit of the entire branch history
+
+[Read more about git log](https://www.git-scm.com/docs/git-log) 
+
+### what is the git reflog
+
+git reflog on the other hand is private to the repository and is not part of the replicated repository.  Therefore a developer will not be able to view the local repository's reflog without having access to the physical machine where it is located.
+
+The reflog can be found in `.git\logs\refs\heads` that tracks the history of local commits for a given branch and excludes any commits that may have been pruned. 
+
+[Read more about git log](https://git-scm.com/docs/git-reflog) .
 
 
