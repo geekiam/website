@@ -15,12 +15,12 @@
         "gridsome-plugin-feed": "^1.0.2",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-remark-shiki": "^0.3.1",
-        "netlify-cms": "^2.10.51",
-        "vue-loader": "^15.9.3",
         "gridsome-plugin-tailwindcss": "^2.2.48",
-        "tailwindcss-transitions": "^2.1.0"
+        "netlify-cms": "^2.10.51",
+        "tailwindcss-transitions": "^2.1.0",
+        "vue-loader": "^15.9.3"
     },
-    "description": "Enabling young people globally to have fun, learn and master software engineering",
+    "description": "Enabling people globally to have fun, learn and master software engineering",
     "version": "1.0.0",
     "main": "gridsome.config.js",
     "devDependencies": {
