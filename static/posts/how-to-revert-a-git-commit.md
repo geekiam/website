@@ -74,7 +74,8 @@ mkdir git-revert
 
 cd git-revert
 
-# We will create 3 Markdown files and add content to them, after writing the text content remember to use ctrl + d to exit back to command line
+# We will create 3 Markdown files and add content to them, after writing the text
+# content remember to use ctrl + d to exit back to command line
 
 cat > test0.md
 This is the content for the test0
