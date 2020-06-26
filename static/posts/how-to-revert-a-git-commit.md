@@ -53,6 +53,6 @@ git reflog on the other hand is private to the repository and is not part of the
 
 The reflog can be found in `.git\logs\refs\heads` that tracks the history of local commits for a given branch and excludes any commits that may have been pruned. 
 
-[Read more about git log](https://git-scm.com/docs/git-reflog) .
+[Read more about git reflog](https://git-scm.com/docs/git-reflog) .
 
 
