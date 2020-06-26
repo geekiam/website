@@ -46,7 +46,8 @@ summary
 path
 date (format: "D MMMM Y")
 feature {
-image
+image(width:400)
+alt
 }
 categories {
 id
