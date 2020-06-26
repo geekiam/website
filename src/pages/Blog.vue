@@ -4,7 +4,6 @@
             <section>
                 <post-item v-for="edge in $page.posts.edges"
                            :key="edge.node.id"
-                           :feature="edge.node.feature"
                            :post="edge.node"
                 />
             </section>
@@ -47,8 +46,7 @@ summary
 path
 date (format: "D MMMM Y")
 feature {
-image ,
-alt
+image
 }
 categories {
 id
