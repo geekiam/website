@@ -29,10 +29,9 @@ Alternatively, it may be more mundane error, that I made which prompted me to wr
 committed my code to the wrong branch!  Whatever the root cause of your error, git makes it really easy to revert your 
 changes.
 
-### How to revert a git commit
+### How to find your commit to revert?
 
-There are a number of ways you can easily revert changes to your git repository making use of the git CLI. In just a few commands you can get back
-to where you need to be.
+There are a number of ways you can easily revert changes to your git repository making use of the git CLI. In just a few commands you can get back to where you need to be. However, all these approaches require you to at first find the commit you want to revert.
 
 If you want to roll back a specific commit to your repository, use `git log` or `git reflog`  to track you commit and get the hash code.
 
@@ -107,3 +106,59 @@ We won't push them to the Github remote repository at this stage. However we wil
 We will now got to another machine and use `git log` to take a look at the current state of the Remote repository and see that our change that we made on the other machine is not there.
 
 ![Git log ](/uploads/git-log1.png "git log screenshot")
+
+If we push all the changes to repository from our first machine, and then pull them from the repository on our alternate machine we will then see those changes when appear if we do a git log.
+
+So the key thing to remember here is that id you want to preform a git revert, it is important to know which repository you want to make the revert on. Is it your local copy, i.e. you made changes and commits but you have not pushed them to your remote,  then you should use `git reflog` to find those changes and the hash. if the changes have been pushed to your remote, then you will need to make use of `git log` to find them and the hash.
+
+### How to revert a git commit
+
+We'll explore both options for reverting changes to our repositories.  At his point in our sample directory we have a number of files  which we will now make use of to illustrate the functionality of git revert.
+
+#### How to use git revert on local repository
+
+Lets go ahead and add some additional files to our repository.
+
+In the first scenario I am going add an additional file, then commit these changes to our local repository but we will push them to our remote repository.
+
+```shell
+   
+cat > test3.md
+This is the content for the test3 
+
+# You should use ctrl + d to get back to the terminal
+
+
+
+git add test3.md
+git commit -m "This is will be the commit we want to revert"
+```
+
+Next we will create another file 
+
+```shell
+   
+cat > test4.md
+This is the content for the test4 
+
+# You should use ctrl + d to get back to the terminal
+
+
+
+
+git add test4.md
+git commit -m "This is the additional commit"
+```
+
+We will use `git reflog` to see the changes to the local repository and to get the hash code of the change we want to revert. In our case we want to revert the one we mentioned in the comments that we will be reverting.
+
+![git reflog local change](/uploads/git-revert-2.png "git reflog local change terminal window")
+
+
+
+We can now simply revert our changes by using git revert as follows
+
+```shell
+git revert 708efa8
+
+```
