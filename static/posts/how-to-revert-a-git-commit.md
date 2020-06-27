@@ -130,8 +130,8 @@ This is the content for the test3
 
 
 
-
-git commit -am "This is will be the commit we want to revert"
+git add test3.md
+git commit -m "This is will be the commit we want to revert"
 ```
 
 Next we will create another file 
@@ -146,10 +146,19 @@ This is the content for the test4
 
 
 
-
-git commit -am "This is the additional commit"
+git add test4.md
+git commit -m "This is the additional commit"
 ```
 
 We will use `git reflog` to see the changes to the local repository and to get the hash code of the change we want to revert. In our case we want to revert the one we mentioned in the comments that we will be reverting.
 
 ![git reflog local change](/uploads/git-revert-2.png "git reflog local change terminal window")
+
+
+
+We can now simply revert our changes by using git revert as follows
+
+```shell
+git revert 708efa8
+
+```
