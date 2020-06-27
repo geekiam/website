@@ -106,3 +106,61 @@ We won't push them to the Github remote repository at this stage. However we wil
 We will now got to another machine and use `git log` to take a look at the current state of the Remote repository and see that our change that we made on the other machine is not there.
 
 ![Git log ](/uploads/git-log1.png "git log screenshot")
+
+If we push all the changes to repository from our first machine, and then pull them from the repository on our alternate machine we will then see those changes when appear if we do a git log.
+
+So the key thing to remember here is that id you want to preform a git revert, it is important to know which repository you want to make the revert on. Is it your local copy, i.e. you made changes and commits but you have not pushed them to your remote,  then you should use `git reflog` to find those changes and the hash. if the changes have been pushed to your remote, then you will need to make use of `git log` to find them and the hash.
+
+### How to revert a git commit
+
+We'll explore both options for reverting changes to our repositories.  At his point in our sample directory we have a number of files  which we will now make use of to illustrate the functionality of git revert.
+
+#### How to use git revert on local repository
+
+Lets go ahead and make several changes to our files and add an additional files.  
+
+In the first scenario I am going to edit an existing file to additional text and add an additional file. We will then commit these changes to our local repository but we will push them to our remote repository.
+
+```shell
+    nano test0.md 
+
+# we'll add some additional text and save and exit the file
+
+# Next we will create an additional file 
+
+cat > test3.md
+This is the content for the test3 
+
+# You should use ctrl + d to get back to the terminal
+
+
+
+git add .
+
+git commit -am "This is will be the commit we want to revert"
+```
+
+Next we will create another file and make another edit to the `test0.md` and add some more text
+
+```shell
+   nano test0.md 
+
+# we'll add some additional text and save and exit the file
+
+# Next we will create an additional file 
+
+cat > test4.md
+This is the content for the test4 
+
+# You should use ctrl + d to get back to the terminal
+
+
+
+git add .
+
+git commit -am "This is the additional commit"
+```
+
+We will use `git reflog` to see the changes to the local repository and to get the hash code of the change we want to revert. In our case we want to revert the one we mentioned in the comments that we will be reverting.
+
+![git reflog local change](/uploads/git-revert-2.png "git reflog local change terminal window")
