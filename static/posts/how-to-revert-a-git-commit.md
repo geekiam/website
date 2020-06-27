@@ -29,10 +29,9 @@ Alternatively, it may be more mundane error, that I made which prompted me to wr
 committed my code to the wrong branch!  Whatever the root cause of your error, git makes it really easy to revert your 
 changes.
 
-### How to revert a git commit
+### How to find your commit to revert?
 
-There are a number of ways you can easily revert changes to your git repository making use of the git CLI. In just a few commands you can get back
-to where you need to be.
+There are a number of ways you can easily revert changes to your git repository making use of the git CLI. In just a few commands you can get back to where you need to be. However, all these approaches require you to at first find the commit you want to revert.
 
 If you want to roll back a specific commit to your repository, use `git log` or `git reflog`  to track you commit and get the hash code.
 
