@@ -117,17 +117,12 @@ We'll explore both options for reverting changes to our repositories.  At his po
 
 #### How to use git revert on local repository
 
-Lets go ahead and make several changes to our files and add an additional files.  
+Lets go ahead and add some additional files to our repository.
 
-In the first scenario I am going to edit an existing file to additional text and add an additional file. We will then commit these changes to our local repository but we will push them to our remote repository.
+In the first scenario I am going add an additional file, then commit these changes to our local repository but we will push them to our remote repository.
 
 ```shell
-    nano test0.md 
-
-# we'll add some additional text and save and exit the file
-
-# Next we will create an additional file 
-
+   
 cat > test3.md
 This is the content for the test3 
 
@@ -135,20 +130,14 @@ This is the content for the test3
 
 
 
-git add .
 
 git commit -am "This is will be the commit we want to revert"
 ```
 
-Next we will create another file and make another edit to the `test0.md` and add some more text
+Next we will create another file 
 
 ```shell
-   nano test0.md 
-
-# we'll add some additional text and save and exit the file
-
-# Next we will create an additional file 
-
+   
 cat > test4.md
 This is the content for the test4 
 
@@ -156,7 +145,7 @@ This is the content for the test4
 
 
 
-git add .
+
 
 git commit -am "This is the additional commit"
 ```
