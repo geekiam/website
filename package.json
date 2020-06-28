@@ -16,6 +16,7 @@
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-remark-shiki": "^0.3.1",
         "gridsome-plugin-tailwindcss": "^2.2.48",
+        "gridsome-plugin-base-components": "^0.0.12",
         "netlify-cms": "^2.10.51",
         "tailwindcss-transitions": "^2.1.0",
         "vue-loader": "^15.9.3"
@@ -24,11 +25,23 @@
     "version": "1.0.0",
     "main": "gridsome.config.js",
     "devDependencies": {
-        "eslint": "^6.0.1",
-        "eslint-config-standard": "^12.0.0",
-        "eslint-plugin-standard": "^4.0.0",
-        "standard": "^12.0.1",
-        "standardx": "^3.0.1"
+        "eslint": "^6.5.1",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-vue": "^6.2.2",
+        "husky": "^4.2.5",
+        "prettier": "^2.0.5"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{css,scss,postcss,vue,js}": [
+            "prettier --write"
+        ]
     },
     "repository": {
         "type": "git",

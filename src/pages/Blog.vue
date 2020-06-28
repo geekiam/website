@@ -2,13 +2,9 @@
     <Layout>
         <main>
             <section>
-                <post-item v-for="edge in $page.posts.edges"
-                           :key="edge.node.id"
-                           :post="edge.node"
-                />
+                <post-item :key="edge.node.id" :post="edge.node" v-for="edge in $page.posts.edges"/>
             </section>
-            <pagination :info="$page.posts.pageInfo"
-                        v-if="$page.posts.pageInfo.totalPages > 1" />
+            <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
         </main>
     </Layout>
 </template>
@@ -18,13 +14,13 @@ import PostItem from '@/components/PostItem'
 import Pagination from '@/components/Pagination'
 
 export default {
-  components: {
-    PostItem,
-    Pagination
-  },
-  metaInfo: {
-    title: 'In depth Articles and mini tutorials and stories for a world of learning'
-  }
+    components: {
+        PostItem,
+        Pagination,
+    },
+    metaInfo: {
+        title: ' In depth Articles and mini tutorials and stories for a world of learning',
+    },
 }
 </script>
 
@@ -59,4 +55,3 @@ path
 }
 }
 </page-query>
-
