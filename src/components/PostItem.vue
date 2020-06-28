@@ -14,8 +14,8 @@
             <span v-if="post.author">
               by
               <g-link
-                  :to="`${post.author.path}/`"
                   class="text-green-800 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
+                  :to="`${post.author.path}/`"
                   v-if="post.author">{{ titleCase(post.author.title) }}</g-link></span>
                         </span>
                         <span v-if="post.categories && post.categories.length > 0">

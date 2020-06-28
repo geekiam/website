@@ -25,6 +25,7 @@
     "version": "1.0.0",
     "main": "gridsome.config.js",
     "devDependencies": {
+        "babel-eslint": "^10.1.0",
         "eslint": "^6.5.1",
         "eslint-config-prettier": "^6.11.0",
         "eslint-loader": "^4.0.2",
