@@ -1,40 +1,16 @@
-{
-    "extends": [
-        "standard"
-    ],
-    "plugins": [
-        "import",
-        "standard"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 2018
-    },
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    },
-    "rules": {
-        "new-cap": 0,
-        "semi": [
-            "error",
-            "never"
-        ],
-        "no-unused-vars": 2,
-        "no-undef": 2,
-        "indent": [
-            "error",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "max-len": "off",
-        "no-return-await": "off",
-        "space-before-function-paren": "error"
-    }
-}
+ {
+     "env": {
+         "browser": true,
+         "node": true,
+         "es6": true
+     },
+     "extends": [
+         "plugin:vue/recommended",
+         "eslint:recommended",
+         "prettier/vue",
+         "plugin:prettier/recommended"
+     ],
+     "parserOptions": {
+         "ecmaVersion": 2018
+     }
+ }
