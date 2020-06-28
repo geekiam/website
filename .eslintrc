@@ -11,6 +11,6 @@
          "plugin:prettier/recommended"
      ],
      "parserOptions": {
-         "ecmaVersion": 2018
+         parser: "babel-eslint"
      }
  }
