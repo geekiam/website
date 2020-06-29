@@ -6,7 +6,7 @@ module.exports = {
             './src/**/*.js'
         ],
         options: {
-            defaultExtractor: content => content.match(/[\w-/:%]+(?<!:)/g) || [],
+            defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
             whitelistPatterns: [/shiki/],
         }
     },
