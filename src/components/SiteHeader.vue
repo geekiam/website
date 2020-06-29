@@ -27,9 +27,6 @@
                     <g-link class="text-copy-primary hover:text-gray-600" to="/blog">Articles</g-link>
                 </li>
                 <li class="mr-8 mb-6 lg:mb-0 text-green-800">
-                    <g-link class="text-copy-primary hover:text-gray-600" to="/tutorial">Tutorials</g-link>
-                </li>
-                <li class="mr-8 mb-6 lg:mb-0 text-green-800">
                     <g-link class="text-copy-primary hover:text-gray-600" to="/about">About</g-link>
                 </li>
             </ul>
