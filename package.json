@@ -18,6 +18,7 @@
         "gridsome-plugin-tailwindcss": "^2.2.48",
         "gridsome-plugin-base-components": "^0.0.12",
         "netlify-cms": "^2.10.51",
+        "tailwindcss-plugin-fancy": "^1.2.22",
         "tailwindcss-transitions": "^2.1.0",
         "vue-loader": "^15.9.3"
     },
@@ -32,16 +33,6 @@
         "eslint": "^6.7.2",
         "eslint-plugin-vue": "^6.2.2",
         "vue-template-compiler": "^2.6.11"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "src/**/*.{vue,js}": [
-            "prettier --write"
-        ]
     },
     "repository": {
         "type": "git",
