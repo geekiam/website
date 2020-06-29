@@ -1,3 +1,4 @@
+<script src="../../tailwind.config.js"></script>
 <template>
     <Layout>
         <main>

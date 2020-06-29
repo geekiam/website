@@ -1,15 +1,5 @@
 module.exports = {
-    purge: {
-        content: [
-            './src/assets/**/*.css',
-            './src/**/*.vue',
-            './src/**/*.js'
-        ],
-        options: {
-            defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
-            whitelistPatterns: [/shiki/],
-        }
-    },
+
     theme: {
         screens: {
             sm: '640px',
