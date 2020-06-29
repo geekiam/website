@@ -9,7 +9,7 @@
 
                 <div
                     :class="{ 'pb-10': $page.post.author || $page.post.categories }"
-                    class="text-base markdown-body text-lg leading-normal text-gray-700"
+                    class="markdown-body text-lg leading-normal text-gray-700"
                     v-html="$page.post.content"
                 />
 
