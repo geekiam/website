@@ -1,7 +1,9 @@
 <!--suppress HtmlUnknownTarget -->
 <template>
     <layout>
-        <div class="px-2">
+        <front-page-hero></front-page-hero>
+
+       <!-- <div class="px-2">
             <div class="flex -mx-2">
                 <div class="w-1/4 px-2">
                     <div></div>
@@ -28,13 +30,17 @@
                     <div></div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </layout>
 </template>
 
 <script>
+import FrontPageHero from "../components/FrontPageHero";
 export default {
     name: 'Index',
+    components: {
+        FrontPageHero
+    }
 }
 </script>
 
