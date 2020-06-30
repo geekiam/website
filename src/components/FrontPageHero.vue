@@ -25,15 +25,11 @@
                         <div class="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                             <div class="px-5 pt-4 flex items-center justify-between">
                                 <div>
-                                    <g-image class="h-8 w-auto" src="~/assets/images/geek-i-am-intro.png" width="380"></g-image>
-                                    <img class="h-8 w-auto" src="/img/logos/workflow-mark-on-white.svg" alt="" />
+
+
                                 </div>
                                 <div class="-mr-2">
-                                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
-                                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
+
                                 </div>
                             </div>
 
@@ -54,14 +50,17 @@
                         </p>
                         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                             <div class="rounded-md shadow">
-                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-                                    Get started
-                                </a>
+                                <g-link
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                                    to="/blog"> Get started
+                                </g-link>
                             </div>
                             <div class="mt-3 sm:mt-0 sm:ml-3">
-                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-700 bg-indigo-100 hover:text-green-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-green focus:border-green-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
-                                    Live demo
-                                </a>
+                                <g-link
+                                    class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-green-700 bg-indigo-100 hover:text-green-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-green focus:border-green-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+                                    to="/blog">Live Demo
+                                </g-link>
+
                             </div>
                         </div>
                     </div>
