@@ -49,7 +49,7 @@
 .markdown-body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    color: #24292e;
+    color: #1a202c;
     word-wrap: break-word;
 }
 
@@ -705,87 +705,13 @@
 .markdown-body pre {
     background-color: #f6f8fa;
     border-radius: 15px;
-    font-size: 75%;
+    font-size: 90%;
     line-height: 1.5;
     overflow: auto;
     padding: 20px;
     margin: 10px;
 }
 
-.markdown-body pre code {
-    background-color: transparent;
-    border: 0;
-    display: inline;
-    line-height: inherit;
-    margin: 0;
-    max-width: auto;
-    overflow: visible;
-    padding: 0;
-    word-wrap: normal;
-}
-
-.markdown-body .commit-tease-sha {
-    color: #444d56;
-    display: inline-block;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-    font-size: 90%;
-}
-
-.markdown-body .blob-wrapper {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-.markdown-body .blob-wrapper-embedded {
-    max-height: 240px;
-    overflow-y: auto;
-}
-
-.markdown-body .blob-num {
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    color: rgba(27,31,35,.3);
-    cursor: pointer;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-    font-size: 12px;
-    line-height: 20px;
-    min-width: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: right;
-    user-select: none;
-    vertical-align: top;
-    white-space: nowrap;
-    width: 1%;
-}
-
-.markdown-body .blob-num:hover {
-    color: rgba(27,31,35,.6);
-}
-
-.markdown-body .blob-num:before {
-    content: attr(data-line-number);
-}
-
-.markdown-body .blob-code {
-    line-height: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-    vertical-align: top;
-}
-
-.markdown-body .blob-code-inner {
-    color: #24292e;
-    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
-    font-size: 12px;
-    overflow: visible;
-    white-space: pre;
-    word-wrap: normal;
-}
 
 .markdown-body .pl-token.active,
 .markdown-body .pl-token:hover {

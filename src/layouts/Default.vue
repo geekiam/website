@@ -1,14 +1,18 @@
 <template>
-    <div
-        class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
-    >
-        <site-header/>
-        <div>
-            <div class="flex-grow">
-                <slot/>
+    <div>
+       <site-header></site-header>
+        <main>
+            <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+                <!-- Replace with your content -->
+                <div class="px-4 py-4 sm:px-0">
+                    <div >
+                        <slot/>
+                    </div>
+                </div>
+                <!-- /End replace -->
             </div>
-        </div>
-        <site-footer class="py-8 sm:py-16"/>
+        </main>
+        <site-footer></site-footer>
     </div>
 </template>
 
@@ -19,7 +23,8 @@ import SiteFooter from '@/components/SiteFooter'
 export default {
     components: {
         SiteHeader,
-        SiteFooter,
+        SiteFooter
+
     },
 }
 </script>
