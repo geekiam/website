@@ -75,7 +75,7 @@ module.exports = {
                 },
 
                 maxItems: 25,
-                filterNodes: (node) => true,
+                filterNodes: () => true,
                 nodeToFeedItem: (node) => ({
                     title: node.title,
                     date: node.date,

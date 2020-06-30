@@ -1,6 +1,6 @@
 <template>
   <layout>
-      <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
+      <div class="container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
           <h1 class="text-green-800 text-5xl font-bold text-center">Tutorials</h1>
       </div>
       <div class="container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">

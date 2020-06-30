@@ -1,7 +1,5 @@
 module.exports = {
-    purge: [
-        './src/**/*.vue'
-    ],
+    purge: false,
     theme: {
         screens: {
             sm: '640px',
@@ -38,11 +36,11 @@ module.exports = {
             },
             fontFamily: {
                 sans: [
-                    'Nunito Sans',
-                    'Roboto',
+                    'Fira Sans',
                     '-apple-system',
                     'BlinkMacSystemFont',
                     '"Segoe UI"',
+                    'Roboto',
                     '"Helvetica Neue"',
                     'Arial',
                     '"Noto Sans"',
@@ -50,7 +48,7 @@ module.exports = {
                     '"Apple Color Emoji"',
                     '"Segoe UI Emoji"',
                     '"Segoe UI Symbol"',
-                    '"Noto Color Emoji"'
+                    '"Noto Color Emoji"',
                 ],
                 serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
                 mono: [
@@ -62,6 +60,19 @@ module.exports = {
                     'monospace'
                 ]
             },
+            fontSize: {
+                'xs': '.75rem',
+                sm: '.875rem',
+                'base': '1rem',
+                'lg': '1.125rem',
+                'xl': '1.25rem',
+                '2xl': '1.5rem',
+                '3xl': '1.875rem',
+                '4xl': '2.25rem',
+                '5xl': '3rem',
+                '6xl': '4rem',
+                '7xl': '5rem',
+            },
             spacing: {
                 '80': '20rem',
                 '108': '27rem'
@@ -69,5 +80,7 @@ module.exports = {
         }
     },
     variants: {},
-    plugins: []
+    plugins: [
+        require('tailwindcss-plugin-fancy')
+    ]
 }
