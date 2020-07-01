@@ -126,7 +126,7 @@ module.exports = {
                             '_gid',
                             '_gat'
                         ],
-                        required: false,
+                        required: true,
                         optOut: true,
                         onlyOnce: false
                     }
