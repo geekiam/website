@@ -56,7 +56,7 @@
                             </h4>
                             <ul class="mt-4">
                                 <li class="mt-4">
-                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" href="#"
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white"
                                             to="/privacy">
                                         Privacy
                                     </g-link>
