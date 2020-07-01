@@ -11,25 +11,11 @@
                             </h4>
                             <ul class="mt-4">
                                 <li>
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Marketing
-                                    </a>
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/">
+                                        Training
+                                    </g-link>
                                 </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Analytics
-                                    </a>
-                                </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Commerce
-                                    </a>
-                                </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Insights
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="mt-12 md:mt-0">
@@ -38,25 +24,11 @@
                             </h4>
                             <ul class="mt-4">
                                 <li>
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/">
                                         Pricing
-                                    </a>
+                                    </g-link>
                                 </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Documentation
-                                    </a>
-                                </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Guides
-                                    </a>
-                                </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        API Status
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -67,30 +39,16 @@
                             </h4>
                             <ul class="mt-4">
                                 <li>
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/about">
                                         About
-                                    </a>
+                                    </g-link>
                                 </li>
                                 <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/blog">
                                         Blog
-                                    </a>
+                                    </g-link>
                                 </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Jobs
-                                    </a>
-                                </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Press
-                                    </a>
-                                </li>
-                                <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Partners
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                         <div class="mt-12 md:mt-0">
@@ -98,20 +56,16 @@
                                 Legal
                             </h4>
                             <ul class="mt-4">
-                                <li>
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
-                                        Claim
-                                    </a>
-                                </li>
                                 <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" href="#"
+                                            to="/privacy">
                                         Privacy
-                                    </a>
+                                    </g-link>
                                 </li>
                                 <li class="mt-4">
-                                    <a class="text-base leading-6 text-gray-300 hover:text-white" href="#">
+                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/">
                                         Terms
-                                    </a>
+                                    </g-link>
                                 </li>
                             </ul>
                         </div>
@@ -130,7 +84,7 @@
                                placeholder="Enter your email" required type="email"/>
                         <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                             <button
-                                class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+                                class="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-green-500 hover:bg-green-400 focus:outline-none focus:bg-green-400 transition duration-150 ease-in-out">
                                 Subscribe
                             </button>
                         </div>
