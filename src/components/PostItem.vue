@@ -1,43 +1,64 @@
 <template>
-    <article>
-        <div class="mx-auto max-w-3xl px-6">
-            <div class="py-8 sm:py-20 border-b border-gray-300">
-                <header class="text-center mb-8">
-                    <g-image :alt="post.feature.alt" :src="post.feature.image" v-if="post.feature"/>
-                    <time :datetime="post.date" class="text-gray-700 text-xs mb-2 uppercase">
-                        {{ post.date }}
-                    </time>
-                    <h2 class="text-green-800 text-3xl sm:text-4xl leading-tight font-sans mb-1 sm:mb-2">
+
+    <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex-shrink-0">
+            <g-image :alt="post.feature.alt" :src="post.feature.image" class="h-48 w-full object-cover"
+                     v-if="post.feature"/>
+
+        </div>
+        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1">
+                <p class="text-sm leading-5 font-medium text-green-600">
+                    <g-link
+                        :to="`${post.categories[0].path}/`"
+                        class=" hover:underline text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
+                    >
+                        {{ titleCase(post.categories[0].title) }}
+                    </g-link>
+                </p>
+                <g-link :to="`${post.path}/`" class="block">
+                    <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
                         <g-link :to="`${post.path}/`" class="text-green-700 font-bold">{{ post.title }}</g-link>
-                    </h2>
-                    <p class="text-green-800 leading-normal text-sm sm:text-base">
-            <span v-if="post.author">
-              by
-              <g-link
-                  class="text-green-800 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
-                  :to="`${post.author.path}/`"
-                  v-if="post.author">{{ titleCase(post.author.title) }}</g-link></span>
-                        </span>
-                        <span v-if="post.categories && post.categories.length > 0">
-              in
-              <g-link
-                  :to="`${post.categories[0].path}/`"
-                  class="text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
-              >
-                {{ titleCase(post.categories[0].title) }}
-              </g-link>
-            </span>
-                        <span v-if="post.author || (post.categories && post.categories.length > 0)">·</span>
-                        <span class="text-gray-700">{{ post.timeToRead }} min read</span>
+                    </h3>
+                    <p class="mt-3 text-base leading-6 text-gray-500" v-html="post.summary">
+
                     </p>
-                </header>
-                <div class="text-lg leading-normal text-gray-800" v-html="post.summary"></div>
-                <div class="mt-8 mb-8">
-                    <g-link :to="post.path" class="text-green-800 font-bold uppercase">Read More</g-link>
+                </g-link>
+            </div>
+            <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                    <g-link :to="`${post.author.path}/`">
+                        <img :alt="post.author.title"
+                             :src="avatar(post.author.id)"
+                             @error="imageLoadError"
+                             class="h-10 w-10 rounded-full"
+                             width="100">
+                    </g-link>
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm leading-5 font-medium text-gray-900">
+                        <g-link :to="`${post.author.path}/`" class="hover:underline">
+                            {{ titleCase(post.author.title) }}
+                        </g-link>
+
+                    </p>
+                    <div class="flex text-sm leading-5 text-gray-500">
+                        <time :datetime="post.date">
+                            {{ post.date }}
+                        </time>
+
+                        <span class="mx-1">
+                  &middot;
+                </span>
+                        <span>
+                 {{ post.timeToRead }} min read
+                </span>
+                    </div>
                 </div>
             </div>
         </div>
-    </article>
+    </div>
+
 </template>
 
 <script>
@@ -50,6 +71,12 @@ export default {
                 .split(' ')
                 .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
                 .join(' ')
+        },
+        imageLoadError (e) {
+            e.target.src = `/authors/images/default.png`
+        },
+        avatar (id) {
+            return `/authors/images/${id}.png`
         },
     },
 }
