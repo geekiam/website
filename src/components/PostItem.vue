@@ -27,17 +27,17 @@
             </div>
             <div class="mt-6 flex items-center">
                 <div class="flex-shrink-0">
-                    <g-link :to="`${post.author.path}`" v-if="post.author.path">
+                    <g-link :to="post.author.path" v-if="post.author.path">
                         <g-image :alt="post.author.title"
                                  :src="avatar(post.author.id)"
                                  @error="imageLoadError"
                                  class="h-10 w-10 rounded-full"
-                                 width="100"/>
+                                 width="100"></g-image>
                     </g-link>
                 </div>
                 <div class="ml-3">
                     <p class="text-sm leading-5 font-medium text-gray-900">
-                        <g-link :to="`${post.author.path}`" class="hover:underline" v-if="post.author.path">
+                        <g-link :to="post.author.path" class="hover:underline" v-if="post.author.path">
                             {{ titleCase(post.author.title) }}
                         </g-link>
 

@@ -12,7 +12,7 @@
         "@gridsome/plugin-sitemap": "^0.2.3",
         "@gridsome/source-filesystem": "^0.6.2",
         "@gridsome/transformer-remark": "^0.5.0",
-        "gridsome": "^0.7.18",
+        "gridsome": "^0.7.17",
         "gridsome-plugin-base-components": "^0.0.12",
         "gridsome-plugin-feed": "^1.0.2",
         "gridsome-plugin-netlify-cms": "^1.0.9",
@@ -35,7 +35,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/garywoodfine/geekiam.git"
+        "url": "git+ssh://git@github.com/threenine/geekiam.git"
     },
     "keywords": [
         "geek",
