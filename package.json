@@ -20,9 +20,7 @@
         "gridsome-plugin-tailwindcss": "^2.2.48",
         "klaro-gridsome": "^1.0.3",
         "netlify-cms": "^2.10.52",
-        "tailwindcss-plugin-fancy": "^1.2.22",
-        "tailwindcss-transitions": "^2.1.0",
-        "vue-loader": "^15.9.3"
+        "tailwindcss-plugin-fancy": "^1.2.22"
     },
     "description": "Enabling people globally to have fun, learn and master software engineering",
     "version": "1.0.0",
@@ -33,8 +31,7 @@
         "@vue/cli-service": "~4.4.0",
         "babel-eslint": "^10.1.0",
         "eslint": "^6.7.2",
-        "eslint-plugin-vue": "^6.2.2",
-        "vue-template-compiler": "^2.6.11"
+        "eslint-plugin-vue": "^6.2.2"
     },
     "repository": {
         "type": "git",
