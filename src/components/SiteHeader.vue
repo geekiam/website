@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-gray-800">
+    <nav class="bg-gray-800  pb-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
@@ -7,7 +7,7 @@
                         <g-link
                             to="/"
                         >
-                        <g-image :alt="$static.metadata.siteName" class="h-10" src="~/assets/images/logo.svg"/>
+                            <g-image :alt="$static.metadata.siteName" class="h-10" src="~/assets/images/logo.svg"/>
                         </g-link>
                     </div>
                     <div class="hidden md:block">
