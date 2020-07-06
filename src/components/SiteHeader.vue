@@ -16,24 +16,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-
     </nav>
-
-
-
-
-
-
-
-
-
-
-
-
 </template>
 
 <script>
