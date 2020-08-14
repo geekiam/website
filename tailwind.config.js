@@ -80,7 +80,5 @@ module.exports = {
         }
     },
     variants: {},
-    plugins: [
-        require('tailwindcss-plugin-fancy')
-    ]
+
 }
