@@ -6,12 +6,12 @@
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                                Solutions
+
                             </h4>
                             <ul class="mt-4">
                                 <li>
                                     <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/">
-                                        Training
+
                                     </g-link>
                                 </li>
 
@@ -19,12 +19,12 @@
                         </div>
                         <div class="mt-12 md:mt-0">
                             <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                                Support
+
                             </h4>
                             <ul class="mt-4">
                                 <li>
                                     <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/">
-                                        Pricing
+
                                     </g-link>
                                 </li>
 
@@ -34,7 +34,7 @@
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                                Company
+
                             </h4>
                             <ul class="mt-4">
                                 <li>
@@ -42,17 +42,13 @@
                                         About
                                     </g-link>
                                 </li>
-                                <li class="mt-4">
-                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/blog">
-                                        Blog
-                                    </g-link>
-                                </li>
+
 
                             </ul>
                         </div>
                         <div class="mt-12 md:mt-0">
                             <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                                Legal
+
                             </h4>
                             <ul class="mt-4">
                                 <li class="mt-4">
@@ -61,11 +57,7 @@
                                         Privacy
                                     </g-link>
                                 </li>
-                                <li class="mt-4">
-                                    <g-link class="text-base leading-6 text-gray-300 hover:text-white" to="/">
-                                        Terms
-                                    </g-link>
-                                </li>
+
                             </ul>
                         </div>
                     </div>

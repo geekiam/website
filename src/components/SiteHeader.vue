@@ -12,7 +12,7 @@
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline">
-                            <g-link class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700" to="/blog">Articles</g-link>
+
                         </div>
                     </div>
                 </div>
