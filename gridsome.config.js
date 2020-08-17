@@ -7,8 +7,8 @@
 module.exports = {
     siteName: 'Geek.I.Am',
     siteDescription:
-        'Learn software development skills you need to be a professional software developer',
-    siteUrl: 'https://geekiam.co.uk',
+        'Software Developer Community',
+    siteUrl: 'https://geekiam.io',
     titleTemplate: '%s | Geek.I.Am',
     icon: 'src/favicon.png',
     plugins: [
@@ -60,8 +60,8 @@ module.exports = {
                 feedOptions: {
                     title: 'Geek.I.Am ',
                     description:
-                        'Learn software development skills you need to be a professional software developer',
-                    link: 'https://geekiam.co.uk',
+                        'Software Developer Community',
+                    link: 'https://geekiam.io',
                 },
                 rss: {
                     enabled: true,
