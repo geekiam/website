@@ -2,18 +2,18 @@ backend:
     name: github
     repo: threenine/geekiam
 
-site_url: https://geekiam.co.uk
-display_url: https://geekiam.co.uk
+site_url: https://geekiam.io
+display_url: https://geekiam.io
 media_folder: "static/uploads"
 public_folder: "/uploads"
 publish_mode: editorial_workflow
 
 collections:
-    - name: "posts"
-      label: "Posts"
-      folder: "static/posts"
-      create: true
-      slug: "{{slug}}"
+    -   name: "posts"
+        label: "Posts"
+        folder: "static/posts"
+        create: true
+        slug: "{{slug}}"
       fields:
         - {label: "Title", name: "title", widget: "string", required: true }
         - {label: "Description", name: "description", widget: "string", required: true}
