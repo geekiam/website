@@ -1,6 +1,5 @@
 <template>
     <Layout>
-        <
         <template #mainbody>>
             <header>
                 <div
