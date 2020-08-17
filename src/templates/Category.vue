@@ -37,7 +37,7 @@
                 v-if="$page.category.belongsTo.pageInfo.totalPages > 1"
             />
 
-            />
+
         </template>
     </Layout>
 </template>
