@@ -21,7 +21,7 @@
         "klaro-gridsome": "^1.0.3",
         "netlify-cms": "^2.10.55"
     },
-    "description": "Enabling people globally to have fun, learn and master software engineering",
+    "description": "Software Developer Community",
     "version": "1.0.0",
     "main": "gridsome.config.js",
     "devDependencies": {
