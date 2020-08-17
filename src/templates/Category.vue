@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <template #mainbody>>
+        <template #mainbody>
             <header>
                 <div
                     class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
