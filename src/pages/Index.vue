@@ -1,12 +1,14 @@
 
 <template>
     <Layout>
-        <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-            <div class="mt-1 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
-                <post-item :key="edge.node.id" :post="edge.node" v-for="edge in $page.posts.edges"/>
+        <template #mainbody>
+            <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+                <div class="mt-1 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+                    <post-item :key="edge.node.id" :post="edge.node" v-for="edge in $page.posts.edges"/>
+                </div>
+                <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
             </div>
-            <pagination :info="$page.posts.pageInfo" v-if="$page.posts.pageInfo.totalPages > 1"/>
-        </div>
+        </template>
     </Layout>
 </template>
 
@@ -20,7 +22,7 @@ export default {
         Pagination,
     },
     metaInfo: {
-        title: ' In depth Articles and mini tutorials and stories for a world of learning',
+        title: 'Software Developer Community',
     },
 }
 </script>

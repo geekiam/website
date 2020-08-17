@@ -1,12 +1,11 @@
 <template>
-    <div class="bg-green-800">
+    <div class="bg-green-900">
         <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                 <div class="grid grid-cols-2 gap-8 xl:col-span-2">
                     <div class="md:grid md:grid-cols-2 md:gap-8">
                         <div>
                             <h4 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-
                             </h4>
                             <ul class="mt-4">
                                 <li>
