@@ -11,7 +11,7 @@ export default function (Vue, { head }) {
       {
           key: 'keywords',
           name: 'keywords',
-          content: 'code, tutorials, learn, HTML, CSS, JavaScript, blockchain, cryptocurrency ',
+          content: 'code, tutorials, free source code, software development ',
       },
       {
           name: 'author',
@@ -29,7 +29,7 @@ export default function (Vue, { head }) {
       {
           key: 'og:image',
           property: 'og:image',
-          content: 'https://geekiam.co.uk/assets/static/logo.png',
+          content: 'https://geekiam.io/assets/static/logo.png',
       },
       { property: 'og:site_name', content: config.siteName }
   )

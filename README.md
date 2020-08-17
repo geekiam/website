@@ -17,7 +17,7 @@ learned developing with Gridsome, Vue, Netlify, TailwindCSS, JavaScript and much
 * [Gridsome - Configuring Custom TailwindCSS ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
 * [Gridsome - Configure Basic On-Page SEO ](https://garywoodfine.com/gridsome-configure-basic-on-page-seo/)
 * [Gridsome - Implement Additional SEO ](https://garywoodfine.com/gridsome-implement-additional-seo/)
-* [Gridsome – Adding Feature Image to blog posts](https://garywoodfine.com/gridsome-adding-feature-image-to-blog-posts/)
+* [Gridsome - Adding Feature Image to blog posts](https://garywoodfine.com/gridsome-adding-feature-image-to-blog-posts/)
 * [Gridsome - Implement Cookie Consent](https://garywoodfine.com/gridsome-implement-cookie-consent)
 
  ### Developed, Sponsored and Supported 
