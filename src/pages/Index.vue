@@ -1,47 +1,75 @@
-<!--suppress HtmlUnknownTarget -->
 <template>
-    <layout>
-        <front-page-hero></front-page-hero>
-
-       <!-- <div class="px-2">
-            <div class="flex -mx-2">
-                <div class="w-1/4 px-2">
-                    <div></div>
+    <Layout>
+        <template #mainbody>
+            <div
+                class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
+            >
+                <div
+                    class="mt-1 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
+                >
+                    <post-item
+                        :key="edge.node.id"
+                        :post="edge.node"
+                        v-for="edge in $page.posts.edges"
+                    />
                 </div>
-                <div class="w-1/4 px-2">
-                    <div>
-                        <g-image src="~/assets/images/geek-i-am-intro.png" width="380"></g-image>
-                    </div>
-                </div>
-                <div class="w-1/4 px-2">
-                    <div>
-
-                        <p class="tracking-wide text-4xl font-bold text-left text-green-800 mb-2">
-                            Learn to code
-                        </p>
-                        <p class="tracking-wide text-2xl text-gray-700 mb-2">Master Basics.</p>
-                        <p class="tracking-wide text-2xl text-gray-700 mb-2">Develop Skills.</p>
-                        <p class="tracking-wide text-2xl text-gray-700 mb-2">Build Projects.</p>
-                        <p class="tracking-wide text-2xl text-gray-700 mb-2">Enhance Careers.</p>
-                        <p class="tracking-wide text-2xl text-gray-700 mb-2">Change the World.</p>
-                    </div>
-                </div>
-                <div class="w-1/4 px-2">
-                    <div></div>
-                </div>
+                <pagination
+                    :info="$page.posts.pageInfo"
+                    v-if="$page.posts.pageInfo.totalPages > 1"
+                />
             </div>
-        </div>-->
-    </layout>
+        </template>
+    </Layout>
 </template>
 
 <script>
-import FrontPageHero from "../components/FrontPageHero";
+import PostItem from '@/components/PostItem'
+import Pagination from '@/components/Pagination'
+
 export default {
-    name: 'Index',
     components: {
-        FrontPageHero
-    }
+        PostItem,
+        Pagination,
+    },
+    metaInfo: {
+        title: 'Software Developer Community',
+    },
 }
 </script>
 
-<style scoped></style>
+<page-query>
+query($page: Int) {
+    posts: allPost(page: $page, perPage: 6) @paginate {
+        totalCount
+        pageInfo {
+            totalPages
+            currentPage
+        }
+        edges {
+            node {
+                id
+                title
+                timeToRead
+                content
+                summary
+                path
+                date(format: "D MMMM Y")
+                feature {
+                    image(width: 400)
+                    alt
+                }
+                categories {
+                    id
+                    title
+                    path
+                }
+                author {
+                    id
+                    title
+                    path
+                }
+            }
+        }
+    }
+}
+</page-query>

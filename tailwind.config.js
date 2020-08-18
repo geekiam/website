@@ -5,7 +5,7 @@ module.exports = {
             sm: '640px',
             md: '768px',
             lg: '1024px',
-            xl: '1280px'
+            xl: '1280px',
         },
         extend: {
             colors: {
@@ -18,7 +18,7 @@ module.exports = {
                     600: '#38a169',
                     700: '#2f855a',
                     800: '#276749',
-                    900: '#22543d'
+                    900: '#22543d',
                 },
 
                 gray: {
@@ -30,9 +30,8 @@ module.exports = {
                     600: '#718096',
                     700: '#4a5568',
                     800: '#2d3748',
-                    900: '#1a202c'
-                }
-
+                    900: '#1a202c',
+                },
             },
             fontFamily: {
                 sans: [
@@ -50,22 +49,28 @@ module.exports = {
                     '"Segoe UI Symbol"',
                     '"Noto Color Emoji"',
                 ],
-                serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+                serif: [
+                    'Georgia',
+                    'Cambria',
+                    '"Times New Roman"',
+                    'Times',
+                    'serif',
+                ],
                 mono: [
                     'Menlo',
                     'Monaco',
                     'Consolas',
                     '"Liberation Mono"',
                     '"Courier New"',
-                    'monospace'
-                ]
+                    'monospace',
+                ],
             },
             fontSize: {
-                'xs': '.75rem',
+                xs: '.75rem',
                 sm: '.875rem',
-                'base': '1rem',
-                'lg': '1.125rem',
-                'xl': '1.25rem',
+                base: '1rem',
+                lg: '1.125rem',
+                xl: '1.25rem',
                 '2xl': '1.5rem',
                 '3xl': '1.875rem',
                 '4xl': '2.25rem',
@@ -75,12 +80,9 @@ module.exports = {
             },
             spacing: {
                 '80': '20rem',
-                '108': '27rem'
-            }
-        }
+                '108': '27rem',
+            },
+        },
     },
     variants: {},
-    plugins: [
-        require('tailwindcss-plugin-fancy')
-    ]
 }

@@ -4,7 +4,8 @@
     "scripts": {
         "build": "gridsome build",
         "develop": "gridsome develop",
-        "explore": "gridsome explore"
+        "explore": "gridsome explore",
+        "lint": "vue-cli-service lint"
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",
@@ -12,32 +13,33 @@
         "@gridsome/plugin-sitemap": "^0.2.3",
         "@gridsome/source-filesystem": "^0.6.2",
         "@gridsome/transformer-remark": "^0.5.0",
-        "gridsome": "^0.7.17",
+        "gridsome": "^0.7.19",
         "gridsome-plugin-base-components": "^0.0.12",
         "gridsome-plugin-feed": "^1.0.2",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-remark-shiki": "^0.3.1",
         "gridsome-plugin-tailwindcss": "^2.2.48",
-        "netlify-cms": "^2.10.51",
-        "tailwindcss-plugin-fancy": "^1.2.22",
-        "tailwindcss-transitions": "^2.1.0",
-        "vue-loader": "^15.9.3"
+        "klaro-gridsome": "^1.0.3",
+        "netlify-cms": "^2.10.55"
     },
-    "description": "Enabling people globally to have fun, learn and master software engineering",
+    "description": "Software Developer Community",
     "version": "1.0.0",
     "main": "gridsome.config.js",
     "devDependencies": {
-        "@vue/cli-plugin-babel": "~4.4.0",
-        "@vue/cli-plugin-eslint": "~4.4.0",
-        "@vue/cli-service": "~4.4.0",
+        "@vue/cli-plugin-eslint": "^4.5.4",
+        "@vue/cli-service": "^4.5.4",
+        "@vue/eslint-config-prettier": "^6.0.0",
         "babel-eslint": "^10.1.0",
-        "eslint": "^6.7.2",
+        "eslint": "^7.7.0",
+        "eslint-plugin-gridsome": "^1.5.0",
+        "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-vue": "^6.2.2",
-        "vue-template-compiler": "^2.6.11"
+        "prettier": "^2.0.5",
+        "vue-eslint-parser": "^7.1.0"
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/garywoodfine/geekiam.git"
+        "url": "git+ssh://git@github.com/threenine/geekiam.git"
     },
     "keywords": [
         "geek",

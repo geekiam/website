@@ -5,34 +5,38 @@ import DefaultLayout from '~/layouts/Default.vue'
 import config from '../gridsome.config'
 
 export default function (Vue, { head }) {
-  let copyRightNotice = `\u00a9 threenine.co.uk, ${new Date().getFullYear()}. All rights reserved`
+    let copyRightNotice = `\u00a9 threenine.co.uk, ${new Date().getFullYear()}. All rights reserved`
 
-  head.meta.push(
-      {
-          key: 'keywords',
-          name: 'keywords',
-          content: 'code, tutorials, learn, HTML, CSS, JavaScript, blockchain, cryptocurrency ',
-      },
-      {
-          name: 'author',
-          content: 'threenine.co.uk',
-      },
-      {
-          key: 'description',
-          name: 'description',
-          content: config.siteDescription,
-      },
+    head.meta.push(
+        {
+            key: 'keywords',
+            name: 'keywords',
+            content: 'code, tutorials, free source code, software development ',
+        },
+        {
+            name: 'author',
+            content: 'threenine.co.uk',
+        },
+        {
+            key: 'description',
+            name: 'description',
+            content: config.siteDescription,
+        },
 
-      { name: 'copyright', content: copyRightNotice },
-      { key: 'og:type', property: 'og:type', content: 'website' },
-      { key: 'og:description', property: 'og:description', content: config.siteDescription },
-      {
-          key: 'og:image',
-          property: 'og:image',
-          content: 'https://geekiam.co.uk/assets/static/logo.png',
-      },
-      { property: 'og:site_name', content: config.siteName }
-  )
+        { name: 'copyright', content: copyRightNotice },
+        { key: 'og:type', property: 'og:type', content: 'website' },
+        {
+            key: 'og:description',
+            property: 'og:description',
+            content: config.siteDescription,
+        },
+        {
+            key: 'og:image',
+            property: 'og:image',
+            content: 'https://geekiam.io/assets/static/logo.png',
+        },
+        { property: 'og:site_name', content: config.siteName }
+    )
 
     Vue.component('Layout', DefaultLayout)
 }

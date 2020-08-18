@@ -6,9 +6,8 @@
 
 module.exports = {
     siteName: 'Geek.I.Am',
-    siteDescription:
-        'Learn software development skills you need to be a professional software developer',
-    siteUrl: 'https://geekiam.co.uk',
+    siteDescription: 'Software Developer Community',
+    siteUrl: 'https://geekiam.io',
     titleTemplate: '%s | Geek.I.Am',
     icon: 'src/favicon.png',
     plugins: [
@@ -49,6 +48,8 @@ module.exports = {
             use: 'gridsome-plugin-netlify-cms',
             options: {
                 publicPath: '/admin',
+                configPath: 'src/admin/config.yml',
+                htmlPath: 'src/admin/index.html',
             },
         },
         {
@@ -57,9 +58,8 @@ module.exports = {
                 contentTypes: ['Post'],
                 feedOptions: {
                     title: 'Geek.I.Am ',
-                    description:
-                        'Learn software development skills you need to be a professional software developer',
-                    link: 'https://geekiam.co.uk',
+                    description: 'Software Developer Community',
+                    link: 'https://geekiam.io',
                 },
                 rss: {
                     enabled: true,
@@ -96,6 +96,40 @@ module.exports = {
                 },
             },
         },
+        {
+            use: 'klaro-gridsome',
+            options: {
+                privacyPolicy: '/privacy',
+                cookieName: 'consent',
+                translations: {
+                    en: {
+                        consentModal: {
+                            description:
+                                'Customise the information that we collect about you.',
+                        },
+                        googleAnalytics: {
+                            description:
+                                'Google Analytics enables us to see how visitors use our website.',
+                        },
+                        purposes: {
+                            analytics: 'Analytics',
+                        },
+                    },
+                },
+                apps: [
+                    {
+                        name: 'googleAnalytics',
+                        default: true,
+                        title: 'Google Analytics',
+                        purposes: ['analytics'],
+                        cookies: ['_ga', '_gcl_au', '_gid', '_gat'],
+                        required: true,
+                        optOut: true,
+                        onlyOnce: false,
+                    },
+                ],
+            },
+        },
     ],
     templates: {
         Post: '/:title',
@@ -105,7 +139,12 @@ module.exports = {
     },
     transformers: {
         remark: {
-            plugins: [['gridsome-plugin-remark-shiki', { theme: 'monokai', skipInline: true }]],
+            plugins: [
+                [
+                    'gridsome-plugin-remark-shiki',
+                    { theme: 'monokai', skipInline: true },
+                ],
+            ],
         },
     },
 }
