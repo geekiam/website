@@ -18,7 +18,7 @@ module.exports = {
     ],
     extractors: [
         {
-            extractor: content => content.match(/[A-z0-9-:\\/]+/g),
+            extractor: (content) => content.match(/[A-z0-9-:\\/]+/g),
             extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug'],
         },
     ],
