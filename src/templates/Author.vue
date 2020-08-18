@@ -5,7 +5,9 @@
                 <div
                     class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
                 >
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize">
+                    <h1
+                        class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize"
+                    >
                         {{ titleCase($page.author.title) }}
                     </h1>
                     <svg
@@ -64,36 +66,36 @@ export default {
 }
 </script>
 <page-query>
-    query Author ($path: String!, $page: Int) {
-        author (path: $path) {
-            id
-            title
-            path
-            belongsTo (page: $page, perPage: 6) @paginate {
-                totalCount
-                pageInfo {
-                        totalPages
-                        currentPage
-                    }
-                edges {
-                    node {
-                        ...on Post {
-                                id
-                                title
-                                datetime: date (format: "YYYY-MM-DD HH:mm:ss")
-                                path
-                                content
-                                description
-                                timeToRead
-                                tags {
-                                    id
-                                    title
-                                    path
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+query Author($path: String!, $page: Int) {
+author(path: $path) {
+id
+title
+path
+belongsTo(page: $page, perPage: 6) @paginate {
+totalCount
+pageInfo {
+totalPages
+currentPage
+}
+edges {
+node {
+... on Post {
+id
+title
+datetime: date(format: "YYYY-MM-DD HH:mm:ss")
+path
+content
+description
+timeToRead
+tags {
+id
+title
+path
+}
+}
+}
+}
+}
+}
+}
 </page-query>

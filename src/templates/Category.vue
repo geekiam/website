@@ -8,7 +8,9 @@
                     <p class="text-gray-700 leading-normal">
                         {{ $page.category.belongsTo.totalCount }} posts in total
                     </p>
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize">
+                    <h1
+                        class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize"
+                    >
                         {{ titleCase($page.category.title) }}
                     </h1>
                     <svg
@@ -19,7 +21,9 @@
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <title id="tagIcon">Posts tagged</title>
-                        <path d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                        <path
+                            d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                        />
                     </svg>
                 </div>
             </header>
@@ -35,8 +39,6 @@
                 :info="$page.category.belongsTo.pageInfo"
                 v-if="$page.category.belongsTo.pageInfo.totalPages > 1"
             />
-
-
         </template>
     </Layout>
 </template>
@@ -67,37 +69,37 @@ export default {
 }
 </script>
 <page-query>
-    query Category ($path: String!, $page: Int) {
-        category (path: $path) {
-                id
-                title
-                path
-                belongsTo (page: $page, perPage: 6) @paginate {
-                    totalCount
-                    pageInfo {
-                        totalPages
-                        currentPage
-                        }
-                        edges {
-                        node {
-                            ...on Post {
-                            id
-                            title
-                            datetime: date (format: "YYYY-MM-DD HH:mm:ss")
-                            path
-                            content
-                            excerpt
-                            description
-                            timeToRead
-                            author {
-                                id
-                                title
-                                path
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+query Category($path: String!, $page: Int) {
+category(path: $path) {
+id
+title
+path
+belongsTo(page: $page, perPage: 6) @paginate {
+totalCount
+pageInfo {
+totalPages
+currentPage
+}
+edges {
+node {
+... on Post {
+id
+title
+datetime: date(format: "YYYY-MM-DD HH:mm:ss")
+path
+content
+excerpt
+description
+timeToRead
+author {
+id
+title
+path
+}
+}
+}
+}
+}
+}
+}
 </page-query>
