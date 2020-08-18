@@ -29,7 +29,7 @@
                                 info.currentPage === info.totalPages,
                         }"
                         :rel="
-                            info.currentPage == info.totalPages
+                            info.currentPage === info.totalPages
                                 ? 'nofollow'
                                 : 'next'
                         "
