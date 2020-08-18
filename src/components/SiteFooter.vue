@@ -142,7 +142,7 @@
                     <a
                         class="text-orange-700 border-b border-transparent hover:border-orange-400 transition-border-color"
                         href="https://threenine.co.uk"
-                    >threenine.co.uk</a
+                        >threenine.co.uk</a
                     >, Inc. All rights reserved.
                 </p>
             </div>
@@ -158,9 +158,9 @@ export default {
 
 <static-query>
 query {
-metadata {
-siteName
-siteUrl
-}
+    metadata {
+        siteName
+        siteUrl
+    }
 }
 </static-query>

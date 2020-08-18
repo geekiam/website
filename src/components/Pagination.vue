@@ -48,18 +48,18 @@
 export default {
     props: ['base', 'info'],
     computed: {
-        basePath () {
+        basePath() {
             console.log(`base ${this.base}`)
             return this.base || ''
         },
     },
     methods: {
-        previousPage (currentPage) {
+        previousPage(currentPage) {
             return [0, 1].includes(currentPage - 1)
                 ? `${this.basePath}/`
                 : `${this.basePath}/${currentPage - 1}/`
         },
-        nextPage (currentPage, totalPages) {
+        nextPage(currentPage, totalPages) {
             return totalPages > currentPage
                 ? `${this.basePath}/${currentPage + 1}/`
                 : `${this.basePath}/${currentPage}/`

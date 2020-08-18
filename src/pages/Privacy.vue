@@ -694,41 +694,41 @@
             </p>
             <p class="mt-1 text-sm leading-5 text-gray-800 mb-1">
                 (b)<a
-                href=" https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
-            >
-                https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences
-                (Firefox)</a
-            >
+                    href=" https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+                >
+                    https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences
+                    (Firefox)</a
+                >
             </p>
             <p class="mt-1 text-sm leading-5 text-gray-800 mb-1">
                 (c)<a
-                href="http://www.opera.com/help/tutorials/security/cookies/"
-            >http://www.opera.com/help/tutorials/security/cookies/
-                (Opera);</a
-            >
+                    href="http://www.opera.com/help/tutorials/security/cookies/"
+                    >http://www.opera.com/help/tutorials/security/cookies/
+                    (Opera);</a
+                >
             </p>
             <p class="mt-1 text-sm leading-5 text-gray-800 mb-1">
                 (d)<a
-                href=" https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies"
-            >
-                https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies
-                (Internet Explorer);</a
-            >
+                    href=" https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies"
+                >
+                    https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies
+                    (Internet Explorer);</a
+                >
             </p>
             <p class="mt-1 text-sm leading-5 text-gray-800 mb-1">
                 (e)<a href="https://support.apple.com/kb/PH21411"
-            >ttps://support.apple.com/kb/PH21411 (Safari); and</a
-            >
+                    >ttps://support.apple.com/kb/PH21411 (Safari); and</a
+                >
 
                 h
             </p>
             <p class="mt-1 text-sm leading-5 text-gray-800 mb-1">
                 (f)<a
-                href=" https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy"
-            >
-                https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy
-                (Edge).</a
-            >
+                    href=" https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy"
+                >
+                    https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy
+                    (Edge).</a
+                >
             </p>
             <p class="mt-1 text-sm leading-5 text-gray-800 mb-1">
                 Blocking all cookies will have a negative impact upon the
