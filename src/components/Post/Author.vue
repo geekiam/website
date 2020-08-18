@@ -21,8 +21,7 @@
                     class="text-green-700 hover:text-green-500 capitalize border-b-2 border-transparent transition-color"
                 >
                     {{ titleCase(author.title) }}
-                </g-link
-                >
+                </g-link>
             </h4>
             <p class="leading-normal">
                 <g-link
@@ -31,8 +30,7 @@
                 >
                     See all posts by
                     {{ titleCase(author.title) }} &rarr;
-                </g-link
-                >
+                </g-link>
             </p>
         </div>
     </div>

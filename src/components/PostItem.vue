@@ -23,12 +23,9 @@
                     <h3
                         class="mt-2 text-xl leading-7 font-semibold text-gray-900"
                     >
-                        <g-link
-                            :to="post.path"
-                            class="text-green-700 font-bold"
+                        <g-link :to="post.path" class="text-green-700 font-bold"
                         >{{ post.title }}
-                        </g-link
-                        >
+                        </g-link>
                     </h3>
                     <p
                         class="mt-3 text-base leading-6 text-gray-500"
