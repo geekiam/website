@@ -6,8 +6,8 @@
         "develop": "gridsome develop",
         "explore": "gridsome explore",
         "lint": "vue-cli-service lint",
-        "precommit": "vue-cli-service lint",
-        "prepush": "vue-cli-service lint"
+        "precommit": "npm run lint",
+        "prepush": "npm run lint"git
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",
