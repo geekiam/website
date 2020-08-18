@@ -32,7 +32,28 @@ Git-Flow is certainly one of those approaches. There are number of aspects about
 
 The first factor to consider is the which Project Management Methodology organisation follows, in my opinion, Git-flow works well with *Scrum*, due in part that when using Scrum, teams usually only deploy new code or production ready code to the production environment in iteration of cycles, usually between 2 -4 weeks.
 
-It makes sense in this kind of Environment to have 2 Long-Life branches, namely your Main (master) and Develop (development) branch. 
+It makes sense in this kind of Environment to have 2 Long-Life branches, namely your Main (master) and Develop (development) branch.  Developers, will usually create branches from the develop branch, implement whatever task required, once complete they will merge their branch into develop.
+
+The Develop branch, may be automatically deployed to a staging environment for continuous integration and testing purpose. At the end of the iteration and all Quality Assurance tasks are complete, the Develop branch is then merged into the Master branch which in turn deploys straight to production, after tagging and marked as release.
+
+#### Size of team(s) 
+
+The git flow process is ideal if you working in a large team or even multiple teams. It may be completely overkill, if you're working on a small team or even as an individual contributor. 
+
+
+#### Repository Structure
+
+Many organisations have differing opinions regarding their Repository structures, some prefer the Mono-Repository - where all code for a number of projects which make up an entire solution are kept within one single large repository - this typical of enterprise development shops working on a number of line of business applications or bespoke enterprise solutions.  Other organisations may prefer smaller application specific repositories or even package related repositories.
+
+In my opinion and experience, Git-Flow is a great fit for large Mono Repositories, because it enables more control over which features etc are eventually merged into the main branch. 
+
+When it comes to smaller repositories or even package based repositories, I have found it to be somewhat of an overkill and unnecessary bureaucracy.  Although, in some cases I have implemented on smaller projects and it proved to work quite well.  In most of those cases, I was working on a small projects with an average team size of 4+ and members were distributed across a number of different time-zones.  So the workflow provided additional control and enforced a common team discipline. 
+
+I have tried to implement it on smaller single contributor projects and in all honesty it proved to cumbersome and somewhat unnecessary.
+
+In each of the cases, it may make sense to use other git related workflows. The point to remember is that git flow does not cure all organisation or environment issues but it can help resolve some.  
+
+All good consultants will provide you with the old *"It depends"* answer, and it is the same with git flow, it will depend on several factors whether implementing it in your organisation or project will be successful or not.  It is not a silver bullet, but it will help in some circumstances. 
 
 ### How to install Git-Flow
 
