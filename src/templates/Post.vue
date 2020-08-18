@@ -1,10 +1,9 @@
 <template>
     <Layout>
-        <main>
+        <template #mainbody>
             <article
-                :class="{ 'border-b border-grey-lighter pb-10 mb-16': !$page.post.author }"
+                :class="{ 'border-b border-grey-lighter pb-10 mb-16': !$page.post.author }">
 
-            >
                 <post-title :post="$page.post"></post-title>
 
                 <div
@@ -21,7 +20,8 @@
                     <author :author="$page.post.author"/>
                 </footer>
             </article>
-        </main>
+        </template>
+
     </Layout>
 </template>
 

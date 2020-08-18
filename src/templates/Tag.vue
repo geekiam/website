@@ -1,16 +1,16 @@
 <template>
     <Layout>
-        <main>
-            <header>
-                <div
-                    class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
-                >
-                    <p class="text-gray-700 leading-normal">
-                        {{ $page.tag.belongsTo.totalCount }} posts in total
-                    </p>
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize">
-                        {{ titleCase($page.tag.title) }}
-                    </h1>
+         <template #mainbody>
+             <header>
+                 <div
+                     class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
+                 >
+                     <p class="text-gray-700 leading-normal">
+                         {{ $page.tag.belongsTo.totalCount }} posts in total
+                     </p>
+                     <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize">
+                         {{ titleCase($page.tag.title) }}
+                     </h1>
                     <svg
                         aria-labelledby="tagIcon"
                         class="w-5 sm:w-6 fill-current text-gray-500 mx-auto mb-1"
@@ -30,12 +30,12 @@
                     v-for="edge in $page.tag.belongsTo.edges"
                 />
             </section>
-            <pagination
-                :base="`${$page.tag.path}`"
-                :info="$page.tag.belongsTo.pageInfo"
-                v-if="$page.tag.belongsTo.pageInfo.totalPages > 1"
-            />
-        </main>
+             <pagination
+                 :base="`${$page.tag.path}`"
+                 :info="$page.tag.belongsTo.pageInfo"
+                 v-if="$page.tag.belongsTo.pageInfo.totalPages > 1"
+             />
+         </template>
     </Layout>
 </template>
 

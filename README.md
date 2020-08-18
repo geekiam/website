@@ -1,4 +1,4 @@
-[![Geek.I.Am ](https://github.com/garywoodfine/geekiam/blob/master/src/assets/images/logo.png)](https://geekiam.co.uk)
+[![Geek.I.Am ](https://github.com/garywoodfine/geekiam/blob/master/src/assets/images/logo.png)](https://geekiam.io)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8efb3bdf-7233-4af4-8ce4-4ef961592200/deploy-status)](https://app.netlify.com/sites/geekiam/deploys)
 
@@ -17,7 +17,7 @@ learned developing with Gridsome, Vue, Netlify, TailwindCSS, JavaScript and much
 * [Gridsome - Configuring Custom TailwindCSS ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
 * [Gridsome - Configure Basic On-Page SEO ](https://garywoodfine.com/gridsome-configure-basic-on-page-seo/)
 * [Gridsome - Implement Additional SEO ](https://garywoodfine.com/gridsome-implement-additional-seo/)
-* [Gridsome – Adding Feature Image to blog posts](https://garywoodfine.com/gridsome-adding-feature-image-to-blog-posts/)
+* [Gridsome - Adding Feature Image to blog posts](https://garywoodfine.com/gridsome-adding-feature-image-to-blog-posts/)
 * [Gridsome - Implement Cookie Consent](https://garywoodfine.com/gridsome-implement-cookie-consent)
 
  ### Developed, Sponsored and Supported 
