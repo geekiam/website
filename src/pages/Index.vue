@@ -39,37 +39,37 @@ export default {
 
 <page-query>
 query($page: Int) {
-posts: allPost(page: $page, perPage: 6) @paginate {
-totalCount
-pageInfo {
-totalPages
-currentPage
-}
-edges {
-node {
-id
-title
-timeToRead
-content
-summary
-path
-date(format: "D MMMM Y")
-feature {
-image(width: 400)
-alt
-}
-categories {
-id
-title
-path
-}
-author {
-id
-title
-path
-}
-}
-}
-}
+    posts: allPost(page: $page, perPage: 6) @paginate {
+        totalCount
+        pageInfo {
+            totalPages
+            currentPage
+        }
+        edges {
+            node {
+                id
+                title
+                timeToRead
+                content
+                summary
+                path
+                date(format: "D MMMM Y")
+                feature {
+                    image(width: 400)
+                    alt
+                }
+                categories {
+                    id
+                    title
+                    path
+                }
+                author {
+                    id
+                    title
+                    path
+                }
+            }
+        }
+    }
 }
 </page-query>

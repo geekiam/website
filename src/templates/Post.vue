@@ -21,8 +21,8 @@
                     class="flex flex-wrap pb-10 sm:pb-16"
                     v-if="$page.post.author || $page.post.categories"
                 >
-                    <categories :categories="$page.post.categories"/>
-                    <author :author="$page.post.author"/>
+                    <categories :categories="$page.post.categories" />
+                    <author :author="$page.post.author" />
                 </footer>
             </article>
         </template>
@@ -41,7 +41,7 @@ export default {
         Author,
         Categories,
     },
-    metaInfo () {
+    metaInfo() {
         return {
             title: this.$page.post.title,
             meta: [
@@ -66,7 +66,7 @@ export default {
         }
     },
     computed: {
-        postUrl () {
+        postUrl() {
             let siteUrl = this.$static.metadata.siteUrl
             let postPath = this.$page.post.path
 
@@ -80,36 +80,36 @@ export default {
 
 <page-query>
 query($path: String) {
-post(path: $path) {
-title
-path
-content
-description
-timeToRead
-summary
-date(format: "D MMMM Y")
-author {
-id
-title
-path
-}
-tags {
-id
-title
-path
-}
-categories {
-id
-title
-path
-}
-}
+    post(path: $path) {
+        title
+        path
+        content
+        description
+        timeToRead
+        summary
+        date(format: "D MMMM Y")
+        author {
+            id
+            title
+            path
+        }
+        tags {
+            id
+            title
+            path
+        }
+        categories {
+            id
+            title
+            path
+        }
+    }
 }
 </page-query>
 <static-query>
 query {
-metadata {
-siteUrl
-}
+    metadata {
+        siteUrl
+    }
 }
 </static-query>

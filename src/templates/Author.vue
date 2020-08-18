@@ -52,10 +52,10 @@ export default {
         Pagination,
     },
     methods: {
-        formatPublishDate (date) {
+        formatPublishDate(date) {
             return moment(date).format('DD MMMM, YYYY')
         },
-        titleCase (str) {
+        titleCase(str) {
             return str
                 .replace('-', ' ')
                 .split(' ')
@@ -67,35 +67,35 @@ export default {
 </script>
 <page-query>
 query Author($path: String!, $page: Int) {
-author(path: $path) {
-id
-title
-path
-belongsTo(page: $page, perPage: 6) @paginate {
-totalCount
-pageInfo {
-totalPages
-currentPage
-}
-edges {
-node {
-... on Post {
-id
-title
-datetime: date(format: "YYYY-MM-DD HH:mm:ss")
-path
-content
-description
-timeToRead
-tags {
-id
-title
-path
-}
-}
-}
-}
-}
-}
+    author(path: $path) {
+        id
+        title
+        path
+        belongsTo(page: $page, perPage: 6) @paginate {
+            totalCount
+            pageInfo {
+                totalPages
+                currentPage
+            }
+            edges {
+                node {
+                    ... on Post {
+                        id
+                        title
+                        datetime: date(format: "YYYY-MM-DD HH:mm:ss")
+                        path
+                        content
+                        description
+                        timeToRead
+                        tags {
+                            id
+                            title
+                            path
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 </page-query>

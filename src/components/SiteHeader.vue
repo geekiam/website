@@ -24,13 +24,13 @@
 <script>
 export default {
     name: 'SiteHeader',
-    data () {
+    data() {
         return {
             expand: false,
         }
     },
     methods: {
-        toggle () {
+        toggle() {
             this.expand = !this.expand
         },
     },
@@ -41,9 +41,9 @@ export default {
 
 <static-query>
 query {
-metadata {
-siteName
-siteUrl
-}
+    metadata {
+        siteName
+        siteUrl
+    }
 }
 </static-query>

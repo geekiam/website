@@ -12,7 +12,7 @@
                     :to="`${post.author.path}/`"
                     class="border-b border-transparent hover:border-green-400 transition-border-color"
                     v-if="post.author"
-                >{{ titleCase(post.author.title) }}</g-link
+                    >{{ titleCase(post.author.title) }}</g-link
                 >
             </span>
             <span>{{ post.timeToRead }} min read</span>
@@ -35,7 +35,7 @@ export default {
     name: 'PostTitle',
     props: ['post'],
     methods: {
-        titleCase (str) {
+        titleCase(str) {
             return str
                 .replace('-', ' ')
                 .split(' ')
