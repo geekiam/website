@@ -7,7 +7,7 @@
         "explore": "gridsome explore",
         "lint": "vue-cli-service lint",
         "precommit": "npm run lint",
-        "prepush": "npm run lint"git
+        "prepush": "npm run lint"
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",
