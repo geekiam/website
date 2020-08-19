@@ -41,19 +41,19 @@ export default {
     name: 'Author',
     props: ['author'],
     computed: {
-        avatar () {
+        avatar() {
             return `/authors/images/${this.author.id}.png`
         },
     },
     methods: {
-        titleCase (str) {
+        titleCase(str) {
             return str
                 .replace('-', ' ')
                 .split(' ')
                 .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
                 .join(' ')
         },
-        imageLoadError (e) {
+        imageLoadError(e) {
             e.target.src = `/authors/images/default.png`
         },
     },

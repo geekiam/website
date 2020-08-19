@@ -25,7 +25,7 @@ export default {
     name: 'Categories',
     props: ['categories'],
     methods: {
-        titleCase (str) {
+        titleCase(str) {
             return str
                 .replace('-', ' ')
                 .split(' ')

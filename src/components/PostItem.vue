@@ -24,7 +24,7 @@
                         class="mt-2 text-xl leading-7 font-semibold text-gray-900"
                     >
                         <g-link :to="post.path" class="text-green-700 font-bold"
-                        >{{ post.title }}
+                            >{{ post.title }}
                         </g-link>
                     </h3>
                     <p
@@ -56,17 +56,17 @@
 export default {
     props: ['post'],
     methods: {
-        titleCase (str) {
+        titleCase(str) {
             return str
                 .replace('-', ' ')
                 .split(' ')
                 .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
                 .join(' ')
         },
-        imageLoadError (e) {
+        imageLoadError(e) {
             e.target.src = `/authors/images/default.png`
         },
-        avatar (id) {
+        avatar(id) {
             return `/authors/images/${id}.png`
         },
     },
