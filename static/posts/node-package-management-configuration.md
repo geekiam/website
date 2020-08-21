@@ -24,4 +24,4 @@ A package is basically a folder that contains scripts that can be run and used b
 
 ### What is a Package Manager
 
-A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer's operating system or software project in a consistent manner
+A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs or modules for operating systems or software projects in a consistent manner
