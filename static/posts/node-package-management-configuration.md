@@ -40,6 +40,8 @@ When used as a dependency manager for a local project, npm can install, in one c
 
 npm also provides version-bumping tools for developers to tag their packages with a particular version and also provides the `package-lock.json` file which has the entry of the exact version used by the project after evaluating semantic versioning in `package.json`.
 
+in March 2020 npm inc, the company behind npm was acquired by Github.
+
 ### What is yarn
 
 Yarn is a package manager for your code. It allows you to use and share code with other developers quickly, securely, and reliably. Yarn allows you to use other developers' solutions to different problems, making it easier for you to develop your software.
@@ -48,3 +50,15 @@ Yarn was developed by a collaborative effort including Facebook, Google, Exponen
 
 * Installing packages wasn't fast and consistent enough
 * Security concerns, due in part npm allowed packages to run code on installation.
+
+### What is the package.json
+
+The `package.json` file is a manifest of files and configuration for your project. It can do a lot of things and in some instances these could appear completely unrelated. 
+
+It's a central repository of configuration for tools, for example. It's also where `npm` and `yarn` store the names and versions for all the installed packages.
+
+When it comes to package management the two important areas of the `package.json` file are:
+
+* `dependencies` sets a list of packages installed as dependencies
+* `devDependencies` sets a list of npm packages installed as development dependencies
+* `engines` sets which versions of Node.js, npm or yarn this package/app works on.
