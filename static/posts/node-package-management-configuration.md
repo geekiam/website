@@ -61,4 +61,4 @@ When it comes to package management the two important areas of the `package.json
 
 * `dependencies` sets a list of packages installed as dependencies
 * `devDependencies` sets a list of npm packages installed as development dependencies
-* `engines` sets which versions of Node.js, npm or yarn this package/app works on.
+* `engines` sets which versions of Node.js, npm or yarn this package works on.
