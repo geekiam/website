@@ -15,7 +15,7 @@ tags:
   - yarn
   - npm
 categories:
-  - software_development
+  - software-development
 ---
 When developing software applications, it is considered good practice, to separate functionality into separate, interchangeable, isolated modules containing everything necessary to execute only the desired functionality.
 
