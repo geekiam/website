@@ -13,6 +13,7 @@ tags:
   - nodejs
   - node
   - yarn
+  - npm
 categories:
   - software_development
 ---
@@ -22,6 +23,8 @@ When developing software applications, it is considered good practice, to separa
 > 
 >[A Philosophy of Software Design - John Ousterhout ](https://amzn.to/31nRGkH)
  
+Modules are referred to by terminology across varying programming languages such as in .net, C++ they are called assemblies, or in languages such as Go, Dart, Java and JavaScript they are referred to as packages.
+
 
 ### What is a package
 
@@ -58,9 +61,18 @@ Yarn was developed by a collaborative effort including Facebook, Google, Exponen
 * Installing packages wasn't fast and consistent enough
 * Security concerns, due in part npm allowed packages to run code on installation.
 
+### How to install a node package manager
+
+When installing node, npm is usually installed by default. 
+
+The following links offer great instructions on how to install Node using Node Version Manager
+
+* [Install Node.js via Node Version Manager on Ubuntu](https://garywoodfine.com/install-node-js-via-node-version-manager-on-ubuntu/)
+* [Install nodejs with nvm on OSX](https://garywoodfine.com/install-nodejs-nvm-osx/) 
+
 ### What is the package.json
 
-The `package.json` file is a manifest of files and configuration for your project. It can do a lot of things and in some instances these could appear completely unrelated. 
+A `package.json` is a JSON format file which exists in the root of a Node/JavaScript project. The `package.json` file is a manifest of files and configuration for your project. It can do a lot of things and in some instances these could appear completely unrelated.  Essentially all the metadata that is relevant to a project.
 
 It's a central repository of configuration for tools, for example. It's also where `npm` and `yarn` store the names and versions for all the installed packages.
 
@@ -69,3 +81,6 @@ When it comes to package management the two important areas of the `package.json
 * `dependencies` sets a list of packages installed as dependencies
 * `devDependencies` sets a list of npm packages installed as development dependencies
 * `engines` sets which versions of Node.js, npm or yarn this package works on.
+
+### How to create a package.json file
+
