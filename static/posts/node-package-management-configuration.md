@@ -23,6 +23,8 @@ When developing software applications, it is considered good practice, to separa
 > 
 >[A Philosophy of Software Design - John Ousterhout ](https://amzn.to/31nRGkH)
  
+Modules are referred to by terminology across varying programming languages such as in .net, C++ they are called assemblies, or in languages such as Go, Dart, Java and JavaScript they are referred to as packages.
+
 
 ### What is a package
 
