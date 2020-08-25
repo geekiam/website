@@ -148,7 +148,6 @@ Both will result in prompting you to answer various questions about the project 
 ```sh
 
 # Npm with the -y switch
-
 npm init -y
 
 # yarn with the -y switch
@@ -175,4 +174,6 @@ Irrespective of which package manager you choose to create your `package.json` t
 }
 
 ```
-It is well taking sometime to read the [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)  detailing What should you know about it, and what are some of the cool things you can do with it.
+It is well taking sometime to read the [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)  detailing What should you know about it, and what are some of the cool things you can do with it. 
+
+
