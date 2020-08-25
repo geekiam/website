@@ -143,16 +143,14 @@ Both will result in prompting you to answer various questions about the project 
 
 ![yarn init questionaire](/uploads/geekiam-yarn.png "yarn init questionaire")
 
-** Note: If you don't want to be prompted to answer questions and prefer to add the detail later you can use the `-y` switch
+\*\* Note: If you don't want to be prompted to answer questions and prefer to add the detail later you can use the `-y` switch
 
 ```sh
-
 # Npm with the -y switch
 npm init -y
 
 # yarn with the -y switch
 yarn init -y
-
 ```
 
 Irrespective of which package manager you choose to create your `package.json` the end result will for the most part be the same. Both will result in generating a JSON format file that you will use to store your project dependencies and metadata.
@@ -172,14 +170,13 @@ Irrespective of which package manager you choose to create your `package.json` t
   "author": "geekiam.io",
   "license": "MIT"
 }
-
 ```
+
 It is well taking sometime to read the [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)  detailing What should you know about it, and what are some of the cool things you can do with it. 
 
 Depending on your project, the amount and type of metadata you'll want to add or edit will vary. 
 
 In the remainder of this post, I will be explicitly discussing some of the important items and additional configurations and properties that are important from a developer/DevOps perspective.
-
 
 #### engines
 
@@ -198,14 +195,32 @@ You may use this property to specify the minimum or maximum version numbers node
 You can also use this option with an additional file name `.npmrc` to restrict developers to use a specific package manager. The `.npmrc` enables us to specify package manager configurations and it is used by both npm and yarn.
 
 In order to use the file, you will first need to create it in the root of your project folder. 
+
 ```sh
 touch .npmrc
 ```
+
 This will create what is known as the [npm-config](https://docs.npmjs.com/misc/config), it is also worth reading more about [the npm config files](https://docs.npmjs.com/files/npmrc).
- 
+
 Once you done so you can open the file and add an additional property `engine-strict` and set it to `true`.  npm will stubbornly refuse to install (or even consider installing) any package that claims to not be compatible with the current Node.js version.
 
 ```sh
    # .npmrc 
 engine-strict = true
+```
+
+If you are using Node Version Manager (nvm) to help you to easily switch between node version on your computer, you can also use another helpful utility to manage and control which version of node you application uses.   This is super easy to create this file, and can simply be done by running the following command:
+
+```sh
+node -v > .nvmrc
+```
+
+This will create an additional file in the root of your project folder which will contain the version of number of node being used.
+
+![nvmrc file created](/uploads/nvmrc.png "nvmrc file created")
+
+The content of the file will typically contain whichever version number is being used.
+
+```sh
+v12.14.1
 ```
