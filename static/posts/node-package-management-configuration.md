@@ -157,7 +157,7 @@ yarn init -y
 
 Irrespective of which package manager you choose to create your `package.json` the end result will for the most part be the same. Both will result in generating a JSON format file that you will use to store your project dependencies and metadata.
 
-``` JSON
+```json
 {
   "name": "geekiam",
   "version": "1.0.0",
@@ -187,7 +187,7 @@ The engines property is a JSON object of key/value pairs that are used to denote
 
 You may use this property to specify the minimum or maximum version numbers node, npm or yarn required to run and to use to develop your application.
 
-```
+```json
  "engines": {
         "node": "12.14.1",
         "npm": ">= 6.14.5",
