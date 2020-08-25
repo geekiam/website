@@ -178,7 +178,9 @@ Depending on your project, the amount and type of metadata you'll want to add or
 
 In the remainder of this post, I will be explicitly discussing some of the important items and additional configurations and properties that are important from a developer/DevOps perspective.
 
-#### engines
+#### How to control version of node and package manager of your project
+
+There may be a instances when you're developing a project, that you want to restrict developers who are collaborating with you on your project to only use a specific version of Node or package manager or you may want to ensure developers only use a specific package manager.
 
 The engines property is a JSON object of key-value pairs that are used to specify the version of the libraries and run-times for the application to run optimally or depend upon.
 
@@ -244,3 +246,5 @@ If you want to restrict the use of package manager to whichever is your preferen
 Now when developers to use `yarn install` on your project they will receive an error message.
 
 ![yarn install error](/uploads/yarn-install.png "yarn install error")
+
+This will help to reduce the chance of errors caused by developers using different package managers and good practice to standardise the project’s coding rules and management.
