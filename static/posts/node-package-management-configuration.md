@@ -244,3 +244,5 @@ If you want to restrict the use of package manager to whichever is your preferen
 Now when developers to use `yarn install` on your project they will receive an error message.
 
 ![yarn install error](/uploads/yarn-install.png "yarn install error")
+
+This will help to reduce the chance of errors caused by developers using different package managers and good practice to standardise the project’s coding rules and management.
