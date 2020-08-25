@@ -50,7 +50,7 @@ When used as a dependency manager for a local project, npm can install, in one c
 
 npm also provides version-bumping tools for developers to tag their packages with a particular version and also provides the `package-lock.json` file which has the entry of the exact version used by the project after evaluating semantic versioning in `package.json`.
 
-in March 2020 npm inc, the company behind npm was acquired by Github.
+in March 2020 npm inc, the company behind npm was acquired by Github. GitHub plans to invest in npm’s infrastructure, with the hopes of bringing some much-needed modernisation to the platform
 
 ### What is yarn
 
@@ -155,3 +155,24 @@ npm init -y
 yarn init -y
 
 ```
+
+Irrespective of which package manager you choose to create your `package.json` the end result will for the most part be the same. Both will result in generating a JSON format file that you will use to store your project dependencies and metadata.
+
+``` JSON
+{
+  "name": "geekiam",
+  "version": "1.0.0",
+  "description": "package manager tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "geekiam.io",
+  "license": "MIT"
+}
+
+```
+It is well taking sometime to read the [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)  detailing What should you know about it, and what are some of the cool things you can do with it.
