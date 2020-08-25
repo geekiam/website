@@ -142,3 +142,16 @@ Both will result in prompting you to answer various questions about the project 
 ##### yarn init
 
 ![yarn init questionaire](/uploads/geekiam-yarn.png "yarn init questionaire")
+
+** Note: If you don't want to be prompted to answer questions and prefer to add the detail later you can use the `-y` switch
+
+```sh
+
+# Npm with the -y switch
+
+npm init -y
+
+# yarn with the -y switch
+yarn init -y
+
+```
