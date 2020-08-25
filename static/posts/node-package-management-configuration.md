@@ -1,5 +1,5 @@
 ---
-title: Node package management configuration
+title: How to use package management in JavaScript projects
 description: How to add project specific node package management configuration options
 summary: How to add project specific node package management configuration options
 Keywords: node
