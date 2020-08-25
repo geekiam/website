@@ -183,7 +183,7 @@ In the remainder of this post, I will be explicitly discussing some of the impor
 
 #### engines
 
-The engines property is a JSON object of key/value pairs that are used to denote/specify the version of the libraries and run-times on which the application should run.
+The engines property is a JSON object of key-value pairs that are used to specify the version of the libraries and run-times for the application to run optimally or depend upon.
 
 You may use this property to specify the minimum or maximum version numbers node, npm or yarn required to run and to use to develop your application.
 
@@ -193,4 +193,19 @@ You may use this property to specify the minimum or maximum version numbers node
         "npm": ">= 6.14.5",
         "yarn": ">= 1.22.4"
     }
+```
+
+You can also use this option with an additional file name `.npmrc` to restrict developers to use a specific package manager. The `.npmrc` enables us to specify package manager configurations and it is used by both npm and yarn.
+
+In order to use the file, you will first need to create it in the root of your project folder. 
+```sh
+touch .npmrc
+```
+This will create what is known as the [npm-config](https://docs.npmjs.com/misc/config), it is also worth reading more about [the npm config files](https://docs.npmjs.com/files/npmrc).
+ 
+Once you done so you can open the file and add an additional property `engine-strict` and set it to `true`.  npm will stubbornly refuse to install (or even consider installing) any package that claims to not be compatible with the current Node.js version.
+
+```sh
+   # .npmrc 
+engine-strict = true
 ```
