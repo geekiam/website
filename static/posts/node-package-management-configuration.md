@@ -224,3 +224,9 @@ The content of the file will typically contain whichever version number is being
 ```sh
 v12.14.1
 ```
+
+This will enable developers who clone your repository from source control to easily set their environment to start working on your project by simply using
+
+```sh 
+nvm use
+```
