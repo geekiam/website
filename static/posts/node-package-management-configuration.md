@@ -248,3 +248,56 @@ Now when developers to use `yarn install` on your project they will receive an e
 ![yarn install error](/uploads/yarn-install.png "yarn install error")
 
 This will help to reduce the chance of errors caused by developers using different package managers and good practice to standardise the project’s coding rules and management.
+
+### Managing Dependencies
+
+To specify the packages your project depends on, you must list them as `dependencies` or `devDependencies` in your package’s `package.json` file. 
+
+This will enable other developers to run `npm install` or `yarn install` to download all the dependencies that are listed in the `package.json` that meet the semantic version requirements.
+
+* `dependencies` - packages required for the production release of the application
+* `devDependencies` - packages only required for development and testing
+
+To add a package to your `dependencies` is simple as using the following commands
+
+```sh
+
+## Add a package dependency with npm
+
+npm install vue
+
+# or 
+npm i vue
+
+### Add a package using yarn
+
+yarn add vue
+
+```
+
+In both instance a new dependency will be added to your project. However, if you look into the root of your project directory you will also notice a new file will have been created depending on your package manager used
+
+* npm == package-lock.json
+* yarn == yarn.lock
+
+### what is the package-lock.json
+
+Describes the exact versions of the dependencies used in an npm JavaScript project. If package.json is a generic descriptive label, package-lock.json is an ingredient table.
+
+And just like how we don't usually read the ingredient table of a product (unless you are too bored or need to know), package-lock.json is not meant to be read line-by-line by developers, but usually only read by the NPM CLI tool to ensure reproduction of build environments for the project with `npm ci`.
+
+#### What npm ci ?
+
+npm ci is a command used by developers to consume the `package-lock.json` to download the exact version of each individual package the project depends on.
+
+This helps to ensure that the projects context is perfectly replicated across environments.
+
+### What is yarn.lock
+
+It is the yarn equivalent of the package-lock.json file and is also auto-generated.  
+
+The way to make use of this is to use the following command
+
+```sh
+yarn install --frozen-lockfile
+```
