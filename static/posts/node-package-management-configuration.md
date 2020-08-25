@@ -227,9 +227,20 @@ v12.14.1
 
 This will enable developers who clone your repository from source control to easily set their environment to start working on your project by simply using
 
-```sh 
+```sh
 nvm use
-
 ```
 
-If you want to restrict the use of package manager to whichever is your preference, you can also simply update the `engines` 
+If you want to restrict the use of package manager to whichever is your preference, you can also simply update the `engines` your `package.json` to 
+
+```sh
+"engines": {
+    "node": "12.14.1",
+    "npm": ">= 6.14.5",
+    "yarn": "NPM is the preferred package manager for this project"
+  },
+```
+
+Now when developers to use `yarn install` on your project they will receive an error message.
+
+![yarn install error](/uploads/yarn-install.png "yarn install error")
