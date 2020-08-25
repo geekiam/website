@@ -47,12 +47,18 @@
     "keywords": [
         "geek",
         "tech",
-        "reviews"
+        "software development",
+        "javascript"
     ],
-    "author": "Gary Woodfine",
+    "author": "threenine.co.uk <hello@threenine.co.uk> (https://threenine.co.uk)",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/garywoodfine/geekiam/issues"
     },
-    "homepage": "https://github.com/garywoodfine/geekiam#readme"
+    "homepage": "https://geekiam.io",
+    "engines": {
+        "node": "12.14.1",
+        "npm": ">= 6.14.5",
+        "yarn": ">= 1.22.4"
+    }
 }
