@@ -19,12 +19,11 @@ categories:
 ---
 When developing software applications, it is considered good practice, to separate functionality into separate, interchangeable, isolated modules containing everything necessary to execute only the desired functionality.
 
->In modular design, a software system, is decomposed into a collection is decomposed into a collection of modules that are relatively independent. Modules can take many forms, such as classes, sub-systems or services.
-> 
->[A Philosophy of Software Design - John Ousterhout ](https://amzn.to/31nRGkH)
- 
-Modules are referred to by terminology across varying programming languages such as in .net, C++ they are called assemblies, or in languages such as Go, Dart, Java and JavaScript they are referred to as packages.
+> In modular design, a software system, is decomposed into a collection is decomposed into a collection of modules that are relatively independent. Modules can take many forms, such as classes, sub-systems or services.
+>
+> [A Philosophy of Software Design - John Ousterhout ](https://amzn.to/31nRGkH)
 
+Modules are referred to by terminology across varying programming languages such as in .net, C++ they are called assemblies, or in languages such as Go, Dart, Java and JavaScript they are referred to as packages.
 
 ### What is a package
 
@@ -37,6 +36,7 @@ Package managers enable Node and JavaScript developers to easily share and re-us
 A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs or modules for operating systems or software projects in a consistent manner
 
 Two of the most popular package management systems for JavaScript projects are 
+
 * NPM (Node Package Manager)
 * yarn 
 
@@ -81,7 +81,6 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 
 sudo apt update && sudo apt install --no-install-recommends yarn
-
 ```
 
 #### How to install yarn on Mac OSX
@@ -90,7 +89,6 @@ If you have Homebrew installed on your Mac OSX you can use it to easily install 
 
 ```sh
 brew install yarn
-
 ```
 
 ### npm vs yarn ?
@@ -104,7 +102,7 @@ One has to also remember that like most things in software development, things a
 Communities constantly evolve, change and adapt. Package  Managers make no exception and there are differing and conflicting opinions as to what makes a good or bad package management system.
 
 A couple of years ago, Yarn had a few completely outstanding features that in some instances made it a good choice.  However, npm has also continued to evolve and what used to be considered its weaker points have been addressed and some issues have been resolved.
- 
+
 I personally, don't really have any strong opinions which makes either a superior choice and I often found myself using either at any given time. Some projects I will use npm and others I will use yarn.  I have been known to use both in the same project, but will admit this possibly should be avoided as it can cause confusion.
 
 At the end of the day, one should choose whichever Package Manager one feels most comfortable with, or failing that whichever Package Manager has been previously mandated by the project.  I don't tend to lose too much sleep over my choice of package management system, I know others may actually stay up till the small hours of the morning debating the finer points of their choice on various social media platforms. 
@@ -126,11 +124,34 @@ When it comes to package management the two important areas of the `package.json
 ### How to create a package.json file
 
 It is relatively easy task creating a `package.json` file using either yarn or npm, using either of the terminal commands.
-``` sh
+
+```sh
 ### Create a package.json using npm
 npm init
 
 ### Create a package.json using yarn
 yarn init
+```
+
+Both will result in prompting you to answer various questions about the project you're about to start, by enabling you to provide some basic metadata.
+
+##### npm init
+
+![npm init questionaire](/uploads/geekiam-npm.png "npm init questionaire")
+
+##### yarn init
+
+![yarn init questionaire](/uploads/geekiam-yarn.png "yarn init questionaire")
+
+** Note: If you don't want to be prompted to answer questions and prefer to add the detail later you can use the `-y` switch
+
+```sh
+
+# Npm with the -y switch
+
+npm init -y
+
+# yarn with the -y switch
+yarn init -y
 
 ```
