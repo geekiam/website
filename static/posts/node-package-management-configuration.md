@@ -125,4 +125,12 @@ When it comes to package management the two important areas of the `package.json
 
 ### How to create a package.json file
 
-It is relatively 
+It is relatively easy task creating a `package.json` file using either yarn or npm, using either of the terminal commands.
+``` sh
+### Create a package.json using npm
+npm init
+
+### Create a package.json using yarn
+yarn init
+
+```
