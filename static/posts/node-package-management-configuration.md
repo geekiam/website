@@ -176,4 +176,15 @@ Irrespective of which package manager you choose to create your `package.json` t
 ```
 It is well taking sometime to read the [The package.json guide](https://nodejs.dev/learn/the-package-json-guide)  detailing What should you know about it, and what are some of the cool things you can do with it. 
 
+Depending on your project, the amount and type of metadata you'll want to add or edit will vary. 
 
+In the remainder of this post, I will be explicitly discussing some of the important items and additional configurations and properties that are important from a developer/DevOps perspective.
+
+
+#### engines
+
+The engines property is a JSON object of key/value pairs that are used to denote/specify the version of the libraries and run-times on which the application should run.
+
+You may use this property to specify the minimum or maximum version numbers node, npm or yarn required to run and to use to develop your application.
+
+```
