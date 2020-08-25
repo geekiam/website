@@ -188,3 +188,9 @@ The engines property is a JSON object of key/value pairs that are used to denote
 You may use this property to specify the minimum or maximum version numbers node, npm or yarn required to run and to use to develop your application.
 
 ```
+ "engines": {
+        "node": "12.14.1",
+        "npm": ">= 6.14.5",
+        "yarn": ">= 1.22.4"
+    }
+```
