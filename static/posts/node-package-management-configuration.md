@@ -229,4 +229,7 @@ This will enable developers who clone your repository from source control to eas
 
 ```sh 
 nvm use
+
 ```
+
+If you want to restrict the use of package manager to whichever is your preference, you can also simply update the `engines` 
