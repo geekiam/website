@@ -4,15 +4,15 @@
         <main>
             <div class="container mx-auto flex flex-wrap py-6">
                 <aside
-                    class="w-full md:w-1/8 flex flex-col items-center px-3"
+                    class="w-full md:w-1/12 flex flex-col items-center px-3"
                 ></aside>
                 <section
-                    class="w-full md:w-3/4 flex flex-col items-center px-3"
+                    class="w-full md:w-6/12 flex flex-col items-center px-3"
                 >
                     <slot name="post-content" />
                 </section>
                 <aside
-                    class="w-full md:w-1/4 flex flex-col items-center px-3"
+                    class="w-full md:w-5/12 flex flex-col items-center px-3"
                 ></aside>
             </div>
         </main>
