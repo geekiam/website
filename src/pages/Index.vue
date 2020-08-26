@@ -56,6 +56,11 @@ query($page: Int) {
                     title
                     path
                 }
+                tags {
+                    id
+                    title
+                    path
+                }
                 author {
                     id
                     title

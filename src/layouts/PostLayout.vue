@@ -2,12 +2,18 @@
     <div>
         <site-header></site-header>
         <main>
-            <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                <div class="px-4 py-4 sm:px-0">
-                    <div>
-                        <slot name="mainbody" />
-                    </div>
-                </div>
+            <div class="container mx-auto flex flex-wrap py-6">
+                <aside
+                    class="w-full md:w-1/8 flex flex-col items-center px-3"
+                ></aside>
+                <section
+                    class="w-full md:w-3/4 flex flex-col items-center px-3"
+                >
+                    <slot name="post-content" />
+                </section>
+                <aside
+                    class="w-full md:w-1/4 flex flex-col items-center px-3"
+                ></aside>
             </div>
         </main>
         <site-footer></site-footer>
@@ -16,7 +22,7 @@
 
 <script>
 export default {
-    name: 'BlogPage',
+    name: 'PostLayout',
 }
 </script>
 

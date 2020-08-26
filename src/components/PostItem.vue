@@ -1,11 +1,13 @@
 <template>
     <article class="flex flex-col shadow my-4">
-        <g-image
-            :alt="post.feature.alt"
-            :src="post.feature.image"
-            class="h-48 w-full object-cover"
-            v-if="post.feature"
-        />
+        <g-link :to="post.path" class="hover:opacity-75">
+            <g-image
+                :alt="post.feature.alt"
+                :src="post.feature.image"
+                class="h-48 w-full object-cover"
+                v-if="post.feature"
+            />
+        </g-link>
         <div class="bg-white flex flex-col justify-start p-6">
             <p class="text-sm leading-5 font-medium text-green-600">
                 <g-link
@@ -41,6 +43,16 @@
                     v-html="post.summary"
                 ></div>
             </g-link>
+            <div class="mt-4 mb-4 px-2">
+                <g-link
+                    :key="tag.id"
+                    :to="`${tag.path}/`"
+                    class="mr-2"
+                    v-for="tag in post.tags"
+                >
+                    {{ `#${tag.title.toLowerCase()}` }}
+                </g-link>
+            </div>
         </div>
     </article>
 </template>

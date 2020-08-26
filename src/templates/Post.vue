@@ -1,6 +1,6 @@
 <template>
     <post-layout>
-        <template #mainbody>
+        <template #post-content>
             <article
                 :class="{
                     'border-b border-grey-lighter pb-10 mb-16': !$page.post
