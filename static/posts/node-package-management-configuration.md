@@ -320,3 +320,17 @@ npm i <package-name> --save-dev
 yarn add <package-name> --dev
 
 ```
+
+When running `npm install` in the root of your project directory, it will by default install all the packages listed in both `dependencies` and `devdependencies` in your `package.json`
+
+When deploying to production environments you typically want to run the `npm install` with the `--production` switch as this will only install the packages listed in the `dependencies` 
+
+```sh
+
+# Install to production using npm
+npm install --production
+
+##install to production using yarn
+yarn install --production
+
+```
