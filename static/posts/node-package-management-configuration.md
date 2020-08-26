@@ -103,7 +103,7 @@ Communities constantly evolve, change and adapt. Package  Managers make no excep
 
 A couple of years ago, Yarn had a few completely outstanding features that in some instances made it a good choice.  However, npm has also continued to evolve and what used to be considered its weaker points have been addressed and some issues have been resolved.
 
-I personally, don't really have any strong opinions which makes either a superior choice and I often found myself using either at any given time. Some projects I will use npm and others I will use yarn.  I have been known to use both in the same project, but will admit this possibly should be avoided as it can cause confusion.
+I personally, don't really have any strong opinions which makes either a superior choice and I often found myself using either at any given time. Some projects I will use npm and others I will use yarn.  I have been known to use both in the same project, but will admit this should be avoided as it can cause confusion.
 
 At the end of the day, one should choose whichever Package Manager one feels most comfortable with, or failing that whichever Package Manager has been previously mandated by the project.  I don't tend to lose too much sleep over my choice of package management system, I know others may actually stay up till the small hours of the morning debating the finer points of their choice on various social media platforms. 
 
