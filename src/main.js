@@ -2,6 +2,10 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import '~/assets/css/main.css'
 import DefaultLayout from '~/layouts/Default.vue'
+import HomePage from '@/layouts/HomePage'
+import SiteHeader from '@/components/SiteHeader'
+import SiteFooter from '@/components/SiteFooter'
+
 import config from '../gridsome.config'
 
 export default function (Vue, { head }) {
@@ -39,4 +43,7 @@ export default function (Vue, { head }) {
     )
 
     Vue.component('Layout', DefaultLayout)
+    Vue.component('HomePage', HomePage)
+    Vue.component('SiteHeader', SiteHeader)
+    Vue.component('SiteFooter', SiteFooter)
 }
