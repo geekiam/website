@@ -264,14 +264,14 @@ To add a package to your `dependencies` is simple as using the following command
 
 ## Add a package dependency with npm
 
-npm install vue
+npm install <package-name>
 
 # or 
-npm i vue
+npm i <package-name>
 
 ### Add a package using yarn
 
-yarn add vue
+yarn add <package-name>
 
 ```
 
@@ -300,4 +300,23 @@ The way to make use of this is to use the following command
 
 ```sh
 yarn install --frozen-lockfile
+```
+### Adding Development Dependencies
+
+Development dependencies are packages that are not required for your application in production, but have either a development or quality assurance specific purpose.
+
+These may include tools like Linters, Unit Testing Frameworks, Code Formatting etc. 
+
+To add a development specific dependency simply use the `--save-dev` switch o
+```sh
+## Adding Development dependency with npm 
+npm install <package-name> --save-dev
+
+#or using the short hand
+npm i <package-name> --save-dev
+
+## Add development dependency using yarn
+
+yarn add <package-name> --dev
+
 ```
