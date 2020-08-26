@@ -3,9 +3,7 @@ title: How to create a new Github repository using the terminal
 description: "How to create a Github repository from a local terminal Update :
   Create a new repository and upload the data from one application to github all
   using  the terminal"
-summary: "How to create a Github repository from a local terminal Update :
-  Create a new repository and upload the data from one application to github all
-  using  the terminal"
+summary: "Create a new Github repository and commit and push your code using the terminal window"
 Keywords: Keywords are cool!
 feature:
   image: /uploads/version-control.png
@@ -19,7 +17,7 @@ categories:
   - version-control
   - collaboration
 ---
-In [Learn The Basics Of Version Control To Become A Master](https://geekiam.co.uk/learn-the-basics-of-version-control-to-become-a-master/) we discussed the basic principles, use cases and terms regarding version control. You have more than likely now realized that all software projects will require some form of version control.  Even if you are the only developer that will be working on the project, it makes absolute sense to create a version control repository.
+In [Learn The Basics Of Version Control To Become A Master](https://geekiam.io/learn-the-basics-of-version-control-to-become-a-master/) we discussed the basic principles, use cases and terms regarding version control. You have more than likely now realized that all software projects will require some form of version control.  Even if you are the only developer that will be working on the project, it makes absolute sense to create a version control repository.
 
 Version control systems not only help you in keeping track of changes and overcoming errors whilst coding, but they also help you to keep your code safe and helping ensure you never lose or delete your code.  
 
@@ -68,7 +66,7 @@ This is quite a lot to remember, and if you're anything like me you're going to 
 | Debian       | [apt(8)](https://manpages.debian.org/buster/apt/apt.8.en.html) | `sudo apt install hub`            |
 | Ubuntu       | [Snap](https://snapcraft.io)                                   | `sudo snap install hub --classic` |
 
-After you have installed hub, I always prefer to ensure that I have I have my ssh keys installed and that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that I configure hub to authenticate and execute commands using ssh.
+After you have finished installing `hub`, I always prefer to ensure that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that I configure hub to authenticate and execute commands using ssh.
 
 ```shell
 git config --global hub.protocol ssh
