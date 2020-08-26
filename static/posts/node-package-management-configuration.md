@@ -331,8 +331,12 @@ When deploying to production environments you typically want to run the `npm ins
 
 # Install to production using npm
 npm install --production
+# or using short hand
+npm i -P
 
 ##install to production using yarn
 yarn install --production
+#short hand
+yarn install -P
 
 ```
