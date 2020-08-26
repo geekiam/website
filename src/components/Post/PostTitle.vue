@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-4 text-green-700">
+    <div class="mt-4 mb-4 text-green-700">
         <div
             class="text-bold text-5xl sm:text-4xl leading-tight mb-1 sm:mb-2n font-sans"
         >
