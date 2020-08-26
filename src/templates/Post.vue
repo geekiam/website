@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <post-layout>
         <template #mainbody>
             <article
                 :class="{
@@ -26,7 +26,7 @@
                 </footer>
             </article>
         </template>
-    </Layout>
+    </post-layout>
 </template>
 
 <script>

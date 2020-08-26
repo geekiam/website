@@ -13,3 +13,11 @@
         <site-footer></site-footer>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'BlogPage',
+}
+</script>
+
+<style scoped></style>
