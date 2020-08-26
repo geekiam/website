@@ -313,11 +313,13 @@ To add a development specific dependency simply use the `--save-dev` switch o
 npm install <package-name> --save-dev
 
 #or using the short hand
-npm i <package-name> --save-dev
+npm i <package-name> -D
 
 ## Add development dependency using yarn
 
 yarn add <package-name> --dev
+#or 
+yarn add <package-name> -D
 
 ```
 
