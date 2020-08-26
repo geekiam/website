@@ -58,7 +58,7 @@
     "homepage": "https://geekiam.io",
     "engines": {
         "node": "12.14.1",
-        "npm": ">= 6.14.5",
+        "npm": ">= 6.13.4",
         "yarn": "npm is the preferred package manager for this project"
     }
 }
