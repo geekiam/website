@@ -6,6 +6,7 @@ import HomeLayout from '@/layouts/HomeLayout'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 import PostLayout from '@/layouts/PostLayout'
+import PostItem from '@/components/PostItem'
 
 import config from '../gridsome.config'
 
@@ -48,4 +49,5 @@ export default function (Vue, { head }) {
     Vue.component('SiteFooter', SiteFooter)
     Vue.component('HomeLayout', HomeLayout)
     Vue.component('PostLayout', PostLayout)
+    Vue.component('PostItem', PostItem)
 }

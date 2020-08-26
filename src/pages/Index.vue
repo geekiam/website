@@ -16,12 +16,10 @@
 </template>
 
 <script>
-import PostItem from '@/components/PostItem'
 import Pagination from '@/components/Pagination'
 
 export default {
     components: {
-        PostItem,
         Pagination,
     },
     metaInfo: {
