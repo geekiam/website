@@ -1,5 +1,9 @@
 <template>
     <home-layout>
+        <template #left-sidebar>
+            <p>test</p>
+        </template>
+
         <template #post-list>
             <post-item
                 :key="edge.node.id"
