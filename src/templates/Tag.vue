@@ -34,26 +34,15 @@
                     v-for="edge in $page.tag.belongsTo.edges"
                 />
             </section>
-            <pagination
-                :base="`${$page.tag.path}`"
-                :info="$page.tag.belongsTo.pageInfo"
-                v-if="$page.tag.belongsTo.pageInfo.totalPages > 1"
-            />
         </template>
     </Layout>
 </template>
 
 <script>
-import PostItem from '@/components/PostItem'
-import Pagination from '@/components/Pagination'
 import moment from 'moment'
 
 export default {
     name: 'Tag',
-    components: {
-        PostItem,
-        Pagination,
-    },
     methods: {
         formatPublishDate(date) {
             return moment(date).format('DD MMMM, YYYY')

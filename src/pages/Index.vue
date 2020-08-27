@@ -8,22 +8,12 @@
                 :post="edge.node"
                 v-for="edge in $page.posts.edges"
             />
-
-            <pagination
-                :info="$page.posts.pageInfo"
-                v-if="$page.posts.pageInfo.totalPages > 1"
-            />
         </template>
     </home-layout>
 </template>
 
 <script>
-import Pagination from '@/components/Pagination'
-
 export default {
-    components: {
-        Pagination,
-    },
     metaInfo: {
         title: 'Software Developer Community',
     },
