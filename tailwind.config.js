@@ -1,4 +1,7 @@
 module.exports = {
+    future: {
+        removeDeprecatedGapUtilities: true,
+    },
     purge: false,
     theme: {
         screens: {
@@ -79,8 +82,8 @@ module.exports = {
                 '7xl': '5rem',
             },
             spacing: {
-                '80': '20rem',
-                '108': '27rem',
+                80: '20rem',
+                108: '27rem',
             },
         },
     },

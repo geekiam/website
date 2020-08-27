@@ -1,8 +1,6 @@
 <template>
     <home-layout>
-        <template #left-sidebar>
-            <p>test</p>
-        </template>
+        <template #left-sidebar> </template>
 
         <template #post-list>
             <post-item
