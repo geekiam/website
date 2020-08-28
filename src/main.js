@@ -45,11 +45,11 @@ export default function (Vue, { router, head, isClient }) {
         { property: 'og:site_name', content: config.siteName }
     )
 
-    Vue.use(InfiniteLoading)
     Vue.component('Layout', DefaultLayout)
     Vue.component('SiteHeader', SiteHeader)
     Vue.component('SiteFooter', SiteFooter)
     Vue.component('HomeLayout', HomeLayout)
     Vue.component('PostLayout', PostLayout)
     Vue.component('PostCard', PostCard)
+    Vue.use(InfiniteLoading)
 }
