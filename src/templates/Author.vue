@@ -25,7 +25,7 @@
                 </div>
             </header>
             <section>
-                <post-item
+                <post-card
                     :key="edge.node.id"
                     :post="edge.node"
                     v-for="edge in $page.author.belongsTo.edges"
