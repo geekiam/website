@@ -6,11 +6,12 @@ import HomeLayout from '@/layouts/HomeLayout'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 import PostLayout from '@/layouts/PostLayout'
-import PostItem from '@/components/PostItem'
+import PostCard from '@/components/PostCard'
+import InfiniteLoading from 'vue-infinite-loading'
 
 import config from '../gridsome.config'
 
-export default function (Vue, { head }) {
+export default function (Vue, { router, head, isClient }) {
     let copyRightNotice = `\u00a9 threenine.co.uk, ${new Date().getFullYear()}. All rights reserved`
 
     head.meta.push(
@@ -44,10 +45,11 @@ export default function (Vue, { head }) {
         { property: 'og:site_name', content: config.siteName }
     )
 
+    Vue.use(InfiniteLoading)
     Vue.component('Layout', DefaultLayout)
     Vue.component('SiteHeader', SiteHeader)
     Vue.component('SiteFooter', SiteFooter)
     Vue.component('HomeLayout', HomeLayout)
     Vue.component('PostLayout', PostLayout)
-    Vue.component('PostItem', PostItem)
+    Vue.component('PostCard', PostCard)
 }

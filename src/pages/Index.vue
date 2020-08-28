@@ -3,12 +3,22 @@
         <template #left-sidebar> </template>
 
         <template #post-list>
-            <post-item
-                :key="edge.node.id"
-                :post="edge.node"
-                v-for="edge in $page.posts.edges"
+            <post-card
+                :key="node.id"
+                :post="node"
+                v-for="{ node } of loadedPosts"
             />
         </template>
+        <transition-group>
+            <ClientOnly>
+                <infinite-loading @infinite="infiniteHandler" spinner="spiral">
+                    <div slot="no-more">
+                        You've scrolled through all the posts ;)
+                    </div>
+                    <div slot="no-results">Sorry, no posts yet :(</div>
+                </infinite-loading>
+            </ClientOnly>
+        </transition-group>
     </home-layout>
 </template>
 
@@ -17,13 +27,39 @@ export default {
     metaInfo: {
         title: 'Software Developer Community',
     },
+    data() {
+        return {
+            loadedPosts: [],
+            currentPage: 1,
+        }
+    },
+    created() {
+        this.loadedPosts.push(...this.$page.posts.edges)
+    },
+    methods: {
+        async infiniteHandler($state) {
+            if (this.currentPage + 1 > this.$page.posts.pageInfo.totalPages) {
+                $state.complete()
+            } else {
+                const { data } = await this.$fetch(
+                    `/blog/${this.currentPage + 1}`
+                )
+                if (data.posts.edges.length) {
+                    this.currentPage = data.posts.pageInfo.currentPage
+                    this.loadedPosts.push(...data.posts.edges)
+                    $state.loaded()
+                } else {
+                    $state.complete()
+                }
+            }
+        },
+    },
 }
 </script>
 
 <page-query>
 query($page: Int) {
-    posts: allPost(page: $page, perPage: 6) @paginate {
-        totalCount
+    posts: allPost(page: $page, perPage: 3) @paginate {
         pageInfo {
             totalPages
             currentPage
@@ -61,3 +97,6 @@ query($page: Int) {
     }
 }
 </page-query>
+<static-query>
+
+</static-query>

@@ -22,7 +22,8 @@
         "gridsome-plugin-remark-shiki": "^0.3.1",
         "gridsome-plugin-tailwindcss": "^2.2.48",
         "klaro-gridsome": "^1.0.3",
-        "netlify-cms": "^2.10.55"
+        "netlify-cms": "^2.10.55",
+        "vue-infinite-loading": "^2.4.5"
     },
     "description": "Software Developer Community",
     "version": "1.0.0",
