@@ -1,6 +1,6 @@
 <template>
-    <article class="w-full shadow my-4">
-        <g-link :to="post.path" class="hover:opacity-75">
+    <article class="w-full shadow my-4 mb-3">
+        <g-link :to="post.path">
             <g-image
                 :alt="post.feature.alt"
                 :src="post.feature.image"

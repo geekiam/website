@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="app">
         <site-header></site-header>
         <main>
             <div class="container mx-auto flex flex-wrap py-6">

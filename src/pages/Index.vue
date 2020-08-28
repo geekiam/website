@@ -5,10 +5,10 @@
         </transition-group>
         <ClientOnly>
             <infinite-loading @infinite="scroll" spinner="spiral">
-                <div slot="no-more">
+                <div slot="no-more" class="mt-2">
                     You've scrolled through all the posts ;)
                 </div>
-                <div slot="no-results">Sorry, no posts yet :(</div>
+                <div slot="no-results" class="mt-2">Sorry, no posts yet :(</div>
             </infinite-loading>
         </ClientOnly>
     </home-layout>
