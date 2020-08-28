@@ -12,9 +12,6 @@ module.exports = {
     icon: 'src/favicon.png',
     plugins: [
         {
-            use: 'gridsome-plugin-base-components',
-        },
-        {
             use: '@gridsome/plugin-google-analytics',
             options: {
                 id: 'UA-151978506-1',
