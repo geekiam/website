@@ -25,12 +25,13 @@
 <script>
 export default {
     metaInfo: {
-        title: 'Software Developer Community',
+        title: 'Geek Community',
     },
     data() {
         return {
             loadedPosts: [],
             currentPage: 1,
+            metaData: [],
         }
     },
     created() {
@@ -98,5 +99,10 @@ query($page: Int) {
 }
 </page-query>
 <static-query>
-
+query {
+    metadata {
+        siteUrl
+        siteDescription
+    }
+}
 </static-query>
