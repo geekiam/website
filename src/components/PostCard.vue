@@ -8,7 +8,7 @@
                 v-if="post.feature"
             />
 
-            <div class="bg-white flex flex-col justify-start p-6">
+            <div class="bg-white justify-start p-6">
                 <p class="text-sm leading-5 font-medium text-green-600">
                     <g-link
                         :to="post.categories[0].path"
@@ -27,10 +27,10 @@
                             >{{ post.title }}
                         </g-link>
                     </h3>
-                    <div class="mt-2 flex items-center">
+                    <div class="mt-2 items-center">
                         <div class="flex-shrink-0"></div>
                         <div class="ml-3">
-                            <div class="flex text-sm leading-5 text-gray-500">
+                            <div class="text-sm leading-5 text-gray-500">
                                 <time :datetime="post.date">
                                     {{ post.date }}
                                 </time>
