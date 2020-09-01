@@ -2,7 +2,7 @@
     <div>
         <site-header></site-header>
         <main>
-            <div class="container mx-auto flex-wrap py-6">
+            <div class="container">
                 <section>
                     <slot name="post-content" />
                 </section>
