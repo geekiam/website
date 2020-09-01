@@ -4,7 +4,7 @@
         <main>
             <div class="container pb-20 px-3 mx-auto items-center">
                 <section class="container mx-auto pt-6">
-                    <slot />
+                    <slot name="main-content" />
                 </section>
             </div>
         </main>
