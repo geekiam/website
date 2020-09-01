@@ -17,10 +17,10 @@ module.exports = {
         'g-image--lazy',
         'g-image--loaded',
     ],
-    extractors: [
+    /*extractors: [
         {
             extractor: (content) => content.match(/[A-z0-9-:\\/]+/g),
             extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug'],
         },
-    ],
+    ],*/
 }
