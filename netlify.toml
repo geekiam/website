@@ -3,4 +3,7 @@
   command = "gridsome build"
 
 [build.environment]
-NODE_VERSION = "12"
+  NODE_VERSION = "12"
+
+[[plugins]]
+  package = "netlify-plugin-gridsome-cache"
