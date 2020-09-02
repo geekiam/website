@@ -3,9 +3,9 @@
         <site-header></site-header>
         <main>
             <div
-                class="flex-grow w-full max-w-7xl mx-auto xl:px-8 lg:flex bg-gray-200"
+                class="flex-grow w-full max-w-7xl mx-auto xl:px-8 lg:flex bg-gray-100"
             >
-                <div class="flex-1 min-w-0 xl:flex-1 bg-gray-200">
+                <div class="flex-1 min-w-0 xl:flex-1 bg-gray-100">
                     <div class="xl:flex-shrink-0 xl:w-64">
                         <div class="pl-4 pr-6 py-6 sm:pl-6 lg:pl-8 xl:pl-0">
                             <div class="flex items-center justify-between">
