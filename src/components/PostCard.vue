@@ -1,5 +1,5 @@
 <template>
-    <article class="shadow my-4 mb-3">
+    <article class="flex-1 shadow my-4 mb-3">
         <g-link :to="post.path">
             <g-image
                 :alt="post.feature.alt"
@@ -8,7 +8,7 @@
                 v-if="post.feature"
             />
 
-            <div class="bg-white justify-start p-6">
+            <div class="bg-white p-6">
                 <p class="text-sm leading-5 font-medium text-green-600">
                     <g-link
                         :to="post.categories[0].path"

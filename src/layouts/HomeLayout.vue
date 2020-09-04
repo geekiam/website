@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div>
         <site-header></site-header>
         <main>
             <div
@@ -7,31 +7,7 @@
             >
                 <div class="flex-1 min-w-0 xl:flex-1 bg-gray-100">
                     <div class="xl:flex-shrink-0 xl:w-64">
-                        <div class="pl-4 pr-6 py-6 sm:pl-6 lg:pl-8 xl:pl-0">
-                            <div class="flex items-center justify-between">
-                                <div class="flex-1 space-y-8">
-                                    <div
-                                        class="space-y-8 sm:space-y-0 sm:flex sm:justify-between sm:items-center xl:block xl:space-y-8"
-                                    >
-                                        <div
-                                            class="flex items-center space-x-3"
-                                        >
-                                            <div
-                                                class="flex-shrink-0 h-12 w-12"
-                                            >
-                                                <div
-                                                    class="flex flex-col space-y-6 sm:flex-row sm:space-y-0 sm:space-x-8 xl:flex-col xl:space-x-0 xl:space-y-6"
-                                                >
-                                                    <div
-                                                        class="flex items-center space-x-2"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <slot name="left-side-bar" />
                     </div>
                 </div>
                 <div class="bg-white lg:min-w-0 lg:flex-6">
@@ -44,7 +20,7 @@
                     </div>
                 </div>
                 <div
-                    class="bg-gray-50 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-200 xl:pr-0"
+                    class="bg-gray-100 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-200 xl:pr-0"
                 >
                     <div class="pl-6 lg:w-80"></div>
                 </div>
