@@ -36,3 +36,11 @@ When accessing a *nix based servers, there is typically no GUI other than consol
 
 The [Linux Information Project](http://www.linfo.org/index.html) has a comprehensive discussion regarding the [Terminal Window](http://www.linfo.org/terminal_window.html)
  which will provide additional useful background information.
+
+All leading Operating Systems provide a Terminal or Console Application equivalent,  although functionality, implementation language and access my vary the underlying concepts will apply.
+
+### Linux
+All Linux distributions (distros) provide a Terminal Window on their Desktop Software editions and for Linux server editions the only way to manage and administer the server is by making use of the Terminal.
+
+### Mac OS
+Apple Mac OS provides a Terminal Application, which 
