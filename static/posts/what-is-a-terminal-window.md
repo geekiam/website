@@ -81,3 +81,5 @@ Over the years a number of shells have become available:
 
 * **Bourne again shell(bash)** : GNU projects reimplementation of the Bourne shell. It supplies the interactive features similar to those available to C and Korn shells.  Bash is probably the most widely used shell on Linux.
 
+[The Linux Programming Interface](https://amzn.to/2F8btfc) has a comprehensive chapter regarding the Fundamental Concepts detailing how the shells interact with the Linux Kernel. 
+
