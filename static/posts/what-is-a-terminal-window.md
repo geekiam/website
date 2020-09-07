@@ -24,7 +24,7 @@ This post, is not meant to be an all encompassing guide on how to use the termin
 
 ### What is a terminal window
 
-A terminal window, also referred to as a terminal emulator, is a text-only window in a Graphical User Interface (GUI) that emulates a console.
+A terminal window, also referred to as a *terminal emulator*, is a text-only window in a *Graphical User Interface (GUI)* that emulates a console.   
 
 In computing a window is typically a rectangular area in a GUI that that presents its contents, i.e an image, the contents of a text file, or a listing of the contents of a directory, seemingly independently of the rest of the screen and that can be moved, resized or otherwise manipulated independently of other objects on the screen.
 
@@ -37,11 +37,18 @@ When accessing a *nix based servers, there is typically no GUI other than consol
 The [Linux Information Project](http://www.linfo.org/index.html) has a comprehensive discussion regarding the [Terminal Window](http://www.linfo.org/terminal_window.html)
  which will provide additional useful background information.
 
-All leading Operating Systems provide a Terminal or Console Application equivalent,  although functionality, implementation language and access my vary the underlying concepts will apply.
+All leading Operating Systems provide a Terminal or Console Application equivalent,  although functionality, implementation language and access my vary the underlying concepts will apply. 
+
+In the Linux world each distribution may provide a different GUI each operating slightly differently to the others and there may be little standardisation between them. Experienced Linux users prefer to use and learn the Terminal commands because these can be used across all distributions. Therefore this provides some consistency. 
 
 ### Linux
 
-All Linux distributions (distros) provide a Terminal Window on their Desktop Software editions and for Linux server editions the only way to manage and administer the server is by making use of the Terminal.
+All Linux distributions (distros) provide a command-line interface Terminal Window, which is abbreviated to **Terminal** , on their Desktop Software editions and for Linux server editions the only way to manage and administer the server is by making use of the Terminal.  
+
+Popular terminal emulators you may find on Linux distros are:
+* Gnome-terminal
+* Konsole
+* xterm
 
 ### Mac OS
 
@@ -51,11 +58,13 @@ Apple Mac OS provides a Terminal Application, which provides a Terminal Emulatio
 
 Confusingly Microsoft Windows provides several options for a Terminal Application.
 
-* ***Command prompt*** - A critical part of the Microsoft Disk Operating System (MS-DOS) command line interface. It is the fundamental setting for the interface, where the prompt sets the stage for executing command lines of code. Up until the emergence of new Windows-oriented graphical interfaces, the DOS command prompt was the most common way to interact with the personal computer.
-* ***Powershell Console***
+* **Command prompt** - A critical part of the Microsoft Disk Operating System (MS-DOS) command line interface. It is the fundamental setting for the interface, where the prompt sets the stage for executing command lines of code. Up until the emergence of new Windows-oriented graphical interfaces, the DOS command prompt was the most common way to interact with the personal computer.  The command prompt provides very limited functionality.
+
+* **Powershell Console**
   Windows PowerShell comes installed by default in every Windows, starting with Windows 7 SP1 and Windows Server 2008 R2 SP1. 
 
   Windows PowerShell is a scripting engine .DLL that's embedded into multiple hosts. The most common hosts you'll start are the interactive command-line powershell.exe and the Interactive Scripting Environment powershell_ise.exe.
+  
 * **Windows Terminal**
   Windows Terminal is a new, modern, fast, efficient, powerful, and productive terminal application for users of command-line tools and shells like Command Prompt, PowerShell, and WSL (Windows Subsystem for Linux).
 
@@ -82,4 +91,3 @@ Over the years a number of shells have become available:
 * **Bourne again shell(bash)** : GNU projects reimplementation of the Bourne shell. It supplies the interactive features similar to those available to C and Korn shells.  Bash is probably the most widely used shell on Linux.
 
 [The Linux Programming Interface](https://amzn.to/2F8btfc) has a comprehensive chapter regarding the Fundamental Concepts detailing how the shells interact with the Linux Kernel. 
-
