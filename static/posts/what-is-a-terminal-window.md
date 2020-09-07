@@ -73,4 +73,11 @@ Shells usually have properties typically associated with programming languages: 
 
 Over the years a number of shells have become available:
 
-* **Bourne Shell (sh)** : 
+* **Bourne Shell (sh)** : The oldest of the widely used shells, originally developed by Steven Bourne, it was the standard shell for 7th Edition of UNIX. The Bourne shell contains many of the features in all shells: I/O redirection, pipelines, File Name generation, background command execution and functions. All later UNIX implementations include the Bourne Shell in addition to other shells.
+
+* **C shell**: The name derives from the resemblance of many of the many control constructs of the *C programming language*. The C shell provided several useful interactive features that were not available in the Bourne shell, including: command history, command-line editiing, job control and aliases.
+
+* **Korn shell**: Orginally developed as the successor to the Bourne shell, and while maintaining backward compatability it also included the interactive features to those provided by the C shell.
+
+* **Bourne again shell(bash)** : GNU projects reimplementation of the Bourne shell. It supplies the interactive features similar to those available to C and Korn shells.  Bash is probably the most widely used shell on Linux.
+
