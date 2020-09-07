@@ -3,7 +3,8 @@ title: How to create a new Github repository using the terminal
 description: "How to create a Github repository from a local terminal Update :
   Create a new repository and upload the data from one application to github all
   using  the terminal"
-summary: "Create a new Github repository and commit and push your code using the terminal window"
+summary: Create a new Github repository and commit and push your code using the
+  terminal window
 Keywords: Keywords are cool!
 feature:
   image: /uploads/version-control.png
@@ -29,7 +30,7 @@ GitHub is a code hosting platform for collaboration and version control, which n
 
 Github supplies a really easy to use Web Interface and developers can use it to carry out all actions and processes they would typically need just using a browser based interface.  For instance, Creating and updating repositories, reviewing code, creating Pull requests and so forth.  
 
-The web based interface works great, however as developers are more than likely to going to prefer working with Terminal Window, because for most developers this is how they will primarily work with git. Especially when first starting out and learning the basics.
+The web based interface works great, however as developers are more than likely to going to prefer working with [Terminal Window](https://geekiam.io/what-is-a-terminal-window/) , because for most developers this is how they will primarily work with git. Especially when first starting out and learning the basics.
 
 Github also provides a really rich set of Application Programming Interface (API) methods enabling developers to build tools to engage and interact with Github. Developers could use these API's to either build their own custom tools or just choose to interact with Github making use of these tools.
 
