@@ -22,7 +22,9 @@
                 <div
                     class="bg-gray-100 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-200 xl:pr-0"
                 >
-                    <div class="pl-6 lg:w-80"></div>
+                    <div class="pl-6 lg:w-80">
+                        <slot name="right-side-bar" />
+                    </div>
                 </div>
             </div>
         </main>

@@ -4,7 +4,7 @@ description: How to add project specific node package management configuration o
 summary: How to add project specific node package management configuration options
 Keywords: node
 feature:
-  image: /uploads/node-js-736399.svg
+  image: /uploads/nodejs.png
   alt: Node Package Management
 date: 2020-08-21T14:51:28.497Z
 author: gary-woodfine

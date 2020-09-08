@@ -27,15 +27,15 @@
                             <h4
                                 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase"
                             >
-                                Advertise
+                                Credits
                             </h4>
                             <ul class="mt-4">
                                 <li>
                                     <g-link
                                         class="text-base leading-6 text-gray-300 hover:text-white"
-                                        to="/"
+                                        to="https://stories.freepik.com/web"
                                     >
-                                        Home
+                                        Freepik
                                     </g-link>
                                 </li>
                             </ul>
