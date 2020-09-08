@@ -11,10 +11,9 @@
             <ClientOnly>
                 <infinite-loading @infinite="scroll" spinner="spiral">
                     <div slot="no-more" class="mt-2">
-                        You've scrolled through all the posts ;)
-                    </div>
-                    <div slot="no-results" class="mt-2">
-                        Sorry, no posts yet :(
+                        <p class="font">
+                            We are hard at work writing more posts!
+                        </p>
                     </div>
                 </infinite-loading>
             </ClientOnly>

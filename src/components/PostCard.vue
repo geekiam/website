@@ -1,10 +1,10 @@
 <template>
-    <article class="flex-1 shadow my-4 mb-3">
+    <article class="flex-1 border shadow-xl mb-5">
         <g-link :to="post.path">
             <g-image
                 :alt="post.feature.alt"
                 :src="post.feature.image"
-                class="h-64 w-full object-cover hover:opacity-75"
+                class="h-64 inset-0 h-full w-full object-cover object-center hover:opacity-75"
                 v-if="post.feature"
             />
 

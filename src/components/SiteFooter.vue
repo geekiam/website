@@ -148,10 +148,6 @@
             </div>
         </div>
         <div id="amzn-assoc-ad-73928baa-47b7-452e-b405-a947c3b0b1e2"></div>
-        <script
-            async
-            src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=73928baa-47b7-452e-b405-a947c3b0b1e2"
-        ></script>
     </div>
 </template>
 
