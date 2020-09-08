@@ -91,3 +91,17 @@ Over the years a number of shells have become available:
 * **Bourne again shell (bash)** : GNU projects re-implementation of the Bourne shell. It supplies the interactive features similar to those available to C and Korn shells.  Bash is probably the most widely used shell on Linux.
 
 [The Linux Programming Interface](https://amzn.to/2F8btfc) has a comprehensive chapter regarding the Fundamental Concepts detailing how the shells interact with the Linux Kernel. 
+
+#### Advantages using terminal window
+
+* Requires a lower machines resources for the interface.
+* Easy to integrate with scripting, and other programmatic interfaces.
+* Provide the ability to pipe multiple commands together
+* consistency of applications across systems. 
+* Provide ability to execute tasks quickly. 
+
+#### Disadvantages of using terminal window
+
+* Not intuitive, especially for the lay user.
+* Does not provide the ability to view media.
+* Complex command combinations can be difficult to remember, and slower to type but that is on a task by task basis.
