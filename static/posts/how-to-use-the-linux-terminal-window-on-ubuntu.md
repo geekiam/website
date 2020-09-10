@@ -46,3 +46,5 @@ You’ll find the Terminal application included with your other installed applic
 In the **Search Bar** at the top of the screen enter the word *terminal* and press Enter to find and launch the Terminal shortcut. You can also locate the Terminal icon in the list of all applications that appears here and click it.
 
 ![Ubuntu terminal dash search](/uploads/ubuntu-terminal-dash.png "Ubuntu terminal dash search")
+
+<iframe id="lbry-iframe" width="560" height="315" src="https://lbry.tv/$/embed/terminal-window-ubuntu/184b03b9f5dcb21815a71cda8c866b6be52f8f53" allowfullscreen></iframe>
