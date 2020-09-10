@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: geekiam.io
+Token: e36e605ae493f5c046adc8f0ca5ac5af78ba5a926ef43435d5e9f5111227f9fe
