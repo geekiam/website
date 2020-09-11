@@ -47,4 +47,18 @@ In the **Search Bar** at the top of the screen enter the word *terminal* and pre
 
 ![Ubuntu terminal dash search](/uploads/ubuntu-terminal-dash.png "Ubuntu terminal dash search")
 
-<iframe id="lbry-iframe" width="560" height="315" src="https://lbry.tv/$/embed/terminal-window-ubuntu/184b03b9f5dcb21815a71cda8c866b6be52f8f53" allowfullscreen></iframe>
+Once you click the Terminal Window you will notice that a terminal window has been opened for you and is awaiting interaction.
+
+![Ubuntu terminal window open](/uploads/ubuntu-terminal-window-open.png "Ubuntu terminal window open")
+
+### Open the Terminal window with keyboard short cuts
+
+Ubuntu provides a handy keyboard shortcut you can use to open a terminal window quickly.  To do simply use the Ctrl + Alt + T keys on your keyboard by pressing them simultaneously and a new Terminal window will open for you.
+
+### Adding terminal window to your Dock
+
+If you would like to add a terminal window short cut to your dock, right click the terminal window in your dock and select **Add to Favourites** and the terminal window icon will then added to your dock enabling you to click on it to open a terminal window.
+
+
+
+<iframe id="lbry-iframe" width="760" height="515" src="https://lbry.tv/$/embed/terminal-window-ubuntu/184b03b9f5dcb21815a71cda8c866b6be52f8f53" allowfullscreen></iframe>
