@@ -9,6 +9,7 @@ keywords:
  - terminal window
  - linux
  - bash
+ - gnome
 feature:
   image: /uploads/version-control.png
   alt: Terminal Window

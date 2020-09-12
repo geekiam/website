@@ -41,6 +41,7 @@ export default {
         Author,
         Categories,
     },
+
     metaInfo() {
         return {
             title: this.$page.post.title,
@@ -57,6 +58,7 @@ export default {
                     content: this.$page.post.description,
                 },
                 { key: 'og:url', property: 'og:url', content: this.postUrl },
+                { key: 'keywords', name: 'keywords', content: this.keywords },
                 {
                     key: 'article:published_time',
                     property: 'article:published_time',
@@ -73,6 +75,13 @@ export default {
             return postPath
                 ? `${siteUrl}${postPath}`
                 : `${siteUrl}/${slugify(this.$page.post.title)}/`
+        },
+        keywords() {
+            let keywords = ''
+            for (let i in this.$page.post.keywords) {
+                keywords = keywords.concat(`${this.$page.post.keywords[i]},`)
+            }
+            return keywords.replace(/(^\s*,)|(,\s*$)/g, '')
         },
     },
 }
@@ -103,6 +112,7 @@ query($path: String) {
             title
             path
         }
+        keywords
     }
 }
 </page-query>
