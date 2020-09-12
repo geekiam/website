@@ -18,7 +18,8 @@ collections:
             - {label: "Title", name: "title", widget: "string", required: true }
             - {label: "Description", name: "description", widget: "string", required: true}
             - {label: "Summary" , name: "summary", widget: "string" }
-            - {label: "Keywords", name: "Keywords", widget: "string" }
+            - {label: "Keywords", name: "Keywords", widget: list
+               field: { label: "Tag", name: "tag", widget: "string" }
             - {
                 label: "Feature",
                 name: "feature",

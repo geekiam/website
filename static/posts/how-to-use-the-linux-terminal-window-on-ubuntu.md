@@ -57,7 +57,7 @@ Ubuntu provides a handy keyboard shortcut you can use to open a terminal window 
 
 ### Adding terminal window to your Dock
 
-If you would like to add a terminal window short cut to your dock, right click the terminal window in your dock and select **Add to Favourites** and the terminal window icon will then added to your dock enabling you to click on it to open a terminal window.
+If you would like to add a terminal window short-cut to your dock, right click the terminal window in your dock and select **Add to Favourites** and the terminal window icon will then added to your dock enabling you to click on it to open a terminal window.
 
 
 

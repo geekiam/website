@@ -2,7 +2,10 @@
 title: How to use package management in JavaScript projects
 description: How to add project specific node package management configuration options
 summary: How to add project specific node package management configuration options
-Keywords: node
+Keywords: 
+    - node
+    - npm
+    - javascript
 feature:
   image: /uploads/nodejs.png
   alt: Node Package Management

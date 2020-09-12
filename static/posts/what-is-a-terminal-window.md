@@ -4,7 +4,10 @@ description: A terminal window is an interactive program built-in all major
   operating systems enabling developers to type commands
 summary: "An overview of what a terminal window is and why it is an important
   and popular tool for software developers "
-Keywords: terminal
+Keywords: 
+    - terminal window
+    - linux
+    - ubuntu
 feature:
   image: /uploads/version-control.png
   alt: Software developer tutorial

@@ -5,7 +5,10 @@ description: "How to create a Github repository from a local terminal Update :
   using  the terminal"
 summary: Create a new Github repository and commit and push your code using the
   terminal window
-Keywords: Keywords are cool!
+Keywords: 
+    - github
+    - git
+    - version control
 feature:
   image: /uploads/version-control.png
   alt: Version Control

@@ -2,7 +2,9 @@
 title: How to revert a git commit
 description: How to use the git cli to revert an accidental commit
 summary: How to revert a git commit when accidentally commit code to your branch
-Keywords: git
+Keywords: 
+    - git
+    - version control
 feature:
   image: /uploads/version-control.png
   alt: Version Control systems
