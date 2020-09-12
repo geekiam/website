@@ -17,6 +17,7 @@ tags:
   - ubuntu
 categories:
   - software-development
+video: https://lbry.tv/@geekiam:b/terminal-window-ubuntu:1
 ---
 If you've read [What is a Terminal Window](https://geekiam.io/what-is-a-terminal-window/) you would have learned that the Terminal Window is probably one of the most common and popular developer tools. There are many developers who more than likely spend most of their day using the terminal window and quite possibly will seldom use the Graphical User Interface that is supplied with their distribution of Linux, often opting for terminal window accessible Text Editors and Integrated Development Environments like Vim or Emacs to perform their daily tasks.
 
