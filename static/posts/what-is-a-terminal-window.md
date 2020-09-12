@@ -54,6 +54,8 @@ Popular terminal emulators you may find on Linux distros are:
 * Konsole
 * xterm
 
+*[How to use the terminal window on Ubuntu linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/)*
+
 ### Mac OS
 
 Apple Mac OS provides a Terminal Application, which provides a Terminal Emulation providing the experience of typing into an old school terminal from the convenience of our modern graphical operating system.
