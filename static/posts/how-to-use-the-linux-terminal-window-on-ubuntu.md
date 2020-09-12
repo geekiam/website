@@ -61,4 +61,4 @@ If you would like to add a terminal window short cut to your dock, right click t
 
 
 
-<iframe id="lbry-iframe" width="760" height="515" src="https://lbry.tv/$/embed/terminal-window-ubuntu/184b03b9f5dcb21815a71cda8c866b6be52f8f53" allowfullscreen></iframe>
+<iframe id="lbry-iframe" width="100%" height="350" src="https://lbry.tv/$/embed/terminal-window-ubuntu/184b03b9f5dcb21815a71cda8c866b6be52f8f53" allowfullscreen></iframe>
