@@ -46,4 +46,5 @@ collections:
             -   label: "Video"
                 name: "video"
                 widget: "string"
+                required: false
 
