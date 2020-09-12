@@ -2,7 +2,7 @@
 title: How to use git flow
 description: Using git-flow CLI to automate a popular git branching and merging strategy
 summary: Using git-flow CLI to automate a popular git branching and merging strategy .
-Keywords: 
+keywords: 
      - gitflow
      - git
      - version control

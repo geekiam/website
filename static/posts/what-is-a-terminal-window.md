@@ -9,10 +9,6 @@ keywords:
   - linux
   - ubuntu
   - bash
-Keywords:
-  - terminal window
-  - linux
-  - ubuntu
 feature:
   image: /uploads/version-control.png
   alt: Software developer tutorial

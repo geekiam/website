@@ -5,7 +5,10 @@ summary: "The terminal window for most average users and even some seasoned
   developers may at first be an intimidating environment and for the most part a
   place where wizards seem to be able cast weird and incomprehensible textual
   spells that make computers respond or do things!  "
-Keywords: terminal
+keywords: 
+ - terminal window
+ - linux
+ - bash
 feature:
   image: /uploads/version-control.png
   alt: Terminal Window
