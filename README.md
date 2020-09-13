@@ -20,6 +20,7 @@ learned developing with Gridsome, Vue, Netlify, TailwindCSS, JavaScript and much
 * [Gridsome - Adding Feature Image to blog posts](https://garywoodfine.com/gridsome-adding-feature-image-to-blog-posts/)
 * [Gridsome - Implement Cookie Consent](https://garywoodfine.com/gridsome-implement-cookie-consent)
 * [Gridsome - Configure your development environment](https://garywoodfine.com/gridsome-configure-your-development-environment/)
+* [Gridsome - Configuring Layouts and using slots](https://garywoodfine.com/gridsome-configuring-layouts-and-using-slots/)
 
  ### Developed, Sponsored and Supported 
  
