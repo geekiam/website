@@ -98,7 +98,9 @@ gh help
 
 ![Github CLI help files](/uploads/github-cli.png "Github CLI help files")
 
-It is worth taking a little time and having a read through the help files to get acquainted with some of the terms and commands that are available.
+It is worth taking a little time and having a read through the help files to get acquainted with some of the terms and commands that are available. 
+
+If reading online manuals is your preferred option then the [full Github Cli manual](https://cli.github.com/manual/) is available
 
 ### How to create Github repository using terminal commands
 
@@ -158,6 +160,8 @@ gh repo create Geek-I-Am/version-control-tutorial
 
 git push -u origin master
 ```
+
+[gh repo create](https://cli.github.com/manual/gh_repo_create)
 
 ### Conclusion
 
