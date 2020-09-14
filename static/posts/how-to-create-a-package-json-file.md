@@ -1,5 +1,5 @@
 ---
-title: How to create a package.json file
+title: A deep dive on the package.json file
 description: How to create a package.json to list all dependencies, metadata and
   make your project reproducible across environments
 summary: How to create a package.json to list all dependencies, metadata and
@@ -31,5 +31,17 @@ The `package.json` file:
 * Lists the packages your project depends on
 * Specifies the version number of your project
 * Contains build and environment configuration detail
+
+### How to create `package.json`
+
+There are a few ways to create a `package.json` in that you can either create it manually by creating a simple JSON format file and adding the bits you need, or simply using your preferred package manager do so i.e. npm or yarn
+
+```sh
+### Create a package.json using npm
+npm init
+
+### Create a package.json using yarn
+yarn init
+``` 
 
 
