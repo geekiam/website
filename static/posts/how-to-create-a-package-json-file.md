@@ -44,4 +44,12 @@ npm init
 yarn init
 ``` 
 
+#### Package.json required fields
+
+There are only two fields that all `package.json` must contain:
+
+*  **name** : package’s name, and must be lowercase and one word, and may contain hyphens and underscores.
+* **version** : field must be in the form x.x.x and follow the [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning).
+
+
 
