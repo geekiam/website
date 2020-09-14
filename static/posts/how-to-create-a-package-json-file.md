@@ -74,10 +74,32 @@ When creating a `package.json` file with a package management tool some addition
 ### Optional Directives for package.json files
 * **Description:** A bried description of the node.js project to provide relevant detail about the module\project.
 
-* **Entry point:** refers to the file where the application starts, this can be any JavaScript file that should be executed first.
+* **main:** refers to the file where the application starts, this can be any JavaScript file that should be executed first.
 
 * **Contributors:** names of all the developers and the people who have contributed to this projec.
 
 * **Keywords:** keyword of the project in the Package.json file. Used to index the project on relevant package management repositories for discovery.
 
 * **Author:** Developer name, company and email address.
+
+```javascript
+{
+  "name": "simple-package",
+  "version": "1.0.0",
+  "description": "An short description describing simple-package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+      "Amazing Software",
+      "innovative solution",
+      "Technology Education",
+      "JavaScript Tutorials"
+],
+  "author": "geekiam.io <hello@geekiam.io> (https://geekiam.io)",
+  "license": "ISC"
+}
+
+
+```
