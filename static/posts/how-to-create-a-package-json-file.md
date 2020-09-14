@@ -51,5 +51,14 @@ There are only two fields that all `package.json` must contain:
 *  **name** : package’s name, and must be lowercase and one word, and may contain hyphens and underscores.
 * **version** : field must be in the form x.x.x and follow the [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning).
 
+The below is an example of the simplest `package.json` file possible
+
+```javascript
+{
+  "name": "simple-package",
+  "version": "1.0.0"
+}
+
+```
 
 
