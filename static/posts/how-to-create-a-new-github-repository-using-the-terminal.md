@@ -96,7 +96,7 @@ if you want to read the *hub* help files you can use the following commands
 gh help
 ```
 
-![hub help files](/uploads/github-cli.png "hub help files")
+![Github CLI help files](/uploads/github-cli.png "Github CLI help files")
 
 It is worth taking a little time and having a read through the help files to get acquainted with some of the terms and commands that are available.
 
