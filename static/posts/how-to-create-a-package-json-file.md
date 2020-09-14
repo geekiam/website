@@ -19,4 +19,17 @@ tags:
 categories:
   - software-development
 ---
-asdfasdf
+In [How to use Package Management In Javascript projects](https://geekiam.io/how-to-use-package-management-in-java-script-projects) we discussed project specific node package management configuration options and also introduced the `package.json` file and how it is used as the configuration management repository.
+
+In this, we will take a deeper dive into the `package.json` and explore it further.
+
+### What is the package.json file
+
+The `package.json` is one of the core components of the Node runtime environment, and it typically included in the project root directory of all node based projects. It is a plain text JSON file which contains the basic metadata, dependencies, configuration and build information about the project.
+
+The `package.json` file:
+* Lists the packages your project depends on
+* Specifies the version number of your project
+* Contains build and environment configuration detail
+
+
