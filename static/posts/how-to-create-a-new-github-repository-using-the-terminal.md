@@ -87,10 +87,10 @@ sudo dnf install gh
 After you have finished installing `gh`, I always prefer to ensure that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that I configure hub to authenticate and execute commands using ssh.
 
 ```shell
-git config --global gh.protocol ssh
+gh config set git_protocol ssh
 ```
 
-if you want to read the *hub* help files you can use the following commands
+if you want to read the *github cli* help files you can use the following commands
 
 ```shell
 gh help
