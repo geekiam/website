@@ -42,7 +42,7 @@ It is possible to create a `package.json` manually by creating by simply JSON fo
 
 #### Package.json required fields
 
-There are only two fields that all `package.json` must contain:
+There are only two mandatory directives that all `package.json` must contain:
 
 *  **name** : package’s name, and must be lowercase and one word, and may contain hyphens and underscores.
 * **version** : field must be in the form x.x.x and follow the [semantic versioning guidelines](https://docs.npmjs.com/about-semantic-versioning).
@@ -69,3 +69,15 @@ npm init
 yarn init
 ``` 
 
+When creating a `package.json` file with a package management tool some additional optional directives are included to help others who will find your project to understand it by providing some additional information like the `author`, `contributors`, `homepage` and `repository` fields.
+
+### Optional Directives for package.json files
+* **Description:** A bried description of the node.js project to provide relevant detail about the module\project.
+
+* **Entry point:** refers to the file where the application starts, this can be any JavaScript file that should be executed first.
+
+* **Contributors:** names of all the developers and the people who have contributed to this projec.
+
+* **Keywords:** keyword of the project in the Package.json file. Used to index the project on relevant package management repositories for discovery.
+
+* **Author:** Developer name, company and email address.
