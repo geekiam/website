@@ -55,7 +55,7 @@ This is quite a lot to remember, and if you're anything like me you're going to 
 
 Github CLI enables you to interact with Gihub on the command line, and it’s now available in beta. It brings pull requests, issues, and other GitHub concepts to the terminal next to where you are already working with git and your code.
 
-[Github is an extension to command-line git](https://cli.github.com/manual/) that helps you do everyday GitHub tasks without ever leaving the terminal window.  
+[Github CLI is an extension to command-line git](https://cli.github.com/manual/) that helps you do everyday GitHub tasks without ever leaving the terminal window.  
 
 ### How to install Github CLI on Linux
 
