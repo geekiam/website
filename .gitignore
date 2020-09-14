@@ -9,4 +9,4 @@ dist
 package-lock.json
 .idea
 yarn.lock
-local.env
+.env.development

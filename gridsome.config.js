@@ -18,6 +18,12 @@ module.exports = {
             },
         },
         {
+            use: 'gridsome-plugin-amazon-onelink',
+            options: {
+                id: process.env.AMAZON_ONELINK,
+            },
+        },
+        {
             use: 'gridsome-plugin-tailwindcss',
         },
         {

@@ -147,7 +147,6 @@
                 </p>
             </div>
         </div>
-        <div id="amzn-assoc-ad-73928baa-47b7-452e-b405-a947c3b0b1e2"></div>
     </div>
 </template>
 

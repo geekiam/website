@@ -16,6 +16,7 @@
         "@gridsome/source-filesystem": "^0.6.2",
         "@gridsome/transformer-remark": "^0.5.0",
         "gridsome": "^0.7.20",
+        "gridsome-plugin-amazon-onelink": "^1.0.0",
         "gridsome-plugin-feed": "^1.0.2",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-remark-shiki": "^0.3.1",
