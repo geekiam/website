@@ -34,15 +34,9 @@ The `package.json` file:
 
 ### How to create `package.json`
 
-There are a few ways to create a `package.json` in that you can either create it manually by creating a simple JSON format file and adding the bits you need, or simply using your preferred package manager do so i.e. npm or yarn
-
-```sh
-### Create a package.json using npm
-npm init
-
-### Create a package.json using yarn
-yarn init
-``` 
+#### Manually creating a package.json file
+ 
+It is possible to create a `package.json` manually by creating by simply JSON format text file and adding the required fields and whichever other fields you desire. 
 
 #### Package.json required fields
 
@@ -61,4 +55,14 @@ The below is an example of the simplest `package.json` file possible
 
 ```
 
+#### Creating a package.json with a package management tool
 
+The most common and popular why of creating a `package.json` file is by making use of a package management tool. Two of the most popular and common package management tools available are [npm](https://docs.npmjs.com/about-npm/) and [yarn](https://yarnpkg.com/getting-started).
+
+```sh
+### Create a package.json using npm
+npm init
+
+### Create a package.json using yarn
+yarn init
+``` 
