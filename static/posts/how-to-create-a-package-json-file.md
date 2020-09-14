@@ -16,6 +16,8 @@ author: gary-woodfine
 tags:
   - nodejs
   - javascript
+  - yarn
+  - npm
 categories:
   - software-development
 ---
@@ -66,3 +68,4 @@ npm init
 ### Create a package.json using yarn
 yarn init
 ``` 
+
