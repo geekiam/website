@@ -65,12 +65,29 @@ Github CLI enables you to interact with Gihub on the command line, and it’s no
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository -u https://cli.github.com/packages
 sudo apt install gh
+
 ```
+To upgrade seems to require just running the installer again i.e.
+```sh
+   sudo apt install gh
+```
+
+#### Fedora, Centos, Red Hat
+```sh
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install gh
+```
+To upgrade seems to require just running the installer again i.e.
+
+```sh
+sudo dnf install gh
+```
+
 
 After you have finished installing `gh`, I always prefer to ensure that I [configure my SSH keys for GitHub Access](https://garywoodfine.com/setting-up-ssh-keys-for-github-access/) then I ensure that I configure hub to authenticate and execute commands using ssh.
 
 ```shell
-git config --global hub.protocol ssh
+git config --global gh.protocol ssh
 ```
 
 if you want to read the *hub* help files you can use the following commands
