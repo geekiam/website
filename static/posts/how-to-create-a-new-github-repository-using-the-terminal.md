@@ -159,6 +159,8 @@ gh repo create Geek-I-Am/version-control-tutorial
 git push -u origin master
 ```
 
+[gh repo create](https://cli.github.com/manual/gh_repo_create)
+
 ### Conclusion
 
 Making use of the Github CLI makes it easy to clone or create repositories, browse project pages, list known issues, ensure your local branches stay up to date, and share logs or code snippets via Gist, all while using the terminal.
