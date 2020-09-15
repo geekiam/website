@@ -234,3 +234,37 @@ yarn add package_name --optional
 yarn add package_name -O
 
 ```
+Any of these commands will result in an entry being added to the *optionalDependencies* section in your `package.json`
+
+```javascript
+"optionalDependencies": {
+    "package_name": "^1.0.0"
+  }
+
+```
+
+* **Peer Dependencies ** used when developing a plugin/package for a host tool or package, where you define that the project you are developing for will have packages/modules being used in your project.
+
+You won't install that packages but rather just list them, running `npm install` on your package will not actually install the packages eoterh.
+
+ 
+```javascript
+"peerDependencies": {
+    "package_name": "^1.0.0"
+  }
+```
+
+* **Bundled Dependencies**  These are array of packages which are bundled when publishing our package.If you want certain or all the dependencies bundled together in a single file then you can specify these dependencies under the key `bundledDependencies` in your `package.json` file. 
+
+To create a single tarball of all the dependencies mentioned in `bundledDependencies` you issue the command: `npm pack` which will create a .tgz file with name like: `bundled_packages.tgz`. 
+
+Users can simply issue the command `npm install` name_of_the_project-`bundled_packages.tgz` to install the project bundled dependencies using a single file. 
+
+This approach is used to preserve dependencies and make them available using a single file.
+
+```javaascript
+"bundledDependencies": [
+    'express','request'
+  ]
+
+```
