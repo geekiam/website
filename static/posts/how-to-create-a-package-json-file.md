@@ -126,7 +126,7 @@ or by providing it in a shorthand format on a single string
 
 ```
 
-### Additional Directives
+### Additional Optional Directives
 
 There are many more directives you can include to supply even more information regarding your project. The more information you provide increases the likelihood of your project being found and even used by others.
 
@@ -144,9 +144,46 @@ The `.npmignore` file works just like a `.gitignore`. If there is a `.gitignore`
                },
 
 ```
+
 * **bugs : ** Provides a location of your issue tracker where bugs and issues can be raised.
+
 ```javascript
 "bugs": {
     "url": "https://github.com/threenine/gridsome-plugin-amazon-onelink/issues"
   },
+```
+
+* **scripts :**  Functional metadata of your, which typically takes an object with keys that could be scripts that could be executed to build, deploy, test or run your application.
+
+These may be terminal commands, which are put into the scripts field so other developers can document and use them.
+
+Scripts are powerful tools that the npm CLI can use to run tasks for your project. They can do the job of most task runners used during development.
+
+
+### Dependency Management
+
+A typical node application or project may make use of a number of third party modules or applications to extend different levels of functionality.
+
+Modules can be used in various areas of your application and bundled into or even excluded in various builds.  It is possible to only require some modules for when you're developing an application i.e. Unit Testing Framework, Mocking Framework, Linting, code formatting etc.
+
+The `package.json` enables you to define a number of different levels of dependencies and how to add them.  We'll take a brief look at the different types of dependencies we can add to a node project.
+
+* **dependencies : **  These are typically known as the **Production Dependencies** of your application, which are the mandatory packages required to run your application and modules used throughout your project.
+
+You can add production dependencies using any of the following commands
+
+```sh
+### Using npm 
+npm install package_name
+## or 
+npm i package_name
+## or
+npm i package_name --save-prod
+
+### using yarn
+yarn install package_name
+## or
+yarn install package_name --production
+## or
+yarn install package_name -P
 ```
