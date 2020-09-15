@@ -128,5 +128,13 @@ or by providing it in a shorthand format on a single string
 
 ### Additional Directives
 
-There are many more directives you can include to supply even more information regarding your project. The more information you provide increases the likelihood of your project being found and even used by others. 
+There are many more directives you can include to supply even more information regarding your project. The more information you provide increases the likelihood of your project being found and even used by others.
+
+* **files :** An array of file patterns that describes the entries included when your package is installed as a dependency.  If you omit the field then the default of including all the files in in your directory will be applied.
+
+Alternatively, you can provide an additional `.npmignore` file in the root of your directory or in sub-directories detailing which files and directories to exclude.
+
+The `.npmignore` file works just like a `.gitignore`. If there is a `.gitignore` file, and `.npmignore` is missing, `.gitignore` contents will be used instead.
+
+
 
