@@ -144,4 +144,9 @@ The `.npmignore` file works just like a `.gitignore`. If there is a `.gitignore`
                },
 
 ```
-* **bugs : ** Provides a location of your issue tracker where 
+* **bugs : ** Provides a location of your issue tracker where bugs and issues can be raised.
+```javascript
+"bugs": {
+    "url": "https://github.com/threenine/gridsome-plugin-amazon-onelink/issues"
+  },
+```
