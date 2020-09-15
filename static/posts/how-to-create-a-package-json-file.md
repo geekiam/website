@@ -262,9 +262,16 @@ Users can simply issue the command `npm install` name_of_the_project-`bundled_pa
 
 This approach is used to preserve dependencies and make them available using a single file.
 
-```javaascript
+```javascript
+
 "bundledDependencies": [
     'express','request'
   ]
 
 ```
+### Conclusion
+The `package.json` file may at first seem to be nothing more than a simple JSON file and often new developers tend to skip learning its importance and how it functions.  
+
+The package managers often hide a lot of the complexity and functionality contained within the `package.json`.  
+
+It is worth taking the time and effort to read [nodejs package.json guide](https://nodejs.dev/learn/the-package-json-guide) the official guide to the package.json file.
