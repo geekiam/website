@@ -78,11 +78,30 @@ The information obtained when then be included in optional directives to help ot
 
 * **main:** refers to the file where the application starts, this can be any JavaScript file that should be executed first.
 
-* **contributors:** names of all the developers and the people who have contributed to this project.
+* **keywords:** keywords related to the project. Used to index the project on relevant package management repositories for discovery.  You typically provide an array of strings to be used in the packages listing on *npm search*
 
-* **keywords:** keyword of the project in the Package.json file. Used to index the project on relevant package management repositories for discovery.
+* **author:** Developer name, company and email address. There are two accepted formats for supplying information, by either providing it as an JSON object format i.e.
+```javascript
+"author" : {  "name" : "threenine.co.uk",
+              "email" : "hello@threenine.co.uk",
+              "url" : "https://threenine.co.uk"
+           }
+```
+or by providing it in a shorthand format on a single string
+```javascript
+"author" : "threenine.co.uk <hello@threenine.co.uk> (https://threenine.co.uk)"
+```
+ 
+* **contributors:** names of all the developers and the people who have contributed to this project.  The same formatting rules as authors apply however by supplying an array of people.
+```javascript
+"contributors" : [ {  "name" : "Gary Woodfine",
+                      "email" : "hello@threenine.co.uk",
+                      "url" : "https://garywoodfine.com"
+                   },
+                   {"Joe Blogs <hello@blogs.com> (https://blogs.com)"}
 
-* **author:** Developer name, company and email address.
+```
+
 
 * **license: ** specify a license for your detailing how others are permitted to use your project, and any restrictions placed upon it.
 
@@ -106,4 +125,8 @@ The information obtained when then be included in optional directives to help ot
 }
 
 ```
+
+### Additional Directives
+
+There are many more directives you can include to supply even more information regarding your project. The more information you provide increases the likelihood of your project being found and even used by others. 
 
