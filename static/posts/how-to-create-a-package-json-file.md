@@ -69,18 +69,22 @@ npm init
 yarn init
 ``` 
 
-When creating a `package.json` file with a package management tool some additional optional directives are included to help others who will find your project to understand it by providing some additional information like the `author`, `contributors`, `homepage` and `repository` fields.
+When creating a `package.json` file with a package management tool, typically a questionaire will be launched to ask you to provide some additional information about your project.
+
+The information obtained when then be included in optional directives to help others who will find your project to understand more about your project by providing some additional information like the `author`, `contributors`, `homepage` and `repository` fields.
 
 ### Optional Directives for package.json files
-* **Description:** A bried description of the node.js project to provide relevant detail about the module\project.
+* **Description:** A brief description of the node.js project to provide relevant detail about the module\project.
 
 * **main:** refers to the file where the application starts, this can be any JavaScript file that should be executed first.
 
-* **Contributors:** names of all the developers and the people who have contributed to this projec.
+* **contributors:** names of all the developers and the people who have contributed to this project.
 
-* **Keywords:** keyword of the project in the Package.json file. Used to index the project on relevant package management repositories for discovery.
+* **keywords:** keyword of the project in the Package.json file. Used to index the project on relevant package management repositories for discovery.
 
-* **Author:** Developer name, company and email address.
+* **author:** Developer name, company and email address.
+
+* **license: ** specify a license for your detailing how others are permitted to use your project, and any restrictions placed upon it.
 
 ```javascript
 {
@@ -101,5 +105,5 @@ When creating a `package.json` file with a package management tool some addition
   "license": "ISC"
 }
 
-
 ```
+
