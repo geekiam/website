@@ -136,5 +136,12 @@ Alternatively, you can provide an additional `.npmignore` file in the root of yo
 
 The `.npmignore` file works just like a `.gitignore`. If there is a `.gitignore` file, and `.npmignore` is missing, `.gitignore` contents will be used instead.
 
+* **repository :** Specify the source code repository where your code can be viewed. This is especially helpful for not only people who want to contribute to your project but also for people who want to analyse and understand your project before making use of it in theirs.
+``` javascript
+ "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/threenine/geekiam.git"
+               },
 
-
+```
+* **bugs : ** Provides a location of your issue tracker where 
