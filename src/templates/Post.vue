@@ -64,6 +64,21 @@ export default {
                     property: 'article:published_time',
                     content: this.$page.post.date,
                 },
+                { name: 'twitter:card', content: 'summary_large_image' },
+                {
+                    name: 'twitter:description',
+                    content: this.$page.post.summary,
+                },
+                { name: 'twitter:title', content: this.$page.post.title },
+                { name: 'twitter:site', content: '@geekiam1' },
+                {
+                    name: 'twitter:image',
+                    content: this.$page.post.feature.image,
+                },
+                { name: 'twitter:creator', content: '@geekiam1' },
+            ],
+            script: [
+                { src: 'https://platform.twitter.com/widgets.js', async: true },
             ],
         }
     },
@@ -92,6 +107,10 @@ query($path: String) {
     post(path: $path) {
         title
         path
+        feature {
+            image(width: 400)
+            alt
+        }
         content
         description
         timeToRead
