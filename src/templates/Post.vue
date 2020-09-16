@@ -72,7 +72,7 @@ export default {
                 { name: 'twitter:title', content: this.$page.post.title },
                 { name: 'twitter:site', content: '@geekiam1' },
                 {
-                    name: 'twitter:image',
+                    name: 'og:image',
                     content: this.cardImage,
                 },
                 { name: 'twitter:creator', content: '@geekiam1' },
