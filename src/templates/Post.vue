@@ -73,7 +73,7 @@ export default {
                 { name: 'twitter:site', content: '@geekiam1' },
                 {
                     name: 'twitter:image',
-                    content: this.$page.post.feature.image,
+                    content: this.cardImage,
                 },
                 { name: 'twitter:creator', content: '@geekiam1' },
             ],
@@ -97,6 +97,9 @@ export default {
                 keywords = keywords.concat(`${this.$page.post.keywords[i]},`)
             }
             return keywords.replace(/(^\s*,)|(,\s*$)/g, '')
+        },
+        cardImage() {
+            return `${this.$static.metadata.siteUrl}/static${this.$page.post.feature.image}`
         },
     },
 }
