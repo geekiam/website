@@ -99,7 +99,7 @@ export default {
             return keywords.replace(/(^\s*,)|(,\s*$)/g, '')
         },
         cardImage() {
-            return `${this.$static.metadata.siteUrl}/static${this.$page.post.feature.image}`
+            return `${this.$static.metadata.siteUrl}${this.$page.post.feature.image}`
         },
     },
 }
