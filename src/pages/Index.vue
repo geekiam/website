@@ -24,7 +24,7 @@
 <script>
 export default {
     metaInfo: {
-        title: 'Geek Community',
+        title: 'Home',
     },
     data() {
         return {
@@ -97,6 +97,7 @@ query Blog($page: Int) {
 <static-query>
 query {
     metadata {
+        siteName
         siteUrl
         siteDescription
     }

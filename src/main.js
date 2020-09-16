@@ -18,7 +18,7 @@ export default function (Vue, { router, head, isClient }) {
         {
             key: 'keywords',
             name: 'keywords',
-            content: 'code, tutorials, free source code, software development ',
+            content: config.keywords,
         },
         {
             name: 'author',
@@ -37,11 +37,7 @@ export default function (Vue, { router, head, isClient }) {
             property: 'og:description',
             content: config.siteDescription,
         },
-        {
-            key: 'og:image',
-            property: 'og:image',
-            content: 'https://geekiam.io/assets/static/logo.png',
-        },
+
         { property: 'og:site_name', content: config.siteName }
     )
 

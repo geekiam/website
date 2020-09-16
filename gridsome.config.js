@@ -9,6 +9,8 @@ module.exports = {
     siteDescription: 'Software Developer Community',
     siteUrl: 'https://geekiam.io',
     titleTemplate: '%s | Geek.I.Am',
+    keywords: 'code tutorial, learn to code, ',
+    image: 'uploads/version-control.png',
     icon: 'src/favicon.png',
     plugins: [
         {
