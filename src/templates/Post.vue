@@ -75,7 +75,7 @@ export default {
                     name: 'og:image',
                     content: this.cardImage,
                 },
-                { name: 'twitter:creator', content: '@geekiam1' },
+                { name: 'twitter:creator', content: '@gary_woodfine' },
             ],
             script: [
                 { src: 'https://platform.twitter.com/widgets.js', async: true },
