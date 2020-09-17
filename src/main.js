@@ -22,7 +22,7 @@ export default function (Vue, { router, head, isClient }) {
         },
         {
             name: 'author',
-            content: 'threenine.co.uk',
+            content: config.author,
         },
         {
             key: 'description',
