@@ -71,10 +71,8 @@ export default {
                 },
                 { name: 'twitter:title', content: this.$page.post.title },
                 { name: 'twitter:site', content: '@geekiam1' },
-                {
-                    property: 'og:image',
-                    content: this.cardImage,
-                },
+                { property: 'og:image', content: this.cardImage },
+                { property: 'og:image:secure_url', content: this.cardImage },
                 { name: 'twitter:creator', content: '@gary_woodfine' },
             ],
             script: [
