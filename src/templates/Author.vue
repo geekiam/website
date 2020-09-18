@@ -1,27 +1,24 @@
 <template>
-    <Layout>
-        <template #mainbody>
+    <home-layout>
+        <template #main-content>
             <header>
                 <div
-                    class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
+                    class="text-center max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
                 >
                     <h1
                         class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize"
                     >
                         {{ titleCase($page.author.title) }}
                     </h1>
-                    <svg
-                        aria-labelledby="authorIcon"
-                        class="w-5 sm:w-6 fill-current text-gray-500 mx-auto mb-1"
-                        role="img"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <title id="authorIcon">Author posts</title>
-                        <path
-                            d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z"
+                    <div class="md:flex bg-white rounded-lg p-6">
+                        <g-image
+                            :alt="`${$page.author.title}`"
+                            :src="avatar"
+                            @error="imageLoadError"
+                            class="h-14 w-14 rounded-full"
+                            aria-labelledby="authorIcon"
                         />
-                    </svg>
+                    </div>
                 </div>
             </header>
             <section>
@@ -32,24 +29,27 @@
                 />
             </section>
         </template>
-    </Layout>
+    </home-layout>
 </template>
 
 <script>
-import moment from 'moment'
-
 export default {
     name: 'Author',
-    methods: {
-        formatPublishDate(date) {
-            return moment(date).format('DD MMMM, YYYY')
+    computed: {
+        avatar() {
+            return `/authors/images/${this.$page.author.id}.png`
         },
+    },
+    methods: {
         titleCase(str) {
             return str
                 .replace('-', ' ')
                 .split(' ')
                 .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
                 .join(' ')
+        },
+        imageLoadError(e) {
+            e.target.src = `/authors/images/default.png`
         },
     },
 }
@@ -71,9 +71,10 @@ query Author($path: String!, $page: Int) {
                     ... on Post {
                         id
                         title
-                        datetime: date(format: "YYYY-MM-DD HH:mm:ss")
+                        date(format: "D MMMM Y")
                         path
                         content
+                        summary
                         description
                         timeToRead
                         tags {

@@ -5,7 +5,7 @@
     >
         <figure class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center">
             <g-link :to="`${author.path}/`">
-                <img
+                <g-image
                     :alt="author.title"
                     :src="avatar"
                     @error="imageLoadError"
