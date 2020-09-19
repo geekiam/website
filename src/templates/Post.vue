@@ -58,23 +58,30 @@ export default {
                     content: this.$page.post.description,
                 },
                 { key: 'og:url', property: 'og:url', content: this.postUrl },
+                { property: 'og:image', content: this.cardImage },
+                { property: 'og:image:secure_url', content: this.cardImage },
                 { key: 'keywords', name: 'keywords', content: this.keywords },
                 {
                     key: 'article:published_time',
                     property: 'article:published_time',
                     content: this.$page.post.date,
                 },
+                { name: 'twitter:title', content: this.$page.post.title },
                 { name: 'twitter:card', content: 'summary_large_image' },
                 {
                     name: 'twitter:description',
                     content: this.$page.post.summary,
                 },
-                { name: 'twitter:title', content: this.$page.post.title },
-                { name: 'twitter:site', content: '@geekiam1' },
+
+                {
+                    name: 'twitter:site',
+                    content: 'https://twitter.com/geekiam1',
+                },
+                {
+                    name: 'twitter:creator',
+                    content: 'https://twitter.com/gary_woodfine',
+                },
                 { name: 'twitter:image', content: this.cardImage },
-                { property: 'og:image', content: this.cardImage },
-                { property: 'og:image:secure_url', content: this.cardImage },
-                { name: 'twitter:creator', content: '@gary_woodfine' },
             ],
             script: [
                 { src: 'https://platform.twitter.com/widgets.js', async: true },

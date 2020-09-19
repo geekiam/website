@@ -25,7 +25,7 @@
                 <post-card
                     :key="edge.node.id"
                     :post="edge.node"
-                    v-for="edge in $page.author.belongsTo.edges"
+                    v-for="edge in this.posts"
                 />
             </section>
         </template>
@@ -35,6 +35,14 @@
 <script>
 export default {
     name: 'Author',
+    data() {
+        return {
+            posts: [],
+        }
+    },
+    mounted() {
+        this.posts.push(...this.$page.author.belongsTo.edges)
+    },
     computed: {
         avatar() {
             return `/authors/images/${this.$page.author.id}.png`
