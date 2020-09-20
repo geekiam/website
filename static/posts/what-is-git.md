@@ -37,7 +37,30 @@ Git is distributed version-control systems, and every Git directory on every com
 
 There are few characteristics about git that make it a popular choice for software developers and understanding these key properties actually make git easier to user and comprehend.
 
-#### Snapshots
+#### File-system Snapshots
 
-The major difference between Git and any other common Version Control Systems (VCS)  is the way data and details about files is treated by Git. Conceptually, most other systems store information as a list of file-based changes or they store as a set of files and the changes made to each file over time, this is commonly described as delta-based version control.
+The major difference between Git and any other common Version Control Systems (VCS)  is the way data and details about files is treated by Git. Conceptually, most other systems store information as a list of file-based changes or they store as a set of files and the changes made to each file over time, this is commonly described as delta-based version control. The set of incremental changes for each file are recorded,the increment is the difference -Delta - to changes in the file between the previous and current versions. For text-based files, such as source code files, the line changes are recorded.
+
+Git doesn't store information in this manner, it stores data more like a series of snapshots of a miniature file-system. Every time you commit, or save the state of your project, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots.
+
+This makes Git more like a mini file-system with some incredibly powerful tools built on top of it, rather than simply a VCS. 
+
+#### Local operation
+
+Every developer works on their own local copy of the code. What this means is that developers can work on and change, edit, add and delete code file while disconnected from the internet or network, without affecting their team mates.
+
+Even though developers may be disconnected from the network, they can still see a complete history and view old versions of files because every thing is available locally.
+
+This also means that If you get on an aeroplane or a train and want to do a little work, you can commit happily to your local copy until you get to a network connection to synchronise your changes to a central repository. 
+
+In many other systems, doing so is either impossible or painful because you can’t do much when you're not connected to the server. This may not seem like a huge deal, but you may be surprised what a big difference it can make especially when working remotely.
+
+#### File integrity
+Once a file(s) has been committed to a git repository it is impossible to change or tamper with without git knowing about it. All files and folders in Git repository undergo a checksum process before being stored and then referred to by their checksum.
+
+A checksum is a sequence of numbers and letters used to check data for errors. To produce a checksum,a program runs a file through an algorithm. Typical algorithms used for this include MD5, SHA-1, SHA-256, and SHA-512.
+
+The algorithm uses a cryptographic hash function that takes an input and produces a string of a fixed length. The input file can be a small 1 MB file or a massive 4 GB file, but either way, you’ll end up with a checksum of the same length. Checksums are also commonly referred to as *hashes*.
+
+Even the slightest change in a file produces very different looking checksums. A single character difference in the underlying file produces a very different looking checksum.
 
