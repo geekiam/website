@@ -70,3 +70,5 @@ A SHA-1 hash looks something like this:
 ```sh
 56b9da6552332987be463b52f8696cd7e3b00482
 ```
+
+Git stores everything in its internal database by the hash value of its contents.
