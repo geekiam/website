@@ -32,3 +32,12 @@ The primary goals git are aimed at the typical use cases for software developers
 Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. Since 2005,Git has evolved and matured to be amazingly fast and efficient with an incredible branching system that enables non-linear development.
 
 Git is distributed version-control systems, and every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.
+
+### Why do software developers like git?
+
+There are few characteristics about git that make it a popular choice for software developers and understanding these key properties actually make git easier to user and comprehend.
+
+#### Snapshots
+
+The major difference between Git and any other common Version Control Systems (VCS)  is the way data and details about files is treated by Git. Conceptually, most other systems store information as a list of file-based changes or they store as a set of files and the changes made to each file over time, this is commonly described as delta-based version control.
+
