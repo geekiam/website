@@ -29,5 +29,6 @@ The primary goals git are aimed at the typical use cases for software developers
 * data integrity
 * support for distributed team workflows
 
-Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.
- Since 2005, Junio Hamano has been the core maintainer. As with most other distributed version-control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server..
+Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. Since 2005,Git has evolved and matured to be amazingly fast and efficient with an incredible branching system that enables non-linear development.
+
+Git is distributed version-control systems, and every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server.
