@@ -2,10 +2,10 @@
 title: How to use git flow
 description: Using git-flow CLI to automate a popular git branching and merging strategy
 summary: Using git-flow CLI to automate a popular git branching and merging strategy .
-keywords: 
-     - gitflow
-     - git
-     - version control
+keywords:
+  - gitflow
+  - git
+  - version control
 feature:
   image: /uploads/version-control.png
   alt: How to use Git Flow
@@ -23,7 +23,7 @@ The *Git-Flow* approach has gained popularity over the years, and in some way ha
 
 "git flow" branching model is a git branching and release management workflow that helps developers keep track of *features*, *hotfixes* and *releases* in bigger software projects.
 
-The workflow consists of a number terminal commands to type and remember,  which as any developer will tell you has the potential to lead to bugs and mis-implementation! Over the years the [git-flow library] https://github.com/nvie/gitflow) evolved which comprises a number git sub-commands to help automate parts of the flow to make working with it easier.
+The workflow consists of a number terminal commands to be used in a [terminal window](https://geekiam.io/what-is-a-terminal-window/) to type and remember,  which as any developer will tell you has the potential to lead to bugs and mis-implementation! Over the years the [git-flow library](https://github.com/nvie/gitflow) evolved which comprises a number git sub-commands to help automate parts of the flow to make working with it easier.
 
 ### When to use Git Flow
 
