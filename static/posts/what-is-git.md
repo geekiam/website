@@ -62,5 +62,5 @@ A checksum is a sequence of numbers and letters used to check data for errors. T
 
 The algorithm uses a cryptographic hash function that takes an input and produces a string of a fixed length. The input file can be a small 1 MB file or a massive 4 GB file, but either way, you’ll end up with a checksum of the same length. Checksums are also commonly referred to as *hashes*.
 
-Even the slightest change in a file produces very different looking checksums. A single character difference in the underlying file produces a very different looking checksum.
+Even the slightest change in a file produces very different looking checksum values. A single character difference in the underlying file produces a very different looking checksum.
 
