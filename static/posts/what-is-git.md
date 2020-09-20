@@ -64,3 +64,9 @@ The algorithm uses a cryptographic hash function that takes an input and produce
 
 Even the slightest change in a file produces very different looking checksum values. A single character difference in the underlying file produces a very different looking checksum.
 
+The mechanism that Git uses to produce a checksum is called a SHA-1 hash. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git. 
+
+A SHA-1 hash looks something like this:
+```sh
+56b9da6552332987be463b52f8696cd7e3b00482
+```
