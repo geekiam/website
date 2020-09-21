@@ -39,13 +39,13 @@
 </template>
 
 <script>
-import formatService from '@/services/posts/format.servic
+import formatService from '@/services/posts/format.service'
 
 export default {
     name: 'Category',
 
     methods: {
-         titleCase(str) {
+        titleCase(str) {
             return formatService.toTitleCase(str)
         },
     },
