@@ -39,21 +39,14 @@
 </template>
 
 <script>
-import moment from 'moment'
+import formatService from '@/services/posts/format.servic
 
 export default {
     name: 'Category',
 
     methods: {
-        formatPublishDate(date) {
-            return moment(date).format('DD MMMM, YYYY')
-        },
-        titleCase(str) {
-            return str
-                .replace('-', ' ')
-                .split(' ')
-                .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-                .join(' ')
+         titleCase(str) {
+            return formatService.toTitleCase(str)
         },
     },
 }
