@@ -77,3 +77,22 @@ Git stores everything in its internal database by the hash value of its contents
 
 In git, every action preform is an addition only operation. There is very little chance of something being completely deleted from git. Even if a file has been from 1 version or a commit, the file will still be available and restore-able from other versions or branches.
 
+#### Branching
+
+A core concept within git, is branching.  Users can create, delete, manipulate and manage branches in git with ease. However, git has even stronger support for branches and provides capabilities for changing branch points and reproducing changes from one branch to another - a feature known as `rebase`. 
+
+This ease in working with and manipulating branches forms the basis for a software development model with Git. In this model, branches are managed as easily as files are in some other systems. 
+
+#### One Working area
+
+Git provides a single-step managed process enabling you to work in one workspace for a repository, regardless of how many branches you may have or need to use. It manages updating the content in the workspace to ensure it is consistent with whichever branch is active. You never need to leave that workspace. Also, while working in one branch, you still have the expected access to view, merge, or create other branches.
+
+
+### Conclusion
+
+If you're coming from an environment where you used a traditional centralized source control system, like Subversion, Perforce or Team Foundation Services you'll find that Git is significantly different and has a learning curve. 
+
+The workflow is very different. Trying to map commands, structures, and workflows from your previous system is not an effective strategy. Rather, you should take the time to read through the other tutorials on this site and examine the concepts and examples. 
+
+We will aim to provide practice labs and tutorials to guide you along your way to understanding and effectively working with git.
+
