@@ -72,3 +72,8 @@ A SHA-1 hash looks something like this:
 ```
 
 Git stores everything in its internal database by the hash value of its contents.
+
+#### Data addition
+
+In git, every action preform is an addition only operation. There is very little chance of something being completely deleted from git. Even if a file has been from 1 version or a commit, the file will still be available and restore-able from other versions or branches.
+
