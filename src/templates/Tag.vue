@@ -39,20 +39,13 @@
 </template>
 
 <script>
-import moment from 'moment'
+import formatService from '@/services/posts/format.service'
 
 export default {
     name: 'Tag',
     methods: {
-        formatPublishDate(date) {
-            return moment(date).format('DD MMMM, YYYY')
-        },
         titleCase(str) {
-            return str
-                .replace('-', ' ')
-                .split(' ')
-                .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-                .join(' ')
+            return formatService.toTitleCase(str)
         },
     },
 }
@@ -77,6 +70,7 @@ query Tag($path: String!, $page: Int) {
                         datetime: date(format: "YYYY-MM-DD HH:mm:ss")
                         path
                         content
+                        summary
                         excerpt
                         description
                         timeToRead

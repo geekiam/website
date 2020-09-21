@@ -79,6 +79,7 @@ query Category($path: String!, $page: Int) {
                         path
                         content
                         excerpt
+                        summary
                         description
                         timeToRead
                         author {

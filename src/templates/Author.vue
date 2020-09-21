@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import formatService from '@/services/posts/format.service'
 export default {
     name: 'Author',
     computed: {
@@ -42,11 +43,7 @@ export default {
     },
     methods: {
         titleCase(str) {
-            return str
-                .replace('-', ' ')
-                .split(' ')
-                .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-                .join(' ')
+            return formatService.toTitleCase(str)
         },
         imageLoadError(e) {
             e.target.src = `/authors/images/default.png`
@@ -56,36 +53,36 @@ export default {
 </script>
 <page-query>
 query Author($path: String!, $page: Int) {
-author(path: $path) {
-id
-title
-path
-belongsTo(page: $page, perPage: 6) @paginate {
-totalCount
-pageInfo {
-totalPages
-currentPage
-}
-edges {
-node {
-... on Post {
-id
-title
-date(format: "D MMMM Y")
-path
-content
-summary
-description
-timeToRead
-tags {
-id
-title
-path
-}
-}
-}
-}
-}
-}
+    author(path: $path) {
+        id
+        title
+        path
+        belongsTo(page: $page, perPage: 6) @paginate {
+            totalCount
+            pageInfo {
+                totalPages
+                currentPage
+            }
+            edges {
+                node {
+                    ... on Post {
+                        id
+                        title
+                        date(format: "D MMMM Y")
+                        path
+                        content
+                        summary
+                        description
+                        timeToRead
+                        tags {
+                            id
+                            title
+                            path
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 </page-query>
