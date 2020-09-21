@@ -88,4 +88,11 @@ This ease in working with and manipulating branches forms the basis for a softwa
 Git provides a single-step managed process enabling you to work in one workspace for a repository, regardless of how many branches you may have or need to use. It manages updating the content in the workspace to ensure it is consistent with whichever branch is active. You never need to leave that workspace. Also, while working in one branch, you still have the expected access to view, merge, or create other branches.
 
 
+### Conclusion
+
+If you're coming from an environment where you used a traditional centralized source control system, like Subversion, Perforce or Team Foundation Services you'll find that Git is significantly different and has a learning curve. 
+
+The workflow is very different. Trying to map commands, structures, and workflows from your previous system is not an effective strategy. Rather, you should take the time to read through the other tutorials on this site and examine the concepts and examples. 
+
+We will aim to provide practice labs and tutorials to guide you along your way to understanding and effectively working with git.
 
