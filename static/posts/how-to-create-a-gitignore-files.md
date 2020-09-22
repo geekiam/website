@@ -1,5 +1,5 @@
 ---
-title: How to create a .gitignore files
+title: How to create a git ignore files
 description: A .gitignore file allows you to exclude files from your git
   commits.Learn how to easily  create .gitignore files.
 summary: A .gitignore file allows you to exclude files from your git
