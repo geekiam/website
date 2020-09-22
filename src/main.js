@@ -12,7 +12,9 @@ import InfiniteLoading from 'vue-infinite-loading'
 import config from '../gridsome.config'
 
 export default function (Vue, { router, head, isClient }) {
-    let copyRightNotice = `\u00a9 threenine.co.uk, ${new Date().getFullYear()}. All rights reserved`
+    let copyRightNotice = `\u00a9 ${
+        config.author
+    }, ${new Date().getFullYear()}. All rights reserved`
 
     head.meta.push(
         {
