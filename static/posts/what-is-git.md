@@ -7,7 +7,7 @@ keywords:
   - version control
   - What is git
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/git/what-is-git.png
   alt: What is git
 date: 2020-09-20T13:15:08.937Z
 author: gary-woodfine

@@ -10,7 +10,7 @@ keywords:
   - git
   - version control
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/git/github-repository-using-terminal-window.png
   alt: Version Control
 date: 2020-06-20T10:34:39.798Z
 author: gary-woodfine

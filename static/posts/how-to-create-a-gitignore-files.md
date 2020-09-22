@@ -1,5 +1,5 @@
 ---
-title: How to create a git ignore files
+title: How to create git ignore files
 description: A .gitignore file allows you to exclude files from your git
   commits.Learn how to easily  create .gitignore files.
 summary: A .gitignore file allows you to exclude files from your git
@@ -8,7 +8,7 @@ keywords:
   - gitignore
   - how to create gitignore file
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/git/how-to-create-git-ignore-files.png
   alt: How to create gitignore file
 date: 2020-09-22T17:31:47.672Z
 author: gary-woodfine
@@ -329,7 +329,6 @@ node_modules
 ## Ignore all files in the .cache folder
 
 .cache/
-
 
 ## ignore all files in the temp folder in src folder with a .tmp extension but include others
 
