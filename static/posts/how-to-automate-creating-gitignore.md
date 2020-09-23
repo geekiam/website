@@ -2,7 +2,8 @@
 title: How to automate creating gitignore files
 description: A git ignore file allows you to exclude files from your git
   commits. Learn how to easily automate the creation of .gitignore files.
-summary: A git ignore file allows you to exclude files from your git commits. Learn how to easily automate the creation of .gitignore files.
+summary: A git ignore file allows you to exclude files from your git commits.
+  Learn how to easily automate the creation of .gitignore files.
 keywords:
   - gitignore
   - how to create gitignore file
@@ -25,9 +26,10 @@ git ignore files like why and how they are used and creating them.  We also expl
 In the example, provided we made use of a Curl command to make a web call to [Github gitignore template collection](https://github.com/github/gitignore)) 
 and download file and rename it to `.gitignore` in our project directory
 
-```shell script
+```shell
 curl -o .gitignore  https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
 ```
+
 This command is a great time-saver and does the job well. The downside is that its not easy to remember due to the fact 
 there is a long Url string to commit to memory etc.  Therefore, I thought I would share a little trick I use to create 
 an easy to use command, using the power of Linux and the shell.
@@ -38,11 +40,13 @@ details as to why it is such a popular tool for developers.  We'll build on all 
 extend functionality to reuse.
 
 ### Create common bash function file
+
 The first step we'll undertake is to create a new text-based file in our Home directory which we will name `.bash_functions`
 
-```shell script
+```shell
 touch ~/.bash_functions
 ```
+
 The purpose of this file is basically to be a common file to store common functions and utilities we want to create. You
 can name this file whichever you choose, personally I prefer to call it `.bash_functions` because it suits a naming 
 convention already present in our home directory, which we can see if we do `ls -a $HOME` to display all the hidden files
@@ -51,17 +55,16 @@ in our home directory we'll see a few `.bash_**` files, these files all have a s
 
 ![Git log ](/uploads/bash-conventions.png "Home directory bash files")
 
-
 If we open the newly created `.bash_functions` file in our prefered text editor, in my case I am simply going to use `nano`
-```shell script
+
+```shell
 nano .bash_functions
 ```
 
 We add the following code to the file, which will essentially create a function by the name of `gitignore`, again you can 
 call it whatever you want I just prefer to name it according to the action it is going to preform.
 
-```shell script
-
+```shell
 gitignore() {
  curl -o .gitignore  https://raw.githubusercontent.com/github/gitignore/master/"$1".gitignore
 }
@@ -92,7 +95,7 @@ variables.
 You can edit your `.bashrc` using any text editor, in my case I will make use of `nano` , so to edit the file we 
 open it is follows.
 
-```shell script
+```shell
 nano ~/.bashrc
 ```
 
@@ -100,7 +103,7 @@ Once the file is open we need to add additional lines of code, to load our `.bas
 notice in the file, by default there are already lines which load the `.bash_aliases` file, so we will effectively 
 replicate this and include our new file.
 
-```shell script
+```shell
 ...... 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -117,6 +120,7 @@ if [ -f ~/.bash_functions ]; then
 fi
 .....
 ```
+
 Once you have completed adding the code save and exit the file.  
 
 We'll now create an Alias in our `.bash_aliases` file which we'll use to call our function. We can provide whichever 
@@ -124,27 +128,29 @@ easy to remember name we want, in my case for the sake of brevity and hopefully 
 going to call it `gitignore`.  To do this, we can simply open our `.bash_aliases` file in your preferred text editor, 
 again in my case I'll make use of `nano`.
 
-```shell script
+```shell
 nano ~/.bash_aliases
 ```
+
 Once the file is open, we can add our alias as follows
 
-```shell script
+```shell
 alias gitignore='gitignore'
 ```
+
 Save and exit the file.  We now just need to refresh our current terminal session to bring in our updates.
 
-```shell script
-
+```shell
 # We can refresh our terminal window with either command
 source ~/.bashrc
 # or
 . ~/.bashrc
 ```
+
 Once we're finished, we can now use our new command.  If we create a new project folder and in this 
 instance I will be creating a new nodejs project.
 
-```shell script
+```shell
 # Create Project directory
 mkdir funky-project
 # change directory to funky-project
@@ -173,9 +179,8 @@ If we inspect the `.gitignore` in the root of the project folder we'll now see t
 node based project settings.
 
 ### Conclusion
-We have now automated the creation of git ignore files to enable creating the files. This approach enables you to 
-customise this process even further, for instance you may want to create your own organisational repo, which my have t
-typical settings and for a custom project structure you would like to cater for.
 
-Taken this approach we have eliminated some of the boring repetitive and error prone manual steps required when setting 
-up a project. 
+We have now automated the creation of git ignore files to enable creating the files. This approach enables you to 
+customise this process even further, for instance you may want to create your own organisational repository, which may have typical settings and for a custom project structure you would like to cater for.
+
+Taken this approach we have eliminated some of the boring repetitive and error prone manual steps required when setting up a project.
