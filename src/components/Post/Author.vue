@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import format from '@/services/posts/format.service'
 export default {
     name: 'Author',
     props: ['author'],
@@ -47,11 +48,7 @@ export default {
     },
     methods: {
         titleCase(str) {
-            return str
-                .replace('-', ' ')
-                .split(' ')
-                .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-                .join(' ')
+            return format.toTitleCase(str)
         },
         imageLoadError(e) {
             e.target.src = `/authors/images/default.png`

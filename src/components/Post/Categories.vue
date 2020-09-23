@@ -21,16 +21,13 @@
 </template>
 
 <script>
+import format from '@/services/posts/format.service'
 export default {
     name: 'Categories',
     props: ['categories'],
     methods: {
         titleCase(str) {
-            return str
-                .replace('-', ' ')
-                .split(' ')
-                .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-                .join(' ')
+            return format.toTitleCase(str)
         },
     },
 }

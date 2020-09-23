@@ -31,16 +31,13 @@
 </template>
 
 <script>
+import format from '@/services/posts/format.service'
 export default {
     name: 'PostTitle',
     props: ['post'],
     methods: {
         titleCase(str) {
-            return str
-                .replace('-', ' ')
-                .split(' ')
-                .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-                .join(' ')
+            return format.toTitleCase(str)
         },
     },
 }

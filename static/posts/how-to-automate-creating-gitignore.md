@@ -35,8 +35,7 @@ there is a long Url string to commit to memory etc.  Therefore, I thought I woul
 an easy to use command, using the power of Linux and the shell.
 
 I have previously discussed [What is the terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am") and [How to use
-the terminal window on Ubuntu Linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How to use
-                                                                                                         the terminal window on Ubuntu Linux| Geek.I.Am") providing 
+the terminal window on Ubuntu Linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How to use the terminal window on Ubuntu Linux| Geek.I.Am") providing 
 details as to why it is such a popular tool for developers.  We'll build on all the knowledge gained in this posts to 
 extend functionality to reuse.
 
