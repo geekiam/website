@@ -1,4 +1,4 @@
-[![Geek.I.Am ](https://github.com/garywoodfine/geekiam/blob/master/src/assets/images/logo.png)](https://geekiam.io)
+[![Geek.I.Am ](https://github.com/threenine/geekiam/blob/master/src/assets/images/logo.png)](https://geekiam.io)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8efb3bdf-7233-4af4-8ce4-4ef961592200/deploy-status)](https://app.netlify.com/sites/geekiam/deploys)
 
@@ -21,7 +21,9 @@ learned developing with Gridsome, Vue, Netlify, TailwindCSS, JavaScript and much
 * [Gridsome - Implement Cookie Consent](https://garywoodfine.com/gridsome-implement-cookie-consent)
 * [Gridsome - Configure your development environment](https://garywoodfine.com/gridsome-configure-your-development-environment/)
 * [Gridsome - Configuring Layouts and using slots](https://garywoodfine.com/gridsome-configuring-layouts-and-using-slots/)
-
+* [Gridsome - How to create a plugin](https://garywoodfine.com/gridsome-how-to-create-a-plugin/)
+* [Gridsome - How to add Twitter Card to posts](https://garywoodfine.com/gridsome-how-to-add-twitter-card-to-posts/) 
+ 
  ### Developed, Sponsored and Supported 
  
 [![threenine logo](http://static.threenine.co.uk/img/github_footer.png)](https://threenine.co.uk/)

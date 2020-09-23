@@ -11,7 +11,7 @@ keywords:
  - bash
  - gnome
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/terminal/how-to-use-linux-terminal.png
   alt: Terminal Window
 date: 2020-09-10T19:02:30.957Z
 author: gary-woodfine

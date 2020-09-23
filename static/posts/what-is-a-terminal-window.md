@@ -10,7 +10,7 @@ keywords:
   - ubuntu
   - bash
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/terminal/what-is-terminal-window.png
   alt: Software developer tutorial
 date: 2020-09-05T15:18:00.644Z
 author: gary-woodfine
