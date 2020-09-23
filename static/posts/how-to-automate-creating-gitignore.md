@@ -23,7 +23,7 @@ In [How to create git ignore files](https://geekiam.io/how-to-create-git-ignore-
 git ignore files like why and how they are used and creating them.  We also explored how we can make use of common 
 `.gitignore` templates on Github to create project specific git ignore files.
 
-In the example, provided we made use of a Curl command to make a web call to [Github gitignore template collection](https://github.com/github/gitignore)) 
+In the example, provided we made use of a Curl command to make a web call to [Github gitignore template collection](https://github.com/github/gitignore "Github git ignore template collection")
 and download file and rename it to `.gitignore` in our project directory
 
 ```shell
@@ -34,8 +34,9 @@ This command is a great time-saver and does the job well. The downside is that i
 there is a long Url string to commit to memory etc.  Therefore, I thought I would share a little trick I use to create 
 an easy to use command, using the power of Linux and the shell.
 
-I have previously discussed [What is the terminal window](https://geekiam.io/what-is-a-terminal-window/) and [How to use
-the terminal window on Ubuntu Linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/) providing 
+I have previously discussed [What is the terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am") and [How to use
+the terminal window on Ubuntu Linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How to use
+                                                                                                         the terminal window on Ubuntu Linux| Geek.I.Am") providing 
 details as to why it is such a popular tool for developers.  We'll build on all the knowledge gained in this posts to 
 extend functionality to reuse.
 
@@ -83,7 +84,7 @@ load it up if it exists.
 ### What is bashrc?
 
 `.bashrc` is a shell script that runs Bash whenever it is started interactively, to initiate an interactive session. 
-It provides the ability to add any regular commands or functions that you use when using your [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window").
+It provides the ability to add any regular commands or functions that you use when using your [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window | Geek.I.Am").
 
 The `.bashrc` is called whenever a new terminal session is started, and loads up your preferences at each launch.
 

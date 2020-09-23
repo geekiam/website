@@ -56,9 +56,9 @@ ls - a $HOME
 
 We can now populate this file with our environment specific data that we would like to exclude from any new or existing repositories we create and use on our machine.  Github provide a very useful [ collection of useful Global .gitignore templates ](https://github.com/github/gitignore/tree/master/Global) you can use to tailor your global file.
 
-In my particular case, I predominantly use [Jetbrains Based IDE's and Tools](https://www.jetbrains.com/) such as WebStorm, Rider, PHPStorm, GoLand, DataGrid etc  on Linux based computers.  So typically use the defaults that are provided in [Jetbrains Ignore](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore) and the [Linux Ignore](https://github.com/github/gitignore/blob/master/Global/Linux.gitignore) file settings.    I do this by opening the new created `.gitinore` in my prefered text editor and pasting these values in.
+In my particular case, I predominantly use [Jetbrains Based IDE's and Tools](https://www.jetbrains.com/) such as [WebStorm](https://www.jetbrains.com/webstorm/ "Webstorm - The smartest JavaScript IDE"), [Rider](https://www.jetbrains.com/rider/ "Rider Fast & powerful, cross-platform .NET IDE"), [PHPStorm](https://www.jetbrains.com/phpstorm/ "PhpStorm The Lightning-Smart PHP IDE"), [GoLand](https://www.jetbrains.com/go/ "Goland cross-platform IDE built specially for Go developers")  etc  on Linux based computers.  So typically use the defaults that are provided in [Jetbrains Ignore](https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore) and the [Linux Ignore](https://github.com/github/gitignore/blob/master/Global/Linux.gitignore) file settings.    I do this by opening the new created `.gitinore` in my prefered text editor and pasting these values in.
 
-```sh
+```shell script
 nano $HOME/.gitignore
 ```
 
