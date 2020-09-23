@@ -102,9 +102,16 @@ It is worth taking a little time and having a read through the help files to get
 
 If reading online manuals is your preferred option then the [full Github Cli manual](https://cli.github.com/manual/) is available
 
+Personally, I also always prefer to ensure that I only use ssh when communicating with Github and therefore tend to set 
+the default protocol for all terminal commands to use ssh
+
+```shell script
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/
+```
+
 ### How to create Github repository using terminal commands
 
-We now go ahead and create our repository and add our files then we create our repository on Github.
+We now go ahead and create our repository and add our files then we create our repository on Github. 
 
 In this example we will create a very simple repository with one file.  
 

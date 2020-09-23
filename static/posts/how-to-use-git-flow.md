@@ -7,7 +7,7 @@ keywords:
   - git
   - version control
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/git/how-to-use-git-flow.png
   alt: How to use Git Flow
 date: 2020-05-10T20:29:50.183Z
 author: gary-woodfine

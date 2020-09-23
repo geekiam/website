@@ -10,7 +10,7 @@ keywords:
      - github
      
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/git/basics-of-version-control.png
   alt: Version Control Systems
 date: 2020-03-15T20:29:50.183Z
 author: gary-woodfine

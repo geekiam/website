@@ -6,7 +6,7 @@ keywords:
     - git
     - version control
 feature:
-  image: /uploads/version-control.png
+  image: /uploads/posts/git/how-to-revert-a-git-commit.png
   alt: Version Control systems
 date: 2020-05-23T15:29:50.183Z
 author: gary-woodfine
