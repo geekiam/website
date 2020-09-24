@@ -7,7 +7,7 @@ keywords:
     - npm
     - javascript
 feature:
-  image: /uploads/nodejs.png
+  image: /uploads/posts/node/how-use-package-management-in-javascript-projects.jpg
   alt: Node Package Management
 date: 2020-08-21T14:51:28.497Z
 author: gary-woodfine

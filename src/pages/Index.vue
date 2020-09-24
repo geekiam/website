@@ -71,7 +71,7 @@ query Blog($page: Int) {
                 path
                 date(format: "D MMMM Y")
                 feature {
-                    image(width: 400)
+                    image(width: 200)
                     alt
                 }
                 categories {

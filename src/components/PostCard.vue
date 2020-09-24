@@ -4,7 +4,7 @@
             <g-image
                 :alt="post.feature.alt"
                 :src="post.feature.image"
-                class="h-64 inset-0 h-full w-full object-cover object-center hover:opacity-75"
+                class="h-12 inset-0 h-full w-full object-cover object-center hover:opacity-75"
                 v-if="post.feature"
             />
 
