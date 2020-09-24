@@ -8,7 +8,6 @@ import SiteFooter from '@/components/SiteFooter'
 import PostLayout from '@/layouts/PostLayout'
 import PostCard from '@/components/PostCard'
 import InfiniteLoading from 'vue-infinite-loading'
-
 import config from '../gridsome.config'
 
 export default function (Vue, { router, head, isClient }) {
