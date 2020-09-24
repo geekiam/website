@@ -29,7 +29,7 @@ Git makes this job really easy for you by enabling you to create a `.gitignore` 
 
 A `.gitignore` file is essentially a text-based file that  developers can use to list specific files, file types and folders to be excluded from being added or managed by a git repository.   
 
-[Git is a popular version control system](https://geekiam.io/what-is-git/ "What is git")provides the ability to create a Global and Local and these have very specific purposes and developers should definitely making use of both these ignore file options on their development workstations.
+[Git is a popular version control system](https://geekiam.io/what-is-git/ "What is git") provides the ability to create a Global and Local and these have very specific purposes and developers should definitely making use of both these ignore file options on their development workstations.
 
 #### What is a Global .gitignore file
 

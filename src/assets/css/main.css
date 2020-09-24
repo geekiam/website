@@ -10,7 +10,7 @@ html {
 }
 
 a {
-    @apply text-green-700 font-bold;
+    @apply text-green-700 font-bold italic;
 }
 
 a:hover {

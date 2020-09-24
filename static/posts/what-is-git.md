@@ -26,6 +26,7 @@ Over the years software developers have explored and used many different approac
 ### What is git
 
 Git is a free and open-source software distributed under GNU General Public License Version 2 for distributed version-control systems to track changes in source code during software development. It is purposely designed for coordinating work in software development teams, but it can be used to track changes in any set of files. 
+Originally developed by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds "Linus Torvalds | Wikipedia"), the creator of Linux Kernel 
 
 The primary goals git are aimed at the typical use cases for software developers which include: 
 * speed
