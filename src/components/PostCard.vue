@@ -1,24 +1,25 @@
 <template>
     <article class="flex-1 border shadow-xl mb-5">
+        <div class="bg-white p-4">
+            <p class="text-sm leading-5 font-medium text-green-600">
+                <g-link
+                    :to="post.categories[0].path"
+                    class="hover:underline text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
+                    v-if="post.categories && post.categories.length > 0"
+                >
+                    {{ titleCase(post.categories[0].title) }}
+                </g-link>
+            </p>
+        </div>
         <g-link :to="post.path">
             <g-image
                 :alt="post.feature.alt"
                 :src="post.feature.image"
-                class="h-12 inset-0 h-full w-full object-cover object-center hover:opacity-75"
+                class="inset-0 h-full w-full object-cover object-center hover:opacity-75"
                 v-if="post.feature"
             />
 
-            <div class="bg-white p-6">
-                <p class="text-sm leading-5 font-medium text-green-600">
-                    <g-link
-                        :to="post.categories[0].path"
-                        class="hover:underline text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
-                        v-if="post.categories && post.categories.length > 0"
-                    >
-                        {{ titleCase(post.categories[0].title) }}
-                    </g-link>
-                </p>
-
+            <div class="bg-white p-4">
                 <g-link :to="post.path" class="block">
                     <h3
                         class="mt-2 text-xl leading-7 font-semibold text-gray-900"
@@ -41,11 +42,11 @@
                         </div>
                     </div>
                     <div
-                        class="bg-white w-full justify-start p-6 mt-3 pb-6 text-base leading-6 text-gray-500"
+                        class="bg-white w-full justify-start p-6 mt-3 pb-6 text-base leading-6 text-gray-700"
                         v-html="post.summary"
                     ></div>
                 </g-link>
-                <div class="mt-4 mb-4 px-2">
+                <div class="mt-2 mb-2 px-2">
                     <g-link
                         :key="tag.id"
                         :to="`${tag.path}/`"
