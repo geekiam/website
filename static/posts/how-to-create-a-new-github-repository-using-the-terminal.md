@@ -12,6 +12,9 @@ keywords:
 feature:
   image: /uploads/posts/git/github-repository-using-terminal-window.jpg
   alt: Version Control
+cardImage:
+  image: /uploads/twitter/git/github-repository-using-terminal-window.jpg
+  alt: Version Control
 date: 2020-06-20T10:34:39.798Z
 author: gary-woodfine
 tags:

@@ -13,6 +13,9 @@ keywords:
 feature:
   image: /uploads/posts/terminal/how-to-use-linux-terminal.jpg
   alt: Terminal Window
+cardImage:
+  image: /uploads/twitter/terminal/how-to-use-linux-terminal.jpg
+  alt: Terminal Window
 date: 2020-09-10T19:02:30.957Z
 author: gary-woodfine
 tags:

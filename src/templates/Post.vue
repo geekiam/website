@@ -53,6 +53,11 @@ export default {
                     content: this.$page.post.title,
                 },
                 {
+                    key: 'og:description',
+                    property: 'og:description',
+                    content: this.$page.post.summary,
+                },
+                {
                     key: 'description',
                     name: 'description',
                     content: this.$page.post.description,
@@ -105,7 +110,7 @@ export default {
             return keywords.replace(/(^\s*,)|(,\s*$)/g, '')
         },
         cardImage() {
-            return `${this.$static.metadata.siteUrl}${this.$page.post.feature.image}`
+            return `${this.$static.metadata.siteUrl}${this.$page.post.cardImage.image}`
         },
     },
 }
@@ -116,7 +121,7 @@ query($path: String) {
     post(path: $path) {
         title
         path
-        feature {
+        cardImage {
             image(width: 400)
             alt
         }

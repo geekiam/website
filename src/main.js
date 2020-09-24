@@ -25,20 +25,9 @@ export default function (Vue, { router, head, isClient }) {
             name: 'author',
             content: config.author,
         },
-        {
-            key: 'description',
-            name: 'description',
-            content: config.siteDescription,
-        },
 
         { name: 'copyright', content: copyRightNotice },
         { key: 'og:type', property: 'og:type', content: 'website' },
-        {
-            key: 'og:description',
-            property: 'og:description',
-            content: config.siteDescription,
-        },
-
         { property: 'og:site_name', content: config.siteName }
     )
 

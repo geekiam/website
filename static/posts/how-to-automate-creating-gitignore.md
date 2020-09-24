@@ -10,6 +10,9 @@ keywords:
 feature:
   image: /uploads/posts/git/how-to-automate-git-ignore.jpg
   alt: How to create gitignore file
+cardImage:
+  image: /uploads/twitter/git/how-to-automate-git-ignore.jpg
+  alt: How to create gitignore file
 date: 2020-09-23T17:31:47.672Z
 author: gary-woodfine
 tags:

@@ -10,6 +10,8 @@ keywords:
   - new package.json file
 feature:
   image: /uploads/posts/node/how-to-create-package-json.jpg
+cardImage:
+  image: /uploads/twitter/node/how-to-create-package-json.jpg
   alt: How to create a package.json file
 date: 2020-09-14T21:28:34.813Z
 author: gary-woodfine
