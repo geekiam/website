@@ -20,6 +20,7 @@ author: gary-woodfine
 tags:
   - git
   - github
+  - tutorial
 categories:
   - version-control
   - collaboration

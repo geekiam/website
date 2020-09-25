@@ -18,6 +18,7 @@ author: gary-woodfine
 tags:
   - git
   - github
+  - tutorial
 categories:
   - software-development
 ---

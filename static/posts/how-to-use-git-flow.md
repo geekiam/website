@@ -17,6 +17,7 @@ author: gary-woodfine
 tags:
   - git
   - gitflow
+  - tutorial
 categories:
   - version-control
   - collaboration

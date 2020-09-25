@@ -16,6 +16,7 @@ author: gary-woodfine
 tags:
   - git
   - linux
+  - tutorial
 categories:
   - software-development
 ---

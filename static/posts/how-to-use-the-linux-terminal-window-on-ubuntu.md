@@ -10,6 +10,7 @@ keywords:
  - linux
  - bash
  - gnome
+ - tutorial
 feature:
   image: /uploads/posts/terminal/how-to-use-linux-terminal.jpg
   alt: Terminal Window

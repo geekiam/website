@@ -6,6 +6,7 @@ keywords:
     - node
     - npm
     - javascript
+    - tutorial
 feature:
   image: /uploads/posts/node/how-use-package-management-in-javascript-projects.jpg
   alt: Node Package Management

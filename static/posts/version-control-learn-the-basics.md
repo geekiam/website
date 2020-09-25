@@ -8,6 +8,7 @@ keywords:
      - Version Control
      - git
      - github
+     - tutorial
      
 feature:
   image: /uploads/posts/git/basics-of-version-control.jpg

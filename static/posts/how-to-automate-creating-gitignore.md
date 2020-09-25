@@ -19,6 +19,7 @@ tags:
   - git
   - github
   - linux
+  - tutorial
 categories:
   - software-development
 ---
