@@ -1,6 +1,6 @@
 <template>
-    <Layout>
-        <template #mainbody>
+    <home-layout>
+        <template #main-content>
             <header>
                 <div
                     class="max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
@@ -35,7 +35,7 @@
                 />
             </section>
         </template>
-    </Layout>
+    </home-layout>
 </template>
 
 <script>
@@ -67,13 +67,17 @@ query Tag($path: String!, $page: Int) {
                     ... on Post {
                         id
                         title
-                        datetime: date(format: "YYYY-MM-DD HH:mm:ss")
+                        date(format: "D MMMM Y")
                         path
-                        content
                         summary
                         excerpt
                         description
                         timeToRead
+                        categories {
+                            id
+                            title
+                            path
+                        }
                         author {
                             id
                             title
