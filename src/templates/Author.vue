@@ -3,14 +3,11 @@
         <template #main-content>
             <header>
                 <div
-                    class="text-center max-w-xl md:max-w-3xl xl:max-w-4xl flex flex-col-reverse mx-auto text-center px-6 pt-24 pb-10 md:py-32 border-b border-gray-300"
+                    class="flex flex-wrap items-center justify-center sm:justify-left border-t border-b border-gray-300 w-full mt-10 py-10 sm:px-16"
                 >
-                    <h1
-                        class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-2 capitalize"
+                    <figure
+                        class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center"
                     >
-                        {{ titleCase($page.author.title) }}
-                    </h1>
-                    <div class="md:flex bg-white rounded-lg p-6">
                         <g-image
                             :alt="`${$page.author.title}`"
                             :src="avatar"
@@ -18,6 +15,13 @@
                             class="h-14 w-14 rounded-full"
                             aria-labelledby="authorIcon"
                         />
+                    </figure>
+                    <div class="px-4 sm:w-4/5 text-center sm:text-left">
+                        <h1
+                            class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-green-700"
+                        >
+                            {{ titleCase($page.author.title) }}
+                        </h1>
                     </div>
                 </div>
             </header>
