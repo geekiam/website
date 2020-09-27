@@ -80,7 +80,10 @@ Which will return something similar to:
 user.name=Your Name
 user.email=email@domain.com
 ```
+** NOTE : **  Git does not validate the email address you supply, you can enter any email address you choose. However, you need to bear in mind there are some advanced use cases and tools that will require you to have a valid email address.
 
+
+### Git configuration store
 Git stores your configuration details in a hidden text based file gitconfig in your Home directory `~/.gitconfig`.
 
 You can use any text based editor to view these details, in our case we'll use `nano`
