@@ -107,4 +107,4 @@ Installing Git on Debian based Linux Distribution is a matter of making use of t
 
 I recommend the [Pro Git book](https://amzn.to/308IsHT "Pro Git 2nd Edition") and learn more about how to use Git.
 
-<iframe id="lbry-iframe" width="100%" height="350" src="https://open.lbry.com/@geekiam:b/How-to-install-Git-on-Debian-based-Linux:5?r=DoKWPbRDpKDtci2AMZSJKZuzsZMLgiWA" allowfullscreen></iframe>
+<iframe id="lbry-iframe" width="100%" height="350" src="https://lbry.tv/$/embed/How-to-install-Git-on-Debian-based-Linux/5747bb89fff677041ee2a612b5ab86add1edda68" allowfullscreen></iframe>
