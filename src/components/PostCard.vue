@@ -28,14 +28,12 @@
                                 ><span>&nbsp;</span>
                                 <span> Categories : </span>
                                 <g-link
-                                    :to="post.categories[0].path"
+                                    :key="cat.id"
+                                    :to="cat.path"
                                     class="hover:underline text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
-                                    v-if="
-                                        post.categories &&
-                                        post.categories.length > 0
-                                    "
+                                    v-for="cat in post.categories"
                                 >
-                                    {{ titleCase(post.categories[0].title) }}
+                                    {{ titleCase(cat.title) }} &nbsp;
                                 </g-link>
                             </div>
                         </div>

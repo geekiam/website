@@ -47,9 +47,18 @@ sudo apt install git
 Once the installation is complete we can once again verify installation and version number using the `git --version` command again, which should now confirm Git has been successfully installed.
 
 ### Git Configuration
-Git enables you to set a global and per-project *username* and *email address* , and you can easily administer your git identity using the `git config` command.
+When starting to use Git, it's important to configure it so that it works as expected in your particular environment. The first configuration option to consider is setting your username and Email address you would like to associate with  all your commits. Git expects you to set these options at a minimum. 
+The primary reason for this is due to the fact that Git is a Source Code Management System, and it's primary job is to track changes made by users over time, therefore it needs to know who is making those changes so that it can record and associate those changes with a user account.
 
-### Configure Global Username and Email
+If you don't specify these values, then git will default to associating them with signed on userid and machine name, which chances are that is not what you want to have the system ultimately use. 
+
+Git enables you to set a global and per-project *username* and *email address* , and you can easily administer your git identity using the `git config` command.
+ 
+We discuss Git Configuration options in further detail in [Advanced Git Configuration options](https://geekiam.io "Advanced Git Configuration options") , However for now we will discuss the most basic options to consider when just starting out with git.
+
+The first option to consider, is to set a Global username and email address, 
+
+#### Configure Global Username and Email
 The global git username and email address are associated with commits on all repositories on your system that don’t have repository-specific configuration values.
 
 To configure your global commit name and email address run the `git config` command with the `--global` option
@@ -92,5 +101,5 @@ At this point, it may be worth checking out [How To Create Git Ignore Files](htt
 ### Conclusion
 Installing Git on Debian based Linux Distribution is a matter of making use of the APT package manager.  
 
-I recommend the [Pro Git book](https://amzn.to/308IsHT "Pro Git 2nd ed. Edition") and learn more about how to use Git.
+I recommend the [Pro Git book](https://amzn.to/308IsHT "Pro Git 2nd Edition") and learn more about how to use Git.
 
