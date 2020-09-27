@@ -135,6 +135,18 @@ One of the advantages offered by git, is that every git directory on every compu
 a complete history and full version-tracking abilities independent of network access or a central server. Git is also 
 free and open source.
 
+### Types of version control systems
+
+Version Control Systems can be broadly classified into two types:
+
+* Centralised Version Control Systems (CVCS)
+  Examples of centralised version control systems are [CVS - Concurrent Versions System](https://www.nongnu.org/cvs/ "CVS - Concurrent Versions System") and [Subversion](https://subversion.apache.org/ "Apache Subversion")
+* Distributed Version Control Systems (DVCS)
+  Examples of distributed version control systems are [Git](https://git-scm.com/ "Git"), [Mercurial](https://www.mercurial-scm.org/ "Mercurial source control management") and [Bazaar](https://bazaar.canonical.com/en/ "Bazaar")
+
+The fundamental difference between a DVCS and CVCS relates to the approaches taken by the systems to managing their repositories and they user workflows employed to getting content into the server-side part of the system.
+
+
 ### Central Version Control Repositories
 
 When working with git you will often need a central repository that will act as a source of truth for all developers to 

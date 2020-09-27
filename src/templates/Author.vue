@@ -78,6 +78,11 @@ query Author($path: String!, $page: Int) {
                         summary
                         description
                         timeToRead
+                        categories {
+                            id
+                            title
+                            path
+                        }
                         tags {
                             id
                             title
