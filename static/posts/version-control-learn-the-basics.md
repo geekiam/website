@@ -251,14 +251,14 @@ As mentioned previously, in version control, this collection of actions is known
 
 After a Commit has been completed, then the changes are recorded in what is referred to as a *ChangeSet* and assigned a
 unique revision ID.   The ID may be in the form of a simple incremented number i.e. (1, 2, 3 ......... 1234567708 etc), but typically in git and other popular
-distributed version control systems it is a Unique Hash code i.e 39abc87d1234cr890u8sd9709sdfa9878d9s0df. 
+distributed version control systems it is a Unique Hash code i.e `39abc87d1234cr890u8sd9709sdfa9878d9s0df`. 
 
 A change set will include a reference to the person who made the commit, when the change was made, the files or 
 directories affected, a comment and even the changes that happened within the files. 
 
-For collaboration,  having the ability to view past revisions and changesets is a valuable feature to see how a  
+For collaboration,  having the ability to view past revisions and change sets is a valuable feature to see how a  
 project has evolved and to changes to the code base. Each version control system has a formatted way to view a 
-complete history of each revision and changeset in the repository.
+complete history of each revision and change set in the repository.
 
 #### Updates
 To ensure you are always working with the latest version of the code, you will need to ensure you always update your 
