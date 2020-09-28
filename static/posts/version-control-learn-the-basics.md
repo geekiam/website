@@ -164,7 +164,7 @@ The users are dependent on the central server. If the server is unavailable for 
 In a distributed version control model, a remote server holds contains the shared repositories. However, when users want to make changes instead of getting the individual files they want to work, they pull down the entire repository in a process which is defined as cloning. The copy that comes from the remote server
 has all the content and includes all the history of the changes made to files up until the point when the copy was created.
 
-Any changes that are made to the local repository is called a `commit` which is similar concept to a check-in, but it is only made to the local instance at this point.
+Any changes that are made to the local repository is called a `commit` which is a similar concept to a check-in, but it is only made to the local instance at this point.
 
 Once the user has completed all the changes they want to make to the local instance, they can then `push` their changes to the remote server.
 
