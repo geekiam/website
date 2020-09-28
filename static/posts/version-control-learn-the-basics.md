@@ -186,17 +186,7 @@ In [what is git](https://geekiam.io/what-is-git/ "What is git? | Geek.I.Am") we 
 and what makes it unique and why it has become popular with developers the world over. 
 
 We also guide you through the process of [How To Install Git On Linux](https://geekiam.io/how-to-install-git-on-linux/ "How to install Git on Linux | Geek.I.Am")
-
-Software teams owe the introduction of easy to manage *pull requests* to Git.
-
-### What are Pull Requests
-
-Pull requests are requests created by a software developer to combine changes they created with the main project. The 
-process includes reviewing those changes. Reviewers can insert comments on code they think could be improved, changed,
-removed as unnecessary.
-
-After receiving feedback, the creator can respond to it, either by creating a discussion, or simply follow it and 
-change their code accordingly.
+and how to do the basic amount of configuration required to start working with git.
 
  ### What are the benefits of version control systems
  
@@ -257,13 +247,13 @@ individually, the version control system will wait for you to submit your change
 
 As mentioned previously, in version control, this collection of actions is known as a *commit*.
 
-#### Revisions and Changesets
+#### Revisions and Change sets
 
 After a Commit has been completed, then the changes are recorded in what is referred to as a *ChangeSet* and assigned a
 unique revision ID.   The ID may be in the form of a simple incremented number i.e. (1, 2, 3 ......... 1234567708 etc), but typically in git and other popular
 distributed version control systems it is a Unique Hash code i.e 39abc87d1234cr890u8sd9709sdfa9878d9s0df. 
 
-A changset will include a reference to the person who made the commit, when the change was made, the files or 
+A change set will include a reference to the person who made the commit, when the change was made, the files or 
 directories affected, a comment and even the changes that happened within the files. 
 
 For collaboration,  having the ability to view past revisions and changesets is a valuable feature to see how a  
