@@ -147,12 +147,37 @@ Version Control Systems can be broadly classified into two types:
 The fundamental difference between a DVCS and CVCS relates to the approaches taken by the systems to managing their repositories and they user workflows employed to getting content into the server-side part of the system.
 
 
-### Central Version Control Repositories
+### Central Version Control Systems
+
+In a centralised version control system model, there is a central server that contains all the repositories with all the history, versions and changes of the system over time.  A single source of truth, in that the server is a container of all the repositories.
+
+The user workflow when working with a centralised model dictates that if a user wants to work on a file(s) in one of the repositories, they will need to connect to the server via a client and retrieve file(s) they want to work on. They are then able to make whichever edits
+required to the files, once they have completed their changes, they then submit the file(s) back the server. The file differences from the previous version are determined and stored in the repository as updates.
+
+The users are dependent on the central server. If the server is unavailable for whatever reason, users cannot make any source management operations.
+
+![Centralised version control system model](/uploads/posts/git/centralised-version-control-model.jpg "Centralised version control system model")
+
+### Distributed Version Control Systems
+
+In a distributed version control model, a remote server holds contains the shared repositories. However, when users want to make changes instead of getting the individual files they want to work, they pull down the entire repository in a process which is defined as cloning. The copy that comes from the remote server
+has all the content and includes all the history of the changes made to files up until the point when the copy was created.
+
+Any changes that are made to the local repository is called a `commit` which is similar concept to a check-in, but it is only made to the local instance at this point.
+
+Once the user has completed all the changes they want to make to the local instance, they can then `push` their changes to the remote server.
+
+The key difference is that the users are performing their source management operations against the local copy repository.  It is only until the users push the changes back to the remote are they required to connect to the remote server. The connection between local and remote is not constant and is only activated when synchronisation between the two repositories is required.
+
+![Distributed version control system model](/uploads/posts/git/distributed-version-control-model.jpg "Distributed version control system model")
+
 
 When working with git you will often need a central repository that will act as a source of truth for all developers to 
 to sync up to.  In most cases this may be a Cloud-based service such as Github, Gitlab, BitBucket or a private server
-on the internet.  Whichever one your team uses, the role of this cnetral repository is to provide your team with a 
+on the internet.  Whichever one your team uses, the role of this central repository is to provide your team with a 
 *Remote* centrally located server for your team to *Push* and *Pull* changes to source code.
+
+
 
 Software teams owe the introduction of easy to manage *pull requests* to Git.
 
