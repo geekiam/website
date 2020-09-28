@@ -172,6 +172,8 @@ The key difference is that the users are performing their source management oper
 ![Distributed version control system model](/uploads/posts/git/distributed-version-control-model.jpg "Distributed version control system model")
 
 
+### Distributed version control with Git
+
 When working with git you will often need a central repository that will act as a source of truth for all developers to 
 to sync up to.  In most cases this may be a Cloud-based service such as Github, Gitlab, BitBucket or a private server
 on the internet.  Whichever one your team uses, the role of this central repository is to provide your team with a 
