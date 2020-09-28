@@ -28,14 +28,14 @@ categories:
 ---
 Many people believe that in order to become a good software developer, engineer or coder that you will need to be able 
 to write good code fast.  The truth is, that in order to write good code, you first need to be able read, comprehend
-and understand code written by others. 
+and understand code written by others and once you've mastered that you need to be able to collaborate effectively with people, who it is quite possible you will never meet. 
 
 It's also a common misconception that software developers are geeks or hackers working in isolation tapping furiously 
 on their keyboards whilst solving deep and complex problems.  
 
 The reality is, developers probably spend only 10% of their time actually writing code.   This fact, is also discussed 
 in [The Mythical Man-Month: Essays on Software Engineering](https://amzn.to/2UVut64), whereby the average developer
-will generally contribute on average 10 lines of code a day.  
+will generally contribute on average only 10 lines of code a day.  
 
 Professional Software Developers, know that there is a significant difference in rate between adding new lines of code to an
 existing large project, against starting a new project from scratch.  The difference being that when adding new lines to 
@@ -52,7 +52,8 @@ Therefore, 90% of developer time, is spent:
  * Re-engineering
  * Rewriting 
  
-This may be code developed by other software developers from all over the world.
+This may be code developed by other software developers from all over the world, from different companies and more than
+likely different years!
 
 In all likelihood, on any given project, the majority of the code contained in it, will be code from many different 
 sources. You will invariably make use of Libraries, Frameworks, Components, Shared Code and at time Copy and Pasted code
@@ -60,7 +61,7 @@ from other sources. Even the programming language you choose to develop your sof
 others.
 
 Software development, is very much a team sport, the difference being that in all probability you will never meet or 
-even know everybody on your team or contributing to your project.  The only aspect of those people you're ever going to 
+even get to know everybody on your team or contributing to your project.  The only aspect of those people you're ever going to 
 physically see, is their code.
 
 In the book [Pragmatic Programmer - Your Journey to mastery](https://amzn.to/2V8LmK8) - [Read Review](https://garywoodfine.com/book-review-the-pragmatic-programmer/) the authors also stress the importance of learning how to use Version Control Systems, as a virtual project wide time machine to enable you to view and return your project to a state when it actually was able to compile and run!
@@ -177,9 +178,14 @@ The key difference is that the users are performing their source management oper
 When working with git you will often need a central repository that will act as a source of truth for all developers to 
 to sync up to.  In most cases this may be a Cloud-based service such as Github, Gitlab, BitBucket or a private server
 on the internet.  Whichever one your team uses, the role of this central repository is to provide your team with a 
-*Remote* centrally located server for your team to *Push* and *Pull* changes to source code.
+*Remote* central server for your team to *Push* and *Pull* changes to source code.
 
+### Git Version control
 
+In [what is git](https://geekiam.io/what-is-git/ "What is git? | Geek.I.Am") we discuss git in detail, its origin and 
+and what makes it unique and why it has become popular with developers the world over. 
+
+We also guide you through the process of [How To Install Git On Linux](https://geekiam.io/how-to-install-git-on-linux/ "How to install Git on Linux | Geek.I.Am")
 
 Software teams owe the introduction of easy to manage *pull requests* to Git.
 
