@@ -15,7 +15,7 @@ module.exports = {
     icon: 'src/favicon.png',
     plugins: [
         {
-            use: 'gridsome-plugin-gtag',
+            use: '@gridsome/plugin-google-analytics',
             options: {
                 id: process.env.GOOGLE_ANALYTICS_ID,
             },
