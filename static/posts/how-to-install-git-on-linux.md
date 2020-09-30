@@ -55,7 +55,7 @@ If you don't specify these values, then git will default to associating them wit
 
 Git enables you to set a global and per-project *username* and *email address* , and you can easily administer your git identity using the `git config` command.
  
-We discuss Git Configuration options in further detail in [Advanced Git Configuration options](https://geekiam.io "Advanced Git Configuration options") , However for now we will discuss the most basic options to consider when just starting out with git.
+We discuss Git Configuration options in further detail in [Advanced Git Configuration options](https://geekiam.io/advanced-git-configuration-options/ "Advanced Git Configuration options") , However for now we will discuss the most basic options to consider when just starting out with git.
 
 The first option to consider, is to set a Global username and email address, 
 

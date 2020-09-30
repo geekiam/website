@@ -173,6 +173,7 @@ The key difference is that the users are performing their source management oper
 ![Distributed version control system model](/uploads/posts/git/distributed-version-control-model.jpg "Distributed version control system model")
 
 
+
 ### Distributed version control with Git
 
 When working with git you will often need a central repository that will act as a source of truth for all developers to 
@@ -210,6 +211,9 @@ and how to do the basic amount of configuration required to start working with g
  There are many different workflows that teams can choose from when they decide how to make use of branching and 
  merging facilities in VCS.
  
+ The branching model used by Git enables cheap local branching and flexible branch publishing, allowing to use branches 
+ for context switching and for sand-boxing different works in progress.
+ 
  2. *Traceability*. 
  
  Being able to trace each change made to the software and connect it to project management and bug tracking software 
@@ -220,6 +224,12 @@ and how to do the basic amount of configuration required to start working with g
   it is doing and why it is so designed can enable developers to make correct and harmonious changes that are in accord 
   with the intended long-term design of the system. This can be especially important for working effectively with 
   legacy code and is crucial in enabling developers to estimate future work with any accuracy.
+  
+  The fact that the whole history is accessible allows for long-term undo, rewinding back to last working version, and 
+  so on. Tracking ownership of changes automatically makes it possible to find out who was responsible for any given 
+  area of code, and when each change was done. You can compare different revisions, go back to the revision a user is 
+  sending a bug report against, and even automatically find out which revision introduced a regression bug. The fact 
+  that Git is tracking changes to the tips of branches with `reflog` allows for easy undo and recovery.
 
 ### Basic Concepts of version control
 
@@ -245,13 +255,20 @@ Each change to a file is tracked automatically, this may include editing a file,
 reformatting a file or just about any change that could be made to a file.  Instead of recording each change 
 individually, the version control system will wait for you to submit your changes as a single collection of actions. 
 
-As mentioned previously, in version control, this collection of actions is known as a *commit*.
+As mentioned previously, in version control, this collection of actions is known as a *commit*. A unique feature of Git 
+is that it enables explicit access to the staging area for creating commits. This provides 
+additional flexibility to managing your working area and deciding on the shape of a future commit.
 
 #### Revisions and Change sets
 
 After a Commit has been completed, then the changes are recorded in what is referred to as a *ChangeSet* and assigned a
 unique revision ID.   The ID may be in the form of a simple incremented number i.e. (1, 2, 3 ......... 1234567708 etc), but typically in git and other popular
-distributed version control systems it is a Unique Hash code i.e `39abc87d1234cr890u8sd9709sdfa9878d9s0df`. 
+distributed version control systems it is a Unique Hash code.
+ 
+ ``` shell script 
+# An example of a system generated hash code
+ 39abc87d1234cr890u8sd9709sdfa9878d9s0df
+```. 
 
 A change set will include a reference to the person who made the commit, when the change was made, the files or 
 directories affected, a comment and even the changes that happened within the files. 

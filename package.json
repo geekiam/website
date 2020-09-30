@@ -23,6 +23,7 @@
         "gridsome-plugin-tailwindcss": "^2.2.48",
         "klaro-gridsome": "^1.0.3",
         "netlify-cms": "^2.10.61",
+        "netlify-lambda": "^2.0.1",
         "vue-infinite-loading": "^2.4.5"
     },
     "description": "Software Developer Community",
