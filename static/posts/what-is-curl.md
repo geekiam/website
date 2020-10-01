@@ -58,7 +58,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install curl
 ```
 
-#### Install curl RHEL based distributions
+#### Install curl RPM based distributions
 ```shell script
 sudo dnf update && sudo dnf upgrade -y
 sudo dnf install curl
