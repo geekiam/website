@@ -232,13 +232,35 @@ The Git model has been designed for many, smaller repositories instead of fewer,
  
  Configuration value applies to all repositories on a given system unless it's overridden at a lower level. 
  These settings apply regardless of the particular user.
+ 
+ **System-wide configurations** Configuration at this level affects every user and every user's repository.
 
 #### Global 
  Configuration values apply to all repositories for a particular user, unless overridden at the local level. 
  Unless you need repository-specific settings, this is the most common level for users to work with because it saves 
  the effort of having to set values for each repository. 
  
+ **User-wide configurations** configuration at this level affects every user's repository.
+ 
  #### Local
  Configuration value at the local level apply to the context of a repository.  This can be useful in cases where you 
  need to specify unique settings that are particular to one repository. It can also be useful if you need to temporarily
  override a higher-level setting.
+ 
+ **repository only configurations**  configuration at this level, only the repository.
+
+![Git configuration scopes ](/uploads/git-configuration.png "Git configuration scopes")
+
+
+### Typo auto correction
+
+If you're going to be using Git on the command line and if your typing is as awful and inaccurate as mine, then you'll
+no doubt benefit from Git's embedded *autocorrection* but you will have to enable it!
+
+To do this we need to modify the `help.autocorrection` property to define how many tenths of a second Git will wait before
+running the assumed command.
+
+```shell script
+git config --global help.autocorrect 10
+```
+

@@ -98,9 +98,12 @@ Which will look similar to
     email = email@domain.com
 ```
 
-You can continue to make configuration changes either by editing the `~/.gitconfig` in your text editor or making use of the `git config` command.
+It is generally discouraged to modify the Git Configurations directly by editing the files. However, Git Configuration files
+are easy to understand.  You can continue to make configuration changes either by editing the `~/.gitconfig` in your 
+text editor or making use of the `git config` command.
 
-At this point, it may be worth checking out [How To Create Git Ignore Files](https://geekiam.io/how-to-create-git-ignore-files/ "How to create git ignore files | Geek.I.Am") to learn about configuring a global git ignore file.
+We discuss the [Advanced Git Configuration options](https://geekiam.io/advanced-git-configuration-options/) and discuss how to 
+apply beneficial Git Configurations. 
 
 ### Conclusion
 Installing Git on Debian based Linux Distribution is a matter of making use of the APT package manager.  
