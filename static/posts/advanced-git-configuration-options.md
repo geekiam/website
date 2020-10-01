@@ -227,7 +227,7 @@ The Git model has been designed for many, smaller repositories instead of fewer,
  * system
  * global
  * local
- 
+  
  #### System
  
  Configuration value applies to all repositories on a given system unless it's overridden at a lower level. 

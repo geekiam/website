@@ -1,5 +1,5 @@
 ---
-title: What is cUrl
+title: What is cURL
 description: Introduction to a handy command line tool called cURL, discussing installing and its most basic use cases
 summary: " An introductory tutorial on how to install the handy command line tool name cURL and when and where to use it "
 keywords:
@@ -11,7 +11,7 @@ feature:
   image: /uploads/posts/terminal/what-is-terminal-window.jpg
   alt: Software developer tutorial
 cardImage:
-  image: /uploads/twitter/terminal/what-is-terminal-window.jpg
+  image: /uploads/twitter/terminal/what-is-curl.jpg
   alt: Software developer tutorial
 date: 2020-10-01T15:18:00.644Z
 author: gary-woodfine
