@@ -30,6 +30,12 @@ export default function (Vue, { router, head, isClient }) {
         { key: 'og:type', property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: config.siteName }
     )
+    head.link.push({
+        rel: 'sitemap',
+        type: 'application/xml',
+        title: 'Sitemap',
+        href: `${config.siteUrl}/sitemap.xml`,
+    })
 
     Vue.component('Layout', DefaultLayout)
     Vue.component('SiteHeader', SiteHeader)

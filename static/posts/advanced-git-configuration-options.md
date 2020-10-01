@@ -224,9 +224,9 @@ The Git model has been designed for many, smaller repositories instead of fewer,
  settings in each repository. As a result, Git provides options to simplify choosing the scope for configuration values. 
  
  There are three levels available for configuration: 
- * system
- * global
- * local
+ * System
+ * Global
+ * Local
   
  #### System
  
@@ -263,4 +263,11 @@ running the assumed command.
 ```shell script
 git config --global help.autocorrect 10
 ```
+
+### Conclusion
+We have outlined the common advanced Git configuration settings that will make your life easier using Git on the command line.
+
+It is important to remember to always be careful editing the Git config files, because if you incorrectly edit any 
+of these files, you just might ruin your entire Linux Git configuration.
+
 
