@@ -10,7 +10,7 @@ feature:
   image: /uploads/posts/git/git-tutorials.jpg
   alt: Advanced git configuration options
 cardImage:
-  image: /uploads/twitter/git/how-to-install-git-on-linux.jpg
+  image: /uploads/twitter/git/advanced-git-configuration-options.jpg
   alt: Advanced git configuration options
 date: 2020-10-01T17:31:47.672Z
 author: gary-woodfine
