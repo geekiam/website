@@ -209,6 +209,7 @@ with the list of available options we can set.
 The autocomplete functionality enables you to explore any commands and available options just by using the TAB TAB combination. Later,
 it will also enable you to search and list all available branches. Taking the time to configure this functionality pays for itself
 once you start using git on the command line.
+<iframe id="lbry-iframe" width="560" height="315" src="https://lbry.tv/$/embed/How-to-configure-git-autocomplete-on-Linux/b47e5db1e7144cdffcacef5ad29a9d4a47dd694e" allowfullscreen></iframe>
 
 ### Configuring your user details
 
