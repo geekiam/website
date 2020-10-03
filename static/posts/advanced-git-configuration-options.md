@@ -161,9 +161,24 @@ This will be the first part of advanced configuration we should when setting up 
 
 #### How to enable Git Autocomplete on Linux
 
+Autocompletion in Git enables you to hit TAB and a git command will be autocompleted for you. If there are multiple 
+commands that match what you typed so far, you can hit Tab two times, and Bash displays a list of all possible 
+completions. The same works for variables and filenames, but not for the many commands Git provides.
+
+The contained completion routines provide support for completing:
+
+ * local and remote branch names
+ * local and remote tag names
+ * .git/remotes file names
+ * git `subcommands`
+ * git email aliases for git-send-email
+ * tree paths within `ref:path/to/file` expressions
+ * file paths within current working directory and index
+ * common `--long-options`
+
 The first thing we need to do is download the autocomplete file from the [Git - Github repository](https://github.com/git/git "Git on Gtihub")
 we'll do this using [cURL](https://geekiam.io/what-is-c-url). We're going to download this file to our $HOME directory and name it `.git_autocomplete`
-we'll do this all in one line
+we'll do this all in one lines://s
 
 ```shell script
 curl -o .git_autocomplete https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
