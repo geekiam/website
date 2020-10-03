@@ -162,7 +162,7 @@ This will be the first part of advanced configuration we should when setting up 
 #### How to enable Git Autocomplete on Linux
 
 The first thing we need to do is download the autocomplete file from the [Git - Github repository](https://github.com/git/git "Git on Gtihub")
-we'll do this using [cURL](https://geekiam.io/what-is-curl). We're going to download this file to our $HOME directory and name it `.git_autocomplete`
+we'll do this using [cURL](https://geekiam.io/what-is-c-url). We're going to download this file to our $HOME directory and name it `.git_autocomplete`
 we'll do this all in one line
 
 ```shell script
