@@ -268,7 +268,7 @@ distributed version control systems it is a Unique Hash code.
  ``` shell script 
 # An example of a system generated hash code
  39abc87d1234cr890u8sd9709sdfa9878d9s0df
-```. 
+```
 
 A change set will include a reference to the person who made the commit, when the change was made, the files or 
 directories affected, a comment and even the changes that happened within the files. 

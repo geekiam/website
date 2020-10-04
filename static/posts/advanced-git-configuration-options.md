@@ -61,6 +61,16 @@ git <git-options> <command> <command-options> <operands>
 > [Pro Git book, Second Edition](https://amzn.to/308IsHT "Pro Git 2nd Edition")
 >
 
+The origin of *Porcelain & Plumbing commands* comes from [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds "Linus Torvalds | Wikipedia") and the metaphor translates to 
+directly to you toilet.  In that everybody knows how to use the toilet, and for 90% of our interactions with the toilet, we will never have to know
+exactly how it works or what actually happens, for the most part most users don't care. We use the toilet *(Porcelain)* to do what we 
+need to do, flush and move on.   Only very occassionally do we have to deal with and issue, like a blockage, burst pipe or some other
+issue, and only then do we need some advanced knowledge or do some maintenance task *(Plumbing)* .
+
+In git the commands are divided up into the two categories:
+* **Porcelain** - High Level tasks an average user will be most interested in, the  most common operations.
+* **Plumbing** - Low level tasks administrators need to use for more advanced use cases and maintenance. 
+
 #### Git Porcelain Commands
 Porcelain commands aggregate functionality of plumbing commands and certain options and sequences to make things simpler.
 For most software developers, make use of just Porcelain commands they will accomplish the tasks they need too.
