@@ -1,3 +1,4 @@
+
 ---
 title: How to add files to a git repository
 description: A tutorial to guide software developers through how to add files to a git repository.
@@ -138,3 +139,44 @@ However, it is important to remember that this command stages new files and modi
 our particular case is valid because we have not deleted any files.
 
 
+It is important to remember that the `git add ` command only adds the content of the specified files at the time the add
+command was run; if we continue to add and edit files after running the command then you will need to run the command 
+again to ensure the changes are included in the next commit.
+
+If you want to check anytime what files have been included you can, as we did in the example previously, execute the 
+`git status` command. The `git status` command can be used to obtain a summary of which files have changes 
+that are staged for the next commit.
+
+The `git add` command will not add ignored files by default. If any ignored files were explicitly specified on the 
+command line, git add will fail with a list of ignored files. Ignored files reached by directory recursion or 
+filename globbing performed by Git will be silently ignored. The `git add` command can be used to add ignored files 
+with the `-f` (force) option.
+
+#### Add Modified and Deleted Files
+`Git add` enables software developers with a variety of options. In some cases you may only want to stage modified 
+and deleted files, and not stage the newly created file. This use case can be actioned with the below command:
+```shell script
+git add -u
+```
+
+#### Add files by wildcard
+Git allows us to add all the same pattern files at once.  Suppose I want to add all JavaScript files and CSS files, 
+then we can use pattern .js or .css. To do so, we will run the command as follows:
+
+```shell script
+git add *.js *.css
+```
+
+#### Git add undo
+
+You can undo any`git add` operation using the `git reset` command. To undo adding file simply use the following command
+```shell script
+git reset <filename>
+```
+
+### Summary
+
+We explored the `git add` command to understand how it fits into the git command workflow and it purpose in the chain. 
+We also learned that the `git add` command does not add a file to a repository, it only adds to the staging area and in 
+order to ensure that a file makes it to the repository we need to run the `git commit` command, which we will explore 
+further in [How to commit files to a repository](https://geekiam.io).
