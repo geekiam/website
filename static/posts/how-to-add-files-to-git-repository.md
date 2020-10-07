@@ -1,4 +1,3 @@
-
 ---
 title: How to add files to a git repository
 description: A tutorial to guide software developers through how to add files to a git repository.
@@ -10,8 +9,8 @@ feature:
   image: /uploads/posts/git/git-tutorials.jpg
   alt: How to add files to git repository
 cardImage:
-  image: /uploads/twitter/git/how-to-add-files-to-git-repository.jpg
-  alt: How to add files to git repository
+  image: /uploads/twitter/git/how-to-add-files.jpg
+  alt: Advanced git configuration options
 date: 2020-10-05T17:31:47.672Z
 author: gary-woodfine
 tags:
