@@ -44,8 +44,8 @@ get any number of developers in a room and bring up the point and you're likely 
 are also many forums and bulletin boards full of the argument. Some programming languages mandate tabs others mandate 
 spaces and the war rages.
 
-The Multi Repository and Mono Repository debate, is pretty much in the same boat. The mono repository is a source control 
-pattern where all the source code is kept in a single repository. It is believed that this approach makes it 
+The Multi Repository and Mono Repository debate, is pretty much in the same boat. The mono repository is a source 
+control pattern where all the source code is kept in a single repository. It is believed that this approach makes it 
 relatively simple to get all employees access to everything in one shot. Just clone it down, and done. 
 
 The Multi repository approach on the other hand, refers to organizing your projects each into their own 
