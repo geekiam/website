@@ -32,10 +32,10 @@ and Update software applications on their computer operating system. These can b
 Graphical User Interface application. 
 
 Experienced Linux users will very rarely download software from websites or any other location. The primary reasons for
-this included aspects as security and the fact that most Linux distributions have a list of sources where users can 
-download free open source software packages.
+this included aspects as ease of use, security and the fact that most Linux distributions have a list of sources where 
+users can download free open source software packages.
 
-These package sources are often referred to as repositories.
+These package sources are referred to as repositories.
 
 ### What is a package?
 
@@ -51,9 +51,7 @@ the packages needed before proceeding with the installation.
 The package usually includes a manifest of dependencies that must be satisfied for a software application to execute as
 expected on any give Linux computer.
 
-
-
-Common Package Managers in Linux
+Common Package Managers in Linux include:
 * dpkg  (Debian Package Manager)
 * APT (Advanced Package Tool)
 * rpm (RedHat Package Manager)
