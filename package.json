@@ -65,8 +65,8 @@
     },
   "husky": {
     "hooks": {
-      "pre-commit": "precommit",
-      "pre-push": "prepush"
+      "pre-commit": "npm run precommit",
+      "pre-push": "npm run prepush"
     }
   }
 }
