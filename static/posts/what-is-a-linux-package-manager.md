@@ -35,7 +35,10 @@ Experienced Linux users will very rarely download software from websites or any 
 this included aspects as ease of use, security and the fact that most Linux distributions have a list of sources where 
 users can download free open source software packages.
 
-These package sources are referred to as repositories.
+These package sources are referred to as repositories. Using a package manager users will automatically download the appropriate,
+package from a configured repository, install it and complete all the required configuration tasks. There is no need to 
+for the user to click through a wizard screen or hunt down configuration settings. If packages version are updated within
+package repository, the package manager will update each package to its latest version whenever it is requested by the user to do so.
 
 ### What is a package?
 
@@ -61,3 +64,57 @@ Common Package Managers in Linux include:
 * flatpak 
 * pacman
 * snap
+* synaptic
+
+Packages also contain scripts that need to be executed if a package is requested to be removed. Ensuring that everything
+that is associated with execution of package is cleared up.
+
+### How to use a package manager.
+
+Using a package manager, is typically accomplished via the [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window | Geek.I.Am")
+although it is becoming more popular for Package Managers to implement a GUI and most of the popular Linux Distros now provide
+User friendly interface to help users install software. These GUI, typically just provide a wrapper and automate the bash commands
+used to install using the command line.
+
+For most novice users of Linux, the most common and popular package managers they are likely to first start using is the 
+`apt` (Advanced Package Tool) because it is most widely shipped as the default Package Manager for users of Debian, Ubuntu and
+Mint.  
+
+We'll cover some of the basic commands of how to use `apt` in order to illustrate the ease of use of using a package manager
+in the [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window | Geek.I.Am")
+
+#### How to install a package
+
+You can install a package as follows by specify a single package name or install many packages at once by listing all their names.
+
+To install [Flameshot - a popular free powerful open source screenshot software](https://flameshot.js.org/ "Flameshot - Powerful yet simple to use screenshot software." )
+
+```shell script
+sudo apt install flameshot
+```
+![Flameshot install ](/uploads/apt-flameshot-install.png "Flameshot install")
+
+
+#### Find dependencies of a package
+Once package has been installed you might want to understand which dependencies the package is making use of, you can 
+list out the dependencies of a package using apt as follows
+
+```shell script
+sudo apt depends flameshot
+```
+![Flameshot Dependencies ](/uploads/flameshot-dependencies.png "Flameshot dependencies")
+
+#### Search for package
+
+It is highly likely that you will need to search for a package to perform a specific task. The `apt` package manager 
+enables you to easily search for packages via the terminal.
+
+In this case, I want to search for an image manipulation program, I can simply include the phrase in quotes and use the
+apt search facility
+
+```shell script
+sudo apt search "image manipulation program"
+
+```
+
+![apt search ](/uploads/apt-search.png "apt search")
