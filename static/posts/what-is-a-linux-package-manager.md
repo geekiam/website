@@ -118,3 +118,68 @@ sudo apt search "image manipulation program"
 ```
 
 ![apt search ](/uploads/apt-search.png "apt search")
+
+### View package details
+You will often want to find and view details of package.
+In this example I want to view some details regarding the Flameshot package we installed earlier.
+
+```shell script
+sudo apt show flameshot
+```
+
+![apt view ](/uploads/apt-package-view.png "apt view")
+
+
+#### Update System Packages
+
+
+You will periodically want to check and ensure you are making use of the latest available packages, often package maintainers
+will release Bug Fixes and new additional features in packages and you will want to ensure you are able to make use of these
+
+To download a list of packages from different repositories included on your system and updates them when there are new 
+versions of packages and their dependencies.
+```shell script
+sudo apt update
+```
+
+#### Upgrade System Packages
+
+Often the above command will instruct you that new releases of packages are available, so 
+ to install new versions of all the packages on your system.
+ 
+ ```shell script
+sudo apt upgrade
+```
+
+You will often want to execute both these commands at the same time, so you can run them both at the same time using
+```shell script
+sudo apt update && sudo apt upgrade -y
+```
+
+#### Remove packages
+
+To remove packages from your system.
+```shell script
+sudo apt remove flameshot
+```
+
+if you want to ensure all packages configuration and dependencies are removed at the same time you can use the purge switch
+
+```shell script
+sudo apt remove flameshot --purge
+```
+
+#### Remove unused packages
+
+Installing or upgrading packages will result in some dependencies not being required, you can clean up these unused dependencies
+after removing that particular package, it’s dependencies will remain on the system, therefore to remove them 
+use autoremove as follows:
+```shell script
+sudo apt autoremove
+```
+
+### Summary
+
+Learning how to use the Package Manager from the terminal window can help you to quickly, easily and efficiently install, 
+update and remove packages on your system. 
+
