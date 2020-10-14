@@ -63,10 +63,10 @@
         "npm": ">= 6.13.4",
         "yarn": "npm is the preferred package manager for this project"
     },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run precommit",
-      "pre-push": "npm run prepush"
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run precommit",
+            "pre-push": "npm run prepush"
+        }
     }
-  }
 }
