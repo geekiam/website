@@ -11,7 +11,7 @@ feature:
   image: /uploads/posts/terminal/what-is-terminal-window.jpg
   alt: Software developer tutorial
 cardImage:
-  image: /uploads/twitter/terminal/what-is-terminal-window.jpg
+  image: /uploads/twitter/terminal/what-is-package-manager.jpg
   alt: Software developer tutorial
 date: 2020-10-14T17:30:00.644Z
 author: gary-woodfine
