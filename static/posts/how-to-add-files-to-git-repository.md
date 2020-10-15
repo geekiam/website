@@ -168,7 +168,7 @@ git add *.js *.css
 
 #### Git add undo
 
-You can undo any`git add` operation using the `git reset` command. To undo adding file simply use the following command
+You can undo any`git add` operation using the `git reset` command. To undo adding file simply use the following command.
 ```shell script
 git reset <filename>
 ```

@@ -29,8 +29,11 @@ configuration and look at some key required items and significant optional items
 
 ### Understanding git commands
 
-[How To Install Git On Linux](https://geekiam.io/how-to-install-git-on-linux/ "How To Install Git On Linux | Geek.I.Am") we already started using some git commands using the [terminal window command line](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How To Use The Linux Terminal Window On Ubuntu | Geek.I.Am").
-We'll continue using [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window") and the command line to learn git and all the associated commands. The reason for this is that learning Git command line is the most universally applicable method to use the tool.
+[How To Install Git On Linux](https://geekiam.io/how-to-install-git-on-linux/ "How To Install Git On Linux | Geek.I.Am") we 
+already started using some git commands using the [terminal window command line](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How To Use The Linux Terminal Window On Ubuntu | Geek.I.Am").
+We'll continue using [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window") and 
+the command line to learn Git and all the associated commands. The reason for this is that learning Git command line 
+is the most universally applicable method to use the tool.
 
 The general format of a Git command is as follows:
 
@@ -62,10 +65,11 @@ git <git-options> <command> <command-options> <operands>
 >
 
 The origin of *Porcelain & Plumbing commands* comes from [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds "Linus Torvalds | Wikipedia") and the metaphor translates to 
-directly to you toilet.  In that everybody knows how to use the toilet, and for 90% of our interactions with the toilet, we will never have to know
-exactly how it works or what actually happens, for the most part most users don't care. We use the toilet *(Porcelain)* to do what we 
-need to do, flush and move on.   Only very occassionally do we have to deal with and issue, like a blockage, burst pipe or some other
-issue, and only then do we need some advanced knowledge or do some maintenance task *(Plumbing)* .
+directly to you toilet.  In that everybody knows how to use the toilet, and for 90% of our interactions with the toilet,
+ we will never have to know exactly how it works or what actually happens, for the most part most users don't care. We 
+ use the toilet *(Porcelain)* to do what we need to do, flush and move on.   Only very occassionally do we have to deal 
+ with and issue, like a blockage, burst pipe or some other issue, and only then do we need some advanced knowledge or 
+ do some maintenance task *(Plumbing)* .
 
 In git the commands are divided up into the two categories:
 * **Porcelain** - High Level tasks an average user will be most interested in, the  most common operations.
