@@ -185,6 +185,8 @@ node based project settings.
 ### Conclusion
 
 We have now automated the creation of git ignore files to enable creating the files. This approach enables you to 
-customise this process even further, for instance you may want to create your own organisational repository, which may have typical settings and for a custom project structure you would like to cater for.
+customise this process even further, for instance you may want to create your own organisational repository, which may 
+have typical settings and for a custom project structure you would like to cater for.
 
-Taken this approach we have eliminated some of the boring repetitive and error prone manual steps required when setting up a project.
+Taken this approach we have eliminated some of the boring repetitive and error prone manual steps required when setting
+ up a project.

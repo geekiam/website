@@ -47,7 +47,9 @@ Github supplies a really easy to use Web Interface and developers can use it to 
 they would typically need just using a browser based interface.  For instance, Creating and updating repositories, 
 reviewing code, creating Pull requests and so forth.  
 
-The web based interface works great, however as developers are more than likely to going to prefer working with [Terminal Window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window") , because for most developers this is how they will primarily work with git. Especially when first starting out and learning the basics.
+The web based interface works great, however as developers are more than likely to going to prefer working with [Terminal Window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window") , because 
+for most developers this is how they will primarily work with Git. Especially when first starting out and learning 
+the basics.
 
 Github also provides a really rich set of Application Programming Interface (API) methods enabling developers to 
 build tools to engage and interact with Github. Developers could use these API's to either build their own custom tools
@@ -121,9 +123,11 @@ gh help
 
 ![Github CLI help files](/uploads/github-cli.png "Github CLI help files")
 
-It is worth taking a little time and having a read through the help files to get acquainted with some of the terms and commands that are available. 
+It is worth taking a little time and having a read through the help files to get acquainted with some of the terms 
+and commands that are available. 
 
-If reading online manuals is your preferred option then the [full Github Cli manual](https://cli.github.com/manual/) is available
+If reading online manuals is your preferred option then the [full Github Cli manual](https://cli.github.com/manual/) is 
+available.
 
 Personally, I also always prefer to ensure that I only use ssh when communicating with Github and therefore tend to set 
 the default protocol for all terminal commands to use ssh
@@ -169,7 +173,7 @@ nano README.md
 
 After you have added whatever data you want to the README.md file simply save and exit the file using ctrl + x
 
-we can now add the files to our respository and commit them
+we can now add the files to our repository and commit them
 
 ```shell
 # add the files to the repository
@@ -179,7 +183,10 @@ git add .
 git commit -m "This is the first commit"
 ```
 
-We can now use *hub* to create out remote repository.  The default action hub will perform if you don't supply and organisation name, it will create a new repository with the name of the root folder you're adding under your username on Github.  However, in my case I want to create the repository  under the Gee-I-Am organisation so I will supply the organisation name and the repository name I want to use.
+We can now use *hub* to create our remote repository.  The default action hub will perform if you don't supply and 
+organisation name, it will create a new repository with the name of the root folder you're adding under your username 
+on Github.  However, in my case I want to create the repository  under the Geek-I-Am organisation, so I will supply the
+ organisation name and the repository name I want to use.
 
 ```shell
 # create the remote repository
@@ -195,4 +202,5 @@ git push -u origin master
 
 ### Conclusion
 
-Making use of the Github CLI makes it easy to clone or create repositories, browse project pages, list known issues, ensure your local branches stay up to date, and share logs or code snippets via Gist, all while using the terminal.
+Making use of the Github CLI makes it easy to clone or create repositories, browse project pages, list known issues, 
+ensure your local branches stay up to date, and share logs or code snippets via Gist, all while using the terminal.
