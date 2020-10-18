@@ -108,6 +108,22 @@ by automated systems. Each day the repository serves billions of file read reque
 * A repository that contains more than 1 Logical project
 * The project are mostly likely unrelated, loosely connected or can be connected, in some cases they don't even need to 
 be connected.
+
+#### Advantages of a Mono Repository
+
+##### Simplified Organisation
+Projects are organised and grouped together in a whichever logically consistent approach required.  This may have a side effect of providing an easier mechanism to navigating projects,  as if everything is on a network-based
+file system. 
+
+##### Simplified Dependencies
+
+In Mono-Repo's there is a usually a mechanism for versioning and specifying dependencies. However, the reality is, this 
+mechanism is usually cumbersome and involve a lot of overhead.
+
+##### Tooling
+The big attraction to Mono-Repo's is that usually easy for teams and organisation to develop their own internal custom 
+build and deploy tools.
+
   
 ### Multi Repository
 
@@ -130,6 +146,11 @@ dependency on the compiled kernel.
 In fact, taking a look at [Redhat on Github page](https://redhatofficial.github.io/#!/main "RED HAT ON GITHUB | Red Hat") will
 provide a much more holistic view of a multi repository approach, there are literally hundreds of repositories all providing
 some features, functionality or value to Linux but each has its own repository or several associated repository.
+
+#### What is a Multi Repository?
+A Multi repository strategy refers to organizing  each of your projects into their own separate self-contained repositories.
+
+The Multi Repository is popular among organisations who are developing a Micro-Service or Service Oriented stack 
 
 
  
