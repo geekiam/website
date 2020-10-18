@@ -20,15 +20,18 @@ tags:
 categories:
   - software-development
 ---
-Git is the most popular distributed version control system among developers, especially Linux-based software developers. In this tutorial we'll guide you through the process to
-install and configure git for use on your Ubuntu and Debian based Linux.  
+Git is the most popular distributed version control system among developers, especially Linux-based software developers.
+ In this tutorial we'll guide you through the process to install and configure git for use on your Ubuntu and Debian based Linux.  
 
 You may have previously [learned the basics of version control](https://geekiam.io/learn-the-basics-of-version-control-to-become-a-master/ "Learn The Basics Of Version Control To Become A Master | Geek.I.Am") and read [background information on git](https://geekiam.io/what-is-git/ "What is git | Geek.I.Am"), in this post we are going to learn how to install and configure git on a Debian based Linux distribution.
 
 ### Install Git using a package manager
-The easiet and recommended way to install Git is to install making use of a package manager. The most common package management on Debian based distribution is **apt *(Advanced Package Tool)* **, which is used and tightly integrated Debian, Ubuntu, Mint, Kali, PopOS etc.
+The easiet and recommended way to install Git is to install making use of a package manager. The most common package 
+management on Debian based distribution is **apt *(Advanced Package Tool)* **, which is used and tightly integrated 
+Debian, Ubuntu, Mint, Kali, PopOS etc.
  
- Depending on your distribution and release version, there may be a possibility that git is already installed, therefore it is worth double checking.
+ Depending on your distribution and release version, there may be a possibility that git is already installed, therefore
+  it is worth double checking.
  
  To check if git may be already installed, simply using the [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am") to check the version number.
  ```shell script
@@ -38,29 +41,39 @@ If the command returns a response similar to the below, then git has been previo
 
 ![Terminal window git install check](/uploads/git-version-check.jpg "Terminal window git install check")
 
-If git is not installed then the command will return a message indicating that git could not be found, if that is the case then we can update and upgrade our packages to ensure we get the latest possible version, and then install it.
+If git is not installed then the command will return a message indicating that git could not be found, if that is the 
+case then we can update and upgrade our packages to ensure we get the latest possible version, and then install it.
 
 ```shell script
 sudo apt update && sudo apt upgrade -y
 sudo apt install git
 ```
-Once the installation is complete we can once again verify installation and version number using the `git --version` command again, which should now confirm Git has been successfully installed.
+Once the installation is complete we can once again verify installation and version number using the `git --version` 
+command again, which should now confirm Git has been successfully installed.
 
 ### Git Configuration
-When starting to use Git, it's important to configure it so that it works as expected in your particular environment. The first configuration option to consider is setting your username and Email address you would like to associate with  all your commits. Git expects you to set these options at a minimum. 
+When starting to use Git, it's important to configure it so that it works as expected in your particular environment. 
+The first configuration option to consider is setting your username and Email address you would like to associate with 
+all your commits. Git expects you to set these options at a minimum. 
 
-The primary reason for this is due to the fact that Git is a Source Code Management System, and it's primary job is to track changes made by users over time, therefore it needs to know who is making those changes so that it can record and associate those changes with a user account.
+The primary reason for this is due to the fact that Git is a Source Code Management System, and it's primary job is to 
+track changes made by users over time, therefore it needs to know who is making those changes so that it can record and 
+associate those changes with a user account.
 
-If you don't specify these values, then git will default to associating them with signed on userid and machine name, which chances are that is not what you want to have the system ultimately use. 
+If you don't specify these values, then git will default to associating them with signed on userid and machine name, 
+which chances are that is not what you want to have the system ultimately use. 
 
-Git enables you to set a global and per-project *username* and *email address* , and you can easily administer your git identity using the `git config` command.
+Git enables you to set a global and per-project *username* and *email address* , and you can easily administer your git 
+identity using the `git config` command.
  
-We discuss Git Configuration options in further detail in [Advanced Git Configuration options](https://geekiam.io/advanced-git-configuration-options/ "Advanced Git Configuration options") , However for now we will discuss the most basic options to consider when just starting out with git.
+We discuss Git Configuration options in further detail in [Advanced Git Configuration options](https://geekiam.io/advanced-git-configuration-options/ "Advanced Git Configuration options") , 
+However for now we will discuss the most basic options to consider when just starting out with git.
 
 The first option to consider, is to set a Global username and email address, 
 
 #### Configure Global Username and Email
-The global git username and email address are associated with commits on all repositories on your system that don’t have repository-specific configuration values.
+The global git username and email address are associated with commits on all repositories on your system that don’t 
+have repository-specific configuration values.
 
 To configure your global commit name and email address run the `git config` command with the `--global` option
 
@@ -80,7 +93,8 @@ Which will return something similar to:
 user.name=Your Name
 user.email=email@domain.com
 ```
-** NOTE : **  Git does not validate the email address you supply, you can enter any email address you choose. However, you need to bear in mind there are some advanced use cases and tools that will require you to have a valid email address.
+** NOTE : **  Git does not validate the email address you supply, you can enter any email address you choose. However, 
+you need to bear in mind there are some advanced use cases and tools that will require you to have a valid email address.
 
 
 ### Git configuration store
