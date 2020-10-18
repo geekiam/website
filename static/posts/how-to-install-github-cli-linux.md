@@ -144,7 +144,17 @@ Forking a repo is just as easy
 gh repo fork threenine/geekiam
 ```
  During the forking process, the tool will ask you if you want to clone as well. If you say *“yes”*, it will do the 
- cloning, set up the remote upstream branch and perform an update for you automatically.                                           
+ cloning, set up the remote upstream branch and perform an update for you automatically.  
+ 
+ ### Configure Github CLI to use SSH
+ 
+ The first configuration setting you're most likely going to want to set once you have installed the Github CLI is to 
+ always ensure it makes use of SSH for all operations.  To do this is fairly easy and we will make use of the `gh config`
+ command to do so.
+ 
+ ```shell script
+  gh config set git_protocol ssh
+```                                         
 
 ### Conclusion
 
