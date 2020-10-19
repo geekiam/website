@@ -36,7 +36,7 @@ working mostly using the command line. The most popular of which was the [GitHub
 Github from the Command line](https://hub.github.com/ "Github hub").
 
 ### What is Github CLI?
-GitHub CLI provides an easier and seamless way to work with GitHub using nothing but the command line. It was introduced
+GitHub CLI provides an easier and seamless way to work with GitHub using the command line. It was introduced
  as a beta in February 2020, and GitHub CLI 1.0 has been released in September 2020.
 
 The new `gh` command line command is GitHub on the command line and brings pull requests, issues, and other GitHub 
