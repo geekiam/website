@@ -113,6 +113,7 @@ show you four different commands you can append to the current repo command.
  ### Github CLI Command Structure
  The `gh` command structure is tree-like and fairly easy to remember. There are basically two levels of commands; 
  
+ ![Github CLI command level ](/uploads/github-cli-command-level.png "Github CLI command level")
  #### Level 1
  The first level consists of 6 commands
  
@@ -127,6 +128,9 @@ show you four different commands you can append to the current repo command.
 
 Each command enables you to specify the operation you would like to preform
 such as `create`, `view` or `list` etc. 
+
+ The [online Github CLI manual](https://cli.github.com/manual/ "Github CLI Manual") provides detailed explanation of all
+ the options available per command basis.
 
 ### Github Repository Commands
 

@@ -25,8 +25,8 @@ categories:
 In [How to create a git repository](https://geekiam.io/how-to-create-a-git-repository/ "How To Create A Git Repository | Geek.I.Am")
 we seen how it easy it is to create a new git repository and some of the configuration aspects you should consider.  We also
 examined some [advanced git configurations](https://geekiam.io/advanced-git-configuration-options/ "Advanced Git Configuration Options | Geek.I.Am") options to help improve your 
-you interactivity and productivity using Git. We also learned that Git is extremely popular with software developers because
-it enables them to work in a disconnected manner because they do not need to connected to central server.  However, it important
+you inter-activity and productivity using Git. We also learned that Git is extremely popular with software developers because
+it enables them to work disconnected because they do not need to connected to central server.  However, it important
 to realise that Git is has been purposely designed for effective team collaboration and there are some important criteria
 to consider when creating your Git repository.
 
