@@ -115,7 +115,7 @@ mirror option with some additional parameters:
 * `--page-requisites` downloads additional file resources like stylesheets etc.
 
 ```shell script
- wget -m --convert-links --page-requisites geekiam.io
+ wget -m --convert-links --page-requisites server-address.com
 ```
 ** Bear in mind this may produce different results depending on how the website was developed, framework and server security etc **
 
