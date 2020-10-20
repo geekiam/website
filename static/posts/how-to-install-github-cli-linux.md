@@ -157,7 +157,7 @@ gh repo fork threenine/geekiam
  command to do so.
  
  ```shell script
-  gh config set git_protocol ssh
+  gh config set -h github.com git_protocol ssh
 ```                                         
 
 ### Conclusion
