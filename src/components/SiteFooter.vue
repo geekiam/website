@@ -180,12 +180,11 @@
                 <p
                     class="mt-8 text-base leading-6 text-gray-400 md:mt-0 md:order-1"
                 >
-                    &copy; 2020
+                    &copy; 2019 - {{ new Date().getFullYear() }}
                     <g-link
-                        class="text-orange-700 border-b border-transparent hover:border-orange-400 transition-border-color"
-                        href="https://threenine.co.uk"
-                        >threenine.co.uk</g-link
-                    >, Inc. All rights reserved.
+                        class="text-sm leading-5 font-semibold tracking-wider text-gray-400 border-b border-transparent hover:border-orange-400 transition-border-color"
+                        href="https://geekiam.io"
+                        >Geek.I.Am</g-link> All Rights Reserved.
                 </p>
             </div>
         </div>
