@@ -60,7 +60,7 @@ collections:
     -   name: "authors"
         label: "Authors"
         folder: "static/authors"
-        create: "true"
+        create: true
         slug: "{{slug}}"
         fields:
            - {label: "Salutation", name: "title", widget: "string", required: true }
