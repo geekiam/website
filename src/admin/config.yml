@@ -3,7 +3,7 @@ backend:
     repo: threenine/geekiam
 
 site_url: https://geekiam.io
-logo_url: https://geekiam.io/assets/static/logo.svg
+logo_url: https://geekiam.io/static/uploads/geekiam-logo.png
 display_url: https://geekiam.io
 media_folder: "static/uploads"
 public_folder: "/uploads"
