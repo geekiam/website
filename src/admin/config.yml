@@ -58,7 +58,7 @@ collections:
                 name: "video"
                 widget: "string"
                 required: false
-    -   name:  "authors"
+    -   name: "authors"
         label: "Authors"
         folder: "static/authors"
         create: true
