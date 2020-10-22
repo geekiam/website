@@ -3,6 +3,7 @@ backend:
     repo: threenine/geekiam
 
 site_url: https://geekiam.io
+logo_url: https://geekiam.io/assets/static/logo.svg
 display_url: https://geekiam.io
 media_folder: "static/uploads"
 public_folder: "/uploads"
@@ -63,11 +64,20 @@ collections:
         create: true
         slug: "{{slug}}"
         fields:
-           - {label: "Salutation", name: "title", widget: "string", required: true }
            - {label: "Firstname", name: "firstName", widget: "string", required: true }
            - {label: "Lastname", name: "lastName", widget: "string", required: true }
-           - {label: "Bio", name: "bio", widget: "string", required: true }
+           - {label: "Biography", name: "bio", widget: "markdown", required: true }
            - {label: "Website", name: "website", widget: "string", required: true }
            - {label: "Twitter", name: "twitterHandle", widget: "string", required: true }
+           - {
+             label: "Avatar",
+             name: "avatar",
+             widget: "object",
+             fields:
+               [
+                 { label: "Image", name: "image", widget: "image" },
+                 { label: "Description", name: "alt", widget: "string" },
+               ],
+           }
 
 
