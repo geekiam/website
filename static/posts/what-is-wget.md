@@ -117,7 +117,8 @@ mirror option with some additional parameters:
 ```shell script
  wget -m --convert-links --page-requisites server-address.com
 ```
-** Bear in mind this may produce different results depending on how the website was developed, framework and server security etc **
+** Bear in mind this may produce different results depending on how the website has been developed, framework used
+and server security etc **
 
 
 ### Download files with FTP
