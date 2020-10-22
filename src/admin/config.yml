@@ -46,12 +46,12 @@ collections:
             - {label: "Publish Date", name: "date", widget: "date" }
             - {label: "Body", name: "body", widget: "markdown" }
             - {label: "Author"
-                 name: "author"
-                 widget: "relation"
-                 collection: "authors"
-                 search_fields: ["fullName.firstName" , "fullName.lastName"]
-                 value_field: "title"
-                 display_fields: ["fullName.firstName" , "fullName.lastName"]
+               name: "author"
+               widget: "relation"
+               collection: "authors"
+               search_fields: ["fullName.firstName" , "fullName.lastName"]
+               value_field: "title"
+               display_fields: ["fullName.firstName" , "fullName.lastName"]
             }
             -   label: "Tags"
                 name: "tags"
