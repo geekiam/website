@@ -76,3 +76,13 @@ collections:
             - {label: "Tag line", name: "tagLine", widget: "string", required: true }
             - {label: "Twitter handle", name: "twitterHandle", widget: "string" }
             - {label: "Website", name: "website", widget: "string"}
+            - {
+              label: "Avatar",
+              name: "avatar",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Description", name: "alt", widget: "string" },
+                ],
+            }
