@@ -58,34 +58,32 @@ collections:
                 name: "video"
                 widget: "string"
                 required: false
-    -    name: "authors"
-         label: "Authors"
-         folder: "static/authors"
-         create: true
-         slug: "{{slug}}"
-         fields:
-             - {
-               label: "Name",
-               name: "name",
-               widget: object,
-               fields:
-                 [
-                   { label: "Firstname", name: "firstName", widget: "string", required: true },
-                   { label: "Lastname", name: "lastName", widget: "string", required: true }
-                 ]
-               }
-            - {label: "Biography", name: "bio", widget: "markdown", required: true }
-            - {label: "Website", name: "website", widget: "string", required: true }
-            - {label: "Twitter", name: "twitterHandle", widget: "string", required: true }
+    -   name: "authors"
+        label: "Authors"
+        folder: "static/authors"
+        create: true
+        slug: "{{slug}}"
+        fields:
             - {
-              label: "Avatar",
-              name: "avatar",
-              widget: "object",
+              label: "Name",
+              name: "name",
+              widget: object,
               fields:
                 [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Description", name: "alt", widget: "string" },
-                ],
-             }
-
-
+                  { label: "Firstname", name: "firstName", widget: "string", required: true },
+                  { label: "Lastname", name: "lastName", widget: "string", required: true }
+                ]
+              }
+           - {label: "Biography", name: "bio", widget: "markdown", required: true }
+           - {label: "Website", name: "website", widget: "string", required: true }
+           - {label: "Twitter", name: "twitterHandle", widget: "string", required: true }
+           - {
+             label: "Avatar",
+             name: "avatar",
+             widget: "object",
+             fields:
+               [
+                 { label: "Image", name: "image", widget: "image" },
+                 { label: "Description", name: "alt", widget: "string" },
+               ],
+            }
