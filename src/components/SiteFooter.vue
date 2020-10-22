@@ -182,9 +182,11 @@
                 >
                     &copy; 2019 - {{ new Date().getFullYear() }}
                     <g-link
-                        class="text-sm leading-5 font-semibold tracking-wider text-gray-400 border-b border-transparent hover:border-orange-400 transition-border-color"
+                        class="leading-5 font-semibold tracking-wider text-gray-400 border-b border-transparent hover:border-orange-400 transition-border-color"
                         href="https://geekiam.io"
-                        >Geek.I.Am</g-link> All Rights Reserved.
+                        >Geek.I.Am</g-link
+                    >
+                    All Rights Reserved.
                 </p>
             </div>
         </div>

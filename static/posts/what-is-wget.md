@@ -111,7 +111,7 @@ wget -r -l8 server-address.com
 If you want to create a mirror of an entire public facing website on your machine locally you can easily do using `-m`
 mirror option with some additional parameters:
 
-* `--convert-links ` Will convert links to ensure all links are relative to the directory
+* `--convert-links ` convert links to ensure all links are relative to the directory
 * `--page-requisites` downloads additional file resources like stylesheets etc.
 
 ```shell script
