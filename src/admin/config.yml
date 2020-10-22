@@ -57,12 +57,12 @@ collections:
                 name: "video"
                 widget: "string"
                 required: false
-   -   name: "authors"
-       label: "Authors"
-       folder: "static/authors"
-       create: "true"
-       slug: "{{slug}}"
-       fields:
+    -   name: "authors"
+        label: "Authors"
+        folder: "static/authors"
+        create: "true"
+        slug: "{{slug}}"
+        fields:
            -{label: "Salutation", name: "title", widget: "string", required: true }
            - {label: "Firstname", name: "firstName", widget: "string", required: true }
            - {label: "Lastname", name: "lastName", widget: "string", required: true }
