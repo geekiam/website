@@ -65,7 +65,7 @@ collections:
         create: true
         slug: "{{slug}}"
         fields:
-            - {label: "Title", name: "title", widget: "string", required: true }
+            - {label: "Identifier", name: "title", widget: "string", required: true }
             -  label: "Full name"
                name: "fullName"
                widget: "object"
@@ -76,4 +76,3 @@ collections:
             - {label: "Tag line", name: "tagLine", widget: "string", required: true }
             - {label: "Twitter handle", name: "twitterHandle", widget: "string" }
             - {label: "Website", name: "website", widget: "string"}
-            - {label: "}
