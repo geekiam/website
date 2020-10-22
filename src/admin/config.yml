@@ -66,3 +66,11 @@ collections:
         slug: "{{slug}}"
         fields:
             - {label: "Title", name: "title", widget: "string", required: true }
+            -  label: "Name"
+               name: "name"
+               widget: "object"
+               fields:
+                 - {label: "Firstname", name: "firstName", widget: "string"}
+                 - {label: "Lastname", name: "lastName", widget: "string"}
+
+
