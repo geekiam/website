@@ -63,7 +63,7 @@ collections:
         create: "true"
         slug: "{{slug}}"
         fields:
-           -{label: "Salutation", name: "title", widget: "string", required: true }
+           - {label: "Salutation", name: "title", widget: "string", required: true }
            - {label: "Firstname", name: "firstName", widget: "string", required: true }
            - {label: "Lastname", name: "lastName", widget: "string", required: true }
            - {label: "Bio", name: "bio", widget: "string", required: true }
