@@ -8,6 +8,6 @@ tagLine: Likes telling computers what to do
 twitterHandle: gary_woodfine
 website: https://garywoodfine.com
 avatar:
-  image: /uploads/geekiam-index-design.png
+  image: /uploads/home-office.jpg
   alt: asdfsadfasdf
 ---
