@@ -16,7 +16,7 @@ cardImage:
   image: /uploads/twitter/terminal/what-is-terminal-window.jpg
   alt: Software developer tutorial
 date: 2020-09-05T15:18:00.644Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - linux

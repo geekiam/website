@@ -14,7 +14,7 @@ cardImage:
   image: /uploads/twitter/terminal/what-is-package-manager.jpg
   alt: Software developer tutorial
 date: 2020-10-14T17:30:00.644Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - ubuntu
   - linux

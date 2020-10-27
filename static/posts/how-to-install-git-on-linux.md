@@ -12,7 +12,7 @@ cardImage:
   image: /uploads/twitter/git/how-to-install-git-on-linux.jpg
   alt: How to create gitignore file
 date: 2020-09-25T17:31:47.672Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - linux

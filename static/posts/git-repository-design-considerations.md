@@ -14,7 +14,7 @@ cardImage:
   image: /uploads/twitter/git/source-code-repository-design-considerations.jpg
   alt: Advanced git configuration options
 date: 2020-10-07T17:31:47.672Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - linux

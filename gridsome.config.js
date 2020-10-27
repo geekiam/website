@@ -51,6 +51,27 @@ module.exports = {
             },
         },
         {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'static/authors/*.md',
+                typeName: 'Author',
+                refs: {
+                    tags: {
+                        typeName: 'Tag',
+                        create: true,
+                    },
+                    posts: {
+                        typeName: 'Posts',
+                        create: true,
+                    },
+                    categories: {
+                        typeName: 'Category',
+                        create: true,
+                    },
+                },
+            },
+        },
+        {
             use: 'gridsome-plugin-netlify-cms',
             options: {
                 publicPath: '/admin',

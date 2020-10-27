@@ -34,7 +34,12 @@
 import format from '@/services/posts/format.service'
 export default {
     name: 'PostTitle',
-    props: ['post'],
+    props: {
+        post: {
+            type: Object,
+            required: true,
+        },
+    },
     methods: {
         titleCase(str) {
             return format.toTitleCase(str)

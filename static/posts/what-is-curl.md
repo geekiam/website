@@ -14,7 +14,7 @@ cardImage:
   image: /uploads/twitter/terminal/what-is-curl.jpg
   alt: Software developer tutorial
 date: 2020-10-01T15:18:00.644Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - cURL
   - linux

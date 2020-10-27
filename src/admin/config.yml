@@ -48,7 +48,7 @@ collections:
             -   label: "Author"
                 name: "author"
                 widget: "relation"
-                collection: "authors"
+                collection: "Authors"
                 search_fields: ["fullName.firstName" , "fullName.lastName"]
                 value_field: "title"
                 display_fields: ["fullName.firstName" , "fullName.lastName"]
@@ -65,30 +65,16 @@ collections:
                 widget: "string"
                 required: false
 
-    -   name: "authors"
+    -   name: "Authors"
         label: "Authors"
         folder: "static/authors"
         create: true
         slug: "{{slug}}"
         fields:
-            - {label: "Identifier", name: "title", widget: "string", required: true }
+            - {label: "Identifier", name: "title", widget: "string", required: true, hint: "Github username" }
             -  label: "Full name"
                name: "fullName"
                widget: "object"
                fields:
                  - {label: "Firstname", name: "firstName", widget: "string", required: true}
                  - {label: "Lastname", name: "lastName", widget: "string", required: true }
-            - { label: "Biography", name: "bio", widget: "markdown"}
-            - {label: "Tag line", name: "tagLine", widget: "string", required: true }
-            - {label: "Twitter handle", name: "twitterHandle", widget: "string" }
-            - {label: "Website", name: "website", widget: "string"}
-            - {
-              label: "Avatar",
-              name: "avatar",
-              widget: "object",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Description", name: "alt", widget: "string" },
-                ],
-            }

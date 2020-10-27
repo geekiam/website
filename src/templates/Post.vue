@@ -22,9 +22,12 @@
                     v-if="$page.post.author || $page.post.categories"
                 >
                     <categories :categories="$page.post.categories" />
-                    <author :author="$page.post.author" />
                 </footer>
             </article>
+        </template>
+
+        <template #right-side-bar>
+            <author :author="$page.post.author" />
         </template>
     </post-layout>
 </template>
@@ -97,6 +100,7 @@ export default {
         postUrl() {
             let siteUrl = this.$static.metadata.siteUrl
             let postPath = this.$page.post.path
+            console.log(this.$page.post)
 
             return postPath
                 ? `${siteUrl}${postPath}`
@@ -134,6 +138,9 @@ query($path: String) {
             id
             title
             path
+            fullName {
+             firstName
+            }
         }
         tags {
             id

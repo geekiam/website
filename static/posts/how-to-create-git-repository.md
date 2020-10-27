@@ -13,7 +13,7 @@ cardImage:
   image: /uploads/twitter/git/how-to-create-git-repository.jpg
   alt: Advanced git configuration options
 date: 2020-10-05T17:30:47.672Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - linux

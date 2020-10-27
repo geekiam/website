@@ -12,7 +12,7 @@ cardImage:
   image: /uploads/twitter/git/how-to-revert-a-git-commit.jpg
   alt: Version Control systems
 date: 2020-05-23T15:29:50.183Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - tutorial

@@ -13,7 +13,7 @@ cardImage:
   image: /uploads/twitter/git/how-to-use-git-flow.jpg
   alt: How to use Git Flow
 date: 2020-05-10T20:29:50.183Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - gitflow

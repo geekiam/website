@@ -13,7 +13,7 @@ cardImage:
   image: /uploads/twitter/git/how-to-install-github-cli-linux.jpg
   alt: how to install github cli on linux
 date: 2020-10-15T17:31:47.672Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - linux

@@ -13,7 +13,7 @@ cardImage:
   image: /uploads/twitter/git/advanced-git-configuration-options.jpg
   alt: Advanced git configuration options
 date: 2020-10-01T17:31:47.672Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - linux

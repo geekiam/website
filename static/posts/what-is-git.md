@@ -13,7 +13,7 @@ cardImage:
   image: /uploads/twitter/git/what-is-git.jpg
   alt: What is git
 date: 2020-09-20T13:15:08.937Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - tutorial

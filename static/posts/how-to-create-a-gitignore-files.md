@@ -14,7 +14,7 @@ cardImage:
     image: /uploads/twitter/git/how-to-create-git-ignore-files.jpg
     alt: How to create gitignore file
 date: 2020-09-22T17:31:47.672Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - git
   - github

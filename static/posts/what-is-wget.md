@@ -14,7 +14,7 @@ cardImage:
   image: /uploads/twitter/terminal/what-is-wget.jpg
   alt: Software developer tutorial
 date: 2020-10-20T17:30:00.644Z
-author: gary-woodfine
+author: garywoodfine
 tags:
   - wget
   - linux

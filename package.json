@@ -15,6 +15,7 @@
         "@gridsome/plugin-sitemap": "^0.2.3",
         "@gridsome/source-filesystem": "^0.6.2",
         "@gridsome/transformer-remark": "^0.5.0",
+        "axios": "^0.21.0",
         "gridsome": "^0.7.21",
         "gridsome-plugin-amazon-onelink": "^1.0.2",
         "gridsome-plugin-feed": "^1.0.2",
@@ -59,8 +60,8 @@
     },
     "homepage": "https://geekiam.io",
     "engines": {
-        "node": "12.14.1",
-        "npm": ">= 6.13.4",
+        "node": ">= 12.14.1",
+        "npm": ">= 6.14.8",
         "yarn": "npm is the preferred package manager for this project"
     },
     "husky": {
