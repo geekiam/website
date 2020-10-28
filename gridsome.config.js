@@ -55,20 +55,7 @@ module.exports = {
             options: {
                 path: 'static/authors/*.md',
                 typeName: 'Author',
-                refs: {
-                    tags: {
-                        typeName: 'Tag',
-                        create: true,
-                    },
-                    posts: {
-                        typeName: 'Posts',
-                        create: true,
-                    },
-                    categories: {
-                        typeName: 'Category',
-                        create: true,
-                    },
-                },
+                create: true,
             },
         },
         {
