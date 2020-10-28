@@ -70,9 +70,10 @@ collections:
         folder: "static/authors"
         create: true
         slug: "{{slug}}"
+        identifier_field: "title"
         fields:
             - {label: "ID", name: "id", widget: "id"}
-            - {label: "Identifier", name: "title", widget: "string", required: true, hint: "Github username" }
+            - {label: "Github Username", name: "title", widget: "string", required: true, hint: "Github username" }
             -  label: "Full name"
                name: "fullName"
                widget: "object"

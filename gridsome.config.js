@@ -13,7 +13,6 @@ module.exports = {
     keywords: 'code tutorial, learn to code, ',
     image: 'uploads/version-control.png',
     icon: 'src/favicon.png',
-    githubToken: process.env.GITHUB_TOKEN,
     plugins: [
         {
             use: '@gridsome/plugin-google-analytics',
