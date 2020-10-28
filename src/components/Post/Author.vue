@@ -13,15 +13,21 @@
                     d="M10,6.978c-1.666,0-3.022,1.356-3.022,3.022S8.334,13.022,10,13.022s3.022-1.356,3.022-3.022S11.666,6.978,10,6.978M10,12.267c-1.25,0-2.267-1.017-2.267-2.267c0-1.25,1.016-2.267,2.267-2.267c1.251,0,2.267,1.016,2.267,2.267C12.267,11.25,11.251,12.267,10,12.267 M18.391,9.733l-1.624-1.639C14.966,6.279,12.563,5.278,10,5.278S5.034,6.279,3.234,8.094L1.609,9.733c-0.146,0.147-0.146,0.386,0,0.533l1.625,1.639c1.8,1.815,4.203,2.816,6.766,2.816s4.966-1.001,6.767-2.816l1.624-1.639C18.536,10.119,18.536,9.881,18.391,9.733 M16.229,11.373c-1.656,1.672-3.868,2.594-6.229,2.594s-4.573-0.922-6.23-2.594L2.41,10l1.36-1.374C5.427,6.955,7.639,6.033,10,6.033s4.573,0.922,6.229,2.593L17.59,10L16.229,11.373z"
                 ></path>
             </svg>
-            <h1 class="mx-3 text-white font-semibold text-lg">
+            <g-link
+                :href="user.html_url"
+                class="mx-3 text-gray-100 font-bold text-lg hover:underline hover:text-white"
+            >
                 {{ user.public_repos }} Public Repos
-            </h1>
+            </g-link>
         </div>
         <div class="py-4 px-6">
-            <h1 class="text-2xl font-semibold text-green-800">
+            <g-link
+                :href="author.path"
+                class="text-2xl font-bold text-green-800 hover:underline"
+            >
                 {{ user.name }}
-            </h1>
-            <p class="py-2 text-lg text-gray-700">{{ user.bio }}</p>
+            </g-link>
+            <p class="py-2 text-md text-gray-700">{{ user.bio }}</p>
             <div class="flex items-center mt-4 text-gray-700">
                 <svg class="h-6 w-6 fill-current" viewBox="0 0 20 20">
                     <path
@@ -47,9 +53,11 @@
                         d="M16.469,8.924l-2.414,2.413c-0.156,0.156-0.408,0.156-0.564,0c-0.156-0.155-0.156-0.408,0-0.563l2.414-2.414c1.175-1.175,1.175-3.087,0-4.262c-0.57-0.569-1.326-0.883-2.132-0.883s-1.562,0.313-2.132,0.883L9.227,6.511c-1.175,1.175-1.175,3.087,0,4.263c0.288,0.288,0.624,0.511,0.997,0.662c0.204,0.083,0.303,0.315,0.22,0.52c-0.171,0.422-0.643,0.17-0.52,0.22c-0.473-0.191-0.898-0.474-1.262-0.838c-1.487-1.485-1.487-3.904,0-5.391l2.414-2.413c0.72-0.72,1.678-1.117,2.696-1.117s1.976,0.396,2.696,1.117C17.955,5.02,17.955,7.438,16.469,8.924 M10.076,7.825c-0.205-0.083-0.437,0.016-0.52,0.22c-0.083,0.205,0.016,0.437,0.22,0.52c0.374,0.151,0.709,0.374,0.997,0.662c1.176,1.176,1.176,3.088,0,4.263l-2.414,2.413c-0.569,0.569-1.326,0.883-2.131,0.883s-1.562-0.313-2.132-0.883c-1.175-1.175-1.175-3.087,0-4.262L6.51,9.227c0.156-0.155,0.156-0.408,0-0.564c-0.156-0.156-0.408-0.156-0.564,0l-2.414,2.414c-1.487,1.485-1.487,3.904,0,5.391c0.72,0.72,1.678,1.116,2.696,1.116s1.976-0.396,2.696-1.116l2.414-2.413c1.487-1.486,1.487-3.905,0-5.392C10.974,8.298,10.55,8.017,10.076,7.825"
                     ></path>
                 </svg>
-                <g-link class="px-2 text-sm" :href="user.blog">{{
-                    user.blog
-                }}</g-link>
+                <g-link
+                    class="px-2 text-sm hover:underline"
+                    :href="user.blog"
+                    >{{ user.blog }}</g-link
+                >
             </div>
             <div
                 class="flex items-center mt-4 text-gray-700"
@@ -66,7 +74,7 @@
                 </svg>
 
                 <g-link
-                    class="px-2 text-sm"
+                    class="px-2 text-sm hover:underline"
                     :href="twitterUrl(user.twitter_username)"
                     >{{ user.twitter_username }}</g-link
                 >
@@ -92,8 +100,8 @@ export default {
     },
     async created() {
         let service = new userService()
-        service.getUserDetail(this.author.id).then((response) => {
-            this.user = response.data
+        service.getUserDetail(this.author.title).then((response) => {
+           this.user = response.data
         })
     },
     methods: {

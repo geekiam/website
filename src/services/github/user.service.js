@@ -1,9 +1,19 @@
 import axios from 'axios'
 
 export default class userService {
-    constructor() {}
+    constructor() {
+        this.instance = axios.create({
+            baseURL: 'https://api.github.com',
+        })
+    }
 
     async getUserDetail(username) {
-        return await axios.get(`https://api.github.com/users/${username}`)
+        return this.instance({
+            method: 'GET',
+            url: `/users/${username}`,
+            headers: {
+                Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
+            },
+        })
     }
 }
