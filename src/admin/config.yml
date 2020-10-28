@@ -49,9 +49,9 @@ collections:
                 name: "author"
                 widget: "relation"
                 collection: "Authors"
-                search_fields: ["fullName.firstName" , "fullName.lastName"]
-                value_field: "id"
-                display_fields: ["fullName.firstName" , "fullName.lastName"]
+                searchFields: ["fullName.firstName" , "fullName.lastName"]
+                valueField: "id"
+                displayFields: ["fullName.firstName" , "fullName.lastName"]
             -   label: "Tags"
                 name: "tags"
                 widget: list
