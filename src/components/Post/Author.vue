@@ -100,7 +100,7 @@ export default {
     },
     async created() {
         let service = new userService()
-        service.getUserDetail(this.author.title).then((response) => {
+        service.getUserDetail(this.author.id).then((response) => {
             this.user = response.data
         })
     },
