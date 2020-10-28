@@ -3,7 +3,7 @@
         <div
             class="text-bold text-5xl sm:text-4xl leading-tight mb-1 sm:mb-2n font-sans"
         >
-            <h1 class="capitalize">{{ post.title }}</h1>
+            <h1 class="capitalize">{{ post.id }}</h1>
         </div>
         <div class="flex mb-2 text-gray-500 text-sm">
             <span class="mr-4"> {{ post.date }}</span>
@@ -12,7 +12,7 @@
                     :to="`${post.author.path}/`"
                     class="border-b border-transparent hover:border-green-400 transition-border-color"
                     v-if="post.author"
-                    >{{ titleCase(post.author.title) }}</g-link
+                    >{{ titleCase(post.author.id) }}</g-link
                 >
             </span>
             <span>{{ post.timeToRead }} min read</span>

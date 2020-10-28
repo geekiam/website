@@ -77,6 +77,8 @@ module.exports = {
                 publicPath: '/admin',
                 configPath: 'src/admin/config.yml',
                 htmlPath: 'src/admin/index.html',
+                modulePath: 'src/admin/index.js',
+                htmlTitle: 'Geek.I.Am CMS',
             },
         },
         {
