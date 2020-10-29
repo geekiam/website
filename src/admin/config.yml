@@ -72,6 +72,7 @@ collections:
         slug: "{{id}}"
         identifier_field: "id"
         fields:
+            - {label: "ID", name: "id", widget: "string"}
             - {label: "Github Username", name: "title", widget: "string", required: true, hint: "Github username" }
             -  label: "Full name"
                name: "fullName"
