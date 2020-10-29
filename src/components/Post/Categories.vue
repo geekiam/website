@@ -9,7 +9,6 @@
             <svg
                 class="inline w-3 fill-current align-middle mr-1"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
             >
                 <path
                     d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"

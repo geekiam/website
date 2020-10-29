@@ -54,8 +54,8 @@ separate repositories. Each project has its own repository, these repositories c
 ### Mono Repository
 One of the [biggest proponents of Mono Repository is Google](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext "Why Google Stores Billions of Lines of Code in a Single Repository | Communications of the ACM"), 
 who adopted a centralised source control system and all Google Employees work on a shared codebase and all software 
-assets are stored in a single shared repository. Google have also custom-built their own source code repository and a whole
-raft of custom build tools to support working with a mono repository.
+assets are stored in a single shared repository. Google have also custom-built their own source code repository, and 
+a whole raft of custom build tools to support working with a mono repository.
 
 Google's homegrown version-control system hosts one large codebase visible to, and used by, most of the software 
 developers in the company. The centralized system is the foundation of many of Google's developer workflows. 
@@ -68,8 +68,8 @@ data files.
 
 As you might expect, there is no chance in hell, that any developer at Google, is going to download the entire Google 
 mono repository to their laptop. 86 TB of data is going to take a long time to download, then of course there are the 
-storage problems, disk space is cheap these days but I still haven't seen any laptops advertising 86 TB+ of storage space
-as standard.
+storage problems, disk space is cheap these days, but I still haven't seen any laptops advertising 86 TB+ of storage
+space as standard.
 
 Google's codebase is shared by more than 25,000 Google software developers from dozens of offices in countries around 
 the world. On a typical workday, they commit 16,000 changes to the codebase, and another 24,000 changes are committed 
@@ -78,7 +78,7 @@ by automated systems. Each day the repository serves billions of file read reque
  traffic originates from Google's distributed build-and-test systems.
  
  Google chose the monolithic-source-management strategy in 1999 when the existing Google codebase was migrated from 
- CVS to Perforce. Early Google engineers maintained that a single repository was strictly better than splitting up the 
+ CVS too Perforce. Early Google engineers maintained that a single repository was strictly better than splitting up the 
  codebase, though at the time they did not anticipate the future scale of the codebase and all the supporting tooling 
  that would be built to make the scaling feasible.
  
@@ -100,7 +100,9 @@ by automated systems. Each day the repository serves billions of file read reque
  * Twitter
  * Etsy
   
- #### What is a Mono Repository
+#### What is a Mono Repository
+
+> a monorepo repository is a software development strategy where code for many projects is stored in the same repository
  
  The software industry has varying definitions for a mono repository, however principally what they all seem to revolve 
  around some similar attributes:
@@ -108,6 +110,8 @@ by automated systems. Each day the repository serves billions of file read reque
 * A repository that contains more than 1 Logical project
 * The project are mostly likely unrelated, loosely connected or can be connected, in some cases they don't even need to 
 be connected.
+
+![Mono Repository ](/uploads/mono-repository.png "Mono Repository Example")
 
 #### Advantages of a Mono Repository
 
@@ -148,13 +152,36 @@ provide a much more holistic view of a multi repository approach, there are lite
 some features, functionality or value to Linux but each has its own repository or several associated repository.
 
 #### What is a Multi Repository?
-A Multi repository strategy refers to organizing  each of your projects into their own separate self-contained repositories.
 
-The Multi Repository is popular among organisations who are developing a Micro-Service or Service Oriented stack 
+>  Applications made of several  microservices defined within separate repositories. 
 
+A Multi repository strategy refers to organizing  each of your projects into their own separate self-contained 
+repositories.
 
+The Multi Repository is popular among organisations who are developing a Micro-Service or Service Oriented stack.
+
+Microservices — also known as the microservice architecture — is an architectural style that structures an application 
+as a collection of loosely coupled services, which implement business capabilities. The microservice architecture 
+enables the continuous delivery/deployment of large, complex applications. It also enables an organization to evolve 
+its technology stack. 
+
+The main reason behind micro-service architecture is to release software faster, and to create small teams to develop 
+and deliver a single service. Teams are responsible for managing the whole life cycle of the micro service responsibility 
+from development to delivery and maintenance. 
+
+Creating separate repository for different service make sense because a team can then concentrate on a particular 
+repository and maintain separate development and release processes.
  
-   
+Using a multi repository approach helps teams too:
+
+* **Clear ownership:**  The team owns a service and clearly responsible for independently developing and deploying the 
+full stack of that microservice.
+
+* **Smaller code base:** Separate repositories for a service leads to smaller code base and lesser complexity 
+during code merge.
+
+* **Narrow clones:** DevOps and automated build and releases, smaller code base leads to considerably lesser code 
+download/clone time, that leads to faster build and deployments.
 
  
 
