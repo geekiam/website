@@ -22,7 +22,7 @@
         </div>
         <div class="py-4 px-6">
             <g-link
-                :href="author.path"
+                :to="author.path"
                 class="text-2xl font-bold text-green-800 hover:underline"
             >
                 {{ user.name }}

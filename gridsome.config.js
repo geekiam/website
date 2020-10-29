@@ -148,7 +148,7 @@ module.exports = {
     templates: {
         Post: '/:title',
         Tag: '/tag/:id',
-        Author: '/author/:id',
+        Author: '/author/:title',
         Category: '/category/:id',
     },
     transformers: {

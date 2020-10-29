@@ -7,14 +7,6 @@
         </div>
         <div class="flex mb-2 text-gray-500 text-sm">
             <span class="mr-4"> {{ post.date }}</span>
-            <span class="mr-4">
-                <g-link
-                    :to="`${post.author.path}/`"
-                    class="border-b border-transparent hover:border-green-400 transition-border-color"
-                    v-if="post.author"
-                    >{{ titleCase(post.author.id) }}</g-link
-                >
-            </span>
             <span>{{ post.timeToRead }} min read</span>
         </div>
         <div class="mt-4 mb-4 px-2">
@@ -31,7 +23,6 @@
 </template>
 
 <script>
-import format from '@/services/posts/format.service'
 export default {
     name: 'PostTitle',
     props: {
@@ -40,11 +31,7 @@ export default {
             required: true,
         },
     },
-    methods: {
-        titleCase(str) {
-            return format.toTitleCase(str)
-        },
-    },
+    methods: {},
 }
 </script>
 

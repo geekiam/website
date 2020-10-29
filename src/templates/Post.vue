@@ -100,7 +100,6 @@ export default {
         postUrl() {
             let siteUrl = this.$static.metadata.siteUrl
             let postPath = this.$page.post.path
-            console.log(this.$page.post)
 
             return postPath
                 ? `${siteUrl}${postPath}`
