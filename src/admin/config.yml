@@ -49,9 +49,9 @@ collections:
                 name: "author"
                 widget: "relation"
                 collection: "Authors"
-                searchFields: ["fullName.firstName" , "fullName.lastName"]
-                valueField: "id"
-                displayFields: ["fullName.firstName" , "fullName.lastName"]
+                search_fields: ["fullName.firstName" , "fullName.lastName"]
+                value_field: "title"
+                display_fields: ["fullName.firstName" , "fullName.lastName"]
             -   label: "Tags"
                 name: "tags"
                 widget: list
@@ -72,7 +72,6 @@ collections:
         slug: "{{id}}"
         identifier_field: "id"
         fields:
-            - {label: "ID" , name: "id", widget: "string", required: true}
             - {label: "Github Username", name: "title", widget: "string", required: true, hint: "Github username" }
             -  label: "Full name"
                name: "fullName"

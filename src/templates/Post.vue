@@ -138,10 +138,6 @@ query($path: String) {
             id
             title
             path
-            fullName {
-             firstName
-             lastName
-            }
         }
         tags {
             id
