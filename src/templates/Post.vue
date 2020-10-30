@@ -27,7 +27,10 @@
         </template>
 
         <template #right-side-bar>
-            <author :author="$page.post.author" />
+            <author
+                v-if="$page.post.author.title"
+                :author="$page.post.author"
+            />
         </template>
     </post-layout>
 </template>

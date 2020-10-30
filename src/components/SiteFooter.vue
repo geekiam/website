@@ -109,7 +109,7 @@
             >
                 <div class="flex md:order-2">
                     <g-link
-                        class="ml-6 text-gray-400 hover:text-gray-300"
+                        class="ml-6 text-gray-400 hover:text-white"
                         href="https://twitter.com/geekiam1"
                     >
                         <span class="sr-only">Twitter </span>
@@ -124,7 +124,7 @@
                         </svg>
                     </g-link>
                     <g-link
-                        class="ml-6 text-gray-400 hover:text-gray-300"
+                        class="ml-6 text-gray-400 hover:text-white"
                         href="https://github.com/Geek-I-Am"
                     >
                         <span class="sr-only">GitHub </span>
@@ -141,7 +141,7 @@
                         </svg>
                     </g-link>
                     <g-link
-                        class="ml-6 text-gray-400 hover:text-gray-300"
+                        class="ml-6 text-gray-400 hover:text-white"
                         rel="me"
                         href="https://floss.social/@geekiam"
                     >
@@ -159,7 +159,7 @@
                         </svg>
                     </g-link>
                     <g-link
-                        class="ml-6 text-gray-400 hover:text-gray-300"
+                        class="ml-6 text-gray-400 hover:text-white"
                         rel="me"
                         href="https://geekiam.slack.com"
                     >
@@ -182,7 +182,7 @@
                 >
                     &copy; 2019 - {{ new Date().getFullYear() }}
                     <g-link
-                        class="leading-5 font-bold tracking-wider text-gray-400 border-b border-transparent hover:border-white transition-border-color"
+                        class="leading-5 font-bold tracking-wider text-gray-400 border-b border-transparent hover:border-white transition-border-color hover:text-white"
                         href="https://geekiam.io"
                         >Geek.I.Am</g-link
                     >
