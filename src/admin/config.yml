@@ -50,7 +50,7 @@ collections:
                 widget: "relation"
                 collection: "Authors"
                 search_fields: ["fullName.firstName" , "fullName.lastName"]
-                value_field: "id"
+                value_field: "slug"
                 display_fields: ["fullName.firstName" , "fullName.lastName"]
             -   label: "Tags"
                 name: "tags"
@@ -69,7 +69,7 @@ collections:
         label: "Authors"
         folder: "static/authors"
         create: true
-        slug: "{{title}}"
+        slug: "{{slug}}"
         identifier_field: "id"
         fields:
             - {label: "ID", name: "id", widget: "string"}
