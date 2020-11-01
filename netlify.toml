@@ -1,6 +1,6 @@
 [build]
     publish = "dist"
-    command = "gridsome build"
+    command = "npm run build"
     functions = ".functions"
 
 [build.environment]
