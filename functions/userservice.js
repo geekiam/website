@@ -7,7 +7,7 @@ exports.handler = (event, context, callback) => {
     const send = (body) => {
         callback(null, {
             statusCode: 200,
-            body: body,
+            body: JSON.stringify(body),
         })
     }
     const getUserDetail = () => {
