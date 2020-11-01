@@ -15,7 +15,7 @@ exports.handler = (event, context, callback) => {
             method: 'GET',
             url: `${API_ENDPOINT}/users/${userName}`,
             headers: {
-                Authorization: `Bearer ${process.env.GRIDSOME_GITHUB_TOKEN}`,
+                Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
             },
         })
             .then((res) => send(res.data))
