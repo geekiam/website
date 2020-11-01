@@ -33,7 +33,26 @@ to do these kinds of tasks without even have to leave the terminal window.
  simple things with curl, such as download files, webpage or even images.
  
  With curl, you can download or upload data using one of the supported protocols:
- ** HTTP, HTTPS,  SCP, DICT, FILE, FTP, FTPS, GOPHER, IMAP, IMAPS, LDAP, POP3, RTMP, RTSP, SCP, SMB, SMBS, TELNET, TFTP **
+ 
+ * HTTP 
+ * HTTPS
+ * SCP 
+ * DICT
+ * FILE
+ * FTP
+ * FTPS
+ * GOPHER
+ * IMAP
+ * IMAPS
+ * LDAP
+ * POP3
+ * RTMP
+ * RTSP
+ * SCP
+ * SMB
+ * SMBS
+ * TELNET
+ * TFTP
    
 
 ### How to install cURL

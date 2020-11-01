@@ -1,7 +1,7 @@
 [build]
     publish = "dist"
     command = "gridsome build"
-    functions = "functions"
+    functions = ".functions"
 
 [build.environment]
     NODE_VERSION = "12"
