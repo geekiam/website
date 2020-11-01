@@ -25,6 +25,7 @@
         "klaro-gridsome": "^1.0.3",
         "netlify-cms": "^2.10.66",
         "netlify-lambda": "^2.0.1",
+        "node-fetch": "^2.6.1",
         "vue-infinite-loading": "^2.4.5"
     },
     "description": "Software Developer Community",

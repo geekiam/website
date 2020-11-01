@@ -1,10 +1,20 @@
-import userService from './user.service'
+import fetch from 'node-fetch'
 
-exports.handler = async (event) => {
-    const username = event.queryStringParameters.name
-    let service = new userService()
-    return {
-        statusCode: 200,
-        body: service.getUserDetail(username),
-    }
+const API_ENDPOINT = 'https://api.github.com'
+
+exports.handler = async (event, context) => {
+    const userName = event.queryStringParameters.name || 'Worldn'
+
+    return fetch(`${API_ENDPOINT}/users/${userName}`, {
+        headers: {
+            Accept: 'application/json',
+            Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
+        },
+    })
+        .then((response) => response.json())
+        .then((data) => ({
+            statusCode: 200,
+            body: data,
+        }))
+        .catch((error) => ({ statusCode: 422, body: String(error) }))
 }
