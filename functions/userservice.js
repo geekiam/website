@@ -1,9 +1,8 @@
 const axios = require('axios')
-const API_ENDPOINT = 'https://api.github.com'
 
 exports.handler = (event, context, callback) => {
     const userName = event.queryStringParameters.name
-
+    const API_ENDPOINT = 'https://api.github.com'
     const send = (body) => {
         callback(null, {
             statusCode: 200,
@@ -14,6 +13,9 @@ exports.handler = (event, context, callback) => {
         axios({
             method: 'GET',
             url: `${API_ENDPOINT}/users/${userName}`,
+            headers: {
+                Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
+            },
         })
             .then((res) => send(res))
             .catch((err) => send(err))
