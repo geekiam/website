@@ -3,16 +3,16 @@ import axios from 'axios'
 export default class userService {
     constructor() {
         this.instance = axios.create({
-            baseURL: 'https://api.github.com',
+            baseURL: 'https://geekiam.io/.netlify/functions',
         })
     }
 
     async getUserDetail(username) {
         return this.instance({
             method: 'GET',
-            url: `/users/${username}`,
+            url: `/userservice?name=${username}`,
             headers: {
-                Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
+                'Access-Control-Allow-Origin': '*',
             },
         })
     }

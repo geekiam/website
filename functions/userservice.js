@@ -18,7 +18,7 @@ exports.handler = (event, context, callback) => {
                 Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
             },
         })
-            .then((res) => send(res.data))
+            .then((res) => send(res))
             .catch((err) => send(err))
     }
 

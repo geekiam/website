@@ -84,7 +84,7 @@
 </template>
 
 <script>
-import userService from '@/services/github/user.service'
+import fetch from 'node-fetch'
 export default {
     name: 'Author',
     props: {
@@ -98,11 +98,13 @@ export default {
             user: {},
         }
     },
-    async created() {
-        let service = new userService()
-        service.getUserDetail(this.author.title).then((response) => {
-            this.user = response.data
-        })
+    created() {
+        fetch(`../.netlify/functions/userservice?name=${this.author.title}`)
+            .then((res) => {
+                console.log(res)
+                this.user = res.json()
+            })
+            .catch((err) => console.log(err))
     },
     methods: {
         twitterUrl(username) {
