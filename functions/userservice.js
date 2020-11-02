@@ -14,9 +14,6 @@ exports.handler = (event, context, callback) => {
         axios({
             method: 'GET',
             url: `${API_ENDPOINT}/users/${userName}`,
-            headers: {
-                Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
-            },
         })
             .then((res) => send(res))
             .catch((err) => send(err))
