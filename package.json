@@ -2,14 +2,12 @@
     "name": "geekiam",
     "private": true,
     "scripts": {
-        "build": "npm run build:client && npm run build:server",
+        "build": "gridsome build",
         "develop": "gridsome develop",
         "explore": "gridsome explore",
         "lint": "vue-cli-service lint --fix",
         "precommit": "npm run lint",
-        "prepush": "npm run lint",
-        "build:server": "netlify-lambda build functions",
-        "build:client": "gridsome build"
+        "prepush": "npm run lint"
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",

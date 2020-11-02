@@ -25,6 +25,7 @@ exports.handler = (event, context, callback) => {
 
     // Make sure method is GET
     if (event.httpMethod === 'GET') {
+        console.log('the cunt got me')
         // Run
         getUserDetail()
     }
