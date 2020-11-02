@@ -22,7 +22,7 @@
         </div>
         <div class="py-4 px-6">
             <g-link
-                :to="author.path"
+                :href="author.path"
                 class="text-2xl font-bold text-green-800 hover:underline"
             >
                 {{ user.name }}
@@ -84,7 +84,7 @@
 </template>
 
 <script>
-import fetch from 'node-fetch'
+import userService from '@/services/github/user.service'
 export default {
     name: 'Author',
     props: {
@@ -98,13 +98,11 @@ export default {
             user: {},
         }
     },
-    created() {
-        fetch(`../.netlify/functions/userservice?name=${this.author.title}`)
-            .then((res) => {
-                console.log(res)
-                this.user = res.json()
-            })
-            .catch((err) => console.log(err))
+    async created() {
+        let service = new userService()
+        service.getUserDetail(this.author.title).then((response) => {
+            this.user = response.data
+        })
     },
     methods: {
         twitterUrl(username) {
