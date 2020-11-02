@@ -10,9 +10,11 @@ exports.handler = (event, context, callback) => {
         })
     }
     const getUserDetail = () => {
+        let url = `${API_ENDPOINT}/users/${userName}`
+        console.log(url)
         axios({
             method: 'GET',
-            url: `${API_ENDPOINT}/users/${userName}`,
+            url: url,
             headers: {
                 Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
             },
