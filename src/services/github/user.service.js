@@ -1,19 +1,15 @@
-import axios from 'axios'
+import fetch from 'node-fetch'
 
 export default class userService {
-    constructor() {
-        this.instance = axios.create({
-            baseURL: 'https://api.github.com',
-        })
-    }
+    constructor() {}
 
     async getUserDetail(username) {
-        return this.instance({
-            method: 'GET',
-            url: `/users/${username}`,
-            headers: {
-                Authorization: `token ${process.env.GRIDSOME_GITHUB_TOKEN}`,
-            },
-        })
+        fetch(`/.netlify/functions/author-detail?name=${username}`)
+            .then((res) => {
+                console.log(res)
+            })
+            .then((res) => {
+                return res
+            })
     }
 }
