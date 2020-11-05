@@ -2,27 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8efb3bdf-7233-4af4-8ce4-4ef961592200/deploy-status)](https://app.netlify.com/sites/geekiam/deploys)
 
-The gradual evolution of potentially a new business.  Initially inspired on boring rainy Saturday afternoon, then 
-gradually germinating into a full fledged business idea. Read the full story 
-[Times they are a changing – hopefully for the better](https://garywoodfine.com/times-they-are-a-changing-hopefully-for-the-better/)
+Welcome to the code base for [Geek.I.Am community network-based education and social network for software professionals](https://geekiam.io "Geek.I.Am Website").
 
-### Gridsome Tutorial series 
+## What is Geek.I.Am
 
-Along the way, we have also documented the journey of building Geek.I.Am in a series of tutorials about what we have 
-learned developing with Gridsome, Vue, Netlify, TailwindCSS, JavaScript and much more!
+Geek.I.Am community network-based education and social network for software professionals.
 
-* [Gridsome - VueJS Static Website Generator](https://garywoodfine.com/gridsome-vuejs-static-website-generator/)
-* [Gridsome - More adventures with the static website generator](https://garywoodfine.com/gridsome-more-adventures-with-the-static-website-generator/)
-* [Gridsome - Using file system markdown files ](https://garywoodfine.com/gridsome-using-file-system-markdown-files/) 
-* [Gridsome - Configuring Custom TailwindCSS ](https://garywoodfine.com/gridsome-configuring-custom-tailwindcss/)
-* [Gridsome - Configure Basic On-Page SEO ](https://garywoodfine.com/gridsome-configure-basic-on-page-seo/)
-* [Gridsome - Implement Additional SEO ](https://garywoodfine.com/gridsome-implement-additional-seo/)
-* [Gridsome - Adding Feature Image to blog posts](https://garywoodfine.com/gridsome-adding-feature-image-to-blog-posts/)
-* [Gridsome - Implement Cookie Consent](https://garywoodfine.com/gridsome-implement-cookie-consent)
-* [Gridsome - Configure your development environment](https://garywoodfine.com/gridsome-configure-your-development-environment/)
-* [Gridsome - Configuring Layouts and using slots](https://garywoodfine.com/gridsome-configuring-layouts-and-using-slots/)
-* [Gridsome - How to create a plugin](https://garywoodfine.com/gridsome-how-to-create-a-plugin/)
-* [Gridsome - How to add Twitter Card to posts](https://garywoodfine.com/gridsome-how-to-add-twitter-card-to-posts/) 
  
  ### Developed, Sponsored and Supported 
  
