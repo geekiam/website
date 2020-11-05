@@ -87,7 +87,6 @@
 </template>
 
 <script>
-import fetch from 'node-fetch'
 export default {
     name: 'Author',
     props: {
