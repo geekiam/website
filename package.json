@@ -7,8 +7,7 @@
         "explore": "gridsome explore",
         "lint": "vue-cli-service lint --fix",
         "precommit": "npm run lint",
-        "prepush": "npm run lint",
-        "postinstall": "netlify-lambda install"
+        "prepush": "npm run lint"
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.3.0",
