@@ -7,7 +7,10 @@
                         .author,
                 }"
             >
-                <post-title :post="$page.post"></post-title>
+                <post-title
+                    :post="$page.post"
+                    :author="author_detail"
+                ></post-title>
 
                 <div
                     :class="{
