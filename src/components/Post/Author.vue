@@ -87,7 +87,6 @@
 </template>
 
 <script>
-import fetch from 'node-fetch'
 export default {
     name: 'Author',
     props: {
@@ -95,18 +94,10 @@ export default {
             type: Object,
             required: true,
         },
-    },
-    data() {
-        return {
-            details: {},
-        }
-    },
-    created() {
-        fetch(`/.netlify/functions/author-detail?name=${this.author.title}`)
-            .then((response) => {
-                return response.json()
-            })
-            .then((response) => (this.details = response))
+        details: {
+            type: Object,
+            required: true,
+        },
     },
     methods: {
         twitterUrl(username) {

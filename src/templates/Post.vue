@@ -28,8 +28,9 @@
 
         <template #right-side-bar>
             <author
-                v-if="$page.post.author.title"
+                v-if="author_detail"
                 :author="$page.post.author"
+                :details="author_detail"
             />
         </template>
     </post-layout>
@@ -39,6 +40,7 @@
 import Categories from '@/components/Post/Categories'
 import Author from '@/components/Post/Author'
 import PostTitle from '@/components/Post/PostTitle'
+import fetch from 'node-fetch'
 
 export default {
     name: 'Post',
@@ -47,7 +49,11 @@ export default {
         Author,
         Categories,
     },
-
+    data() {
+        return {
+            author_detail: {},
+        }
+    },
     metaInfo() {
         return {
             title: this.$page.post.title,
@@ -98,6 +104,15 @@ export default {
                 { src: 'https://platform.twitter.com/widgets.js', async: true },
             ],
         }
+    },
+    created() {
+        fetch(
+            `/.netlify/functions/author-detail?name=${this.$page.post.author.title}`
+        )
+            .then((response) => {
+                return response.json()
+            })
+            .then((response) => (this.author_detail = response))
     },
     computed: {
         postUrl() {

@@ -52,7 +52,7 @@ same back end based services and data stores.
 ![ REST API ](/uploads/rest-api.png "REST API")
 
 The data is transferred between the layers using either XML or JSON data payloads.  Front end applications make use 
-of either XMLHttpRequest or Fetch API to request and transfer data from the backend API.
+of either `XMLHttpRequest` or the relatively new `fetch` API to request and transfer data from the backend API.
 
 ### What is Fetch API
 The Fetch API has been available in the Service Worker global scope since Chromium  40 based browsers, but has been enabled in the window
