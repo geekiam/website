@@ -108,7 +108,6 @@ export default {
             })
             .then((response) => (this.details = response))
     },
-
     methods: {
         twitterUrl(username) {
             return `https://twitter.com/${username}`

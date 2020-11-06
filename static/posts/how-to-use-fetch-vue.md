@@ -49,6 +49,8 @@ Rest based API's enable developers to build API layers for multiple applications
 types of Front End applications i.e. Web, Mobile, Desktop and even Command Line applications to communicate with the
 same back end based services and data stores.
 
+![ REST API ](/uploads/rest-api.png "REST API")
+
 The data is transferred between the layers using either XML or JSON data payloads.  Front end applications make use 
 of either XMLHttpRequest or Fetch API to request and transfer data from the backend API.
 

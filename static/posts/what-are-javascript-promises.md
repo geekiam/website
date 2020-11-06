@@ -39,7 +39,7 @@ developers as **Javascript callback hell**
 To address this issue, Promises were introduced in ECMAScript 2015 to represent an eventual result of an asynchronous 
 operation.
 
-### What is Javascript promise
+### What is a Javascript promise
 
 Javascript promises provide a cleaner & simpler approach to handling asynchronous operations than the classical 
 callback method based approach. They also enable developers to handle asynchronous errors similar to the `try\catch`
