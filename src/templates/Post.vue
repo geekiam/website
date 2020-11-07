@@ -109,10 +109,10 @@ export default {
         }
     },
     async created() {
-        let response = await fetch(
+        let user = await fetch(
             `/.netlify/functions/author-detail?name=${this.$page.post.author.title}`
         )
-        this.author_detail = await response.json()
+        this.author_detail = await user.json()
     },
     computed: {
         postUrl() {
