@@ -1,3 +1,5 @@
+title = "Geek.I.Am netlify deployment configuration file"
+
 [build]
     publish = "dist"
     command = "npm run build"
@@ -9,6 +11,7 @@
     port= 3850
     publish = "dist" # The path to your static content folder
     autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address in your browser
+
 [build.environment]
     NODE_VERSION = "12"
 

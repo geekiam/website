@@ -196,3 +196,84 @@ const readAllText = () => {  return new Promise((resolve, reject) => {
   .catch(error => console.log(error))
   .finally(() => console.log('Still none the wiser'))
 ```
+
+### Using Promises with Async/Await 
+
+The `then/catch/finally` block working with promises is greate, but as you can tell in the code samples above it can make
+your code quite difficult to read and it could lead to cyclomatic complexity of your code base.
+
+> **Cyclomatic complexity** is a source code complexity measurement that is being correlated to a number of coding errors. 
+>It is calculated by developing a Control Flow Graph of the code that measures the number of linearly-independent paths 
+>through a program module.
+
+ECMAScript 2017 introduced  `async` functions and the `await` keyword that act as  act as syntactic sugar on top of 
+promises, making asynchronous code easier to write and to read afterwards. They make async code look more like 
+old-school synchronous code, so they're well worth learning. 
+
+The `async` keyword can be used to turn a function into an asynchronous function, and an async function knows how to expect
+the possibility of the `await` keyword being used to invoke asynchronous code.
+
+#### Async Functions
+
+The word `async` before a function means a function always returns a promise. Other values are wrapped in a resolved 
+promise automatically.
+
+```javascript
+async function hello() {
+  return 'world';
+}
+```
+
+The function above returns a resolved promise with the result of 'world. We could make use of this function making use 
+of the typical `then/catch/finally` pattern.
+
+```javascript
+async function hello() {
+  return 'world';
+}
+
+hello().then(result => console.log(result))
+```
+
+`async` ensures that the function returns a promise, and wraps non-promises in it. Even if the code in the function does
+not explicitly,  the `async` keyword will internally make it return a promise.
+
+#### Await
+
+The keyword await makes JavaScript wait until that promise settles and returns its result. The `await` keyword only works
+inside functions defined with `async`.
+
+You can use `await` when calling any function that returns a Promise, including web API functions.  To simulate this
+we could refactor the code above to include a Promise.
+
+```javascript
+async function hello() {
+    return world = await Promise.resolve("world");
+}
+
+hello().then(result => console.log(result))
+```
+
+The async/wait keywords were introduced to help to reduce the amount bolier plate code required to work with promises. 
+
+Promises were introduced to solve the famous callback hell problem, but they introduced complexity on their own, and 
+syntax complexity.
+
+Developers are able to read and understand the code as a synchronous operation, however it is all asynchronous
+
+```javascript
+async function hello() {
+     return world = await Promise.resolve("world");
+}
+
+const greeting = async () => {
+    console.log(await hello())
+}
+
+greeting()
+```
+### Conclusion
+
+A promise is an object that returns a value at some point in the future. Javascript promises enable developers to write
+asynchronous code.
+ 
