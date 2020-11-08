@@ -6,7 +6,8 @@
 
 module.exports = {
     siteName: 'Geek.I.Am',
-    siteDescription: 'Software Developer Community',
+    siteDescription:
+        'community network-based education and social network for software professionals',
     siteUrl: 'https://geekiam.io',
     titleTemplate: '%s | Geek.I.Am',
     author: 'threenine.co.uk',
@@ -72,7 +73,8 @@ module.exports = {
                 contentTypes: ['Post'],
                 feedOptions: {
                     title: 'Geek.I.Am ',
-                    description: 'Software Developer Community',
+                    description:
+                        'community network-based education and social network for software professionals',
                     link: 'https://geekiam.io',
                 },
                 rss: {
@@ -80,7 +82,7 @@ module.exports = {
                     output: '/feed.xml',
                 },
                 atom: {
-                    enabled: false,
+                    enabled: true,
                     output: '/feed.atom',
                 },
                 json: {
@@ -93,7 +95,7 @@ module.exports = {
                 nodeToFeedItem: (node) => ({
                     title: node.title,
                     date: node.date,
-                    content: node.summary,
+                    content: node.body,
                 }),
             },
         },
