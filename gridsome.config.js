@@ -91,11 +91,12 @@ module.exports = {
                 },
 
                 maxItems: 25,
+                htmlFields: ['body'],
                 filterNodes: () => true,
                 nodeToFeedItem: (node) => ({
                     title: node.title,
                     date: node.date,
-                    content: node.body,
+                    content: node.content,
                 }),
             },
         },
