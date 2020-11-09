@@ -21,6 +21,9 @@ tags:
 categories:
   - software-development
 ---
+In [How To Use Fetch With Vue](https://geekiam.io/how-to-use-fetch-with-vue/ "How To Use Fetch With Vue | Geek.I.Am") we briefly touched on Javascript promises
+and how the Fetch API makes use of them. In my opinion Promises in Javascript requires a bit more explanation and therefore felt it was necessary to expand
+on the discussion.
 
 The single-threaded, event-loop based concurrency model of JavaScript, deals with processing of events using so-called 
 *asynchronous non-blocking I/O model*.  What this means is, that in JavaScript code is executed sequentially. 
@@ -51,7 +54,7 @@ operation and its resulting value.
 
 > A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.
 >
-> [ECMAScript® 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects " ECMAScript® 2015 Language Specification - Promise Objects")
+> [ECMAScript® 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects "ECMAScript® 2015 Language Specification - Promise Objects")
 
 Essentially a *Promise* is a proxy value for a value that is not necessarily known at the time when the promise was 
 first created.  It enables developers to associate a handler for an asynchronous action's eventual success or failure result.
@@ -127,7 +130,7 @@ The first argument of `.then` is a function that runs when the promise is resolv
 
 The second argument of `.then` is a function that runs when the promise is rejected, and receives the error.
 
-We could rewite the above code slightly to illustrate how to make use of the two functions
+We could rewrite the above code slightly to illustrate how to make use of the two functions
 
 ```javascript
 const fs = require('fs')
@@ -221,9 +224,9 @@ which refers to how much a developer needs to know in order to complete a task.
 >
 > [John Ousterhout - A philosophy of software design](https://amzn.to/3nj4EbF "A philosophy of software design")
 
-ECMAScript 2017 introduced  `async` functions and the `await` keyword that act as syntactic sugar on top of 
-promises, making asynchronous code easier to write and to read afterwards. They make async code look more like 
-old-school synchronous code, so they're well worth learning. 
+[ECMAScript 2017](https://www.ecma-international.org/ecma-262/11.0/index.html "ECMAScript 2017 language specification") introduced  [Async function definitions](https://www.ecma-international.org/ecma-262/11.0/index.html#sec-async-function-definitions "ECMAScript 2017 language specification - Async Function Definitions")
+ and the [Await Completion Record Specification](https://www.ecma-international.org/ecma-262/11.0/index.html#await "The Completion Record Specification Type") keyword that act as syntactic sugar on top of promises, making asynchronous code easier to write and 
+ to read afterwards. They make async code look more like old-school synchronous code, so they're well worth learning. 
 
 The `async` keyword can be used to turn a function into an asynchronous function, and an async function knows how to expect
 the possibility of the `await` keyword being used to invoke asynchronous code.
