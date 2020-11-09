@@ -23,7 +23,7 @@ categories:
 ---
 
 The single-threaded, event-loop based concurrency model of JavaScript, deals with processing of events using so-called 
-*asynchronous non-blocking I/O model*.  What this means is, that in Javascript JavaScript code is executed sequentially. 
+*asynchronous non-blocking I/O model*.  What this means is, that in JavaScript code is executed sequentially. 
 In order to prevent blocking the main thread on I/O-bound operations, JavaScript uses a callback mechanism where 
 asynchronous operations specify a callback – the function to be executed when the result of an asynchronous operation 
 is ready, while the code control flow continues executing.
@@ -200,13 +200,23 @@ const readAllText = () => {  return new Promise((resolve, reject) => {
 ### Using Promises with Async/Await 
 
 The `then/catch/finally` block working with promises is greate, but as you can tell in the code samples above it can make
-your code quite difficult to read and it could lead to cyclomatic complexity of your code base.
+your code quite difficult to read and increases the cyclomatic complexity of your code base.
 
-> **Cyclomatic complexity** is a source code complexity measurement that is being correlated to a number of coding errors. 
->It is calculated by developing a Control Flow Graph of the code that measures the number of linearly-independent paths 
+> **Cyclomatic complexity** is a source code complexity measurement that is correlated to the number of coding errors, 
+>calculated by developing a Control Flow Graph of the code that measures the number of linearly-independent paths 
 >through a program module.
+>
 
-ECMAScript 2017 introduced  `async` functions and the `await` keyword that act as  act as syntactic sugar on top of 
+In his book [A philosophy of software design](https://amzn.to/3nj4EbF "A philosophy of software design"), John Ousterhout expands on the fact that software
+development is primarily dedicated to managing complexity.  One of the symptoms of complexity refers to the Cognitive Load,
+which refers to how much a developer needs to know in order to complete a task.
+
+> Complexity is anything related to the structure of a software systemd that makes it hard to understand and modify the 
+> system
+>
+> [John Ousterhout - A philosophy of software design](https://amzn.to/3nj4EbF "A philosophy of software design")
+
+ECMAScript 2017 introduced  `async` functions and the `await` keyword that act as syntactic sugar on top of 
 promises, making asynchronous code easier to write and to read afterwards. They make async code look more like 
 old-school synchronous code, so they're well worth learning. 
 
