@@ -36,8 +36,9 @@ The necessity to do error handling and embedding callbacks would make code diffi
 load for other developers to understand and maintain the code later. This what is commonly referred to by Javascript 
 developers as **Javascript callback hell**
 
-To address this issue, Promises were introduced in ECMAScript 2015 to represent an eventual result of an asynchronous 
-operation.
+To address this issue, Promises were introduced in [ECMAScript 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/ "ECMAScript® 2015 Language Specification") (a.k.a. ECMAScript 6 or ES6) to represent an 
+eventual result of an asynchronous operation.
+
 
 ### What is a Javascript promise
 
@@ -47,6 +48,10 @@ approach.
 
 The JavaScript Promise is an object holding a state, which represents an eventual completion of an asynchronous 
 operation and its resulting value.
+
+> A Promise is an object that is used as a placeholder for the eventual results of a deferred (and possibly asynchronous) computation.
+>
+> [ECMAScript® 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/#sec-promise-objects " ECMAScript® 2015 Language Specification - Promise Objects")
 
 Essentially a *Promise* is a proxy value for a value that is not necessarily known at the time when the promise was 
 first created.  It enables developers to associate a handler for an asynchronous action's eventual success or failure result.
@@ -211,7 +216,7 @@ In his book [A philosophy of software design](https://amzn.to/3nj4EbF "A philoso
 development is primarily dedicated to managing complexity.  One of the symptoms of complexity refers to the Cognitive Load,
 which refers to how much a developer needs to know in order to complete a task.
 
-> Complexity is anything related to the structure of a software systemd that makes it hard to understand and modify the 
+> Complexity is anything related to the structure of a software system that makes it hard to understand and modify the 
 > system
 >
 > [John Ousterhout - A philosophy of software design](https://amzn.to/3nj4EbF "A philosophy of software design")
