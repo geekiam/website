@@ -22,6 +22,9 @@
                         >
                             {{ author_detail.fullName }}
                         </h1>
+                        <p class="py-4 text-md text-gray-700 px-5">
+                            {{ author_detail.biography }}
+                        </p>
                     </div>
                 </div>
             </header>
@@ -37,7 +40,6 @@
 </template>
 
 <script>
-import formatService from '@/services/posts/format.service'
 import fetch from 'node-fetch'
 export default {
     name: 'Author',
@@ -46,11 +48,6 @@ export default {
             author_detail: {},
         }
     },
-    computed: {
-        avatar() {
-            return `/authors/images/${this.$page.author.id}.png`
-        },
-    },
     async created() {
         let user = await fetch(
             `/.netlify/functions/author-detail?name=${this.$page.author.title}`
@@ -58,9 +55,6 @@ export default {
         this.author_detail = await user.json()
     },
     methods: {
-        titleCase(str) {
-            return formatService.toTitleCase(str)
-        },
         imageLoadError(e) {
             e.target.src = `/authors/images/default.png`
         },
