@@ -49,9 +49,9 @@ The JavaScript Promise is an object holding a state, which represents an eventua
 operation and its resulting value.
 
 Essentially a *Promise* is a proxy value for a value that is not necessarily known at the time when the promise was 
-first created.  It enables developers to associate a handler for an asynchronous actions eventual success or failure result.
+first created.  It enables developers to associate a handler for an asynchronous action's eventual success or failure result.
 Enabling asynchronous methods return values like synchronous methods, instead of immediately returning values. At the most
-basic level, a Promise enables an asynchronous method to return a value at some point in future.
+basic level, a Promise enables an asynchronous method to return a value at some point in the future.
 
 A Promise can be in one of three states:
 
@@ -71,7 +71,7 @@ The Promise API provides 4 static methods of the Promise Class
 * **all**  Wait for all promises results.
 * **race** Wait until any of the promises is resolved or rejected.
 
-It probably easier to read an example of Promise implementation to understand what is going on.
+It is probably easier to read an example of Promise implementation to understand what is going on.
 
 In the example below, we are going to create a Promise to the read the contents of a text file on our disk. If we are
 able to read all the contents of the text file to a buffer and then will return a success message using the promise *resolve* method,
@@ -115,7 +115,7 @@ error. Consuming functions can be registered  using methods `.then`, `.catch` an
 The `then()` method is used to schedule a callback to be executed when the promise is successfully resolved. This takes
 two callback functions:
 
-* onFullfilled - callback if the promise is fulfilled
+* onFulfilled - callback if the promise is fulfilled
 * onRejected - callback if the promise is rejected.
 
 The first argument of `.then` is a function that runs when the promise is resolved, and receives the result.
@@ -199,7 +199,7 @@ const readAllText = () => {  return new Promise((resolve, reject) => {
 
 ### Using Promises with Async/Await 
 
-The `then/catch/finally` block working with promises is greate, but as you can tell in the code samples above it can make
+The `then/catch/finally` block working with promises is great, but as you can tell in the code samples above it can make
 your code quite difficult to read and increases the cyclomatic complexity of your code base.
 
 > **Cyclomatic complexity** is a source code complexity measurement that is correlated to the number of coding errors, 
@@ -264,7 +264,7 @@ async function hello() {
 hello().then(result => console.log(result))
 ```
 
-The async/wait keywords were introduced to help to reduce the amount bolier plate code required to work with promises. 
+The async/wait keywords were introduced to help to reduce the amount of boiler plate code required to work with promises. 
 
 Promises were introduced to solve the famous callback hell problem, but they introduced complexity on their own, and 
 syntax complexity.

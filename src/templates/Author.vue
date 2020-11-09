@@ -9,8 +9,8 @@
                         class="px-2 mb-1 sm:mb-0 w-full sm:w-1/5 flex justify-center"
                     >
                         <g-image
-                            :alt="`${$page.author.title}`"
-                            :src="avatar"
+                            :alt="author_detail.fullName"
+                            :src="author_detail.avatar"
                             @error="imageLoadError"
                             class="h-14 w-14 rounded-full"
                             aria-labelledby="authorIcon"
@@ -20,7 +20,7 @@
                         <h1
                             class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-green-700"
                         >
-                            {{ titleCase($page.author.title) }}
+                            {{ author_detail.fullName }}
                         </h1>
                     </div>
                 </div>
@@ -38,12 +38,24 @@
 
 <script>
 import formatService from '@/services/posts/format.service'
+import fetch from 'node-fetch'
 export default {
     name: 'Author',
+    data() {
+        return {
+            author_detail: {},
+        }
+    },
     computed: {
         avatar() {
             return `/authors/images/${this.$page.author.id}.png`
         },
+    },
+    async created() {
+        let user = await fetch(
+            `/.netlify/functions/author-detail?name=${this.$page.author.title}`
+        )
+        this.author_detail = await user.json()
     },
     methods: {
         titleCase(str) {
