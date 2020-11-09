@@ -1,7 +1,7 @@
 ---
 title: What is a Javascript promise
 description: JavaScript Promise is an object holding a state, which represents an eventual completion or failure of an asynchronous operation and its resulting value.
-summary: "A definitive guide to understanding JavaScript Promises"
+summary: "A Promise in JavaScript is an object representing a value which may be available in the future. If we request data from an API, a Promise promises to ensure the data is there when we need it.  Prior to promises events and callback functions were used but they had limited functionalities and created unmanageable code, we take a deeper look into Javascript and learn how we can use them."
 keywords:
   - how to use fetch
   - using fetch in vue.js

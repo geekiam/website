@@ -40,7 +40,7 @@ through a *Hotfix Branch*.
 
 
 The workflow consists of a number terminal commands to be used in a [terminal window](https://geekiam.io/what-is-a-terminal-window/) to type and remember,  
-which as any developer will tell you has the potential to lead to bugs and mis-implementation! Over the years the 
+which as any developer will tell you, has the potential to lead to bugs and mis-implementation! Over the years the 
 [git-flow library](https://github.com/nvie/gitflow) evolved which comprises a number git sub-commands to help automate 
 parts of the flow to make working with it easier.
 
