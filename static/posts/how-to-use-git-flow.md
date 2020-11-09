@@ -44,9 +44,11 @@ which as any developer will tell you has the potential to lead to bugs and mis-i
 [git-flow library](https://github.com/nvie/gitflow) evolved which comprises a number git sub-commands to help automate 
 parts of the flow to make working with it easier.
 
+![ Gitflow diagram ](/uploads/git-flow-diagram.png "Gitflow diagram")
+
 ### When to use Git Flow
 
-The are a number of approaches to working with Git and different Software Development Teams and Organisations will 
+There are a number of approaches to working with Git and different Software Development Teams and Organisations will 
 certainly have their preferred approach, as with many aspects in software development there is not always the one best 
 approach, but there is always the best approach that works for your team or organisation.
 
@@ -64,7 +66,7 @@ It makes sense in this kind of Environment to have 2 Long-Life branches, namely 
 (development) branch.  Developers, will usually create branches from the develop branch, implement whatever task required, 
 once complete they will merge their branch into develop.
 
-The Develop branch, may be automatically deployed to a staging environment for continuous integration and testing 
+The *Develop* branch, may be automatically deployed to a staging environment for continuous integration and testing 
 purpose. At the end of the iteration and all Quality Assurance tasks are complete, the Develop branch is then merged 
 into the Master branch which in turn deploys straight to production, after tagging and marked as release.
 
