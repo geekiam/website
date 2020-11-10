@@ -242,7 +242,7 @@ nvm use
 
 If you want to restrict the use of package manager to whichever is your preference, you can also simply update the `engines` your `package.json` to 
 
-```sh
+```json
 "engines": {
     "node": "12.14.1",
     "npm": ">= 6.14.5",
@@ -343,3 +343,80 @@ npm install --production
 yarn install --production
 
 ```
+
+### Additional flags for npm install 
+* `-P` or `--save-prod`  Package will appear in `dependencies`
+* `-d` or `--save` Package will appear in `dependencies`
+* `-D` or `--save-dev` Package will appear in `devDependencies`
+* `-E` or `--save-exact` dependencies will be configured with an exact version rather than using npm’s default semver range operator
+* `--no-save` Prevents saving to dependencies
+
+### Updating Dependencies
+
+
+The `package.json` enables the tagging of dependencies to a range of versions. When installing dependencies with `npm i` or 
+`yarn add`  the latest available version of the package is downloaded and store in the `node_modules` folder, and a 
+corresponding entry is added to the `package.json`.
+
+```json
+{
+  "dependencies": {
+    "package-name": "2.0.0"
+  }
+}
+```
+ 
+ #### Update patch releases
+ If you would like enable the installation of the latest patch version you can just update with`~` and `npm install` 
+ will install the latest version of those. 
+ 
+ If versions 2.0.1 , 2.0.2, 2.0.3 are released then npm will install those. However, If 2.1.0 is released, it will not 
+ install that version, this is generally  a good strategy as it may contain breaking changes.
+ 
+ ```json
+{
+  "dependencies": {
+    "package-name": "~2.0.0"
+  }
+}
+```
+
+#### Update minor releases
+If you like to enable updating to the latest minor version then update the prefix with `^` 
+
+This will enable npm to update to most recent minor version increment. `^2.6.1` will match any `2.x.x` release including 
+`2.7.0`, but will not install version `3.0.0`.
+
+ ```json
+{
+  "dependencies": {
+    "package-name": "^2.0.0"
+  }
+}
+```
+
+#### Explicit version range
+You can use `>, <, <=, >=` to explicitly set the version range. Another good option for custom ranges or if you would 
+like to be explicit with your version ranges. The follow will install every version greater than or equal to 2.0.0 but 
+greater than 7.0.0:
+```json
+{
+  "dependencies": {
+    "package-name": ">= 2.0.0 < 7.0.0"
+  }
+}
+```
+
+#### Always install the latest version
+
+If you would like to ensure always installing the latest version of packages you can use the `*`
+
+```json
+{
+  "dependencies": {
+    "package-name": "*"
+  }
+}
+```
+
+
