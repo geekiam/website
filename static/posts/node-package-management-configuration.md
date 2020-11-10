@@ -419,4 +419,29 @@ If you would like to ensure always installing the latest version of packages you
 }
 ```
 
+### How to check package version
 
+To check the NPM registry to see if your packages can be upgraded or if there are more current release versions 
+available for your packages, you can use the `npm outdated` command.
+
+```shell script
+$ npm outdated
+Package                       Current   Wanted   Latest  Location
+eslint-plugin-vue             6.2.2    6.2.2     7.1.0   geekiam
+gridsome-plugin-remark-shiki  0.3.1    0.3.1     0.5.0   geekiam
+gridsome-plugin-tailwindcss   2.2.48   2.2.48    3.0.1   geekiam
+```
+
+`wanted` is the maximum version of the package that satisfies the semver range specified in package.json. If there's no 
+available semver range (i.e. you're running npm outdated `--global`, or the package isn't included in `package.json`), 
+then wanted shows the currently-installed version.
+
+`latest` is the version of the package tagged as latest in the registry. Running npm publish with no special 
+configuration will publish the package with a dist-tag of latest. This may or may not be the maximum version of the 
+package, or the most-recently published version of the package, depending on how the package's developer manages the 
+latest dist-tag.
+
+### How to update packages
+
+Use `npm update` to update all your dependencies to the latest versions. Or `npm update packagename anotherpackage` 
+to update specific packages to the latest version.
