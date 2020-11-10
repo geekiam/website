@@ -42,7 +42,6 @@ module.exports = {
                     },
                     author: {
                         typeName: 'Author',
-                        create: true,
                     },
                     categories: {
                         typeName: 'Category',
@@ -62,8 +61,9 @@ module.exports = {
         {
             use: 'gridsome-plugin-netlify-cms',
             options: {
-                publicPath: '/admin',
+                modulePath: 'src/admin/index.js',
                 configPath: 'src/admin/config.yml',
+                publicPath: '/admin',
                 htmlPath: 'src/admin/index.html',
             },
         },
