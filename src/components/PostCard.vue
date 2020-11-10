@@ -30,16 +30,16 @@
                                 <g-link
                                     :key="cat.id"
                                     :to="cat.path"
-                                    class="hover:underline text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
+                                    class="hover:underline capitalize text-green-700 capitalize border-b border-transparent hover:border-green-400 transition-border-color"
                                     v-for="cat in post.categories"
                                 >
-                                    {{ titleCase(cat.title) }} &nbsp;
+                                    {{ cat.title }} &nbsp;
                                 </g-link>
                             </div>
                         </div>
                     </div>
                     <div
-                        class="mb-1 text-base leading-6 text-gray-700 pl-1 pr-2"
+                        class="mb-1 text-base leading-6 text-gray-700 pl-5 pr-5"
                         v-html="post.summary"
                     ></div>
                 </g-link>
@@ -59,19 +59,7 @@
 </template>
 
 <script>
-import format from '@/services/posts/format.service'
 export default {
     props: ['post'],
-    methods: {
-        titleCase(str) {
-            return format.toTitleCase(str)
-        },
-        imageLoadError(e) {
-            e.target.src = `/authors/images/default.png`
-        },
-        avatar(id) {
-            return `/authors/images/${id}.png`
-        },
-    },
 }
 </script>
