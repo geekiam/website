@@ -66,7 +66,7 @@ query($path: String!) {
         id
         title
         path
-        fullName {
+        name {
             firstName
             lastName
         }
