@@ -65,7 +65,7 @@ collections:
       folder: "static/authors"
       create: true
       slug: "{{slug}}"
-      identifier_field: "id"
+      identifier_field: "title"
       fields:
           - {label: "Github Username", name: "title", widget: "string", required: true, hint: "Github username" }
           -  label: "Full name"
