@@ -104,7 +104,7 @@ export default {
             return `https://twitter.com/${username}`
         },
         createAuthorUrl(username) {
-            return `/author/${username}`
+            return `/author/${username}/`
         },
     },
 }

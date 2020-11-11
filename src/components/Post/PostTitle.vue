@@ -70,7 +70,7 @@ export default {
     },
     methods: {
         createAuthorUrl(username) {
-            return `/author/${username}`
+            return `/author/${username}/`
         },
     },
 }
