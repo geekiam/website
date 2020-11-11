@@ -75,11 +75,6 @@ query Category($path: String!, $page: Int) {
                         summary
                         description
                         timeToRead
-                        author {
-                            id
-                            title
-                            path
-                        }
                         categories {
                             id
                             title

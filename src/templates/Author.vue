@@ -28,13 +28,13 @@
                     </div>
                 </div>
             </header>
-            <section>
+            <!--   <section>
                 <post-card
                     :key="edge.node.id"
                     :post="edge.node"
                     v-for="edge in $page.author.belongsTo.edges"
                 />
-            </section>
+            </section>-->
         </template>
     </home-layout>
 </template>
@@ -50,7 +50,7 @@ export default {
     },
     async created() {
         let user = await fetch(
-            `/.netlify/functions/author-detail?name=${this.$page.author.title}`
+            `/.netlify/functions/author-detail?name=${this.$page.authors.title}`
         )
         this.author_detail = await user.json()
     },
@@ -62,41 +62,14 @@ export default {
 }
 </script>
 <page-query>
-query Author($path: String!, $page: Int) {
-    author(path: $path) {
+query($path: String!) {
+    authors(path: $path) {
         id
         title
         path
-        belongsTo(page: $page, perPage: 6) @paginate {
-            totalCount
-            pageInfo {
-                totalPages
-                currentPage
-            }
-            edges {
-                node {
-                    ... on Post {
-                        id
-                        title
-                        date(format: "D MMMM Y")
-                        path
-                        content
-                        summary
-                        description
-                        timeToRead
-                        categories {
-                            id
-                            title
-                            path
-                        }
-                        tags {
-                            id
-                            title
-                            path
-                        }
-                    }
-                }
-            }
+        fullName {
+            firstName
+            lastName
         }
     }
 }

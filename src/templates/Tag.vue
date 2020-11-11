@@ -78,11 +78,6 @@ query Tag($path: String!, $page: Int) {
                             title
                             path
                         }
-                        author {
-                            id
-                            title
-                            path
-                        }
                     }
                 }
             }

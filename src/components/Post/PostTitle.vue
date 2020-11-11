@@ -38,7 +38,7 @@
             </svg>
             <g-link
                 class="px-2 text-sm hover:underline"
-                :to="post.author.path"
+                :to="createAuthorUrl(post.author)"
                 >{{ author.fullName }}</g-link
             >
         </div>
@@ -68,7 +68,11 @@ export default {
             required: true,
         },
     },
-    methods: {},
+    methods: {
+        createAuthorUrl(username) {
+            return `/author/${username}`
+        },
+    },
 }
 </script>
 

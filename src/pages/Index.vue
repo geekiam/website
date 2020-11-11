@@ -84,11 +84,6 @@ query Blog($page: Int) {
                     title
                     path
                 }
-                author {
-                    id
-                    title
-                    path
-                }
             }
         }
     }

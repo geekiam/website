@@ -31,34 +31,6 @@ module.exports = {
             use: 'gridsome-plugin-tailwindcss',
         },
         {
-            use: '@gridsome/source-filesystem',
-            options: {
-                path: 'static/posts/*.md',
-                typeName: 'Post',
-                refs: {
-                    tags: {
-                        typeName: 'Tag',
-                        create: true,
-                    },
-                    author: {
-                        typeName: 'Author',
-                    },
-                    categories: {
-                        typeName: 'Category',
-                        create: true,
-                    },
-                },
-            },
-        },
-        {
-            use: '@gridsome/source-filesystem',
-            options: {
-                path: 'static/authors/*.md',
-                typeName: 'Author',
-                create: true,
-            },
-        },
-        {
             use: 'gridsome-plugin-netlify-cms',
             options: {
                 configPath: 'src/admin/config.yml',
@@ -146,11 +118,44 @@ module.exports = {
                 ],
             },
         },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'static/posts/*.md',
+                typeName: 'Post',
+                refs: {
+                    tags: {
+                        typeName: 'Tag',
+                        create: true,
+                    },
+                    authors: {
+                        typeName: 'Authors',
+                    },
+                    categories: {
+                        typeName: 'Category',
+                        create: true,
+                    },
+                },
+            },
+        },
+        {
+            use: '@gridsome/source-filesystem',
+            options: {
+                path: 'static/authors/*.md',
+                typeName: 'Authors',
+                create: true,
+            },
+        },
     ],
     templates: {
         Post: '/:title',
         Tag: '/tag/:id',
-        Author: '/author/:title',
+        Authors: [
+            {
+                path: '/author/:title',
+                component: './src/templates/Author.vue',
+            },
+        ],
         Category: '/category/:id',
     },
     transformers: {

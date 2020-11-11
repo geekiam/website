@@ -44,7 +44,6 @@ import Categories from '@/components/Post/Categories'
 import Author from '@/components/Post/Author'
 import PostTitle from '@/components/Post/PostTitle'
 import fetch from 'node-fetch'
-
 export default {
     name: 'Post',
     components: {
@@ -110,8 +109,9 @@ export default {
     },
     async created() {
         let user = await fetch(
-            `/.netlify/functions/author-detail?name=${this.$page.post.author.title}`
+            `/.netlify/functions/author-detail?name=${this.$page.post.author}`
         )
+
         this.author_detail = await user.json()
     },
     computed: {
@@ -151,11 +151,7 @@ query($path: String) {
         timeToRead
         summary
         date(format: "D MMMM Y")
-        author {
-            id
-            title
-            path
-        }
+        author
         tags {
             id
             title

@@ -22,7 +22,7 @@
         </div>
         <div class="py-4 px-6">
             <g-link
-                :to="author.path"
+                :to="createAuthorUrl(author)"
                 class="text-2xl font-bold text-green-800 hover:underline"
             >
                 {{ details.fullName }}
@@ -91,7 +91,7 @@ export default {
     name: 'Author',
     props: {
         author: {
-            type: Object,
+            type: String,
             required: true,
         },
         details: {
@@ -102,6 +102,9 @@ export default {
     methods: {
         twitterUrl(username) {
             return `https://twitter.com/${username}`
+        },
+        createAuthorUrl(username) {
+            return `/author/${username}`
         },
     },
 }
