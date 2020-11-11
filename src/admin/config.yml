@@ -29,7 +29,7 @@ collections:
                [
                 { label: "Image", name: "image", widget: "image" },
                 { label: "Description", name: "alt", widget: "string" },
-               ],
+               ]
           - label: "Twitter CardImage"
             name: "cardImage"
             widget: "object"
