@@ -11,7 +11,6 @@
     },
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^3.0.0",
-        "@gridsome/plugin-google-analytics": "^0.1.2",
         "@gridsome/plugin-sitemap": "^0.4.0",
         "@gridsome/source-filesystem": "^0.6.2",
         "@gridsome/transformer-remark": "^0.6.3",
@@ -19,6 +18,7 @@
         "gridsome": "^0.7.22",
         "gridsome-plugin-amazon-onelink": "^1.0.2",
         "gridsome-plugin-feed": "^1.0.2",
+        "gridsome-plugin-gtag": "^0.1.9",
         "gridsome-plugin-netlify-cms": "^1.0.9",
         "gridsome-plugin-remark-shiki": "^0.5.0",
         "gridsome-plugin-tailwindcss": "^3.0.1",
