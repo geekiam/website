@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import fetch from 'node-fetch'
+import userService from '@/services/user.service'
 export default {
     name: 'Author',
     data() {
@@ -49,10 +49,9 @@ export default {
         }
     },
     async created() {
-        let user = await fetch(
-            `/.netlify/functions/author-detail?name=${this.$page.authors.title}`
-        )
-        this.author_detail = await user.json()
+        let service = new userService()
+        let user = this.$page.authors.title
+        this.author_detail = await service.getUserDetail(user)
     },
     methods: {
         imageLoadError(e) {

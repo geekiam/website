@@ -43,7 +43,8 @@
 import Categories from '@/components/Post/Categories'
 import Author from '@/components/Post/Author'
 import PostTitle from '@/components/Post/PostTitle'
-import fetch from 'node-fetch'
+
+import userService from '@/services/user.service'
 export default {
     name: 'Post',
     components: {
@@ -108,11 +109,8 @@ export default {
         }
     },
     async created() {
-        let user = await fetch(
-            `/.netlify/functions/author-detail?name=${this.$page.post.author}`
-        )
-
-        this.author_detail = await user.json()
+        let service = new userService()
+        this.author_detail = await service.getUserDetail(this.$page.post.author)
     },
     computed: {
         postUrl() {
