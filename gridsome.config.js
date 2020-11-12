@@ -41,6 +41,29 @@ module.exports = {
             },
         },
         {
+            use: 'gridsome-plugin-rss',
+            options: {
+                contentTypeName: 'Post',
+                latest: true,
+                maxItems: 1000,
+                feedOptions: {
+                    title: 'Geek.I.Am RSS',
+                    feed_url: 'https://geekiam.io/rss.xml',
+                    site_url: 'https://geekiam.io',
+                },
+                feedItemOptions: (post) => ({
+                    title: post.title,
+                    description: post.description,
+                    url: 'https://geekiam.io' + post.slug,
+                    author: post.author,
+                }),
+                output: {
+                    dir: './static',
+                    name: 'rss.xml',
+                },
+            },
+        },
+        {
             use: 'gridsome-plugin-feed',
             options: {
                 contentTypes: ['Post'],
