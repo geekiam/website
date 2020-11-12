@@ -54,7 +54,7 @@ module.exports = {
                 feedItemOptions: (post) => ({
                     title: post.title,
                     description: post.description,
-                    url: 'https://geekiam.io' + post.slug,
+                    url: 'https://geekiam.io/' + post.path,
                     author: post.author,
                 }),
                 output: {
