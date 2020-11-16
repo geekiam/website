@@ -2,6 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import '~/assets/css/main.css'
 import DefaultLayout from '@/layouts/Default.vue'
+import MainLayout from '@/layouts/MainLayout'
 import HomeLayout from '@/layouts/HomeLayout'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
@@ -36,7 +37,7 @@ export default function (Vue, { router, head, isClient }) {
         title: 'Sitemap',
         href: `${config.siteUrl}/sitemap.xml`,
     })
-
+    Vue.component('MainLayout', MainLayout)
     Vue.component('Layout', DefaultLayout)
     Vue.component('SiteHeader', SiteHeader)
     Vue.component('SiteFooter', SiteFooter)

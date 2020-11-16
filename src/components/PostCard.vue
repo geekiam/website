@@ -1,5 +1,5 @@
 <template>
-    <article class="flex-1 w-4/4 mx-auto border shadow-xl mb-5">
+    <article class="mx-auto border shadow-xl mb-5">
         <g-link :to="post.path">
             <g-image
                 :alt="post.feature.alt"
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div
-                        class="mb-1 text-base leading-6 text-gray-700 pl-5 pr-5"
+                        class="mb-1 leading-2 text-sm text-gray-500 pl-5 pr-5"
                         v-html="post.summary"
                     ></div>
                 </g-link>

@@ -1,6 +1,4 @@
 
-@import "markdown.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,10 +15,10 @@ a:hover {
     @apply text-green-600;
 }
 
-.container-inner {
+/*.container-inner {
     padding-left: 1rem;
     padding-right: 1rem;
-}
+}*/
 .fade-enter-active,
 .fade-leave-active {
     transition: ease opacity 0.3s;

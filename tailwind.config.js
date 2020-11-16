@@ -4,7 +4,26 @@ module.exports = {
         purgeLayersByDefault: true,
     },
     purge: false,
+    plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
     theme: {
+        typography: {
+            default: {
+                css: {
+                    h1: {
+                        color: '#276749',
+                    },
+                    h3: {
+                        color: '#276749',
+                    },
+                    h4: {
+                        color: '#276749',
+                    },
+                    a: {
+                        color: '#276749',
+                    },
+                },
+            },
+        },
         container: {
             center: true,
             padding: {
@@ -46,38 +65,7 @@ module.exports = {
                     900: '#1a202c',
                 },
             },
-            fontFamily: {
-                sans: [
-                    'Fira Sans',
-                    '-apple-system',
-                    'BlinkMacSystemFont',
-                    '"Segoe UI"',
-                    'Roboto',
-                    '"Helvetica Neue"',
-                    'Arial',
-                    '"Noto Sans"',
-                    'sans-serif',
-                    '"Apple Color Emoji"',
-                    '"Segoe UI Emoji"',
-                    '"Segoe UI Symbol"',
-                    '"Noto Color Emoji"',
-                ],
-                serif: [
-                    'Georgia',
-                    'Cambria',
-                    '"Times New Roman"',
-                    'Times',
-                    'serif',
-                ],
-                mono: [
-                    'Menlo',
-                    'Monaco',
-                    'Consolas',
-                    '"Liberation Mono"',
-                    '"Courier New"',
-                    'monospace',
-                ],
-            },
+            fontFamily: {},
             fontSize: {
                 xs: '.75rem',
                 sm: '.875rem',

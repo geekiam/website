@@ -31,6 +31,9 @@ module.exports = {
         },
         {
             use: 'gridsome-plugin-tailwindcss',
+            options: {
+                tailwindConfig: './tailwind.config.js',
+            },
         },
         {
             use: 'gridsome-plugin-netlify-cms',
@@ -47,14 +50,15 @@ module.exports = {
                 latest: true,
                 maxItems: 1000,
                 feedOptions: {
-                    title: 'Geek.I.Am RSS',
-                    feed_url: 'https://geekiam.io/rss.xml',
-                    site_url: 'https://geekiam.io',
+                    title: this.siteName,
+                    description: this.siteDescription,
+                    feed_url: this.site_url + '/rss.xml',
+                    site_url: this.site_url,
                 },
                 feedItemOptions: (post) => ({
                     title: post.title,
                     description: post.description,
-                    url: 'https://geekiam.io' + post.path,
+                    url: this.site_url + post.path,
                     author: post.author,
                 }),
                 output: {
@@ -68,10 +72,9 @@ module.exports = {
             options: {
                 contentTypes: ['Post'],
                 feedOptions: {
-                    title: 'Geek.I.Am ',
-                    description:
-                        'community network-based education and social network for software professionals',
-                    link: 'https://geekiam.io',
+                    title: this.siteName,
+                    description: this.siteDescription,
+                    link: this.site_url,
                 },
                 rss: {
                     enabled: true,
@@ -188,7 +191,7 @@ module.exports = {
             plugins: [
                 [
                     'gridsome-plugin-remark-shiki',
-                    { theme: 'monokai', skipInline: true },
+                    { theme: 'monokai', skipInline: true, fontsize: 3 },
                 ],
             ],
         },

@@ -1,5 +1,5 @@
 <template>
-    <layout>
+    <Layout>
         <template #mainbody>
             <div
                 class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8"
@@ -13,7 +13,7 @@
                     <h2
                         class="mt-6 text-center text-3xl leading-9 font-extrabold text-green-800"
                     >
-                        Sign in to your account
+                        Register an account
                     </h2>
                 </div>
 
@@ -55,29 +55,20 @@
                                     />
                                 </div>
                             </div>
-
-                            <div class="mt-6 flex items-center justify-between">
-                                <div class="flex items-center">
+                            <div class="mt-6">
+                                <label
+                                    for="password"
+                                    class="block text-sm font-medium leading-5 text-gray-700"
+                                >
+                                    Confirm Password
+                                </label>
+                                <div class="mt-1 rounded-md shadow-sm">
                                     <input
-                                        id="remember_me"
-                                        type="checkbox"
-                                        class="form-checkbox h-4 w-4 text-green-600 transition duration-150 ease-in-out"
+                                        id="confirm_password"
+                                        type="password"
+                                        required
+                                        class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                                     />
-                                    <label
-                                        for="remember_me"
-                                        class="ml-2 block text-sm leading-5 text-gray-900"
-                                    >
-                                        Remember me
-                                    </label>
-                                </div>
-
-                                <div class="text-sm leading-5">
-                                    <a
-                                        href="#"
-                                        class="font-medium text-green-600 hover:text-green-500 focus:outline-none focus:underline transition ease-in-out duration-150"
-                                    >
-                                        Forgot your password?
-                                    </a>
                                 </div>
                             </div>
 
@@ -87,7 +78,7 @@
                                         type="submit"
                                         class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green active:bg-green-700 transition duration-150 ease-in-out"
                                     >
-                                        Sign in
+                                        Join
                                     </button>
                                 </span>
                             </div>
@@ -96,13 +87,11 @@
                 </div>
             </div>
         </template>
-    </layout>
+    </Layout>
 </template>
 
 <script>
 export default {
-    name: 'Login',
+    name: 'Register',
 }
 </script>
-
-<style scoped></style>

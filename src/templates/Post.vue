@@ -16,7 +16,7 @@
                     :class="{
                         'pb-10': $page.post.author || $page.post.categories,
                     }"
-                    class="markdown-body text-lg leading-normal text-gray-700"
+                    class="prose lg:prose-xl leading-normal text-gray-700"
                     v-html="$page.post.content"
                 />
 
