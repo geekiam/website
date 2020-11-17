@@ -1,5 +1,8 @@
 <template>
     <post-layout>
+        <template #left-side-bar>
+            <sidebar></sidebar>
+        </template>
         <template #post-content>
             <article
                 :class="{
