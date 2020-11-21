@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full mx-w-8xl mx-auto">
+    <div class="w-full mx-w-8xl mx-auto mt-5">
         <div class="lg:flex">
             <div
                 id="sidebar"
@@ -7,14 +7,19 @@
             >
                 <slot name="left-side-bar" />
             </div>
-            <div class="flex w-full">
-                <div class="min-w-0 flex-auto px-4 sm:px-6 xl:px-8 bg-white">
-                    <slot name="post-content" />
-                </div>
-                <div
-                    class="hidden xl:text-sm xl:block flex-none w-64 pl-8 mr-8"
-                >
-                    <div class="pl-3 lg:w-64">
+            <div
+                id="content-wrapper"
+                class="min-w-0 w-full flex-auto lg:static lg:max-h-full lg:overflow-visible"
+            >
+                <div class="pt-10 pb-24 lg:pb-16 w-full flex">
+                    <div
+                        class="min-w-0 flex-auto px-4 sm:px-6 xl:px-8 bg-white"
+                    >
+                        <slot name="main-content" />
+                    </div>
+                    <div
+                        class="hidden xl:text-sm xl:block flex-none w-64 pl-8 mr-8"
+                    >
                         <slot name="right-side-bar" />
                     </div>
                 </div>
@@ -28,5 +33,3 @@ export default {
     name: 'PostLayout',
 }
 </script>
-
-<style scoped></style>

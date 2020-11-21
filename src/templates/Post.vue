@@ -3,7 +3,7 @@
         <template #left-side-bar>
             <home-side-nav></home-side-nav>
         </template>
-        <template #post-content>
+        <template #main-content>
             <article
                 :class="{
                     'border-b border-grey-lighter pb-10 mb-16': !$page.post

@@ -1,7 +1,5 @@
 <template>
-    <div
-        class="flex flex-grow w-full max-w-6xl mx-auto xl:px-2 lg:flex mt-10 p-4"
-    >
+    <div class="w-full mx-w-8xl mx-auto mt-5">
         <div class="lg:flex">
             <div
                 id="sidebar"
@@ -14,7 +12,7 @@
             >
                 <slot name="main-content" />
             </div>
-            <div class="flex-1 min-w-1 bg-green-600"></div>
+            <div class="flex-1 min-w-1"></div>
         </div>
     </div>
     <!--<div class="w-full max-w-8xl mx-auto">
