@@ -8,6 +8,12 @@ Welcome to the code base for [Geek.I.Am community network-based education and so
 
 Geek.I.Am community network-based education and social network for software professionals.
 
+### Contributing to Geek.I.Am
+
+
+### Current Project Team Members
+
+
  
  ### Developed, Sponsored and Supported 
  
