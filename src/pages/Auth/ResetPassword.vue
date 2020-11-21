@@ -3,35 +3,20 @@
         <div>
             <label for="email"> Email address </label>
             <div>
-                <input
-                    id="email"
-                    type="email"
-                    v-model="registration.email"
-                    required
-                />
+                <input id="email" type="email" required />
             </div>
         </div>
 
         <div class="mt-6">
             <label for="password"> Password </label>
             <div>
-                <input
-                    id="password"
-                    type="password"
-                    v-model="registration.password"
-                    required
-                />
+                <input id="password" type="password" required />
             </div>
         </div>
         <div>
             <label for="confirm_password"> Confirm Password </label>
             <div>
-                <input
-                    id="confirm_password"
-                    type="password"
-                    v-model="registration.confirmPassword"
-                    required
-                />
+                <input id="confirm_password" type="password" required />
             </div>
         </div>
 
