@@ -14,7 +14,8 @@ Geek.I.Am community network-based education and social network for software prof
 
 ### Current Project Team Members
 
-[Gary Woodfine](https://github.com/garywoodfine) - Project Lead
+* [Gary Woodfine](https://github.com/garywoodfine) - Project Lead
+ 
  
  ### Developed, Sponsored and Supported 
  

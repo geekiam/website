@@ -58,6 +58,14 @@ function classof(o) {
   return Object.prototype.toString.call(o).slice(8, -1);
 }
 ```
+### What is a class 
+
+A class is blueprint for any number of objects. A class describes the type of an object - how it is represented and what
+operations can be carried out on it. 
+
+The conventional wisdom in programming is that classes should be small, not deep. 
+
+A class should contain exact specifications on what can be done with an object.  The specification is the class' contract.
 
 ### Defining classes in Javascript
 
@@ -112,3 +120,45 @@ export class SomeCoolClass {
           </p>
       </div>
   </div>
+
+### Constructor
+
+The constructor method is a unique method for creating and initializing the object created with the class. There can 
+only be one unique method with the name “constructor” in a class. The constructor can use the super keyword to call the 
+constructor of the superclass.
+
+`constructor(param1, param2, ...)` is a special method in the body of a class that is used to initialize an instance of a class. 
+It's typically the place where one would set the initial values for the fields, or do any kind of object setup.
+
+In the example below we will add a constructor method to our class which will accept an argument for a `name` value we 
+can add to help describe our class.
+
+We can then initialise an instance of our class can provide some catchy name.
+
+```javascript
+
+class SomeCoolClass {
+   
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+const someClass = new SomeCoolClass('A cool class  name');
+
+```
+If you don’t define a `constructor` method for a class, a default one is created. The default constructor is an 
+empty function, which doesn’t modify the instance.
+
+### Fields
+
+Class fields are variables that hold information. Fields can be attached to 2 entities:
+
+* Fields on the class instance
+* Fields on the class itself (aka static)
+
+The fields also have 2 levels of accessibility:
+
+* **Public**: accessible anywhere
+* **Private**: accessible only within the body of the class
+
