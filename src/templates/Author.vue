@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import userService from '@/services/user.service'
+import UserService from '@/services/github/userService'
 export default {
     name: 'Author',
     data() {
@@ -49,7 +49,7 @@ export default {
         }
     },
     async created() {
-        let service = new userService()
+        let service = new UserService()
         let user = this.$page.authors.title
         this.author_detail = await service.getUserDetail(user)
     },

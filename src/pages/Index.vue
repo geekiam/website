@@ -1,5 +1,9 @@
 <template>
     <home-layout>
+        <template #left-side-bar>
+            <home-side-nav></home-side-nav>
+        </template>
+
         <template #main-content>
             <transition-group name="fade">
                 <post-card
@@ -18,11 +22,15 @@
                 </infinite-loading>
             </ClientOnly>
         </template>
+
+        <template #right-side-bar></template>
     </home-layout>
 </template>
 
 <script>
+import HomeSideNav from '@/components/navigation/HomeSideNav'
 export default {
+    components: { HomeSideNav },
     metaInfo: {
         title: 'Home',
     },

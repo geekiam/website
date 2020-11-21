@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 
-export default class userService {
+export default class UserService {
     constructor() {}
 
     async getUserDetail(username) {

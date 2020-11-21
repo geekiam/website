@@ -45,7 +45,9 @@
                         <div>
                             <h4
                                 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase"
-                            ></h4>
+                            >
+                                Information
+                            </h4>
                             <ul class="mt-4">
                                 <li>
                                     <g-link
@@ -60,12 +62,30 @@
                         <div class="mt-12 md:mt-0">
                             <h4
                                 class="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase"
-                            ></h4>
+                            >
+                                Legal
+                            </h4>
                             <ul class="mt-4">
                                 <li class="mt-4">
                                     <g-link
                                         class="text-base leading-6 text-gray-300 hover:text-white"
-                                        to="/privacy"
+                                        to="/legal/terms-and-conditions"
+                                    >
+                                        Terms & Conditions
+                                    </g-link>
+                                </li>
+                                <li class="mt-4">
+                                    <g-link
+                                        class="text-base leading-6 text-gray-300 hover:text-white"
+                                        to="/legal/community-terms-and-conditions"
+                                    >
+                                        Community
+                                    </g-link>
+                                </li>
+                                <li class="mt-4">
+                                    <g-link
+                                        class="text-base leading-6 text-gray-300 hover:text-white"
+                                        to="/legal/privacy"
                                     >
                                         Privacy
                                     </g-link>

@@ -11,6 +11,7 @@ import PostCard from '@/components/PostCard'
 import InfiniteLoading from 'vue-infinite-loading'
 import Sidebar from '@/components/Post/Sidebar'
 import config from '../gridsome.config'
+import Vuelidate from 'vuelidate'
 
 export default function (Vue, { router, head, isClient }) {
     let copyRightNotice = `\u00a9 ${
@@ -47,4 +48,5 @@ export default function (Vue, { router, head, isClient }) {
     Vue.component('PostCard', PostCard)
     Vue.component('Sidebar', Sidebar)
     Vue.use(InfiniteLoading)
+    Vue.use(Vuelidate)
 }

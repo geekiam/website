@@ -1,5 +1,7 @@
 <template>
-    <header class="relative bg-gray-900">
+    <header
+        class="sticky top-0 z-40 w-full max-w-8xl mx-auto flex-none bg-gray-900"
+    >
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div
                 class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
@@ -17,7 +19,7 @@
                     <div class="ml-10 flex items-baseline"></div>
                 </div>
                 <div
-                    class="md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0"
+                    class="sm:hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0"
                 >
                     <g-link
                         to="/auth/login"

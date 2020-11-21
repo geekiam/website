@@ -1,7 +1,7 @@
 <template>
     <post-layout>
         <template #left-side-bar>
-            <sidebar></sidebar>
+            <home-side-nav></home-side-nav>
         </template>
         <template #post-content>
             <article
@@ -19,7 +19,7 @@
                     :class="{
                         'pb-10': $page.post.author || $page.post.categories,
                     }"
-                    class="prose lg:prose-xl leading-normal text-gray-700"
+                    class="prose lg:prose-lg leading-normal text-gray-700"
                     v-html="$page.post.content"
                 />
 
@@ -47,10 +47,12 @@ import Categories from '@/components/Post/Categories'
 import Author from '@/components/Post/Author'
 import PostTitle from '@/components/Post/PostTitle'
 
-import userService from '@/services/user.service'
+import UserService from '@/services/github/userService'
+import HomeSideNav from '@/components/navigation/HomeSideNav'
 export default {
     name: 'Post',
     components: {
+        HomeSideNav,
         PostTitle,
         Author,
         Categories,
@@ -112,7 +114,7 @@ export default {
         }
     },
     async created() {
-        let service = new userService()
+        let service = new UserService()
         this.author_detail = await service.getUserDetail(this.$page.post.author)
     },
     computed: {

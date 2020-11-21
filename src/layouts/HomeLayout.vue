@@ -1,25 +1,51 @@
 <template>
-    <div class="flex-grow w-full max-w-7xl mx-auto xl:px-8 lg:flex bg-gray-100">
-        <div class="flex-2 min-w-0 xl:flex-2 bg-gray-100">
-            <div class="xl:flex-shrink-0 xl:w-64">
+    <div
+        class="flex flex-grow w-full max-w-6xl mx-auto xl:px-2 lg:flex mt-10 p-4"
+    >
+        <div class="lg:flex">
+            <div
+                id="sidebar"
+                class="top-0 fixed z-1 inset-0 flex-none h-full bg-opacity-25 w-full lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-60 xl:w-72 lg:block hidden"
+            >
                 <slot name="left-side-bar" />
             </div>
-        </div>
-        <div class="bg-white">
             <div
-                class="pt-4 pb-1 border-b border-t border-gray-200 sm:pl-6 lg:pl-8 xl:pl-6 xl:pt-6 xl:border-t-0"
+                class="h-screen z-1 flex-auto items-center overflow-x-hidden bg-white p-5 rounded-md"
             >
-                <section class="lg:container">
-                    <slot name="main-content" />
-                </section>
+                <slot name="main-content" />
             </div>
-        </div>
-        <div
-            class="bg-gray-100 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-200 xl:pr-0"
-        >
-            <div class="pl-6 lg:w-80">
-                <slot name="right-side-bar" />
-            </div>
+            <div class="flex-1 min-w-1 bg-green-600"></div>
         </div>
     </div>
+    <!--<div class="w-full max-w-8xl mx-auto">
+        <div class="lg:flex">
+            <div
+                id="sidebar"
+                class="fixed z-40 inset-0 flex-none h-full w-full lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-60 xl:w-72 lg:block hidden"
+            >
+                <slot name="left-side-bar" />
+            </div>
+            <div
+                id="content-wrapper"
+                class="min-w-0 w-full flex-auto lg:static lg:max-h-full lg:overflow-visible"
+            >
+                <div class="pt-10 pb-16 w-full flex">
+                    <div class="min-w-0 flex-auto px-4 sm:px-6 xl:px-8">
+                        <slot name="main-content" />
+                    </div>
+                    <div
+                        class="hidden xl:text-sm xl:block flex-none w-64 pl-8 mr-8"
+                    >
+                        <div
+                            class="flex flex-col justify-between overflow-y-auto sticky max-h-(screen-18) -mt-10 pt-10 pb-4 top-18"
+                        >
+                            <div class="mb-8">
+                                <slot name="right-side-bar" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
 </template>

@@ -33,6 +33,7 @@ module.exports = {
             use: 'gridsome-plugin-tailwindcss',
             options: {
                 tailwindConfig: './tailwind.config.js',
+                shouldImport: true,
             },
         },
         {
@@ -115,8 +116,8 @@ module.exports = {
         {
             use: 'klaro-gridsome',
             options: {
-                privacyPolicy: '/privacy',
-                cookieName: 'consent',
+                privacyPolicy: '/legal/privacy',
+                cookieName: 'geekiam.io',
                 translations: {
                     en: {
                         consentModal: {

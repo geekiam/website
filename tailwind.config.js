@@ -4,6 +4,7 @@ module.exports = {
         purgeLayersByDefault: true,
     },
     purge: false,
+    separator: ':',
     plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
     theme: {
         typography: {
@@ -12,28 +13,35 @@ module.exports = {
                     h1: {
                         color: '#276749',
                     },
+                    h2: {
+                        color: '#276749',
+                    },
                     h3: {
                         color: '#276749',
                     },
                     h4: {
                         color: '#276749',
                     },
+                    h5: {
+                        color: '#276749',
+                    },
+                    h6: {
+                        color: '#276749',
+                    },
                     a: {
                         color: '#276749',
+                    },
+                    blockquote: {
+                        color: '#2f855a',
                     },
                 },
             },
         },
         container: {
             center: true,
-            padding: {
-                default: '1rem',
-                sm: '2rem',
-                lg: '4rem',
-                xl: '5rem',
-            },
         },
         screens: {
+            xs: '300px',
             sm: '640px',
             md: '768px',
             lg: '1024px',
@@ -41,6 +49,10 @@ module.exports = {
         },
         extend: {
             colors: {
+                transparent: 'transparent',
+                current: 'currentColor',
+                black: '#000',
+                white: '#fff',
                 green: {
                     100: '#f0fff4',
                     200: '#c6f6d5',
@@ -78,10 +90,6 @@ module.exports = {
                 '5xl': '3rem',
                 '6xl': '4rem',
                 '7xl': '5rem',
-            },
-            spacing: {
-                80: '20rem',
-                108: '27rem',
             },
         },
     },
