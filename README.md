@@ -10,10 +10,11 @@ Geek.I.Am community network-based education and social network for software prof
 
 ### Contributing to Geek.I.Am
 
+[Contributing to Geek.I.Am](https://github.com/threenine/geekiam/blob/master/CONTRIBUTING.md)
 
 ### Current Project Team Members
 
-
+[Gary Woodfine](https://github.com/garywoodfine) - Project Lead
  
  ### Developed, Sponsored and Supported 
  
