@@ -10,7 +10,7 @@ feature:
   image: /uploads/posts/javascript/javascript-tutorials.png
   alt: Advanced git configuration options
 cardImage:
-  image: /uploads/twitter/vue/how-to-implement-form-validation-in-vue.png
+  image: /uploads/javascript/javascript-tutorials.png
   alt: Advanced git configuration options
 date: 2020-11-19T17:31:47.672Z
 author: garywoodfine
@@ -162,4 +162,64 @@ The fields also have 2 levels of accessibility:
 
 * **Public**: accessible anywhere
 * **Private**: accessible only within the body of the class
+
+#### Public Instance Fields
+
+In the code above we created a public instance field in the constructor `name`, we could access this field outside of 
+the class as follows
+
+```javascript
+const someClass = new SomeCoolClass('A cool class  name');
+console.log(someClass.name);    // Would print out A cool class  name to the console
+```
+The downside to creating implicitly inside the constructor, as above, is it could be difficult for other developers to 
+understand and grasp the fields list, because they would have to decipher them from the constructor’s code.
+ 
+ A better approach would be to explicitly declare the class fields. Therefore, irrespective of the constructor, the instance 
+ always has the same set of fields.
+ 
+ We can declare a `name;` field inside the body of the class which declares a public field name.
+ 
+ The public fields declared such a way is expressive: a quick look at the fields declarations is enough to understand 
+ the class’s data structure.
+  
+ ```javascript
+class SomeCoolClass {
+    name;   
+
+  constructor(name) {
+    this.name = name;
+  }
+}
+```
+ There is no restriction on access or update of the public fields. Developers can read and assign values to public fields 
+ inside the constructor, methods, and outside of the class.
+ 
+#### Private instance fields
+
+Developing Javascript you will often need encapsulate the inner workings or your class from the outside. Using encapsulation
+the public interface of the class provides does not couple it to the implementation details of the class.
+
+
+>  encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct 
+> access to some of an object's components
+
+To declare private fields in Javascript classes we only need to prefix the name with a `#` symbol. The prefix should be used
+everytime you declare and reference the field.
+
+ ```javascript
+class SomeCoolClass {
+    #name;   
+
+  constructor(name) {
+    this.#name = name;
+  }
+}
+```
+ The `#name` is a private field and can only be accessed and modified within the body of the class. If we try access 
+ the `name` field in code now, we will now be thrown an error.
+
+
+
+                                                                                                       
 
