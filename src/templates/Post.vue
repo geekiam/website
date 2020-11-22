@@ -153,7 +153,7 @@ query($path: String) {
         description
         timeToRead
         summary
-        date(format: "D MMMM Y")
+        date(format: "D MMM Y")
         author
         tags {
             id

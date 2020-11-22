@@ -60,7 +60,7 @@ module.exports = {
                 feedItemOptions: (post) => ({
                     title: post.title,
                     description: post.description,
-                    url: this.site_url + post.path,
+                    url: 'https://geekiam.io/' + post.path,
                     author: post.author,
                 }),
                 output: {
