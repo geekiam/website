@@ -51,10 +51,11 @@ module.exports = {
                 latest: true,
                 maxItems: 1000,
                 feedOptions: {
-                    title: this.siteName,
-                    description: this.siteDescription,
-                    feed_url: this.site_url + '/rss.xml',
-                    site_url: this.site_url,
+                    title: 'Geek.I.Am',
+                    description:
+                        'community network-based education and social network for software professionals',
+                    feed_url: 'https://geekiam.io' + '/rss.xml',
+                    site_url: 'https://geekiam.io',
                 },
                 feedItemOptions: (post) => ({
                     title: post.title,
@@ -73,9 +74,10 @@ module.exports = {
             options: {
                 contentTypes: ['Post'],
                 feedOptions: {
-                    title: this.siteName,
-                    description: this.siteDescription,
-                    link: this.site_url,
+                    title: 'Geek.I.Am',
+                    description:
+                        'community network-based education and social network for software professionals',
+                    link: 'https://geekiam.io',
                 },
                 rss: {
                     enabled: true,
