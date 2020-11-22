@@ -10,7 +10,7 @@ feature:
   image: /uploads/posts/javascript/javascript-tutorials.png
   alt: Advanced git configuration options
 cardImage:
-  image: /uploads/javascript/javascript-tutorials.png
+  image: /uploads/twitter/javascript/javascript-tutorials.png
   alt: Advanced git configuration options
 date: 2020-11-19T17:31:47.672Z
 author: garywoodfine
