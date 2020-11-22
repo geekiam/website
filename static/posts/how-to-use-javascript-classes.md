@@ -19,11 +19,12 @@ tags:
 categories:
   - software-development
 ---
-Javascript classes have always been quite different from classes that are available in other strongly-typed
- Object Oriented programming languages like Java, C#, C++ etc. There are some syntactic similarities, and it is possible 
- to emulate many of the features of *classical* classes in Javascript, but it is best to understand that Javascript's 
- classes and prototype-based inheritance mechanism are substantially different from the classes and class-based inheritance
- of C#, Java etc.
+Javascript classes have always been quite different from classes that are available in other strongly-typed Object Oriented 
+programming languages like Java, C#, C++ etc. 
+ 
+ There are some syntactic similarities, and it is possible to emulate many of the features of *classical* classes in Javascript, 
+ but it is best to understand that Javascript's classes and prototype-based inheritance mechanism are substantially different 
+ from the classes and class-based inheritance in other object oriented programming languages.
  
  The [ECMAScript 2015 Language Specification](https://www.ecma-international.org/ecma-262/6.0/ "ECMAScript® 2015 Language Specification")
  introduced syntax element and provided `constructors` , `static`, instance methods, inheritance and the ability to
