@@ -125,8 +125,11 @@ export class SomeCoolClass {
 ### Constructor
 
 The constructor method is a unique method for creating and initializing the object created with the class. There can 
-only be one unique method with the name “constructor” in a class. The constructor can use the super keyword to call the 
-constructor of the superclass.
+only be one unique method with the name “constructor” in a class. The constructor can use the `super` keyword to call the 
+constructor of the superclass, which is the constructor of the class you are deriving your class from.
+
+A constructor enables you to provide any custom initialization that must be done before any other methods can be called 
+on an instantiated object.
 
 `constructor(param1, param2, ...)` is a special method in the body of a class that is used to initialize an instance of a class. 
 It's typically the place where one would set the initial values for the fields, or do any kind of object setup.
@@ -150,6 +153,43 @@ const someClass = new SomeCoolClass('A cool class  name');
 ```
 If you don’t define a `constructor` method for a class, a default one is created. The default constructor is an 
 empty function, which doesn’t modify the instance.
+
+```javascript
+class SomeCoolClass {
+   
+  constructor() {}
+}
+```
+
+Classes can extend - a.k.a *inherit*, other classes , therefore if your class is derived class, the default constructor calls
+the parent constructor, passing alon any arguments that were provided.
+ 
+ ```javascript
+constructor(...args) {
+  super(...args);
+}
+```
+This enables the code to function as follows.
+```javascript
+class SomeCoolClass {
+   
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class InheritedCoolClass extends SomeCoolClass {
+ 
+       printClassName() {
+        return this.name;
+    }
+}
+ 
+   
+    let cool = new InheritedCoolClass("Kajagoogoo")
+    console.log(`My class name is : ${ cool.printClassName() }`)
+}
+```
 
 ### Fields
 
@@ -180,7 +220,13 @@ understand and grasp the fields list, because they would have to decipher them f
  
  We can declare a `name;` field inside the body of the class which declares a public field name.
  
- The public fields declared such a way is expressive: a quick look at the fields declarations is enough to understand 
+ The public fields declared such a way is expressive and ensures the fields exist on every created instance of the class. This
+ ensures the field is always present and assists in ensuring the class definition is more self-documenting.
+ 
+ Public instance fields are added with `Object.defineProperty()` either at construction time in the base class 
+ or just after `super()` returns in a subclass.
+  
+  a quick look at the fields declarations is enough to understand 
  the class’s data structure.
   
  ```javascript
@@ -219,7 +265,9 @@ class SomeCoolClass {
  The `#name` is a private field and can only be accessed and modified within the body of the class. If we try access 
  the `name` field in code now, we will now be thrown an error.
 
+### Public Static Fields
 
+ Static fields are helpful to define class constants or store information specific to the class. 
 
-                                                                                                       
+  To create static fields use the special keyword `static` followed by the field name: `static coolStaticField`.                                                                                                     
 
