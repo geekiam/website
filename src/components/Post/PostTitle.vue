@@ -5,7 +5,7 @@
         >
             <h1 class="capitalize">{{ post.title }}</h1>
         </div>
-        <div class="flex mb-3 mt-3 text-gray-500 text-xs">
+        <div class="flex flex-row mb-3 mt-3 text-gray-500 text-sm">
             <svg
                 class="h-4 w-4 fill-current mr-2"
                 fill="currentColor"

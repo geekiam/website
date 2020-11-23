@@ -79,7 +79,7 @@ module.exports = {
             },
             fontFamily: {},
             fontSize: {
-                xs: '.75rem',
+                xs: '.50rem',
                 sm: '.875rem',
                 base: '1rem',
                 lg: '1.125rem',
