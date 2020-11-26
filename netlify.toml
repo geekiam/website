@@ -16,8 +16,7 @@ title = "Geek.I.Am netlify deployment configuration file"
     NODE_VERSION = "12"
 
 [[plugins]]
-    package = "netlify-plugin-gridsome-cache"
-    package = "@netlify/plugin-functions-install-core"
+    package = ["netlify-plugin-gridsome-cache",  "@netlify/plugin-functions-install-core"]
 
 [[headers]]
     for = "/*"
