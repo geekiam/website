@@ -17,14 +17,16 @@ const createFaunaDB = function () {
 
     /* Based on your requirements, change the schema here */
     return client
-        .query(query.CreateCollection, { name: 'items' })
+        .query(query.CreateCollection({ name: 'items' }))
         .then(() => {
             console.log('Created items class')
-            return client.query(query.CreateIndex, {
-                name: 'all_items',
-                source: query.Collection('items'),
-                active: true,
-            })
+            return client.query(
+                query.CreateIndex({
+                    name: 'all_items',
+                    source: query.Collection('items'),
+                    active: true,
+                })
+            )
         })
 
         .catch((error) => {
