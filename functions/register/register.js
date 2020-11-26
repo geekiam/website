@@ -1,6 +1,7 @@
 const fetch = require('node-fetch')
 const Zk = require('@nuid/zk')
 const apiRootUrl = 'https://auth.nuid.io'
+const process = require('process')
 
 exports.handler = async function (event, context) {
     const { identity, user } = context.clientContext

@@ -1,6 +1,6 @@
 <template>
     <layout>
-        <template #mainbody>
+        <template #main-content>
             <div
                 class="prose lg:prose-md leading-normal text-gray-700 bg-white px-4 py-5 border-b border-gray-200 sm:px-6"
             >

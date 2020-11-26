@@ -1,8 +1,8 @@
 <template>
     <layout>
-        <template #mainbody>
+        <template #main-content>
             <div
-                class="prose lg:prose-xl leading-normal text-gray-700 bg-white px-4 py-5 border-b border-gray-200 sm:px-6"
+                class="prose leading-normal text-gray-700 bg-white px-4 py-5 border-b border-gray-200 sm:px-6"
             >
                 <h3 class="text-lg leading-6 font-medium text-gray-900 mb-3">
                     Privacy Policy

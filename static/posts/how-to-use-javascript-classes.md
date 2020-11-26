@@ -8,10 +8,10 @@ keywords:
   - The class syntax does not introduce the new object-oriented inheritance model to JavaScript.
 feature:
   image: /uploads/posts/javascript/javascript-tutorials.png
-  alt: Advanced git configuration options
+  alt: How to use Javascript classes
 cardImage:
   image: /uploads/twitter/javascript/javascript-tutorials.png
-  alt: Advanced git configuration options
+  alt: How to use Javascript classes
 date: 2020-11-19T17:31:47.672Z
 author: garywoodfine
 tags:
@@ -267,7 +267,10 @@ class SomeCoolClass {
 
 ### Public Static Fields
 
- Static fields are helpful to define class constants or store information specific to the class. 
+ Static fields are helpful to define class constants or store information specific to the class.  This is useful for caches, 
+ fixed-configuration, or any other data you *don't need* to be replicated across instances.
 
-  To create static fields use the special keyword `static` followed by the field name: `static coolStaticField`.                                                                                                     
+To create static fields use the special keyword `static` followed by the field name: `static coolStaticField`. 
+
+                                                                                                 
 
