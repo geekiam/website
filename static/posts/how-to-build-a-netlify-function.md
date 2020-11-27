@@ -187,7 +187,7 @@ to enable us to test our functions
 
 If we visit the draft website Url and append the path to our function, we'll see our function respond
 
-![netlify function](/upload/netlify-deploy-test-browser.png)
+![netlify function](/uploads/netlify-deploy-test-browser.png)
 
 Our function works as expected, so we can now deploy it to our production server using
 ```shell script
