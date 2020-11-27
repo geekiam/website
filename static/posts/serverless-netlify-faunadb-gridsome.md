@@ -62,11 +62,10 @@ I am going to assume some level of familiarity of Gridsome and Netlify CLI for t
           </div>
           <div class="w-auto text-grey-darker items-center p-4">
               <span class="text-lg font-bold pb-4">
-                  Sign Up with Fauna for free
+                 <a href="https://fauna.com/pricing" target="_blank">Sign Up with Fauna for free</a>
               </span>
               <div class="leading-tight">
               <ul>
-                <li>Capabilities</li>
                 <li>Fauna core (FQL & GraphQL)</li>
                 <li>Built-in security (ABAC)</li>
                 <li>Temporality (24 hour retention)</li>
