@@ -48,60 +48,46 @@ because the article provides a background on how to configure your local develop
 to start developing making use of Netlify Functions and the [Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI")
 
 I am going to assume some level of familiarity of Gridsome and Netlify CLI for the remainder of this guide. 
-
-<div class="flex bg-teal-lighter max-w-sm mb-4">
-      <div class="w-16 bg-teal">
-          <div class="p-4">
-              <svg 
-                 class="h-8 w-8 text-white fill-current" 
-                 xmlns="http://www.w3.org/2000/svg" 
-                 viewBox="0 0 512 512">
-              <path d="M437.019 74.981C388.667 26.629 324.38 0 256 0S123.333 26.63 74.981 74.981 0 187.62 0 256s26.629 132.667 74.981 181.019C123.332 485.371 187.62 512 256 512s132.667-26.629 181.019-74.981C485.371 388.667 512 324.38 512 256s-26.629-132.668-74.981-181.019zM256 470.636C137.65 470.636 41.364 374.35 41.364 256S137.65 41.364 256 41.364 470.636 137.65 470.636 256 374.35 470.636 256 470.636z"/>
-              <path d="M256 235.318c-11.422 0-20.682 9.26-20.682 20.682v94.127c0 11.423 9.26 20.682 20.682 20.682 11.423 0 20.682-9.259 20.682-20.682V256c0-11.422-9.259-20.682-20.682-20.682zM270.625 147.248A20.826 20.826 0 0 0 256 141.19a20.826 20.826 0 0 0-14.625 6.058 20.824 20.824 0 0 0-6.058 14.625 20.826 20.826 0 0 0 6.058 14.625A20.83 20.83 0 0 0 256 182.556a20.826 20.826 0 0 0 14.625-6.058 20.826 20.826 0 0 0 6.058-14.625 20.839 20.839 0 0 0-6.058-14.625z"/>
-              </svg>
+ <div class="flex bg-teal-lighter mb-4">
+          <div class="w-16 bg-teal">
+              <div class="p-4">
+                  <svg 
+                     class="h-8 w-8 text-white fill-current" 
+                     xmlns="http://www.w3.org/2000/svg" 
+                     viewBox="0 0 512 512">
+                      <path d="M437.019 74.981C388.667 26.629 324.38 0 256 0S123.333 26.63 74.981 74.981 0 187.62 0 256s26.629 132.667 74.981 181.019C123.332 485.371 187.62 512 256 512s132.667-26.629 181.019-74.981C485.371 388.667 512 324.38 512 256s-26.629-132.668-74.981-181.019zM256 470.636C137.65 470.636 41.364 374.35 41.364 256S137.65 41.364 256 41.364 470.636 137.65 470.636 256 374.35 470.636 256 470.636z"/>
+                      <path d="M256 235.318c-11.422 0-20.682 9.26-20.682 20.682v94.127c0 11.423 9.26 20.682 20.682 20.682 11.423 0 20.682-9.259 20.682-20.682V256c0-11.422-9.259-20.682-20.682-20.682zM270.625 147.248A20.826 20.826 0 0 0 256 141.19a20.826 20.826 0 0 0-14.625 6.058 20.824 20.824 0 0 0-6.058 14.625 20.826 20.826 0 0 0 6.058 14.625A20.83 20.83 0 0 0 256 182.556a20.826 20.826 0 0 0 14.625-6.058 20.826 20.826 0 0 0 6.058-14.625 20.839 20.839 0 0 0-6.058-14.625z"/>
+                  </svg>
+              </div>
           </div>
-      </div>
-      <div class="w-auto text-grey-darker items-center p-4">
-          <span class="text-lg font-bold pb-4">
-              Sign Up with Fauna for free
-          </span>
-          <div class="leading-tight">
-          <ul>
-            <li>Capabilities</li>
-            <li>Fauna core (FQL & GraphQL)</li>
-            <li>Built-in security (ABAC)</li>
-            <li>Temporality (24 hour retention)</li>
-            <li>Multi-factor authentication</li>
-            <li>Real-time document streams</li>
-            <li>Standard regions</li>
-            </ul>
+          <div class="w-auto text-grey-darker items-center p-4">
+              <span class="text-lg font-bold pb-4">
+                  Sign Up with Fauna for free
+              </span>
+              <div class="leading-tight">
+              <ul>
+                <li>Capabilities</li>
+                <li>Fauna core (FQL & GraphQL)</li>
+                <li>Built-in security (ABAC)</li>
+                <li>Temporality (24 hour retention)</li>
+                <li>Multi-factor authentication</li>
+                <li>Real-time document streams</li>
+                <li>Standard regions</li>
+                </ul>
+              </div>
           </div>
-      </div>
-</div>
+   </div>
 
  ### Create a Netlify function
   
-  Our first step  to creating our FaunaDb Crud API is to create folder in our netlify functions folder.  We could use
-  the Netlify CLI to do this, and the Netlify CLI already provides a sample of a typical ToDo app. However, we will do
-  this from scratch just to walk through the steps in detail.
-  
-  If you haven't already create a folder in the root of your project directory and name it `functions`, then in the folder
-  we'll create another new folder and name it 'users'. We 'll then initialise `npm` and install our `faunadb`.
- 
- ```shell script
-   $ mkdir functions && cd functions
-   $ mkdir users && cd users
-   $ npm init -y
-   $ npm i faunadb
-   $ touch users.js
-```
-
+ Our first step to create a Fauna CRUD API is to create a Function, which we will do so making use of the Netlify CLI,
+ if you haven't installed the Netlify-CLI locally yet, I recommend you do so and read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
 
 If you haven't already create a `env.development` in the root project directory and add a new environment variable which
 will store your Key you generate in your Fauna Dashboard.
 
 ```javascript
-FAUNADB_SERVER_SECRET=<your key from fauna>
+FAUNA_SECRET=<your key from fauna>
 ```
 
 

@@ -12,7 +12,7 @@ const handler = async (event) => {
     const { id } = event
     console.log(`Function 'update' invoked. update id: ${id}`)
     return client
-        .query(query.Update(query.Collection(`items/${id}`), { data }))
+        .query(query.Update(query.Collection(`users/${id}`), { data }))
         .then((response) => {
             console.log('success', response)
             return {

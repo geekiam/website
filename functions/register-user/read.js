@@ -11,7 +11,7 @@ const handler = async (event) => {
     const { id } = event
     console.log(`Function 'read' invoked. Read id: ${id}`)
     return client
-        .query(query.Get(query.Ref(query.Collection(`items`), id)))
+        .query(query.Get(query.Ref(query.Collection(`users`), id)))
         .then((response) => {
             console.log('success', response)
             return {

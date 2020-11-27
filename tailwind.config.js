@@ -49,6 +49,8 @@ module.exports = {
         },
         extend: {
             colors: {
+                'teal-lighter': '#a0f0ed',
+                teal: '#4dc0b5',
                 transparent: 'transparent',
                 current: 'currentColor',
                 black: '#000',
