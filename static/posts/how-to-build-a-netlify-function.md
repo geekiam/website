@@ -134,7 +134,8 @@ If you are familiar with AWS Lambda, the function code will be familiar to you:
 * `event` : object contains data on the request
 * `context` : user information when using Identity for user authentication.
 
-All we do in our function is return a promise. with a status code, message and event information.
+All we do in our function is return a simple [Javascript promise](https://geekiam.io/what-is-a-javascript-promise/ "What Is A Javascript Promise | Geek.I.Am")
+ with a status code, message and event information.
  
  ```javascript
  return {
