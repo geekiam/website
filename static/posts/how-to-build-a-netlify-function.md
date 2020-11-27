@@ -202,3 +202,8 @@ respond.
 ![netlify production](/uploads/netlify-production-function.png)
 
 
+### Conclusion
+We have managed to develop and deploy our function without really having to leave our console.  This makes working with 
+netlify so easy and enables developers to concentrate on the things they do best, developing software applications.
+
+
