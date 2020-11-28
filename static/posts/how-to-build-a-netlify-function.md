@@ -27,9 +27,9 @@ Netlify is one of these great innovative Serverless Computing services that enab
 minutes and provides a whole of host great tools and services to not only help you develop your next big idea but also 
 to help you manage it effortlessly!
  
- In fact, in developing our idea for Geek.I.Am, we've chosen Netlify as our platform of choice. In our opinion, is a 
- great platform if you want to learn something new that you can really dig into and works just fine for small 
- projects or large projects. You can Use it for sandbox development or even something more substantial.
+ In fact, in developing our idea for Geek.I.Am, we've chosen Netlify as our platform of choice. In our opinion, Netlify 
+ is a great platform if you want to learn something new, that you can really dig into and a platform that works just 
+ fine for small projects or large projects. You can Use it for sandbox development or even something more substantial.
  
  Netlify offers web hosting and automation solutions for businesses. It speeds up the static site set up and lets 
  companies start hosting instantly. Users can drag and drop components onto the Netlify web application or import 
@@ -38,22 +38,51 @@ to help you manage it effortlessly!
  Netlify enables users to reference specific branches for Git repository hosting. The platform allows users to surpass 
  all requirements for set up and maintenance for launching web projects.
  
- One of the great features Netlify provides to help you to implement dynamic content into your Jamstack static website,
- is [Netlify functions](https://functions.netlify.com/ "Netlify Functions | Netlify").  
+ <div class="flex bg-teal-lighter mb-4">
+           <div class="w-16 bg-teal">
+               <div class="p-4">
+                   <svg 
+                      class="h-8 w-8 text-white fill-current" 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 512 512">
+                       <path d="M437.019 74.981C388.667 26.629 324.38 0 256 0S123.333 26.63 74.981 74.981 0 187.62 0 256s26.629 132.667 74.981 181.019C123.332 485.371 187.62 512 256 512s132.667-26.629 181.019-74.981C485.371 388.667 512 324.38 512 256s-26.629-132.668-74.981-181.019zM256 470.636C137.65 470.636 41.364 374.35 41.364 256S137.65 41.364 256 41.364 470.636 137.65 470.636 256 374.35 470.636 256 470.636z"/>
+                       <path d="M256 235.318c-11.422 0-20.682 9.26-20.682 20.682v94.127c0 11.423 9.26 20.682 20.682 20.682 11.423 0 20.682-9.259 20.682-20.682V256c0-11.422-9.259-20.682-20.682-20.682zM270.625 147.248A20.826 20.826 0 0 0 256 141.19a20.826 20.826 0 0 0-14.625 6.058 20.824 20.824 0 0 0-6.058 14.625 20.826 20.826 0 0 0 6.058 14.625A20.83 20.83 0 0 0 256 182.556a20.826 20.826 0 0 0 14.625-6.058 20.826 20.826 0 0 0 6.058-14.625 20.839 20.839 0 0 0-6.058-14.625z"/>
+                   </svg>
+               </div>
+           </div>
+           <div class="w-auto text-grey-darker items-center p-4">
+               <span class="text-lg font-bold pb-4">
+                  <a href="https://www.netlify.com/pricing/" target="_blank">Sign Up to Netlify Starter for free</a>
+               </span>
+               <div class="leading-tight">
+               <ul>
+                 <li>Automated builds from Git</li>
+                 <li>Deploy to global Edge network</li>
+                 <li>Site previews for every push</li>
+                 <li>Instant rollbacks to any version</li>
+                 <li>Deploy static assets & dynamic serverless functions</li>
+                 </ul>
+               </div>
+           </div>
+ </div> 
  
- > Functions are scripts that you write and deploy with Netlify. The function’s code is hidden from the public, 
+
+One of the great features Netlify provides to help you to implement dynamic content into your Jamstack static website,
+is [Netlify functions](https://functions.netlify.com/ "Netlify Functions | Netlify").  
+
+ 
+> Functions are scripts that you write and deploy with Netlify. The function’s code is hidden from the public, 
 > but you can interact with it just like any other API service. Just as with your site code, Netlify takes care of 
 > deploying your scripts into functions.
+
+### Netlify CLI
  
- ### Netlify CLI
- 
- In my opinion, one of the tools that makes working with Netlify so easy and saves a lot of time, is the Netlify CLI.
+ One of the tools that makes working with Netlify so easy and saves a lot of time, is the Netlify CLI.
  Netlify's CLI tool enables you to configure, manage, deploy and automate aspects of your development workflow directly
  using the command line!
  
  You can use the CLI to spin up  local development server and test your website as it would be once deployed! The CLI 
  comes with utilities to help you quickly and easily develop and test Netlify functions.
- 
  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation) provides all the information 
  you need to get up and running with the Netlify-CLI quickly!
  
@@ -70,6 +99,8 @@ Create a directory on your local machine for your project.
 mkdir  geekiam-tutorials && cd geekiam-tutorials
 
 ```
+ At this point you could create a local and remote git repository to store your project, why not checkout our great
+ guide on [How To Create A New Github Repository Using The Terminal](https://geekiam.io/how-to-create-a-new-github-repository-using-the-terminal/ "How To Create A New Github Repository Using The Terminal | Geek.I.Am")
  
  ### Create a Netlify Configuration file
  
