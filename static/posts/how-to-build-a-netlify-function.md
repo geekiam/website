@@ -61,23 +61,28 @@ to help you manage it effortlessly!
  site to only host our functions.  Along the way we'll learn all the important basics we'll need to expand on this and 
  develop more complex functionalities.
  
-#### Step one
+#### Create a local development directory
 
-Lets create a directory on our local machine for our project.
+Create a directory on your local machine for your project. 
+
 ```shell script
 
 mkdir  geekiam-tutorials && cd geekiam-tutorials
 
 ```
  
- ### Step Two
+ ### Create a Netlify Configuration file
  
  Our next step involves creating a `netlify.toml` which is a file where we configure how the site builds and where 
- your serverless functions live. This file is a [TOML configuration](https://toml.io/en/ "A config file format for humans") file 
- that aims to be a minimal configuration file format that’s easy to read due to obvious semantics. TOML is designed to 
- map unambiguously to a hash table. TOML should be easy to parse into data structures in a wide variety of languages.
+ your serverless functions can be located within our project. 
  
- We'll add a `[build]` section to inform netlify our functions will be found in a folder we'll name function.
+ This file is a [TOML configuration](https://toml.io/en/ "A config file format for humans") file 
+ that aims to be a minimal configuration file format that’s easy to read due to obvious semantics. 
+ 
+ TOML is designed to map unambiguously to a hash table. TOML should be easy to parse into data structures in a wide 
+ variety of languages.
+ 
+ Add a `[build]` section to inform netlify, your functions will be found in a folder we'll name `functions`.
  
  ```toml
 [build]
@@ -92,7 +97,7 @@ mkdir sayhello && cd sayhello
 
 ```
  
- ### Step Three
+ ### Develop a simple function
  
  We now need to add a javascript file and open the file for editing in any editor of choice. In my case I will simply 
  use `nano`
@@ -147,7 +152,7 @@ All we do in our function is return a simple [Javascript promise](https://geekia
   }
 ```
 
-### Step four
+### Initialise the Netlify Local environment
 
 We can now test our function locally to ensure it works as expected. To this we can simply spin up
 the `netlify dev` from our project root folder.
@@ -167,11 +172,13 @@ In our case, can also simply open a browser and navigate to the following Url
 
 You have confirmed our functions worked! We can now deploy our super simple function to a production environment.
 
-### Step 5
+### Prepare deployment environment
 
-We can now create and deploy a function to our production environment straight from the CLI.
+We can now create and deploy the function to our production environment straight from the CLI. In our case we will 
+manually create a new hosting and name our application `geekiam-tutorials`.
 
-In our case we will manually create a new hosting and name our applcation `geekiam-tutorials`
+We don't need to leave the CLI at all, to create a website, in fact we can requisition our entire deployment 
+infrastructure with one simple CLI command.
 
 ```shell script
 netlify init --manual 
@@ -181,6 +188,8 @@ for us.
 
 ![netlify deploy](/uploads/netlify-deploy.png)
 
+### Deploy to staging environment
+
 We can now use `netlify deploy` to deploy our functions. This will deploy our function to a "staging" server
 to enable us to test our functions
 
@@ -189,6 +198,8 @@ to enable us to test our functions
 If we visit the draft website Url and append the path to our function, we'll see our function respond
 
 ![netlify function](/uploads/netlify-deploy-test-browser.png)
+
+### Deploy to production
 
 Our function works as expected, so we can now deploy it to our production server using
 ```shell script
