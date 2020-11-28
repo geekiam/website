@@ -6,11 +6,11 @@ keywords:
   - How to build a Netlify Function
   - Building Serverless functions with netlify
 feature:
-  image: /uploads/posts/code/full-stack-js.png
-  alt: How to build serverless with Netlify, FaunaDB and Gridsome
+  image: /uploads/posts/javascript/netlify_tutorials.png
+  alt: How to build serverless functions with Netlify
 cardImage:
-  image: /uploads/posts/code/full-stack-js.png
-  alt: How to build serverless with Netlify, FaunaDB and Gridsome
+  image: /uploads/posts/javascript/netlify_tutorials.png
+  alt: How to build serverless functions with Netlify
 date: 2020-11-27T17:31:47.672Z
 author: garywoodfine
 tags:
@@ -61,7 +61,7 @@ to help you manage it effortlessly!
  site to only host our functions.  Along the way we'll learn all the important basics we'll need to expand on this and 
  develop more complex functionalities.
  
-#### Create a local development directory
+### Create a local development directory
 
 Create a directory on your local machine for your project. 
 
@@ -83,6 +83,10 @@ mkdir  geekiam-tutorials && cd geekiam-tutorials
  variety of languages.
  
  Add a `[build]` section to inform netlify, your functions will be found in a folder we'll name `functions`.
+ 
+ For the purpose of our application, we will be configuring the bare minimum, in order to just get our very simple 
+ function out there. It is well worth taking the time to read the [File-based configuration](https://docs.netlify.com/configure-builds/file-based-configuration/#sample-file "File-based configuration | Netlify")
+ to understand more about what is possible with File-based configuration.
  
  ```toml
 [build]
