@@ -1,2 +1,2 @@
-const name = 'users'
-const index = 'all_users'
+module.exports.name = 'users'
+module.exports.index = 'all_users'

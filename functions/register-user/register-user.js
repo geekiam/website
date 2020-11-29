@@ -4,7 +4,7 @@ const readRoute = require('./read')
 const readAllRoute = require('./read-all')
 const updateRoute = require('./update')
 
-const handler = async (event, context) => {
+exports.handler = async (event, context) => {
     const path = event.path.replace(/\.netlify\/functions\/[^/]+/, '')
     const segments = path.split('/').filter(Boolean)
 
@@ -62,5 +62,3 @@ const handler = async (event, context) => {
             }
     }
 }
-
-module.exports = { handler }

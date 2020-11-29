@@ -1,9 +1,7 @@
 <template>
     <!-- component -->
     <g-link :to="post.path">
-        <div
-            class="max-w-2xl w-full lg:flex border shadow-xl mb-5 hover:shadow-3xl"
-        >
+        <div class="max-w-2xl w-full lg:flex border shadow-xl mb-5">
             <g-image
                 :alt="post.feature.alt"
                 :src="post.feature.image"

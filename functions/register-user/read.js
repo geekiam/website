@@ -1,4 +1,3 @@
-/* Import faunaDB sdk */
 const process = require('process')
 
 const { query, Client } = require('faunadb')
@@ -7,7 +6,7 @@ const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
 })
 
-const handler = async (event) => {
+exports.handler = async (event) => {
     const { id } = event
     console.log(`Function 'read' invoked. Read id: ${id}`)
     return client
@@ -27,5 +26,3 @@ const handler = async (event) => {
             }
         })
 }
-
-module.exports = { handler }

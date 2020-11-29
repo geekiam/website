@@ -1,25 +1,24 @@
 #!/usr/bin/env node
 const process = require('process')
-const collection = require('./collection')
+let collection = require('./collection')
 /* bootstrap database in your FaunaDB account - use with `netlify dev:exec <path-to-this-file>` */
 const { query, Client } = require('faunadb')
 
 const createFaunaDB = function () {
     if (!process.env.FAUNADB_SERVER_SECRET) {
-        console.log(
-            'No FAUNADB_SERVER_SECRET in environment, skipping DB setup'
-        )
+        console.log('Fauna Secret Environment variable does not exist.')
+        console.log('Database cannot be created.')
     }
     console.log('Create the database!')
+    console.log(`A collection with the name ${collection.name} will be created`)
     const client = new Client({
         secret: process.env.FAUNADB_SERVER_SECRET,
     })
 
-    /* Based on your requirements, change the schema here */
     return client
         .query(query.CreateCollection({ name: collection.name }))
         .then(() => {
-            console.log('Created users class')
+            console.log(`created ${collection.name} collection`)
             return client.query(
                 query.CreateIndex({
                     name: collection.index,
@@ -28,7 +27,6 @@ const createFaunaDB = function () {
                 })
             )
         })
-
         .catch((error) => {
             if (
                 error.requestResult.statusCode === 400 &&

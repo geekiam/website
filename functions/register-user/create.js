@@ -2,25 +2,21 @@ const process = require('process')
 
 const { query, Client } = require('faunadb')
 const collection = require('./collection')
-/* configure faunaDB Client with our secret */
+
 const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
 })
 
-/* export our lambda function as named "handler" export */
-const handler = async (event) => {
-    /* parse the string body into a useable JS object */
+exports.handler = async (event) => {
     const data = JSON.parse(event.body)
-    console.log('Function `create` invoked', data)
+
     const item = {
         data,
     }
-    /* construct the fauna query */
+
     return client
         .query(query.Create(query.Collection(collection.name), item))
         .then((response) => {
-            console.log('success', response)
-            /* Success! return the response with statusCode 200 */
             return {
                 statusCode: 200,
                 body: JSON.stringify(response),
@@ -35,5 +31,3 @@ const handler = async (event) => {
             }
         })
 }
-
-module.exports = { handler }
