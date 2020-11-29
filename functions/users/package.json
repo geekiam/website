@@ -1,8 +1,8 @@
 {
-  "name": "fauna-crud",
+  "name": "users-crud",
   "version": "1.0.0",
-  "description": "netlify functions:create - CRUD functionality with Fauna DB",
-  "main": "fauna-crud.js",
+  "description": "netlify functions to manage user accounts",
+  "main": "users.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

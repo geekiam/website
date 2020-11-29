@@ -47,7 +47,9 @@ If you would like more information on how to use Gridsome and Netlify functions 
 because the article provides a background on how to configure your local development environment in order to get setup
 to start developing making use of Netlify Functions and the [Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI")
 
-I am going to assume some level of familiarity of Gridsome and Netlify CLI for the remainder of this guide. 
+I am going to assume some level of familiarity of Gridsome, Netlify CLI and a Fauna Account in order to follow along
+with this guide. 
+
  <div class="flex bg-teal-lighter mb-4">
           <div class="w-16 bg-teal">
               <div class="p-4">
@@ -77,25 +79,53 @@ I am going to assume some level of familiarity of Gridsome and Netlify CLI for t
           </div>
    </div>
 
+### Register environment variables
+
+The first thing we will need to do is ensure both our Development server and production server have all the environment
+variables we need.  
+
+You will also need to create an Access Key to your Fauna Database, read the [security section of the Fauna](https://docs.fauna.com/fauna/current/security/ "Security Overview | Fauna") 
+
+Once you have your key you can create a local `env.development` in the root project directory and add a new 
+environment variable which will store your Key you generate in your Fauna Dashboard. The standard name to use
+is `FAUNADB_SERVER_SECRET`
+
+```javascript
+FAUNADB_SERVER_SECRET=<your key from fauna>
+```
+You can also register this key on your Netlify Deploy Dashboard in [Build environment variables](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables "Build Environment Variables | Netlify")
+ 
  ### Create a Netlify function
  
  If you are not familiar with Netlify Functions and how to start developing them, then please take the time to read 
  [How To Build A Netlify Function](https://geekiam.io/how-to-build-a-netlify-function/ "How To Build A Netlify Function | Geek.I.Am")  
  as we walk you through the process and introduce all the tools you need to start developing Netlify Functions.
  
- I also recommend taking the time to read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
+ In our case we are going to creat a `functions` folder in the root of our project directory and in this folder we will
+ create another folder name `users`, because the functionality we will be building here is a typical User Management
+system, enabling users create and update their information, which we will be storing in Fauna.
 
-
-If you haven't already create a `env.development` in the root project directory and add a new environment variable which
-will store your Key you generate in your Fauna Dashboard.
-
-
-
-
-
-```javascript
-FAUNA_SECRET=<your key from fauna>
+```shell script
+mkdir functions && cd functions
+mkdir users && cd users
 ```
+We are also going to be developing a function that will be making use of the FaunaDB client library, so we will need to
+install the npm package to folder. We will need to initialise our project
+
+```shell script
+npm init -y
+```
+We can now install the `faunadb` package
+
+```shell script
+npm i faunadb
+```
+
+If you are not familiar with the Netlify CLI, then taking the time to read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
+will help in following along with this article.
+
+
+
 
 
 
