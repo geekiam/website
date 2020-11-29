@@ -7,7 +7,7 @@ const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
 })
 
-exports.handler = async (event) => {
+exports.handler = async function (event) {
     const data = JSON.parse(event.body)
 
     const item = {

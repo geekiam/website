@@ -7,7 +7,7 @@ const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
 })
 
-exports.handler = async () => {
+exports.handler = async function () {
     return client
         .query(query.Paginate(query.Match(query.Index(collection.index))))
         .then((response) => {
