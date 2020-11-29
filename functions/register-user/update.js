@@ -6,13 +6,15 @@ const { query, Client } = require('faunadb')
 const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
 })
-
+const collection = require('./collection')
 const handler = async (event) => {
     const data = JSON.parse(event.body)
     const { id } = event
     console.log(`Function 'update' invoked. update id: ${id}`)
     return client
-        .query(query.Update(query.Collection(`users/${id}`), { data }))
+        .query(
+            query.Update(query.Collection(`${collection.name}/${id}`), { data })
+        )
         .then((response) => {
             console.log('success', response)
             return {

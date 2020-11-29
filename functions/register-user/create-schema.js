@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const process = require('process')
-
+const collection = require('./collection')
 /* bootstrap database in your FaunaDB account - use with `netlify dev:exec <path-to-this-file>` */
 const { query, Client } = require('faunadb')
 
@@ -17,13 +17,13 @@ const createFaunaDB = function () {
 
     /* Based on your requirements, change the schema here */
     return client
-        .query(query.CreateCollection({ name: 'users' }))
+        .query(query.CreateCollection({ name: collection.name }))
         .then(() => {
             console.log('Created users class')
             return client.query(
                 query.CreateIndex({
-                    name: 'all_users',
-                    source: query.Collection('users'),
+                    name: collection.index,
+                    source: query.Collection(collection.name),
                     active: true,
                 })
             )

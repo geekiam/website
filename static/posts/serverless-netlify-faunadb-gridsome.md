@@ -78,12 +78,20 @@ I am going to assume some level of familiarity of Gridsome and Netlify CLI for t
    </div>
 
  ### Create a Netlify function
-  
- Our first step to create a Fauna CRUD API is to create a Function, which we will do so making use of the Netlify CLI,
- if you haven't installed the Netlify-CLI locally yet, I recommend you do so and read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
+ 
+ If you are not familiar with Netlify Functions and how to start developing them, then please take the time to read 
+ [How To Build A Netlify Function](https://geekiam.io/how-to-build-a-netlify-function/ "How To Build A Netlify Function | Geek.I.Am")  
+ as we walk you through the process and introduce all the tools you need to start developing Netlify Functions.
+ 
+ I also recommend taking the time to read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
+
 
 If you haven't already create a `env.development` in the root project directory and add a new environment variable which
 will store your Key you generate in your Fauna Dashboard.
+
+
+
+
 
 ```javascript
 FAUNA_SECRET=<your key from fauna>

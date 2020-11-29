@@ -2,7 +2,7 @@
 const process = require('process')
 
 const { query, Client } = require('faunadb')
-
+const collection = require('./collection')
 const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
 })
@@ -11,7 +11,7 @@ const handler = async (event) => {
     const { id } = event
     console.log(`Function 'read' invoked. Read id: ${id}`)
     return client
-        .query(query.Get(query.Ref(query.Collection(`users`), id)))
+        .query(query.Get(query.Ref(query.Collection(collection.name), id)))
         .then((response) => {
             console.log('success', response)
             return {

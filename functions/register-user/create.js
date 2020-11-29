@@ -1,7 +1,7 @@
 const process = require('process')
 
 const { query, Client } = require('faunadb')
-
+const collection = require('./collection')
 /* configure faunaDB Client with our secret */
 const client = new Client({
     secret: process.env.FAUNADB_SERVER_SECRET,
@@ -17,7 +17,7 @@ const handler = async (event) => {
     }
     /* construct the fauna query */
     return client
-        .query(query.Create(query.Collection('users'), item))
+        .query(query.Create(query.Collection(collection.name), item))
         .then((response) => {
             console.log('success', response)
             /* Success! return the response with statusCode 200 */

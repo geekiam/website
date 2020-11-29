@@ -3,7 +3,7 @@ module.exports = {
         removeDeprecatedGapUtilities: true,
         purgeLayersByDefault: true,
     },
-    purge: ['./src/**/*.vue'],
+    purge: ['./src/**/*.vue', './static/posts/*.md'],
     separator: ':',
     plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
     theme: {
