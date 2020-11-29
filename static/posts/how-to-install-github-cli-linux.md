@@ -7,7 +7,7 @@ keywords:
   - how to use github cli
   - github cli on linux
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: how to install github cli on linux
 cardImage:
   image: /uploads/twitter/git/how-to-install-github-cli-linux.jpg

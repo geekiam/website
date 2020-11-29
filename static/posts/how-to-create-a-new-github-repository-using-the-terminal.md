@@ -10,7 +10,7 @@ keywords:
   - git
   - version control
 feature:
-  image: /uploads/posts/git/github-repository-using-terminal-window.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Version Control
 cardImage:
   image: /uploads/twitter/git/github-repository-using-terminal-window.jpg

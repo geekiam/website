@@ -6,7 +6,7 @@ keywords:
   - Create a FaunaDB backend for Gridsome
   - Building Serverless CRUD apps with Netlify Functions & FaunaDB
 feature:
-  image: /uploads/posts/code/full-stack-js.png
+  image: /uploads/posts/javascript/javascript-tutorials.svg
   alt: How to build serverless with Netlify, FaunaDB and Gridsome
 cardImage:
   image: /uploads/posts/code/full-stack-js.png

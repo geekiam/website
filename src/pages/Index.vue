@@ -77,6 +77,7 @@ query Blog($page: Int) {
                 content
                 summary
                 path
+                author
                 date(format: "D MMMM Y")
                 feature {
                     image(width: 300)

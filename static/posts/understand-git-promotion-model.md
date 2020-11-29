@@ -7,7 +7,7 @@ keywords:
   - what is the git promotion model
   - what are the different levels in git
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Advanced git configuration options
 cardImage:
   image: /uploads/twitter/git/the-git-promotion-model.jpg

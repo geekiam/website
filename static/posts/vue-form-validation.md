@@ -7,7 +7,7 @@ keywords:
   - How to do form validation with Vue.JS
   - basics of form validation Vue
 feature:
-  image: /uploads/posts/vue/vue-tutorials.png
+  image: /uploads/posts/vue/vue-tutorials.svg
   alt: Advanced git configuration options
 cardImage:
   image: /uploads/twitter/vue/how-to-implement-form-validation-in-vue.png

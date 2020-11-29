@@ -7,7 +7,7 @@ keywords:
   - how to configure git
   - advanced git config
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Advanced git configuration options
 cardImage:
   image: /uploads/twitter/git/advanced-git-configuration-options.jpg

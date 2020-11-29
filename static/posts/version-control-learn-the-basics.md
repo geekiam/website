@@ -11,7 +11,7 @@ keywords:
      - tutorial
      
 feature:
-  image: /uploads/posts/git/basics-of-version-control.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Version Control Systems
 cardImage:
   image: /uploads/twitter/git/basics-of-version-control.jpg

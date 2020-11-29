@@ -6,7 +6,7 @@ keywords:
     - git
     - version control
 feature:
-  image: /uploads/posts/git/how-to-revert-a-git-commit.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Version Control systems
 cardImage:
   image: /uploads/twitter/git/how-to-revert-a-git-commit.jpg

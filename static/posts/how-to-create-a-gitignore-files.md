@@ -8,7 +8,7 @@ keywords:
   - gitignore
   - how to create gitignore file
 feature:
-  image: /uploads/posts/git/how-to-create-git-ignore-files.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: How to create gitignore file
 cardImage:
     image: /uploads/twitter/git/how-to-create-git-ignore-files.jpg

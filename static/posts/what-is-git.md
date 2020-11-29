@@ -7,7 +7,7 @@ keywords:
   - version control
   - What is git
 feature:
-  image: /uploads/posts/git/what-is-git.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: What is git
 cardImage:
   image: /uploads/twitter/git/what-is-git.jpg

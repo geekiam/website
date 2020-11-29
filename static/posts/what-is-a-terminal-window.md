@@ -10,7 +10,7 @@ keywords:
   - ubuntu
   - bash
 feature:
-  image: /uploads/posts/terminal/what-is-terminal-window.jpg
+  image: /uploads/posts/terminal/linux-tutorials.svg
   alt: Software developer tutorial
 cardImage:
   image: /uploads/twitter/terminal/what-is-terminal-window.jpg

@@ -6,7 +6,7 @@ keywords:
   - How to build a Netlify Function
   - Building Serverless functions with netlify
 feature:
-  image: /uploads/posts/javascript/netlify_tutorials.png
+  image: /uploads/posts/javascript/javascript-tutorials.svg
   alt: How to build serverless functions with Netlify
 cardImage:
   image: /uploads/posts/javascript/netlify_tutorials.png
@@ -18,7 +18,6 @@ tags:
 categories:
   - software-development
 ---
-
 [Serverless Computing](https://geekiam.io/what-is-serverless-computing/ "What is serverless computing") is a popular model 
 that helps Start-Up companies develop and deploy their world changing apps quicker and easier, without actually having 
 to worry about configuring and managing the hosting infrastructure.

@@ -6,7 +6,7 @@ keywords:
   - git
   - how to install git on ubuntu
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/terminal/linux-tutorials.svg
   alt: How to create gitignore file
 cardImage:
   image: /uploads/twitter/git/how-to-install-git-on-linux.jpg

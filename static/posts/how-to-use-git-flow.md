@@ -7,7 +7,7 @@ keywords:
   - git
   - version control
 feature:
-  image: /uploads/posts/git/how-to-use-git-flow.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: How to use Git Flow
 cardImage:
   image: /uploads/twitter/git/how-to-use-git-flow.jpg

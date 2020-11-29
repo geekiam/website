@@ -7,7 +7,7 @@ keywords:
   - How to declare javascript classes
   - The class syntax does not introduce the new object-oriented inheritance model to JavaScript.
 feature:
-  image: /uploads/posts/javascript/javascript-tutorials.png
+  image: /uploads/posts/javascript/javascript-tutorials.svg
   alt: How to use Javascript classes
 cardImage:
   image: /uploads/twitter/javascript/javascript-tutorials.png

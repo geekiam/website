@@ -8,7 +8,7 @@ keywords:
   - how to send HTTP GET requests from Vue 
   - vue and fetch
 feature:
-  image: /uploads/posts/node/javascript_tutorials.jpg
+  image: /uploads/posts/vue/vue-tutorials.svg
   alt: How to use fetch with vue
 cardImage:
   image: /uploads/twitter/node/how-to-use-fetch-with-vue.jpg

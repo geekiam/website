@@ -8,7 +8,7 @@ keywords:
     - javascript
     - tutorial
 feature:
-  image: /uploads/posts/node/how-use-package-management-in-javascript-projects.jpg
+  image: /uploads/posts/javascript/javascript-tutorials.svg
   alt: Node Package Management
 cardImage:
   image: /uploads/twitter/node/how-use-package-management-in-javascript-projects.jpg

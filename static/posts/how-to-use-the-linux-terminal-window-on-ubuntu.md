@@ -12,7 +12,7 @@ keywords:
  - gnome
  - tutorial
 feature:
-  image: /uploads/posts/terminal/how-to-use-linux-terminal.jpg
+  image: /uploads/posts/terminal/linux-tutorials.svg
   alt: Terminal Window
 cardImage:
   image: /uploads/twitter/terminal/how-to-use-linux-terminal.jpg

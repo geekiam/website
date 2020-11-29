@@ -7,7 +7,7 @@ keywords:
   - pros and cons of serverless
   - advantages of serverless
 feature:
-  image: /uploads/posts/code/code-tutorials.png
+  image: /uploads/posts/code/code-tutorials.svg
   alt: What is Serverless computing
 cardImage:
   image: /uploads/posts/code/code-tutorials.png

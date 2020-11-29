@@ -8,7 +8,7 @@ keywords:
   - multi repository
   - mono repository vs multi repository
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Advanced git configuration options
 cardImage:
   image: /uploads/twitter/git/source-code-repository-design-considerations.jpg

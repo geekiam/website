@@ -7,7 +7,7 @@ keywords:
   - how to create git repositories
   - how to use git init command
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: Advanced git configuration options
 cardImage:
   image: /uploads/twitter/git/how-to-create-git-repository.jpg

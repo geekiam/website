@@ -6,7 +6,7 @@ keywords:
   - git
   - how to add files to a git repository
 feature:
-  image: /uploads/posts/git/git-tutorials.jpg
+  image: /uploads/posts/git/git-tutorials.svg
   alt: How to add files to git repository
 cardImage:
   image: /uploads/twitter/git/how-to-add-files.jpg
