@@ -251,6 +251,11 @@ and view our GeekIam database we'll see our new collection exists.
 
 ## Create User Script
 
+We create the first lambda for a basic CRUD API we're developing, this function will be responsible for creating a 
+record in our Users collection.  You'll notice we import the Collection and Fauna Client, then we simply save whichever 
+JSON is passed to the function to Fauna.
+
+The function saves the data to the database, then simply returns the saved record back to client.
 ```javascript
 const process = require('process')
 
@@ -291,6 +296,9 @@ exports.handler = async function (event) {
 
 ### Read User Script
 
+We'll create the second component of function, which is the Read function. It follows a similar pattern as the previous
+function. We pass in the ID of the record we want we simply query Fauna to get the details.
+
 ```javascript
 const process = require('process')
 
@@ -322,6 +330,27 @@ exports.handler = async function (event) {
 }
 
 ```
-
+<div class="flex bg-teal-lighter mb-4">
+     <div class="w-16 bg-teal">
+                       <div class="p-4">
+                           <svg 
+                              class="h-8 w-8 text-white fill-current" 
+                              xmlns="http://www.w3.org/2000/svg" 
+                              viewBox="0 0 512 512">
+                               <path d="M437.019 74.981C388.667 26.629 324.38 0 256 0S123.333 26.63 74.981 74.981 0 187.62 0 256s26.629 132.667 74.981 181.019C123.332 485.371 187.62 512 256 512s132.667-26.629 181.019-74.981C485.371 388.667 512 324.38 512 256s-26.629-132.668-74.981-181.019zM256 470.636C137.65 470.636 41.364 374.35 41.364 256S137.65 41.364 256 41.364 470.636 137.65 470.636 256 374.35 470.636 256 470.636z"/>
+                               <path d="M256 235.318c-11.422 0-20.682 9.26-20.682 20.682v94.127c0 11.423 9.26 20.682 20.682 20.682 11.423 0 20.682-9.259 20.682-20.682V256c0-11.422-9.259-20.682-20.682-20.682zM270.625 147.248A20.826 20.826 0 0 0 256 141.19a20.826 20.826 0 0 0-14.625 6.058 20.824 20.824 0 0 0-6.058 14.625 20.826 20.826 0 0 0 6.058 14.625A20.83 20.83 0 0 0 256 182.556a20.826 20.826 0 0 0 14.625-6.058 20.826 20.826 0 0 0 6.058-14.625 20.839 20.839 0 0 0-6.058-14.625z"/>
+                           </svg>
+                       </div>
+                   </div>
+          <div class="w-auto text-grey-darker items-center p-4">
+              <span class="text-lg font-bold pb-4">
+                 <a href="https://github.com/threenine/geekiam" target="_blank">Code on Github</a>
+              </span>
+              <div class="leading-tight">
+               For the sake of brevity we have not included all the code in this article. If you would like to see 
+               the full code listing check out full code in our Github repo
+              </div>
+      </div>
+   </div>
 
 
