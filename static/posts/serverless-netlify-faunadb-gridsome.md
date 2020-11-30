@@ -127,9 +127,43 @@ npm i faunadb
 Check out [How To Use Package Management In JavaScript Projects](https://geekiam.io/how-to-use-package-management-in-java-script-projects/ "How To Use Package Management In JavaScript Projects | Geek.I.Am")
 to learn more about package management in JavaScript projects.
 
+ <div class="flex bg-green-lighter mb-4">
+      <div class="w-16 bg-green-400">
+          <div class="p-4">
+              <svg class="h-8 w-8 text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M468.907 214.604c-11.423 0-20.682 9.26-20.682 20.682v20.831c-.031 54.338-21.221 105.412-59.666 143.812-38.417 38.372-89.467 59.5-143.761 59.5h-.12C132.506 459.365 41.3 368.056 41.364 255.883c.031-54.337 21.221-105.411 59.667-143.813 38.417-38.372 89.468-59.5 143.761-59.5h.12c28.672.016 56.49 5.942 82.68 17.611 10.436 4.65 22.659-.041 27.309-10.474 4.648-10.433-.04-22.659-10.474-27.309-31.516-14.043-64.989-21.173-99.492-21.192h-.144c-65.329 0-126.767 25.428-172.993 71.6C25.536 129.014.038 190.473 0 255.861c-.037 65.386 25.389 126.874 71.599 173.136 46.21 46.262 107.668 71.76 173.055 71.798h.144c65.329 0 126.767-25.427 172.993-71.6 46.262-46.209 71.76-107.668 71.798-173.066v-20.842c0-11.423-9.259-20.683-20.682-20.683z"/><path d="M505.942 39.803c-8.077-8.076-21.172-8.076-29.249 0L244.794 271.701l-52.609-52.609c-8.076-8.077-21.172-8.077-29.248 0-8.077 8.077-8.077 21.172 0 29.249l67.234 67.234a20.616 20.616 0 0 0 14.625 6.058 20.618 20.618 0 0 0 14.625-6.058L505.942 69.052c8.077-8.077 8.077-21.172 0-29.249z"/></svg>
+          </div>
+      </div>
+      <div class="w-auto text-grey-darker items-center p-4">
+          <span class="text-lg font-bold pb-4">
+             <a href="https://docs.netlify.com/cli/get-started/#installation" target="_blank">
+             Get started with Netlify CLI</a>
+          </span>
+          <p class="leading-tight">
+             The Netlify CLI has templates available that can simply these steps. It's well taking the time to examine 
+             the templates offered.
+          </p>
+      </div>
+  </div>
 
-If you are not familiar with the Netlify CLI, then taking the time to read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
-will help in following along with this article.
+### Update Netlify Configuration file
+
+In [How To Build A Netlify Function](https://geekiam.io/how-to-build-a-netlify-function/ "How To Build A Netlify Function | Geek.I.Am") 
+we briefly introduced the Netlify Configuration file `netlify.toml`, we will now need to add an additional section to 
+our configuration file. We need to include an additional Netlify Build plugin because we are developing a function that 
+going to install its own dependencies.  In our case, we don't want to include the dependency to our top level `package.json`
+i.e the Gridsome project `packcage.json`, primarily because at some point in the future we will want to move our functions
+to a separate repository and possibly deploy them to a different website. We want to develop the using the *microservice*
+that each service is its own contained unit and operates entirely on its own. 
+
+We need to install the `@netlify/plugin-functions-install-core` build plugin, to do this we just add the following to our
+`netlify.toml` file.
+
+```toml
+
+[[plugins]]
+     package =  "@netlify/plugin-functions-install-core"
+```
+
 
 
 

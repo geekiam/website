@@ -50,6 +50,7 @@ module.exports = {
         extend: {
             colors: {
                 'teal-lighter': '#a0f0ed',
+                'green-lighter': '#a2f5bf',
                 teal: '#4dc0b5',
                 transparent: 'transparent',
                 current: 'currentColor',
