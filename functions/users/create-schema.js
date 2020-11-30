@@ -1,16 +1,18 @@
 #!/usr/bin/env node
+/* use with `netlify dev:exec <path-to-this-file>` */
 const process = require('process')
 let collection = require('./collection')
-/* bootstrap database in your FaunaDB account - use with `netlify dev:exec <path-to-this-file>` */
+
 const { query, Client } = require('faunadb')
 
-const createFaunaDB = function () {
+const createSchema = function () {
     if (!process.env.FAUNADB_SERVER_SECRET) {
         console.log('Fauna Secret Environment variable does not exist.')
         console.log('Database cannot be created.')
     }
-    console.log('Create the database!')
+
     console.log(`A collection with the name ${collection.name} will be created`)
+
     const client = new Client({
         secret: process.env.FAUNADB_SERVER_SECRET,
     })
@@ -38,4 +40,4 @@ const createFaunaDB = function () {
         })
 }
 
-createFaunaDB()
+createSchema()

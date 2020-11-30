@@ -153,7 +153,7 @@ our configuration file. We need to include an additional Netlify Build plugin be
 going to install its own dependencies.  In our case, we don't want to include the dependency to our top level `package.json`
 i.e the Gridsome project `packcage.json`, primarily because at some point in the future we will want to move our functions
 to a separate repository and possibly deploy them to a different website. We want to develop the using the *microservice*
-that each service is its own contained unit and operates entirely on its own. 
+that each service is a self-contained unit. 
 
 We need to install the `@netlify/plugin-functions-install-core` build plugin, to do this we just add the following to our
 `netlify.toml` file.
@@ -164,9 +164,164 @@ We need to install the `@netlify/plugin-functions-install-core` build plugin, to
      package =  "@netlify/plugin-functions-install-core"
 ```
 
+### Create Fauna Collection
+We will now start to create the elements of our function, and the first step in this direction is to create a script 
+that will help to create the Database Collection we'll need for our function.  In this function, we are going to assume
+that the Fauna Database has been created. This can be a fairly safe assumption, because we would have had to create the
+ database to register the security key we're using to access the Fauna. 
+ 
+ In order to keep things simple from this tutorial perspective, we only need to ensure that the collection can be 
+ created from the terminal. 
+ 
+ The first file we're gong to create is a plain Javascript file which will contain some Global variables we are going 
+ use across a number of files in our function.  We'll create a `collection.js` in our function folder. Essentially this
+ file contains variable for the name of our collection and the name of its associated index.
+  
+ ```javascript
+module.exports.name = 'users'
+module.exports.index = 'all_users'
+```
+
+The next file we'll create is the `create-schema.js` which will be the file that will create our initial collection.
+
+You'll notice that in this file we import our `collection.js`  file which contains our two variable values we set 
+previously. We also import the Fauna dependency we installed, and we also access the Secret we configured.
+
+Once we have thos details with instantiate the Fauna DB client and create a Collection and associated Index.
+```javascript
+#!/usr/bin/env node
+/* use with `netlify dev:exec <path-to-this-file>` */
+const process = require('process')
+let collection = require('./collection')
+
+const { query, Client } = require('faunadb')
+
+const createSchema = function () {
+    if (!process.env.FAUNADB_SERVER_SECRET) {
+        console.log('Fauna Secret Environment variable does not exist.')
+        console.log('Database cannot be created.')
+    }
+
+    console.log(`A collection with the name ${collection.name} will be created`)
+
+    const client = new Client({
+        secret: process.env.FAUNADB_SERVER_SECRET,
+    })
+
+    return client
+        .query(query.CreateCollection({ name: collection.name }))
+        .then(() => {
+            console.log(`created ${collection.name} collection`)
+            return client.query(
+                query.CreateIndex({
+                    name: collection.index,
+                    source: query.Collection(collection.name),
+                    active: true,
+                })
+            )
+        })
+        .catch((error) => {
+            if (
+                error.requestResult.statusCode === 400 &&
+                error.message === 'instance not unique'
+            ) {
+                console.log(`Collection: ${collection.name} already exists`)
+            }
+            throw error
+        })
+}
+
+createSchema()
+
+```
+
+We can now run this file to create our collection. Using the terminal window we can use the Netlify CLI to execute our 
+script.
+
+```shell script
+ netlify dev:exec functions/users/create-schema.js 
+```
+![Create Schema with Fauna](/uploads/fauna-create-schema.png)
+
+We will see the confirmation message that the Collection has been created. We can also log in to our Fauna Dashboard
+and view our GeekIam database we'll see our new collection exists.
+
+![Fauna Collection Created](/uploads/fauna-create-collection.png)
 
 
+## Create User Script
 
+```javascript
+const process = require('process')
+
+const { query, Client } = require('faunadb')
+const collection = require('./collection')
+
+const client = new Client({
+    secret: process.env.FAUNADB_SERVER_SECRET,
+})
+
+exports.handler = async function (event) {
+    const data = JSON.parse(event.body)
+
+    const item = {
+        data,
+    }
+
+    return client
+        .query(query.Create(query.Collection(collection.name), item))
+        .then((response) => {
+            return {
+                statusCode: 200,
+                body: JSON.stringify(response),
+            }
+        })
+        .catch((error) => {
+            console.log('error', error)
+            /* Error! return the error with statusCode 400 */
+            return {
+                statusCode: 400,
+                body: JSON.stringify(error),
+            }
+        })
+}
+
+```
+
+
+### Read User Script
+
+```javascript
+const process = require('process')
+
+const { query, Client } = require('faunadb')
+const collection = require('./collection')
+const client = new Client({
+    secret: process.env.FAUNADB_SERVER_SECRET,
+})
+
+exports.handler = async function (event) {
+    const { id } = event
+    console.log(`Function 'read' invoked. Read id: ${id}`)
+    return client
+        .query(query.Get(query.Ref(query.Collection(collection.name), id)))
+        .then((response) => {
+            console.log('success', response)
+            return {
+                statusCode: 200,
+                body: JSON.stringify(response),
+            }
+        })
+        .catch((error) => {
+            console.log('error', error)
+            return {
+                statusCode: 400,
+                body: JSON.stringify(error),
+            }
+        })
+}
+
+```
 
 
 
