@@ -12,7 +12,7 @@
     "js",
     "faunadb"
   ],
-  "author": "Netlify",
+  "author": "threenine.co.uk <hello@threenine.co.uk> (https://threenine.co.uk)",
   "license": "MIT",
   "dependencies": {
     "faunadb": "^4.0.0"

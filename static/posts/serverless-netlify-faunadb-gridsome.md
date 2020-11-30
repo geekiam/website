@@ -79,6 +79,9 @@ with this guide.
           </div>
    </div>
 
+To set up a Fauna database to store our User data, you will need to set up an account and get the API Key, we'll be 
+using this to scaffold our Database and Collections.  To create an account [https://dashboard.fauna.com/accounts/register](https://dashboard.fauna.com/accounts/register "Fauna Dashboard")
+
 ### Register environment variables
 
 The first thing we will need to do is ensure both our Development server and production server have all the environment
@@ -120,6 +123,10 @@ We can now install the `faunadb` package
 ```shell script
 npm i faunadb
 ```
+
+Check out [How To Use Package Management In JavaScript Projects](https://geekiam.io/how-to-use-package-management-in-java-script-projects/ "How To Use Package Management In JavaScript Projects | Geek.I.Am")
+to learn more about package management in JavaScript projects.
+
 
 If you are not familiar with the Netlify CLI, then taking the time to read  [Get started with Netlify CLI](https://docs.netlify.com/cli/get-started/#installation "Get started with Netlify CLI | Netlify" )
 will help in following along with this article.

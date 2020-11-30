@@ -32,7 +32,7 @@ const createFaunaDB = function () {
                 error.requestResult.statusCode === 400 &&
                 error.message === 'instance not unique'
             ) {
-                console.log('DB already exists')
+                console.log(`Collection: ${collection.name} already exists`)
             }
             throw error
         })
