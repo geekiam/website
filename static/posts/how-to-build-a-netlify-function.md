@@ -200,7 +200,13 @@ This will launch netlify development environment, by default our site will be av
 
 ![netlify development environment](/uploads/netlify-dev.png)
 
-In our case, can also simply open a browser and navigate to the following Url
+We can now use cUrl to query call our lambda locally and test its response from the command line.
+Curl is command line tool that enables you to interact with API's, to learn more about read [What is cUrl](https://geekiam.io/what-is-c-url/ "What is cUrl | Geek.I.Am")
+```shell script
+curl --location --request GET 'http://localhost:8888/.netlify/functions/sayHello'
+```
+
+We can also simply open a browser and navigate to the following Url
 `http://localhost:8888/.netlify/functions/sayhello`  and will see the response of our simple function.
 ![netlify function](/uploads/netlify-functions-dev.png)
 
@@ -229,7 +235,14 @@ to enable us to test our functions
 
 ![Netlify deploy Test ](/uploads/netlify-deploy-test.png)
 
-If we visit the draft website Url and append the path to our function, we'll see our function respond
+we can test our staging environment function by using with the temporary url that has been created for us.
+
+```shell script
+curl --location --request GET https://5fc17a5bda660a47884aa02c--geekiam-tutorials.netlify.app
+
+```
+
+We can also visit the draft website Url and append the path to our function, we'll see our function respond
 
 ![netlify function](/uploads/netlify-deploy-test-browser.png)
 
@@ -242,7 +255,11 @@ netlify deploy --prod
 
 ![netlify production deploy](/uploads/netlify-deploy-prod.png)
 
-If now visit the production url and append the path to our function, we will see the production instance of our function 
+Once the site has been deployed, we can now use curl again to query function and test it
+```shell script
+curl --location --request GET https://geekiam-tutorials.netlify.app/.netlify/functions/sayhello
+```
+We can also visit the production url and append the path to our function, we will see the production instance of our function 
 respond.
 
 ![netlify production](/uploads/netlify-production-function.png)
