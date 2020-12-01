@@ -14,7 +14,12 @@ exports.handler = async function (event) {
 
     return client
         .query(
-            query.Update(query.Collection(`${collection.name}/${id}`), { data })
+            query.Update(
+                query.Ref(query.Collection(`${collection.name}`), id),
+                {
+                    data,
+                }
+            )
         )
         .then((response) => {
             console.log('success', response)
