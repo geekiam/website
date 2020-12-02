@@ -285,7 +285,7 @@
 <script>
 import { required, email, minLength, sameAs } from 'vuelidate/lib/validators'
 import Zk from '@nuid/zk'
-import registerUserService from '@/services/auth/register.user'
+import RegisterUserService from '@/services/auth/register.user'
 export default {
     name: 'Register',
     data() {
@@ -334,7 +334,7 @@ export default {
                 ),
                 accepted: this.registration.accept,
             }
-            let service = new registerUserService()
+            let service = new RegisterUserService()
             await service.register(user)
         },
     },

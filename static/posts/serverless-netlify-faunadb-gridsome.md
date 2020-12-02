@@ -355,7 +355,11 @@ exports.handler = async function (event) {
 
 
 ### Gateway
-The last lambda we'll create will be our *Controller* gateway type lambda. 
+
+The last lambda we'll create will be our *Controller* gateway type of  lambda. This will easily allow us to implement more 
+stringent security later, but for now what it enables us to do is point our applications at one route. i.e. `/users`
+and the lambda itself will determine what route it needs to enable by inspecting the HttpMethod call.
+
 
 ```javascript
 const createRoute = require('./create')
@@ -416,3 +420,4 @@ exports.handler = async function (event, context) {
     }
 }
 ```
+
