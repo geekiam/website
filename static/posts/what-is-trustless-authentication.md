@@ -19,14 +19,17 @@ tags:
   - authentication
   - javascript
   - nu_id
+  - IAM
 categories:
   - software-development
 ---
 
 The internet is great! It's a technology that has revolutionised and changed the world and societies we live in, in 
-many ways, some good and definitely some bad. One of the bad things the internet has inflicted on us, is the need to 
-constantly create Usernames and Passwords and the need to constantly share or provide what was once considered private 
-or personal information with almost every website.
+many ways, some good and definitely some bad. 
+
+One of the bad things the internet has inflicted on us, is the need to constantly create Usernames and Passwords and 
+the need to constantly share or provide what was once considered private or personal information with almost every 
+website.
 
 It seems you can't register to use a service or buy a product on websites without having to provide your Date of Birth, 
 inside leg measurement, first pets name, mothers maiden name, national security number, mobile number.  All 
@@ -56,6 +59,8 @@ number combination, but then on another website they insist in a special charact
 `p@ssword12` , then on another site they insist on lowercase and uppercase characters then the password evolves to,
 `P@ssword12`,  then another insists on some minimum length of 12, `P@ssword1234` 
 
+> 81% of data breaches are due to stolen and weak passwords
+
 Invariably, most users will use the same email address across a number of websites, because most likely it's the email
 address they most likely use. It has become somewhat common place for people to have more than one email address, but
 the problem is, they are more than likely have an email address they used to register for websites and a much more
@@ -70,8 +75,7 @@ especially if it gets into the wrong hands.  It is also high on the list of most
 Considering that in [September 2020 there were 267 million records breached](https://www.itgovernance.co.uk/blog/list-of-data-breaches-and-cyber-attacks-in-september-2020 "List of data breaches and cyber attacks in September 2020 | IT Governance")
 you can assume that demand is not going to disappear anytime soon!
 
-> Criminals rob banks, because that is where the money is! 
-> 
+> Criminals rob banks, because that is where the money is!
 
 The exact same reasoning applies to Central Identity and Authentication services, they are a target for criminal actors
 because they are store of all the data they need!
@@ -125,8 +129,21 @@ Using NUID to keep your secrets, secret, there is no need to trust a single cent
 > Combining these technologies allows users to own and manage their authentication credentials while enabling 
 > companies to authenticate without storing and protecting sensitive information.
 
+Instead of transmitting passwords from a device to your server to be verified for authentication, NuID uses zero 
+knowledge cryptography that enables the user?s device to ? prove? the user provided the correct password. The actual 
+password is never sent off-device, or stored anywhere, which means it can?t be intercepted or stolen in a server-side 
+breach.
 
+NuID eliminates the need to store credentials without requiring any changes to login User Experience. Unlike 
+authentication solutions that rely on PKI, the NUID SDK doesn't require users to store and manage private keys or 
+download and use a separate authentication app.
 
+End users can login with passwords, biometrics, and more, all without sharing any sensitive and private data.
+
+#### Zero knowledge cryptography
+A zero knowledge proof (ZKP) is a cryptographic protocol which allows an individual to mathematically prove they know a piece
+of information, without sharing that information or anything else about it. The ZKP NuID uses is based on the Schnorr protocol
+described in the [Internet Engineering Task Force's RFC 8235](https://www.rfc-editor.org/info/rfc8235 "Schnorr Non-interactive Zero-Knowledge Proof, SEPTEMBER 2017").
 
 
 
