@@ -90,6 +90,40 @@ inadequate. The following statistics provide evidence of the scale of the danger
 * Having a social media account increases the chance of ID theft by 46%.
 * Famous data breaches in 2018:  Facebook, Google+, Quora, MyFittnesPal.
 
+The basic fact is that passwords and other user credentials stored in large centralized databases increases their 
+vulnerability to theft.  Organizations, regardless of size and technical abilities, face difficulties in ensuring their 
+cyber-security is up to the task of facing the challenges or being under constant attack.
+
+> 70% of consumers would boycott services that fail to protect their data.
+
+### Zero-knowledge proof
+
+Fortunately, blockchain technology provides an alternative solution, which can also be easily integrated into any 
+Identity and Access Management (IAM) system, that actually eliminates the need for organisations to store any user 
+authentication data. This enables businesses to authenticate customers or employees without storing passwords and other
+sensitive authentication data.
+
+This results in users passwords and other authentication data never having to leave their devices, leaving no 
+opportunity for man in the middle attacks or mass credential breaches.  
+
+This is referred to as either *zero-knowledge proof* or *Trustless Authentication*  
+
+The primary objective for Trustless Authentication, is to remove the need for End Users to trust companies with 
+their Authentication Details, removing any possibility for that trust to be broken by a credential breach.
+
+[NUID - Trustless Authentication systems](https://nuid.io/ "NUID - Trustless Authentication systems") has developed a
+portable and user-owned authentication system, which does not rely on a centralised database and authority to manage 
+user identities. It makes use of Blockchain technology to immutably store and protect user identities on a 
+distributed ledger. Using blockchain provides important security benefits since any data stored on a distributed ledger
+is nearly impossible to alter.
+
+Using NUID to keep your secrets, secret, there is no need to trust a single central repository.
+
+> The NuID protocol immutably stores public reference parameters on a blockchain, so that they can be shared but not 
+> tampered with. A blockchain provides a trustless infrastructure with no central point of failure.
+>
+> Combining these technologies allows users to own and manage their authentication credentials while enabling 
+> companies to authenticate without storing and protecting sensitive information.
 
 
 

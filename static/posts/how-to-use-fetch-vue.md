@@ -339,6 +339,4 @@ interface. Fetch works great for fetching network resources.
 
 The Fetch API is supported by all modern browsers, so there is no need to use any polyfill unless you want to support IE.
 
-`POST` is the `HTTP` method that is designed to send data to a server from a specified resource. This method allows 
-data to be sent as a package in a separate communication with the processing script. This means that data sent through 
-the POST method will not be visible in the URL, as parameters are not sent along with the URI.
+`
