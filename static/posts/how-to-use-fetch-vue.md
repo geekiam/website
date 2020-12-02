@@ -164,7 +164,8 @@ javascript expression to wait for the promises to return.
 ### How to use fetch GET request with error handling
 
 It is important to remember when working with Fetch API and the promises returned that you will not necessarily receive 
-error information regarding any API focused issues and therefore using `.catch()` . The `fetch()` function will automatically throw an error for network errors but not for HTTP errors such as 4xx or 
+error information regarding any API focused issues and therefore using `.catch()` . The `fetch()` function will 
+automatically throw an error for network errors but not for HTTP errors such as 4xx or 
 5xx responses. 
 
 In order to catch any HTTP errors, developers will need to check the `response.ok` property to see if the request 
@@ -250,9 +251,94 @@ export default {
 The above code adds additional header information to the get request to provide an authentication token the GitHub API
 request to avoid any throttling that Github enforces on unauthenticated requests.
 
+### How to use fetch to make a POST request
+
+You can also use fetch API to make other requests. For instance, when developing applications you'll undoubtedly come 
+across situations when you need to submit JSON data to the server. Typically, need to do this by making a POST request.
+
+`POST` is the `HTTP` method that is designed to send data to a server from a specified resource. This method allows
+data to be sent as a package in a separate communication with the processing script. This means that data sent through
+the POST method will not be visible in the URL, as parameters are not sent along with the URI.
+
+The format of an HTTP POST should have HTTP headers, followed by a blank line, followed by the request body. POST 
+request can be used to submit a web form or upload a file, but it is critical to ensure that the receiving application 
+resonates with the format being used. The Content-Type header indicates the type of body in the POST request.
+
+In the example below we are going to post data to a [Netlify function](https://geekiam.io/how-to-build-a-netlify-function/ "How to build a netlify function | Geek.I.Am")
+to post JSON data. We will be making use of the [JavaScript Async/Await promise pattern](https://geekiam.io/what-is-a-javascript-promise/ "What Is A Javascript Promise | Geek.I.Am")
+
+`POST` is NOT idempotent. So if you retry the request `N` times, you will end up having `N` resources with `N` different 
+URIs created on server.
+
+Use `POST` when you want to add a child resource under a resource collection, always use `POST` for `CREATE` operations.
+
+```javascript
+ let response = await fetch(`/.netlify/functions/users`, {
+     method: 'POST',
+     headers: {
+         'Content-Type': 'application/json',
+     },
+      body: JSON.stringify(user),
+    })
+ return await response.json()
+```
+
+### How to use fetch to make a PUT request
+
+While both `POST` and `PUT` HTTP request methods seem to be sending data to a server inside the body, there is a key 
+difference between the two request methods.
+
+`PUT` method is idempotent. So if you send a retry request multiple times, that should be equivalent to single request
+modification.
+
+Use `PUT` when you want to modify a singular resource which is already a part of resources collection. `PUT` replaces 
+the resource in its entirety, always use `PUT` for `UPDATE` operations.
+
+Typically, the `PUT` requires an existing resource to update, so we need to pass the ID of the resource we need to 
+update as part of the Url string and in the body we supply the JSON with the data that needs to be updated
+
+```javascript
+
+ // Pass the ID of the resource you want to update with a JSON body containing 
+ // the items you want to update
+ let response = await fetch(`/.netlify/functions/users/123456`, {
+     method: 'PUT',
+     headers: {
+         'Content-Type': 'application/json',
+     },
+      body: JSON.stringify(user),
+    })
+ return await response.json()
+```
+
+
+### How to use fetch to make a DELETE request
+DELETE operation is idempotent,  resource is removed, gone forever. If you repeat the DELETE operation for that same 
+resource, result will be same, “resource is deleted“. Response status is 200 ( OK ) for the first DELETE operation as 
+his operation deletes the resource, for the successive DELETE operation response status will be 404 ( NOT FOUND )
+as resource is already deleted by first DELETE operation.
+
+Using the REST API you typically pass the Name of the Resource and its ID of what you would like to `DELETE`.
+You should never use the delete method to delete any items from a resource collection, because the DELETE method is 
+only designed to remove the entire resource collection using the ID of the resource collection.
+
+```javascript
+
+let response = await fetch(`/.netlify/functions/users/123456`, {
+     method: 'DELETE',
+     headers: {
+         'Content-Type': 'application/json',
+     })
+ return await response.json()
+```
+
 ### Conclusion
 
 The JavaScript Fetch API, is a huge improvement over `XMLHttpRequest`  and provides a simple, elegant, and easy-to-use 
 interface. Fetch works great for fetching network resources. 
 
 The Fetch API is supported by all modern browsers, so there is no need to use any polyfill unless you want to support IE.
+
+`POST` is the `HTTP` method that is designed to send data to a server from a specified resource. This method allows 
+data to be sent as a package in a separate communication with the processing script. This means that data sent through 
+the POST method will not be visible in the URL, as parameters are not sent along with the URI.
