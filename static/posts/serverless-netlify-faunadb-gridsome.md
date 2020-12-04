@@ -173,10 +173,19 @@ that the Fauna Database has been created. This can be a fairly safe assumption, 
  In order to keep things simple from this tutorial perspective, we only need to ensure that the collection can be 
  created from the terminal. 
  
- The first file we're gong to create is a plain Javascript file which will contain some Global variables we are going 
- use across a number of files in our function.  We'll create a `collection.js` in our function folder. Essentially this
- file contains variable for the name of our collection and the name of its associated index.
-  
+ 
+
+FaunaDB is a rare breed in the world of databases as it allows you to model and query your data using different 
+paradigms:
+* Relational
+* Documents (schemaless)
+* Temporal
+* Graph-like 
+
+The first file we're going to create is a plain Javascript file which will contain some Global variables we are going
+use across a number of files in our function.  We'll create a `collection.js` in our function folder. Essentially this
+file contains variable for the name of our collection and the name of its associated index.
+
  ```javascript
 module.exports.name = 'users'
 module.exports.index = 'all_users'
@@ -187,7 +196,7 @@ The next file we'll create is the `create-schema.js` which will be the file that
 You'll notice that in this file we import our `collection.js`  file which contains our two variable values we set 
 previously. We also import the Fauna dependency we installed, and we also access the Secret we configured.
 
-Once we have thos details with instantiate the Fauna DB client and create a Collection and associated Index.
+Once we have those details with instantiate the Fauna DB client and create a Collection and associated Index.
 ```javascript
 #!/usr/bin/env node
 /* use with `netlify dev:exec <path-to-this-file>` */

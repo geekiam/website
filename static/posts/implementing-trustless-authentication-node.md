@@ -38,7 +38,7 @@ because we'll be using it for our back-end database.
 The following steps will create a simple project folder: Essentially we will be creating a basic nodejs project, 
 git repository, Github remote repository.
 
-For reference, some of the steps below have been further explained in the following articles:
+Some steps below have been further explained in the following articles:
 * [How To Create A New Github Repository Using The Terminal](https://geekiam.io/how-to-create-a-new-github-repository-using-the-terminal/ "How To Create A New Github Repository Using The Terminal | Geek.I.Am")
 * [How To Automate Creating Gitignore Files](https://geekiam.io/how-to-automate-creating-gitignore-files/ "How To Automate Creating Gitignore Files | Geek.I.Am")
 
@@ -53,8 +53,42 @@ gh repo create Geek-I-AM/trustless-auth
 
 
 ### Install Dependencies 
-In order to create our simple project, we will need to install the following dependencies
+In order to create our simple project, we will need to install the following dependencies.
 
 ```shell
 npm i faunadb @nuid/zk node-fetch express body-parser dotenv 
 ```
+
+### Create a simple Node Webserver
+
+We now have all the dependencies we need installed, we can now start developing the basic skeleton of our application.
+
+We'll iniitally create a very simple node based webserver that we will use to serve our application. Add new file
+to our repository and name it `index.js`, then add the following code to create our webserver.
+
+
+```javascript
+const bodyParser = require('body-parser');
+const express = require('express');
+
+const DEFAULT_PORT = process.env.DEFAULT_PORT || 8001;
+const HOST = process.env.HOST || '0.0.0.0';
+
+const app = express();
+
+app.use(bodyParser.json())
+
+app.listen(DEFAULT_PORT, HOST, err => {
+    if (err) {
+        return console.log(err);
+    }
+    console.log('\n\tStarting server...');
+    console.log(`Running locally at ${HOST}:${DEFAULT_PORT}`);
+});
+```
+
+We can now test our webserver, works by running `node index.js` in our terminal window, then we'll see our simple 
+webserver will start up.
+
+![Simple Web server](/uploads/trustless-auth-terminal.png "Trustless Authentication")
+

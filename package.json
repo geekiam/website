@@ -26,7 +26,7 @@
         "gridsome-plugin-rss": "^1.2.0",
         "gridsome-plugin-tailwindcss": "^3.0.1",
         "klaro-gridsome": "^1.0.3",
-        "netlify-cms": "^2.10.71",
+        "netlify-cms": "^2.10.73",
         "node-fetch": "^2.6.1",
         "postcss-import": "^13.0.0",
         "vue-infinite-loading": "^2.4.5",
@@ -42,13 +42,13 @@
         "babel-eslint": "^10.1.0",
         "eslint": "^7.14.0",
         "eslint-plugin-gridsome": "^1.5.0",
-        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-prettier": "^3.2.0",
         "eslint-plugin-vue": "^7.1.0",
         "husky": "^4.3.0",
         "netlify-lambda": "^2.0.1",
         "prettier": "^2.2.1",
         "uuid": "^8.3.1",
-        "vue-eslint-parser": "^7.1.1"
+        "vue-eslint-parser": "^7.2.0"
     },
     "repository": {
         "type": "git",
