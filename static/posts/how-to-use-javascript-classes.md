@@ -291,4 +291,65 @@ To create static fields use the special keyword `static` followed by the field n
 We'll create a new field type that will indicate the type of class we're going to create, then in our sample we'll query
 the Static field 
                                                                                                  
+```javascript
+class Class {
+    static CLASS_TYPE = "Cool"
 
+    name;
+    type;
+
+    constructor(name, type) {
+        this.name = name
+        this.type = type
+    }
+}
+let some = new Class("Classes", Class.CLASS_TYPE)
+console.log(`${ some.name } are ${ some.type }`)
+
+
+```
+The `CLASS_TYPE` is a static field, therefore to access the static field you have to use the class followed by the field
+name i.e. `Class.CLASS_TYPE`
+
+### Private static fields
+
+There may be occassions when you may want to hide static fields, essentially making them private.  We again
+make use of the convention discussed previously and make use of the `#` prefix on the field name.
+
+Consider you would like to limit the number of instances of the `Class` being created. We could hide the 
+details of how we implement this, by creating private static fields.
+
+The static field `Class.#MAX_INSTANCES` sets the maximum number of allowed instances, while `Class.#instances` static 
+field counts the actual number of instances.
+
+These private static fields are accessible only within the Class class. We cannot access or interfere externally
+with the limit's of this mechanism, benefiting from the encapsulation.
+
+```javascript
+class Class {
+    static CLASS_TYPE = "Cool"
+    static #MAX_INSTANCES = 2
+    static #instances =0
+
+    name;
+    type;
+
+    constructor(name, type) {
+        this.name = name
+        this.type = type
+
+        Class.#instances++
+
+        if(Class.#instances > Class.#MAX_INSTANCES) {
+            throw new Error("Unable to create another Class Instance")
+        }
+    }
+}
+let some = new Class("Classes", Class.CLASS_TYPE)
+let another = new Class("Another", Class.CLASS_TYPE)
+let ohNo = new Class("OhNo", Class.CLASS_TYPE)
+
+console.log(`${ some.name } are ${ some.type }`)
+console.log(`${ another.name } are ${ another.type }`)
+console.log(`${ ohNo.name } are ${ ohNo.type }`)
+```
