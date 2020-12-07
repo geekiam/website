@@ -93,7 +93,7 @@ const SomeCoolClass = class {
 You can also export a class as part of ES2015 module, making use of the `default export` syntax
 
 ```javascript
-export default class SomeCoolClass{
+export default class SomeCoolClass {
  // The body of the class
 }
 ```

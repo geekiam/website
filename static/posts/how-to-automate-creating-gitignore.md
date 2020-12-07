@@ -38,35 +38,37 @@ This command is a great time-saver and does the job well. The downside is that i
 there is a long Url string to commit to memory etc.  Therefore, I thought I would share a little trick I use to create 
 an easy to use command, using the power of Linux and the shell.
 
-I have previously discussed [What is the terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am") and [How to use
-the terminal window on Ubuntu Linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How to use the terminal window on Ubuntu Linux| Geek.I.Am") providing 
-details as to why it is such a popular tool for developers.  We'll build on all the knowledge gained in this posts to 
-extend functionality to reuse.
+I have previously discussed [What is the terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am")
+and [How to use the terminal window on Ubuntu Linux](https://geekiam.io/how-to-use-the-linux-terminal-window-on-ubuntu/ "How to use the terminal window on Ubuntu Linux| Geek.I.Am") 
+providing details as to why it is such a popular tool for developers.  We'll build on all the knowledge gained in 
+this posts to extend functionality to reuse.
 
 ### Create common bash function file
 
-The first step we'll undertake is to create a new text-based file in our Home directory which we will name `.bash_functions`
+The first step we'll undertake is to create a new text-based file in our Home directory which we will name 
+`.bash_functions`
 
 ```shell
 touch ~/.bash_functions
 ```
 
-The purpose of this file is basically to be a common file to store common functions and utilities we want to create. You
-can name this file whichever you choose, personally I prefer to call it `.bash_functions` because it suits a naming 
-convention already present in our home directory, which we can see if we do `ls -a $HOME` to display all the hidden files
-in our home directory we'll see a few `.bash_**` files, these files all have a specific purposes which we'll learn more about
- shortly.
+The purpose of this file is basically to be a common file to store common functions and utilities we want to create. 
+You can name this file whichever you choose, personally I prefer to call it `.bash_functions` because it suits a naming 
+convention already present in our home directory, which we can see if we do `ls -a $HOME` to display all the hidden 
+files in our home directory we'll see a few `.bash_**` files, these files all have a specific purposes which we'll 
+learn more about shortly.
 
 ![Git log ](/uploads/bash-conventions.png "Home directory bash files")
 
-If we open the newly created `.bash_functions` file in our prefered text editor, in my case I am simply going to use `nano`
+If we open the newly created `.bash_functions` file in our prefered text editor, in my case I am simply going to use 
+`nano`
 
 ```shell
 nano .bash_functions
 ```
 
-We add the following code to the file, which will essentially create a function by the name of `gitignore`, again you can 
-call it whatever you want I just prefer to name it according to the action it is going to preform.
+We add the following code to the file, which will essentially create a function by the name of `gitignore`, again you 
+can call it whatever you want I just prefer to name it according to the action it is going to preform.
 
 ```shell
 gitignore() {
@@ -87,7 +89,8 @@ load it up if it exists.
 ### What is bashrc?
 
 `.bashrc` is a shell script that runs Bash whenever it is started interactively, to initiate an interactive session. 
-It provides the ability to add any regular commands or functions that you use when using your [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window | Geek.I.Am").
+It provides the ability to add any regular commands or functions that you use when using your 
+[terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is a terminal window | Geek.I.Am").
 
 The `.bashrc` is called whenever a new terminal session is started, and loads up your preferences at each launch.
 
@@ -125,24 +128,8 @@ fi
 .....
 ```
 
-Once you have completed adding the code save and exit the file.  
-
-We'll now create an Alias in our `.bash_aliases` file which we'll use to call our function. We can provide whichever 
-easy to remember name we want, in my case for the sake of brevity and hopefully defining exactly what it does, I am just
-going to call it `gitignore`.  To do this, we can simply open our `.bash_aliases` file in your preferred text editor, 
-again in my case I'll make use of `nano`.
-
-```shell
-nano ~/.bash_aliases
-```
-
-Once the file is open, we can add our alias as follows
-
-```shell
-alias gitignore='gitignore'
-```
-
-Save and exit the file.  We now just need to refresh our current terminal session to bring in our updates.
+Once you have completed adding the code save and exit the file. We now just need to refresh our current terminal 
+session to bring in our updates.
 
 ```shell
 # We can refresh our terminal window with either command
@@ -188,5 +175,5 @@ We have now automated the creation of git ignore files to enable creating the fi
 customise this process even further, for instance you may want to create your own organisational repository, which may 
 have typical settings and for a custom project structure you would like to cater for.
 
-Taken this approach we have eliminated some of the boring repetitive and error prone manual steps required when setting
+Taken this approach we have eliminated a boring repetitive and error prone manual steps required when setting
  up a project.

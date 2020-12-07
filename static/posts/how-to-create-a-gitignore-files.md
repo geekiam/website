@@ -219,7 +219,7 @@ I have created an automated process to accomplish this task.
 As we mentioned earlier [Githib provides a collection of useful .gitignore templates](https://github.com/github/gitignore) to use for 
 creating your gitignore file. By making use of a simple Curl command to download the version of gitignore file we 
 want from the repository.  For instance if want to create a typical .gitignore for a NodeJS project we simply execute 
-the following command in our terminal window
+the following [cUrl](https://geekiam.io/what-is-c-url/ "What is cUrl | Geek.I.Am") command in our terminal window
 
 ```sh
 curl -o .gitignore  https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
@@ -392,3 +392,16 @@ reason for this is there is a high chance they will get out of sync with their s
  are always re-generated anyway.
 
 Temporary files and by-products specific to a user's tool chain, should also not be included as tracked files.
+
+### Conclusion 
+
+Using a `.gitignore` files enables you to control which files and file types can be not allowed to be stored in your 
+Git repository.
+
+Typically, you may not want to include all the files in your local copy of a project in your commits. For instance, you 
+may want to exclude, compiled libraries, system logs or configuration files containing sensitive data.  To ignore files,
+you can specify which ones you want to ignore in `.gitignore`.
+
+A project can contain multiple `.gitignore` files. You can override a `.gitignore` rule using the `-f` flag when you 
+use the [git add command](https://geekiam.io/how-to-add-files-to-a-git-repository/ "How To Add Files To A Git Repository | Geek.I.Am").
+
