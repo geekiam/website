@@ -46,7 +46,7 @@ Detail view).
 These files should never be included in your version control project, and often you'll find entries in project based
 `.gitignore` files which to ensure that these files are not included.
 
-```gitignore
+```shell
 .DS_Store
 Thumbs.db
 
@@ -70,7 +70,7 @@ Using the `core.excludesfile` you can ignore certain files *for all repositories
 
 To create a global exclude file, simply create a `.gitignore` in your Home directory, and add your gitignore settings.
 
-```gitignore
+```shell
 
 # Apple system
 .DS_Store
@@ -122,7 +122,7 @@ Personally, I develop mostly on Linux and I make heavy use of most Jetbrains Pro
 exclude the LInux OS files and Jetbrains IDE settings files from my repositories.  I have my local `.gitignore` file
 configured as below, ensuring all these files are never included in repositories.
 
-```gitignore
+```shell
 ### global gitignore for vmd developers to use
 
 ## Linux 
