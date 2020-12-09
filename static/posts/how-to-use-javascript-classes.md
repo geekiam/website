@@ -353,3 +353,118 @@ console.log(`${ some.name } are ${ some.type }`)
 console.log(`${ another.name } are ${ another.type }`)
 console.log(`${ ohNo.name } are ${ ohNo.type }`)
 ```
+
+### Methods
+
+The core concept of behind classes is to provide the ability to modify data, this functionality is exposed by `functions`,
+this is commonly referred to in Object-Oriented Programming (OOP) languages as *Methods*.
+
+Javascript supports both Instance and Static methods on classes.
+
+#### Instance Methods
+
+Instance methods provide the ability to access and modify instance data. Instance methods can call other instance
+methods and static methods.
+
+```javascript
+class User {
+    name = "Anonymous"
+
+    constructor(name) {
+        this.name = name;
+    }
+
+    userName() {
+        return this.name
+    }
+}
+
+const user = new User('Gary Woodfine')
+console.log(user.userName())
+```
+`userName() { ... }` is a method inside the User class, which can be accessed after the class has been initialised
+using `user.userName()` method invocation, which executes the method and returns the computed value.
+
+Methods can also accept arguments and can also be `private`  and can provide indirect access to private static fields.
+
+We can slightly modify the code above to provide an illustration of how we can use encapsulation usings methods and 
+private static fields.
+
+```javascript
+class User {
+    #name = "Anonymous"
+
+    constructor(name) {
+        this.#name = name;
+    }
+
+    userName() {
+        return this.#name
+    }
+}
+
+const user = new User('Gary Woodfine')
+console.log(user.userName())
+
+```
+Before we provide an example of how to use arguments with methods, I want to introduce another feature of classes, 
+which makes working with classes in Javascript really useful.
+
+### Getters and Setters
+Getter and Setter fields mimic regular fields, however they provide more control in regards to how fields are accessed
+and changed. 
+
+Getter enable access to a field and Setter enable the setting the field value.
+
+We can rewrite the class above to make use of Getters and Setter, which are commonly referred to in OOP as `properties`
+
+```javascript
+class User {
+    #firstName = ''
+    #lastName = ''
+
+    constructor(firstname, lastname) {
+        this.#firstName = firstname
+        this.#lastName = lastname
+    }
+
+    get firstName(){
+        return this.#firstName
+    }
+
+    set firstName (firstName) {
+        if(firstName === '') {
+            throw new Error('A firstname is required')
+        }
+        this.#firstName = firstName
+    }
+
+    get lastName() {
+        return this.#lastName
+    }
+
+    set lastName(lastName) {
+        if(lastName === '') {
+            throw new Error('A firstname is required')
+        }
+        this.#lastName = lastName
+    }
+   get userName {
+        return `${this.#firstName} ${this.#lastName}`
+    }
+}
+
+const user = new User('Gary', 'Woodfine')
+console.log(user.userName)
+console.log(`the Firstname ${user.firstName}`)
+console.log(`the Lastname ${user.lastName}`)
+user.firstName = 'Gareth'
+console.log(user.userName)
+```
+
+The `get` property enable access to the value of the field:  `user.firstName`
+
+The `set` enables updating of the field i.e. `user.firstName = 'Gareth'`
+
+We also implemented a `readonly` property in effect by only implementing a get property for userName, which simply 
+returns the concatenated first and last names.
