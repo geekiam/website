@@ -10,7 +10,7 @@ feature:
   image: /uploads/posts/code/package-manager.svg
   alt: How to use linuxbrew package manager
 cardImage:
-  image: /uploads/twitter/code/package-manager.png
+  image: /uploads/posts/code/package-manager.png
   alt: How to use Git Flow
 date: 2020-12-18T20:29:50.183Z
 author: garywoodfine
