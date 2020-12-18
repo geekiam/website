@@ -449,7 +449,7 @@ class User {
         }
         this.#lastName = lastName
     }
-   get userName {
+   get fullName {
         return `${this.#firstName} ${this.#lastName}`
     }
 }
@@ -459,12 +459,12 @@ console.log(user.userName)
 console.log(`the Firstname ${user.firstName}`)
 console.log(`the Lastname ${user.lastName}`)
 user.firstName = 'Gareth'
-console.log(user.userName)
+console.log(user.fullName)
 ```
 
 The `get` property enable access to the value of the field:  `user.firstName`
 
 The `set` enables updating of the field i.e. `user.firstName = 'Gareth'`
 
-We also implemented a `readonly` property in effect by only implementing a get property for userName, which simply 
+We also implemented a `readonly` property in effect by only implementing a get property for `fullName`, which simply 
 returns the concatenated first and last names.
