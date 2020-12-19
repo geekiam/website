@@ -456,5 +456,22 @@ latest dist-tag.
 
 ### How to update packages
 
-Use `npm update` to update all your dependencies to the latest versions. Or `npm update packagename anotherpackage` 
-to update specific packages to the latest version.
+Use `npm update` to update all your dependencies to the latest minor or patch versions of packages.
+
+Or `npm update packagename anotherpackage` to update specific packages to the latest minor or patch version.
+
+#### Upgrading all packages
+To update all packages to their latest major version, you can install an additional global package called 
+`npm-check-updates`.
+
+```shell
+npm i -g npm-check-updates
+```
+
+You can then run the command below in your project directory
+```shell
+ncu -u
+```
+This command will update your `package.json` file dependencies to the latest version.  Once the command is complete it
+will provide an overview of which packages have been updated and then you simply run
+`npm i` to install all the updated packages.

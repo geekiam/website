@@ -132,6 +132,15 @@ particular package, in our case we want to learn more about nvm we can use.
 ```shell
 brew info nvm 
 ```
+If you want a list of commands that are available for use in Homebrew, you can simply use
+```shell
+brew --help
+```
+In addition to the help command-line switch, Linuxbrew also has a detailed instruction manual available. To view it use
+
+```shell
+man brew
+```
 
 
 ### Conclusion
