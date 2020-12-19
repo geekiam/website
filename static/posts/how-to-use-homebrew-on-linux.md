@@ -107,6 +107,33 @@ Once complete you will be prompted to edit your `~/.bashrc` file to add the foll
     [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 ```
 
+Save and Exit your `~/.bashrc` file and then refresh your current terminal window using `. ~/.bashrc` and nvm is ready 
+for use. You can check your version of nvm using `nvm --version`
+
+### Search for packages
+Homebrew has loads of useful packages. You can view the list of packages available using 
+```shell
+brew formulae
+```
+This will display a long and overwhelming list of packages that are available
+![brew formulae](/uploads/brew-formulae.png)
+
+The list can also be viewed at [Homebrew Formulae](https://formulae.brew.sh/formula-linux/ "Homebrew formulae")
+
+If you would like to search for a package via description you can use
+
+```shell
+    brew search --desc "manage multiple node"
+```
+
+This will return all the packages that will help to manage multiple node versions.  To get more information about a 
+particular package, in our case we want to learn more about nvm we can use.
+
+```shell
+brew info nvm 
+```
+
+
 ### Conclusion
 Homebrew is a tool that makes it even easier to install applications on Linux. It is not intended to replace the 
 traditional package managers, but rather works as a complement to them.
