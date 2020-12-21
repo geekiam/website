@@ -74,7 +74,7 @@
     "homepage": "https://geekiam.io",
     "engines": {
         "node": "12.18.4",
-        "npm": ">= 6.14.10",
+        "npm": ">= 6.14.6",
         "yarn": "npm is the preferred package manager for this project"
     },
     "husky": {
