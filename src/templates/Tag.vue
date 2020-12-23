@@ -1,5 +1,8 @@
 <template>
-    <home-layout>
+    <post-layout>
+        <template #left-side-bar>
+            <home-side-nav></home-side-nav>
+        </template>
         <template #main-content>
             <header>
                 <div
@@ -35,14 +38,17 @@
                 />
             </section>
         </template>
-    </home-layout>
+    </post-layout>
 </template>
 
 <script>
 import formatService from '@/services/posts/format.service'
-
+import HomeSideNav from '@/components/navigation/HomeSideNav'
 export default {
     name: 'Tag',
+    components: {
+        HomeSideNav,
+    },
     methods: {
         titleCase(str) {
             return formatService.toTitleCase(str)
