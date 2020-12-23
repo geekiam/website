@@ -2,7 +2,7 @@
     <!-- component -->
     <div class="flex items-center justify-center bg-gray-100 py-6">
         <div class="flex w-full max-w-xs p-4">
-            <ul class="flex flex-col items-center w-full">
+            <ul class="flex flex-col items-end w-full">
                 <li class="my-px">
                     <g-link
                         to="/"
