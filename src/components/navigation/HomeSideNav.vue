@@ -1,6 +1,6 @@
 <template>
     <!-- component -->
-    <div class="flex items-center justify-center bg-gray-100 py-6">
+    <div class="flex justify-center bg-gray-100 py-6">
         <div class="flex w-full max-w-xs p-4">
             <ul class="flex flex-col items-end w-full">
                 <li class="my-px">
