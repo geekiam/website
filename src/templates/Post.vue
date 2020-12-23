@@ -17,9 +17,9 @@
 
                 <div
                     :class="{
-                        'pb-10': $page.post.author || $page.post.categories,
+                        'pb-10': $page.post.categories,
                     }"
-                    class="prose lg:prose-lg leading-normal text-gray-700"
+                    class="prose lg:prose-lg text-gray-700"
                     v-html="$page.post.content"
                 />
 
