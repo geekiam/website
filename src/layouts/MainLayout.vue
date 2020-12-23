@@ -36,7 +36,7 @@
             </svg>
         </button>
         <!-- End Mobile Navigation Menu -->
-        <div class="container flex overflow-hidden">
+        <div class="container flex flex-1 overflow-hidden">
             <router-view></router-view>
         </div>
 

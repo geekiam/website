@@ -1,33 +1,16 @@
 <template>
-    <div class="w-full mx-w-8xl mx-auto mt-5">
-        <div class="lg:flex">
-            <div
-                id="sidebar"
-                class="top-0 z-1 inset-0 flex-none h-full bg-opacity-25 w-full lg:static lg:h-auto lg:overflow-y-visible lg:pt-0 lg:w-60 xl:w-72 lg:block hidden"
-            >
-                <slot name="left-side-bar" />
-            </div>
-            <div
-                id="content-wrapper"
-                class="min-w-0 w-full flex-auto lg:static lg:max-h-full lg:overflow-visible"
-            >
-                <div class="pt-10 pb-24 lg:pb-16 w-full flex">
-                    <div class="min-w-0 flex-auto px-2 bg-white items-center">
-                        <slot name="main-content" />
-                    </div>
-                    <div
-                        class="hidden xl:text-sm xl:block flex-none w-64 pl-8 mr-8"
-                    >
-                        <slot name="right-side-bar" />
-                    </div>
-                </div>
-            </div>
+    <div class="flex overflow-hidden mt-3">
+        <div id="sidebar" class="hidden md:flex h-0 top-0 h-full">
+            <slot name="left-side-bar" />
+        </div>
+        <div
+            id="content-wrapper"
+            class="sm:px-1 bg-white rounded-md items-center"
+        >
+            <slot name="main-content" />
+        </div>
+        <div class="hidden xl:text-sm xl:block flex-1 w-64 pl-8 mr-8">
+            <slot name="right-side-bar" />
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    name: 'PostLayout',
-}
-</script>
