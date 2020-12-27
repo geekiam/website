@@ -4,22 +4,14 @@
             <home-side-nav></home-side-nav>
         </template>
         <template #main-content>
-            <article
-                :class="{
-                    'border-b border-grey-lighter pb-10 mb-16': !$page.post
-                        .author,
-                }"
-            >
+            <article class="border-b border-grey-lighter pb-10 mb-16">
                 <post-title
                     :post="$page.post"
                     :author="author_detail"
                 ></post-title>
 
                 <div
-                    :class="{
-                        'pb-10': $page.post.categories,
-                    }"
-                    class="prose lg:prose-lg text-gray-700"
+                    class="prose sm:prose-sm lg:prose-lg text-gray-700"
                     v-html="$page.post.content"
                 />
 
