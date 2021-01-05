@@ -4,23 +4,24 @@
             <home-side-nav></home-side-nav>
         </template>
         <template #main-content>
-            <article class="border-b border-grey-lighter pb-10 mb-16">
+            <article class="py-2">
                 <post-title
+                    class="px-3"
                     :post="$page.post"
                     :author="author_detail"
                 ></post-title>
 
                 <div
-                    class="prose sm:prose-sm lg:prose-lg text-gray-700"
+                    class="prose sm:prose-sm lg:prose-lg text-gray-700 pb-10"
                     v-html="$page.post.content"
                 />
 
-                <footer
+                <div
                     class="flex flex-wrap pb-10 sm:pb-16"
-                    v-if="$page.post.author || $page.post.categories"
+                    v-if="$page.post.categories"
                 >
                     <categories :categories="$page.post.categories" />
-                </footer>
+                </div>
             </article>
         </template>
 
