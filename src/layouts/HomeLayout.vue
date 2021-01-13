@@ -3,11 +3,11 @@
         <!-- Left sidebar & main wrapper -->
         <div class="flex-1 min-w-0 xl:flex">
             <div
-                class="border-b dark:border-gray-700 border-gray-200 xl:border-b-0 xl:flex-shrink-0 xl:w-64 xl:border-r"
+                class="border-b dark:border-gray-700 border-gray-200 xl:border-b-0 xl:flex-shrink-1 xl:w-64 xl:border-r"
             >
                 <div class="h-full pl-4 pr-6 py-6 sm:pl-6 lg:pl-8 xl:pl-0">
                     <!-- Start left column area -->
-                    <div class="h-full relative" style="min-height: 10rem">
+                    <div class="h-full relative" style="min-height: 5rem">
                         <div
                             class="absolute inset-0 border-1 border-gray-200 rounded-lg"
                         >
