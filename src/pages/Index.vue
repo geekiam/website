@@ -5,22 +5,24 @@
         </template>
 
         <template #main-content>
-            <transition-group name="fade">
-                <post-card
-                    :key="node.id"
-                    :post="node"
-                    v-for="{ node } of posts"
-                />
-            </transition-group>
-            <ClientOnly>
-                <infinite-loading @infinite="scroll" spinner="spiral">
-                    <div slot="no-more" class="mt-2">
-                        <p class="font">
-                            We are hard at work writing more posts!
-                        </p>
-                    </div>
-                </infinite-loading>
-            </ClientOnly>
+            <section class="flex-1 pt-3 lg:mb-0 lg:min-h-0 lg:min-w-0">
+                <transition-group name="fade">
+                    <post-card
+                        :key="node.id"
+                        :post="node"
+                        v-for="{ node } of posts"
+                    />
+                </transition-group>
+                <ClientOnly>
+                    <infinite-loading @infinite="scroll" spinner="spiral">
+                        <div slot="no-more" class="mt-2">
+                            <p class="font">
+                                We are hard at work writing more posts!
+                            </p>
+                        </div>
+                    </infinite-loading>
+                </ClientOnly>
+            </section>
         </template>
 
         <template #right-side-bar></template>

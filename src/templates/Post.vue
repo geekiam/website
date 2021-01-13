@@ -1,28 +1,47 @@
 <template>
     <post-layout>
         <template #left-side-bar>
-            <home-side-nav></home-side-nav>
+            <post-side-nav></post-side-nav>
         </template>
         <template #main-content>
-            <article class="py-2">
-                <post-title
-                    class="px-3"
-                    :post="$page.post"
-                    :author="author_detail"
-                ></post-title>
-
-                <div
-                    class="prose sm:prose-sm lg:prose-lg text-gray-700 pb-10"
-                    v-html="$page.post.content"
-                />
-
-                <div
-                    class="flex flex-wrap pb-10 sm:pb-16"
-                    v-if="$page.post.categories"
+            <main
+                class="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 overflow-auto"
+            >
+                <section
+                    class="flex-1 pt-3 md:p-6 lg:mb-0 lg:min-h-0 lg:min-w-0"
                 >
-                    <categories :categories="$page.post.categories" />
-                </div>
-            </article>
+                    <div class="flex flex-col lg:flex-row h-full w-full">
+                        <div
+                            class="border h-full w-full lg:flex-1 px-3 min-h-0 min-w-0"
+                        >
+                            <!-- overflow content right -->
+                            <div class="bg-white min-h-0 min-w-0 px-5">
+                                <article class="py-2">
+                                    <post-title
+                                        class="px-3"
+                                        :post="$page.post"
+                                        :author="author_detail"
+                                    ></post-title>
+
+                                    <div
+                                        class="prose sm:prose-sm lg:prose-lg text-gray-700 pb-10"
+                                        v-html="$page.post.content"
+                                    />
+
+                                    <div
+                                        class="flex flex-wrap pb-10 sm:pb-16"
+                                        v-if="$page.post.categories"
+                                    >
+                                        <categories
+                                            :categories="$page.post.categories"
+                                        />
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </template>
 
         <template #right-side-bar>
@@ -41,11 +60,11 @@ import Author from '@/components/Post/Author'
 import PostTitle from '@/components/Post/PostTitle'
 
 import UserService from '@/services/github/userService'
-import HomeSideNav from '@/components/navigation/HomeSideNav'
+import PostSideNav from '@/components/navigation/PostSideNav'
 export default {
     name: 'Post',
     components: {
-        HomeSideNav,
+        PostSideNav,
         PostTitle,
         Author,
         Categories,

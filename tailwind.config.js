@@ -5,7 +5,11 @@ module.exports = {
     },
     purge: ['./src/**/*.vue', './static/posts/*.md'],
     separator: ':',
-    plugins: [require('@tailwindcss/ui'), require('@tailwindcss/typography')],
+    plugins: [
+        require('@tailwindcss/ui'),
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/forms'),
+    ],
     theme: {
         typography: {
             default: {
