@@ -11,33 +11,31 @@
                     class="flex-1 pt-3 md:p-6 lg:mb-0 lg:min-h-0 lg:min-w-0"
                 >
                     <div class="flex flex-col lg:flex-row h-full w-full">
+                        <!-- overflow content right -->
                         <div
-                            class="border h-full w-full lg:flex-1 px-3 min-h-0 min-w-0"
+                            class="dark:bg-gray-900 bg-white min-h-0 min-w-0 px-5"
                         >
-                            <!-- overflow content right -->
-                            <div class="bg-white min-h-0 min-w-0 px-5">
-                                <article class="py-2">
-                                    <post-title
-                                        class="px-3"
-                                        :post="$page.post"
-                                        :author="author_detail"
-                                    ></post-title>
+                            <article class="py-2">
+                                <post-title
+                                    class="px-3"
+                                    :post="$page.post"
+                                    :author="author_detail"
+                                ></post-title>
 
-                                    <div
-                                        class="prose sm:prose-sm lg:prose-lg text-gray-700 pb-10"
-                                        v-html="$page.post.content"
+                                <div
+                                    class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-700 pb-10"
+                                    v-html="$page.post.content"
+                                />
+
+                                <div
+                                    class="flex flex-wrap pb-10 sm:pb-16"
+                                    v-if="$page.post.categories"
+                                >
+                                    <categories
+                                        :categories="$page.post.categories"
                                     />
-
-                                    <div
-                                        class="flex flex-wrap pb-10 sm:pb-16"
-                                        v-if="$page.post.categories"
-                                    >
-                                        <categories
-                                            :categories="$page.post.categories"
-                                        />
-                                    </div>
-                                </article>
-                            </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
                 </section>

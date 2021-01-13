@@ -3,6 +3,7 @@ module.exports = {
         removeDeprecatedGapUtilities: true,
         purgeLayersByDefault: true,
     },
+    darkMode: 'media',
     purge: ['./src/**/*.vue', './static/posts/*.md'],
     separator: ':',
     plugins: [

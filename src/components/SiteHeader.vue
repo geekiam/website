@@ -1,6 +1,6 @@
 <template>
     <header
-        class="sticky top-0 z-40 w-full max-w-8xl mx-auto flex-none bg-gray-900"
+        class="sticky top-0 z-40 w-full max-w-8xl mx-auto flex-none dark:bg-gray-900 bg-gray-100"
     >
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div
@@ -23,7 +23,7 @@
                 >
                     <g-link
                         to="/auth/login"
-                        class="whitespace-no-wrap capitalize text-base leading-6 font-medium text-gray-300 hover:text-white focus:outline-none focus:text-white"
+                        class="whitespace-no-wrap capitalize text-base leading-6 font-medium dark:text-gray-300 text-gray-600 dark:hover:text-white hover:text-gray-900 focus:outline-none focus:text-white"
                     >
                         Sign in
                     </g-link>

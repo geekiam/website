@@ -9,7 +9,7 @@
                 v-if="post.feature"
             />
             <div
-                class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+                class="border-r border-b border-l dark:border-gray-700 border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light dark:bg-gray-900 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
             >
                 <div class="mb-8">
                     <g-link

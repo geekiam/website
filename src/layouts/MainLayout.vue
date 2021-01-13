@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-100">
+    <div class="dark:bg-gray-900 bg-gray-100">
         <site-header></site-header>
         <div class="h-full w-full">
             <router-view></router-view>
