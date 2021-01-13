@@ -15,6 +15,7 @@ date: 2020-11-26T17:31:47.672Z
 author: garywoodfine
 tags:
   - javascript
+  - serverless
 categories:
   - software-development
 ---

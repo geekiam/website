@@ -18,6 +18,7 @@ author: garywoodfine
 tags:
   - authentication
   - javascript
+  - serverless
   - nu_id
   - IAM
 categories:

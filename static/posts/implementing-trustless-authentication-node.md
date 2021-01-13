@@ -17,6 +17,7 @@ date: 2020-12-02T17:30:00.644Z
 author: garywoodfine
 tags:
   - authentication
+  - serverless
   - javascript
   - nu_id
   - IAM
