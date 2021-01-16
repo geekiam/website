@@ -32,4 +32,4 @@ title = "Geek.I.Am netlify deployment configuration file"
 # All deploys that are not from a pull/merge request
 # or from the production branch will inherit these settings.
 [context.branch-deploy]
-command = "make staging"
+command = "yarn generate"
