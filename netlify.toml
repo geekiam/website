@@ -2,7 +2,7 @@ title = "Geek.I.Am netlify deployment configuration file"
 
 [build]
     publish = "dist"
-    command = "npm run generate"
+    command = "yarn generate"
     functions = "functions"
 
 [dev]
@@ -14,9 +14,6 @@ title = "Geek.I.Am netlify deployment configuration file"
 
 [build.environment]
     NODE_VERSION = "12"
-
-[[plugins]]
-    package = "netlify-plugin-gridsome-cache"
 
 [[plugins]]
      package =  "@netlify/plugin-functions-install-core"
