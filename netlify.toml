@@ -2,12 +2,12 @@ title = "Geek.I.Am netlify deployment configuration file"
 
 [build]
     publish = "dist"
-    command = "yarn generate"
+    command = "npm run generate"
     functions = "functions"
 
 [dev]
     framework="nuxt"
-    command = "yarn dev" # Command to start your dev server
+    command = "npm run dev" # Command to start your dev server
     port= 3850
     publish = "dist" # The path to your static content folder
     autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address in your browser
@@ -32,4 +32,4 @@ title = "Geek.I.Am netlify deployment configuration file"
 # All deploys that are not from a pull/merge request
 # or from the production branch will inherit these settings.
 [context.branch-deploy]
-command = "yarn generate"
+command = "npm run generate"
