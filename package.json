@@ -1,87 +1,42 @@
 {
-    "name": "geekiam",
-    "private": true,
-    "scripts": {
-        "build": "gridsome build",
-        "develop": "gridsome develop",
-        "explore": "gridsome explore",
-        "lint": "vue-cli-service lint --fix ",
-        "precommit": "npm run lint",
-        "prepush": "npm run lint"
-    },
-    "dependencies": {
-        "@gridsome/plugin-sitemap": "^0.4.0",
-        "@gridsome/source-filesystem": "^0.6.2",
-        "@gridsome/transformer-remark": "^0.6.4",
-        "@nuid/zk": "^0.1.1",
-        "@tailwindcss/forms": "^0.2.1",
-        "@tailwindcss/typography": "^0.3.1",
-        "@tailwindcss/ui": "^0.7.2",
-        "autoprefixer": "^10.1.0",
-        "gridsome": "^0.7.23",
-        "gridsome-plugin-amazon-onelink": "^1.0.2",
-        "gridsome-plugin-feed": "^1.0.2",
-        "gridsome-plugin-gtag": "^0.1.10",
-        "gridsome-plugin-netlify-cms": "^1.0.9",
-        "gridsome-plugin-remark-shiki": "^0.6.0",
-        "gridsome-plugin-rss": "^1.2.0",
-        "gridsome-plugin-tailwindcss": "^4.1.1",
-        "klaro-gridsome": "^1.0.3",
-        "netlify-cms": "^2.10.79",
-        "node-fetch": "^2.6.1",
-        "postcss": "^8.2.2",
-        "postcss-import": "^14.0.0",
-        "postcss-loader": "^4.1.0",
-        "postcss-preset-env": "^6.7.0",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "tailwindcss": "^2.0.2",
-        "uuid": "^8.3.2",
-        "vue-infinite-loading": "^2.4.5",
-        "vuelidate": "^0.7.6"
-    },
-    "description": "Software Developer Community",
-    "version": "1.0.0",
-    "main": "gridsome.config.js",
-    "devDependencies": {
-        "@vue/cli-plugin-eslint": "^4.5.9",
-        "@vue/cli-service": "^4.5.9",
-        "@vue/eslint-config-prettier": "^6.0.0",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^7.17.0",
-        "eslint-plugin-gridsome": "^1.5.1",
-        "eslint-plugin-prettier": "^3.3.0",
-        "eslint-plugin-vue": "^7.4.0",
-        "husky": "^4.3.6",
-        "netlify-lambda": "^2.0.2",
-        "prettier": "^2.2.1",
-        "vue-eslint-parser": "^7.3.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/threenine/geekiam.git"
-    },
-    "keywords": [
-        "geek",
-        "tech",
-        "software development",
-        "javascript"
-    ],
-    "author": "threenine.co.uk <hello@threenine.co.uk> (https://threenine.co.uk)",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/garywoodfine/geekiam/issues"
-    },
-    "homepage": "https://geekiam.io",
-    "engines": {
-        "node": "12.18.4",
-        "npm": ">= 6.14.6",
-        "yarn": "npm is the preferred package manager for this project"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run precommit",
-            "pre-push": "npm run prepush"
-        }
-    }
+  "name": "geekiam",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "yarn lint:js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.9.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "@vue/test-utils": "^1.1.0",
+    "autoprefixer": "^9",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.5.0",
+    "postcss": "^7",
+    "prettier": "^2.1.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vue-jest": "^3.0.4"
+  }
 }
