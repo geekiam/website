@@ -15,11 +15,8 @@
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
-    "autoprefixer": "^9",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
@@ -28,6 +25,7 @@
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.3.1",
     "@vue/test-utils": "^1.1.0",
+    "autoprefixer": "^9.8.6",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.5.0",
@@ -37,7 +35,9 @@
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.5.0",
     "netlify-lambda": "^2.0.2",
+    "postcss": "^7.0.35",
     "prettier": "^2.1.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vue-jest": "^3.0.4"
   }
 }
