@@ -1,5 +1,3 @@
-import tailwindTypography from '@tailwindcss/typography'
-import tailwindForms from '@tailwindcss/forms'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -16,13 +14,6 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  tailwindcss: {
-    config: {
-      darkMode: 'media',
-      plugins: [tailwindTypography, tailwindForms],
-    },
-  },
-
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
 
@@ -51,7 +42,13 @@ export default {
   axios: {},
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-dark.css',
+      },
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
