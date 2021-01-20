@@ -1,8 +1,9 @@
 <template>
-  <svg width="50" height="50" viewBox="0 0 200 200">
-    <g>
-      <image
-        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+  <nuxt-link to="/">
+    <svg width="50" height="50" viewBox="0 0 200 200">
+      <g>
+        <image
+          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAB42SURBVHhe7Z0JfFxV9cdnkrZQmjbJzHszCVYW
 RVFEEJFFZdOP/FVkU6gIpZ0lyUy3JJ157026MmylbWama9IkbTNvkrJWWQTXqiC4IaJ/Uf5/UUGk
 Kih/FGiTSSjQ+Z/7cint5MzMe7NmJuf7+fw+oWTufSfzznn33nfvPddEEARBEARBEARBEARBEARB
@@ -141,7 +142,8 @@ zUfvwhzdmKLb2Stmo9lUCGLioy16vON9dmf0MsGhLoWuGNu/sWt8EDCxfFYxFgw32pxRr92hXmQk
 1SlBVBTinK4atryEicYSBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQ
 BEEQBEEQhAFMpv8HpxxQZuG+458AAAAASUVORK5CYII=
 "
-      />
-    </g>
-  </svg>
+        />
+      </g>
+    </svg>
+  </nuxt-link>
 </template>
