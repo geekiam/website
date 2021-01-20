@@ -185,25 +185,7 @@
             </div>
           </div>
         </div>
-        <ul
-          class="relative z-0 divide-y divide-gray-200 border-b border-gray-200"
-        >
-          <li
-            v-for="post of posts"
-            :key="post.slug"
-            class="relative pl-4 pr-6 py-5 hover:bg-gray-50 sm:py-6 sm:pl-6 lg:pl-8 xl:pl-6"
-          >
-            <div class="flex items-center justify-between space-x-4">
-              <div class="min-w-0 space-y-3">
-                <div class="flex items-center space-x-3">
-                  <span class="block">
-                    <post-card :post="post" />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <post-list :posts="posts" />
       </div>
     </div>
     <!-- Activity feed -->
@@ -212,38 +194,7 @@
     >
       <div class="pl-6 lg:w-80">
         <div class="pt-6 pb-2">
-          <h2 class="text-sm font-semibold dark:text-gray-100">Activity</h2>
-        </div>
-        <div>
-          <ul class="divide-y divide-gray-200">
-            <li class="py-4">
-              <div class="flex space-x-3">
-                <img
-                  class="h-6 w-6 rounded-full"
-                  src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80"
-                  alt=""
-                />
-                <div class="flex-1 space-y-1">
-                  <div class="flex items-center justify-between">
-                    <h3 class="text-sm font-medium dark:text-gray-200">You</h3>
-                    <p class="text-sm text-gray-500 dark:text-gray-200">1h</p>
-                  </div>
-                  <p class="text-sm text-gray-500 dark:text-gray-200">
-                    Some amazing article
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <!-- More items... -->
-          </ul>
-          <div class="py-4 text-sm border-t border-gray-200">
-            <a
-              href="#"
-              class="text-green-600 font-semibold hover:text-green-900"
-              >View all activity <span aria-hidden="true">&rarr;</span></a
-            >
-          </div>
+          <h2 class="text-sm font-semibold dark:text-gray-100">Right Column</h2>
         </div>
       </div>
     </div>
@@ -251,7 +202,9 @@
 </template>
 
 <script>
+import PostList from '../components/blog/PostList'
 export default {
+  components: { PostList },
   layout: 'home',
 
   async asyncData({ $content }) {
