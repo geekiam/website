@@ -255,10 +255,7 @@ export default {
   layout: 'home',
 
   async asyncData({ $content }) {
-    const posts = await $content('posts')
-      .sortBy('date', 'desc')
-      .limit(6)
-      .fetch()
+    const posts = await $content('posts').sortBy('date', 'desc').fetch()
     return {
       posts,
     }

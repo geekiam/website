@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky flex-shrink-0 dark:bg-gray-900 bg-gray-50">
+  <nav class="flex-shrink-0 dark:bg-gray-900 bg-gray-50">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <!-- Logo section -->
@@ -98,18 +98,18 @@
         <!-- Links section -->
         <div class="hidden lg:block lg:w-80">
           <div class="flex items-center justify-end">
-            <div class="flex">
-              <a
-                href="#"
-                class="px-3 py-2 rounded-md text-sm font-medium text-green-200 hover:text-white"
-                >Documentation</a
-              >
-              <a
-                href="#"
-                class="px-3 py-2 rounded-md text-sm font-medium text-green-200 hover:text-white"
-                >Support</a
-              >
-            </div>
+            <!--            <div class="flex">-->
+            <!--&lt;!&ndash;              <a&ndash;&gt;-->
+            <!--&lt;!&ndash;                href="#"&ndash;&gt;-->
+            <!--&lt;!&ndash;                class="px-3 py-2 rounded-md text-sm font-medium text-green-200 hover:text-white"&ndash;&gt;-->
+            <!--&lt;!&ndash;                >Documentation</a&ndash;&gt;-->
+            <!--&lt;!&ndash;              >&ndash;&gt;-->
+            <!--&lt;!&ndash;              <a&ndash;&gt;-->
+            <!--&lt;!&ndash;                href="#"&ndash;&gt;-->
+            <!--&lt;!&ndash;                class="px-3 py-2 rounded-md text-sm font-medium text-green-200 hover:text-white"&ndash;&gt;-->
+            <!--&lt;!&ndash;                >Support</a&ndash;&gt;-->
+            <!--&lt;!&ndash;              >&ndash;&gt;-->
+            <!--            </div>-->
             <!-- Profile dropdown -->
             <div class="ml-4 relative flex-shrink-0">
               <div>
@@ -119,11 +119,25 @@
                   aria-haspopup="true"
                 >
                   <span class="sr-only">Open user menu</span>
-                  <img
-                    class="h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80"
-                    alt=""
-                  />
+                  <!--                  <img-->
+                  <!--                    class="h-8 w-8 rounded-full"-->
+                  <!--                    src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&h=256&q=80"-->
+                  <!--                    alt=""-->
+                  <!--                  />-->
+                  <svg
+                    class="w-8 h-8 rounded-full"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    ></path>
+                  </svg>
                 </button>
               </div>
               <!--

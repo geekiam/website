@@ -5,7 +5,7 @@ backend:
 site_url: https://geekiam.io
 logo_url: https://geekiam.io/uploads/geekiam-logo.png
 display_url: https://geekiam.io
-media_folder: "content/uploads"
+media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
