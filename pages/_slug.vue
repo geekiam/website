@@ -17,6 +17,7 @@
       <!-- Projects List -->
       <div class="bg-white dark:bg-gray-900 lg:min-w-0 lg:flex-1">
         <div class="pl-4 pr-6">
+          <post-title :author="author" :post="post" />
           <nuxt-content
             class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-700 pb-10 mx-auto"
             :document="post"
@@ -35,13 +36,14 @@
 
 <script>
 import RightColumn from '../components/blog/RightColumn'
+import PostTitle from '../components/blog/PostTitle'
 export default {
-  components: { RightColumn },
+  components: { PostTitle, RightColumn },
   layout: 'home',
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
-
-    return { post }
+    const author = await $content('authors', post.author).fetch()
+    return { post, author }
   },
 }
 </script>
