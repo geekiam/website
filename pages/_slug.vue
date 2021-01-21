@@ -45,22 +45,83 @@ export default {
     const author = await $content('authors', post.author).fetch()
     return { post, author }
   },
+  computed: {
+    keywords() {
+      let keywords = ''
+      for (const i in this.post.keywords) {
+        keywords = keywords.concat(`${this.post.keywords[i]},`)
+      }
+      return keywords.replace(/(^\s*,)|(,\s*$)/g, '')
+    },
+  },
   head() {
     return {
       title: this.post.title,
       meta: [
         { key: 'og:type', property: 'og:type', content: 'article' },
         {
-          key: 'og:title',
+          hid: 'og:title',
           property: 'og:title',
           content: this.post.title,
         },
         {
-          key: 'og:description',
+          hid: 'description',
+          name: 'description',
+          content: this.post.description,
+        },
+        {
+          hid: 'og:description',
           property: 'og:description',
           content: this.post.summary,
         },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `https://geekiam.io${this.post.cardImage.image}`,
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image:secure_url',
+          content: `https://geekiam.io${this.post.cardImage.image}`,
+        },
+        { hid: 'keywords', name: 'keywords', content: this.keywords },
+        {
+          hid: 'article:published_time',
+          property: 'article:published_time',
+          content: this.post.date,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.post.title,
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.post.summary,
+        },
+        {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: 'https://twitter.com/geekiam1',
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: 'https://twitter.com/gary_woodfine',
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: `https://geekiam.io${this.post.cardImage.image}`,
+        },
       ],
+      script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }],
     }
   },
 }

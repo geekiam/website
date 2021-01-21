@@ -4,15 +4,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Geek.I.Am',
+    titleTemplate: '%s | Geek.I.Am',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Software Developers community',
-      },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Geek.I.Am' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
