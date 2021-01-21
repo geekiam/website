@@ -45,5 +45,23 @@ export default {
     const author = await $content('authors', post.author).fetch()
     return { post, author }
   },
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        { key: 'og:type', property: 'og:type', content: 'article' },
+        {
+          key: 'og:title',
+          property: 'og:title',
+          content: this.post.title,
+        },
+        {
+          key: 'og:description',
+          property: 'og:description',
+          content: this.post.summary,
+        },
+      ],
+    }
+  },
 }
 </script>
