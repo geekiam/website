@@ -36,7 +36,12 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/sitemap',
   ],
+  sitemap: {
+    hostname: 'https://geekiam.io',
+    gzip: true,
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
