@@ -26,6 +26,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@/modules/sitemapRouteGenerator',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -39,7 +40,9 @@ export default {
     '@nuxtjs/sitemap',
   ],
   sitemap: {
+    path: '/sitemap.xml',
     hostname: 'https://geekiam.io',
+    cacheTime: 1000 * 60 * 15,
     gzip: true,
   },
 
