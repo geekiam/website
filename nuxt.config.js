@@ -43,7 +43,7 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://geekiam.io',
     defaults: {
-      changefreq: 'daily',
+      changefreq: 'weekly',
       priority: 1,
       lastmod: new Date(),
     },
