@@ -16,7 +16,7 @@
         />
       </svg>
 
-      <span class="mr-4" v-html="post.date"></span>
+      <span class="mr-4" v-html="$moment(post.date)"></span>
       <svg
         class="h-4 w-4 mr-1 ml-4 fill-current"
         fill="currentColor"
