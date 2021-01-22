@@ -99,3 +99,7 @@ We can now run the following command in our terminal:
 
 ![Create nuxt sampe app ](/uploads/create-nuxt-sample.png "create nuxt sample app")
   
+### Conclusion
+
+We have created our initial Nuxt Application and have it running.  We now proceed to the next tutorial to [understand
+nuxt project structure](https://geekiam.io/understanding-nuxt-project-structure "Understanding the nuxt project structure | Geek.I.Am")
