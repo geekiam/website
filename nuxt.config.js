@@ -49,7 +49,9 @@ export default {
       lastmod: new Date(),
     },
   },
-
+  moment: {
+    defaultTimezone: 'Europe/London',
+  },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 

@@ -16,7 +16,10 @@
         />
       </svg>
 
-      <span class="mr-4" v-html="$moment(post.date)"></span>
+      <span
+        class="mr-4 text-gray-500 dark:text-gray-100 ml-1"
+        v-html="$moment(post.date)"
+      ></span>
       <svg
         class="h-4 w-4 mr-1 ml-4 fill-current"
         fill="currentColor"
@@ -27,8 +30,14 @@
         />
       </svg>
       <nuxt-link class="hover:underline" :to="author.slug">
-        <span class="text-gray-100 ml-1" v-html="author.name.firstName"></span>
-        <span class="text-gray-100 ml-1" v-html="author.name.lastName"></span>
+        <span
+          class="text-gray-500 dark:text-gray-100 ml-1"
+          v-html="author.name.firstName"
+        ></span>
+        <span
+          class="text-gray-500 dark:text-gray-100 ml-1"
+          v-html="author.name.lastName"
+        ></span>
       </nuxt-link>
     </div>
     <div class="mt-4 mb-4 px-2">
