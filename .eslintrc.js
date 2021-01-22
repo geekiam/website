@@ -1,29 +1,22 @@
 module.exports = {
-    root: true,
-    parser: 'vue-eslint-parser',
-    plugins: ['gridsome'],
-    env: {
-        node: true,
-    },
-    extends: [
-        'plugin:gridsome/recommended',
-        'plugin:vue/essential',
-        'plugin:prettier/recommended',
-        '@vue/prettier',
-    ],
-    rules: {
-        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    },
-    overrides: [
-        {
-            files: [
-                '**/__tests__/*.{j,t}s?(x)',
-                '**/tests/unit/**/*.spec.{j,t}s?(x)',
-            ],
-            env: {
-                jest: true,
-            },
-        },
-    ],
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
+  extends: [
+    '@nuxtjs',
+    'prettier',
+    'prettier/vue',
+    'plugin:prettier/recommended',
+    'plugin:nuxt/recommended',
+  ],
+  plugins: ['prettier'],
+  // add your custom rules here
+  rules: {
+    'vue/no-v-html': 0,
+  },
 }
