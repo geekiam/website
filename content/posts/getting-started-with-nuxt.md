@@ -1,7 +1,7 @@
 ---
 title: Getting started with nuxt
 description: Learn how to create server-side rendered applications by using Nuxt.js, how to configure your application for development.
-summary: In this tutorial, we’re going to learn how to create server-side rendered applications by using Nuxt.js, how to configure your application for development, and how to deploy to Netlify.
+summary: In this tutorial, we’re going to learn how to create server-side rendered applications by using Nuxt.js.
 keywords:
   - how to start a project with nuxt
   - what is nuxt
@@ -46,15 +46,56 @@ Netlify hosting.
 At it core NuxtJS enables developers to create three types of applications 
 
 1. Static Generated website
+   
    Static generated applications do not require API requests to fetch the contents of the pages, i.e. the contents 
    are already included in the HTML file. An example of a static site is a portfolio website or landing pages for 
    for lead generation.
    
 2. Single Page Application
-   JavaScript frameworks (React, Angular, Emberjs, Vue, etc) are single page application whose contents are 
+   
+   JavaScript frameworks like React, Angular, Emberjs, Vue, etc are single page application whose contents are 
    dynamically populated with faster transitions. SPAs generally make use of the HTML5 history API or the location Hash
    for routing.
    
 3. Server Side Rendered Applications (SSR)
+   
    Server-Side Rendering is a technique used to fetch and display client-side data on the server to send a fully 
    rendered page to the client. This is a good approach to get good SEO for your application.
+
+### Creating a Nuxt application
+
+There best way to create a nuxt application is to make use of the NPM package runner (`npx`) a tool intended 
+to help using packages from the npm registry — a similar experience to installing and manage dependencies hosted on 
+the registry, npx makes it easy to use CLI tools and other executables hosted on the registry. 
+
+To check if you have `npx` installed you can use `npx --version` which should respond with the version number. If `npx` 
+not installed you can install it as follows
+
+```shell
+npm install -g npx
+```
+
+We can now proceed to creating our nuxt application using the `create-nuxt-app` command.
+
+```shell
+# use create0nuxt-app and provide a name of your application
+npx create-nuxt-app geekiam-sample
+```
+This will initiate a wizard process which will ask several questions regarding the type of application you would like 
+to create. For the purpose of this tutorial, we will install axios, linting and Prettier configurations to create a 
+Server Side Rendered application.
+
+![Create nuxt app ](/uploads/create-nuxt-app.png "create nuxt app")
+
+Once the wizard has completed,  we can then change into the project directory created.
+
+![Create nuxt app finish ](/uploads/create-nuxt-finish.png "create nuxt app finish")
+
+We can now run the following command in our terminal:
+```shell
+ cd nuxt-tutorial-app
+ npm run dev
+```
+
+![Create nuxt sampe app ](/uploads/create-nuxt-sample.png "create nuxt sample app")
+  
