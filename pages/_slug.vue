@@ -122,6 +122,7 @@ export default {
         },
       ],
       script: [{ src: 'https://platform.twitter.com/widgets.js', async: true }],
+      link: [{ rel: 'canonical', href: `https://geekiam.io${this.post.slug}` }],
     }
   },
 }
