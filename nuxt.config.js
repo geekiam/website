@@ -38,6 +38,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/moment',
+    '@nuxtjs/google-gtag',
     '@nuxtjs/sitemap',
   ],
   sitemap: {
@@ -51,6 +52,9 @@ export default {
   },
   moment: {
     defaultTimezone: 'Europe/London',
+  },
+  'google-gtag': {
+    id: process.env.GOOGLE_ANALYTICS_ID,
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
