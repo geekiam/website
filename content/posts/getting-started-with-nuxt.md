@@ -68,7 +68,8 @@ There best way to create a nuxt application is to make use of the NPM package ru
 to help using packages from the npm registry — a similar experience to installing and manage dependencies hosted on 
 the registry, npx makes it easy to use CLI tools and other executables hosted on the registry. 
 
-To check if you have `npx` installed you can use `npx --version` which should respond with the version number. If `npx` 
+`npx` has automatically been shipped with npm since version 5.2.0., so there should be no installation required. To 
+check if you have `npx` installed you can use `npx --version` which should respond with the version number. If `npx` 
 not installed you can install it as follows
 
 ```shell
