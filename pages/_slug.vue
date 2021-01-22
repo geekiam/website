@@ -29,16 +29,16 @@
     <div
       class="bg-gray-100 dark:bg-gray-900 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-500 xl:pr-0"
     >
-      <right-column></right-column>
+      <post-right-column></post-right-column>
     </div>
   </div>
 </template>
 
 <script>
-import RightColumn from '../components/blog/RightColumn'
+import PostRightColumn from '../components/blog/PostRightColumn'
 import PostTitle from '../components/blog/PostTitle'
 export default {
-  components: { PostTitle, RightColumn },
+  components: { PostTitle, PostRightColumn },
   layout: 'home',
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()

@@ -36,7 +36,7 @@
 <script>
 import PostList from '../components/blog/PostList'
 import PostSort from '../components/blog/PostSort'
-import RightColumn from '../components/blog/RightColumn'
+import RightColumn from '../components/blog/PostRightColumn'
 export default {
   components: { RightColumn, PostSort, PostList },
   layout: 'home',
