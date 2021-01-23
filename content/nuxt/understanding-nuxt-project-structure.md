@@ -73,10 +73,33 @@ convert all the `.vue` files inside this directory and generate the application 
 
 ### The layouts directory
 
-The `layouts` directory is used to store the layout files for your application. Nuxt generates a `default.vue`by default,
+The `layouts` directory is used to store the layout files for your application. Nuxt generates a `default.vue` by default,
 you can modify this default layout or add new files to the directory.
 
 ### The components directory
 
 The `components` directory is used to store Vue components.  You should keep small and reusable components in this 
 directory.
+
+### The plugins directory
+
+The `plugins` directory is used to store your global Javascript functions that you want to run before the root Vue 
+instance is instantiated . 
+
+### The store directory
+
+The `store` directory is used to contain the Vuex store. There is no need to install Vuex in Nuxt because it is already
+installed. It is disabled by default and all you need to do enable it is add an `index.js` file to this directory.
+
+### The middleware directory
+
+The `middleware` directory is used to store middleware files that are Javascript functions that run before rendering a
+page or group of pages.
+
+### The package.json
+
+The `package.json` file is used to contain the dependencies and scripts of the Nuxt application. 
+
+### The nuxt.config.js 
+
+The `nuxt.config.js` file is used to carry out any custom configuration you would like applied to your application.
