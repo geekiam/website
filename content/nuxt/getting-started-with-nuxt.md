@@ -1,5 +1,5 @@
 ---
-title: Getting started with nuxt
+title: How to Get started with Nuxt
 description: Learn how to create server-side rendered applications by using Nuxt.js, how to configure your application for development.
 summary: In this tutorial, we’re going to learn how to create server-side rendered applications by using Nuxt.js.
 keywords:
@@ -18,8 +18,6 @@ tags:
   - nuxt
   - javascript
   - vue
-categories:
-  - software-development
 ---
 When getting started with developing new applications, developers can often spend a lot of time agonising over which 
 framework is going to be the best choice for their needs.  There are a number of points to consider like which Frontend
