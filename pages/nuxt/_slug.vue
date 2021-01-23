@@ -41,7 +41,7 @@ export default {
   components: { PostTitle, PostRightColumn },
   layout: 'home',
   async asyncData({ $content, params }) {
-    const post = await $content('posts', params.slug).fetch()
+    const post = await $content('nuxt', params.slug).fetch()
     const author = await $content('authors', post.author).fetch()
     return { post, author }
   },
