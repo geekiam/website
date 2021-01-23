@@ -68,11 +68,43 @@ Nuxt helps developers to overcome common problems that occur when developing tra
 and Server Side Rendering (SSR) Multi Page Applications (MPA). Nuxt is a hybrid framework to aid developers in developing
 both these types of applications in s single framework, commonly referred to as **Universal** or **Isomorphic**.
 
-The ability to do Server Side Rendering is the defining feature of Nuxt.
+
+### What is a Universal Server-Side Rendered Application
+ 
+There are both advantage and disadvantages to both traditional server side rendered applications and Single Page 
+applications.  Nuxt helps to leverage all the benefits of both while trying to eliminate the unwanted side effects.
+
+Javascript has evolved to become an isomorphic language since the release of Node.js in 2009. Essentially what this
+means is that code written in Javascript can run on both Client and Server side. Isomorphic or Universal Javascript can 
+be defined as a hybrid of client and the server side implementation of an application.
+
+Using Universal Server-Side Rendering (USSR) your app will first pre-load on the server side, pre-render the pages and 
+send the rendered HTML to the browser before switching to the client-side operation for the rest of the application's 
+life span.  Developing  USSR apps from scratch is tedious and complicated because it requires a lot of configuration 
+and plumbing code even before the actual development process can begin on the apps functionality. 
+
+The aim of Nuxt is to eliminate all this grunt work, by providing all the preset configuration and plumbing needed
+for you to create Vue USSR apps easily.
+
+### Advantages and Disadvantages of USSR 
+
+#### Advantages
+
+* Faster load times 
+* Better SEO Support
+* Enhanced User Experience
+
+#### Disadvantages
+
+* Node.js server required
+* Complex Development 
+
+The ability simply and quickly develop Universal Server Side Rendering is the defining feature of Nuxt, which helps 
+to eliminate the disadvantages, is the defining feature of Nuxt.
 
 ### Creating a Nuxt application
 
-There best way to create a nuxt application is to make use of the NPM package runner (`npx`) a tool intended 
+The best way to create a nuxt application is to make use of the NPM package runner (`npx`) a tool intended 
 to help using packages from the npm registry — a similar experience to installing and manage dependencies hosted on 
 the registry, npx makes it easy to use CLI tools and other executables hosted on the registry. 
 
@@ -106,7 +138,7 @@ We can now run the following command in our terminal:
  npm run dev
 ```
 
-![Create nuxt sampe app ](/uploads/create-nuxt-sample.png "create nuxt sample app")
+![Create nuxt sample app ](/uploads/create-nuxt-sample.png "create nuxt sample app")
   
 ### Conclusion
 
