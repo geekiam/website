@@ -62,6 +62,14 @@ At it core NuxtJS enables developers to create three types of applications
    Server-Side Rendering is a technique used to fetch and display client-side data on the server to send a fully 
    rendered page to the client. This is a good approach to get good SEO for your application.
 
+### Why Use Nuxt
+
+Nuxt helps developers to overcome common problems that occur when developing traditional Single Page Applications (SPA)
+and Server Side Rendering (SSR) Multi Page Applications (MPA). Nuxt is a hybrid framework to aid developers in developing
+both these types of applications in s single framework, commonly referred to as **Universal** or **Isomorphic**.
+
+The ability to do Server Side Rendering is the defining feature of Nuxt.
+
 ### Creating a Nuxt application
 
 There best way to create a nuxt application is to make use of the NPM package runner (`npx`) a tool intended 
