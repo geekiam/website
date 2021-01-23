@@ -41,6 +41,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/moment',
+    '@nuxtjs/netlify-files',
     '@nuxtjs/google-gtag',
     '@nuxtjs/sitemap',
   ],
