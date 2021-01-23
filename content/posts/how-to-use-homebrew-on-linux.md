@@ -24,7 +24,7 @@ categories:
 Package Managers are essentially software applications that help users to: Search, Download, Install, Remove and Update 
 software applications on their computer operating system. These can be either Command Line tools or a complete Graphical
 User Interface application. In [What is a Linux Package Manager](https://geekiam.io/what-is-a-linux-package-manager/ "What is a Linux Package Manager | Geek.I.Am")
-we discussed package managers from a Linux Perspective and in [How To Use Package Management In JavaScript Projects](https://geekiam.io/how-to-use-package-management-in-java-script-projects/ "How To Use Package Management In JavaScript Projects | Geek.I.Am")
+we discussed package managers from a Linux Perspective and in [How To Use Package Management In JavaScript Projects](https://geekiam.io/node-package-management-configuration "How To Use Package Management In JavaScript Projects | Geek.I.Am")
 learned more about them from a Javascript perspective.
 
 ### What is Homebrew
