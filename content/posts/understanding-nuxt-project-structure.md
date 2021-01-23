@@ -22,10 +22,11 @@ categories:
   - software-development
 ---
 
-In our previous tutorial, [getting started with nuxt](https://geekiam.io/getting-started-with-nuxt "Getting started with nuxt | Geek.I.Am") 
+In our previous tutorial, 
+[getting started with nuxt](https://geekiam.io/getting-started-with-nuxt "Getting started with nuxt | Geek.I.Am") 
 we explored the basics of getting started with Nuxt the intuitive Vue Framework.  We started the development of a
 Server Rendered Page application. The Nuxt team have focused on making this a stream lined purpose. 
 
 After you have generated your nuxt application you will see the nuxt project folder structure below.
 
-![Nuxt project structure ](/uploads/nuxt-folder-structure.png "nuxt folder structure")
+![Nuxt project structure](/uploads/nuxt-folder-structure.png "nuxt folder structure")
