@@ -44,7 +44,7 @@ collections:
           - label: "Author"
             name: "author"
             widget: "relation"
-            collection: "Authors"
+            collection: "authors"
             search_fields: ["name.firstName" , "name.lastName"]
             value_field: "title"
             display_fields: ["name.firstName" , "name.lastName"]
@@ -61,7 +61,7 @@ collections:
             widget: "string"
             required: false
 
-    - name: "Authors"
+    - name: "authors"
       label: "Authors"
       folder: "content/authors"
       create: true
@@ -75,3 +75,51 @@ collections:
              fields:
                 - {label: "Firstname", name: "firstName", widget: "string", required: true}
                 - {label: "Lastname", name: "lastName", widget: "string", required: true}
+
+    - name: "nuxt"
+      label: "Nuxt"
+      folder: "content/nuxt"
+      format: 'frontmatter'
+      create: true
+      slug: "nuxt{{slug}}"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: true }
+        - { label: "Description", name: "description", widget: "string", required: true }
+        - { label: "Summary" , name: "summary", widget: "text" }
+        - label: "Keywords"
+          name: "keywords"
+          widget: list
+          field: { label: "keyword", name: "keyword", widget: "string" }
+        - label: "Feature"
+          name: "feature"
+          widget: "object"
+          fields:
+            [
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Description", name: "alt", widget: "string" },
+            ]
+        - label: "Twitter CardImage"
+          name: "cardImage"
+          widget: "object"
+          fields:
+            [
+              { label: "Image", name: "image", widget: "image" },
+              { label: "Description", name: "alt", widget: "string" },
+            ]
+        - { label: "Publish Date", name: "date", widget: "date" }
+        - { label: "Body", name: "body", widget: "markdown" }
+        - label: "Author"
+          name: "author"
+          widget: "relation"
+          collection: "authors"
+          search_fields: [ "name.firstName" , "name.lastName" ]
+          value_field: "title"
+          display_fields: [ "name.firstName" , "name.lastName" ]
+        - label: "Tags"
+          name: "tags"
+          widget: list
+          field: { label: "Tag", name: "tag", widget: "string" }
+        - label: "Video"
+          name: "video"
+          widget: "string"
+          required: false

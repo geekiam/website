@@ -18,8 +18,6 @@ tags:
   - nuxt
   - javascript
   - vue
-categories:
-  - software-development
 ---
 
 In our previous tutorial, 

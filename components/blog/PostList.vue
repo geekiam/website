@@ -23,7 +23,7 @@ export default {
   name: 'PostList',
   props: {
     posts: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
