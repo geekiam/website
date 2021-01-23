@@ -34,9 +34,9 @@
 </template>
 
 <script>
-import PostList from '../components/blog/PostList'
-import PostSort from '../components/blog/PostSort'
-import RightColumn from '../components/blog/PostRightColumn'
+import PostList from '@/components/blog/PostList'
+import PostSort from '@/components/blog/PostSort'
+import RightColumn from '@/components/site/RightColumn'
 export default {
   components: { RightColumn, PostSort, PostList },
   layout: 'home',
