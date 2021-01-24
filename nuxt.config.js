@@ -2,7 +2,7 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   generate: {
-    fallback: true
+    fallback: true,
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -62,6 +62,23 @@ export default {
   },
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
+  netlifyFiles: {
+    headers: [
+      {
+        for: '/*',
+        values: [
+          { 'X-XSS-Protection': '1; mode=block' },
+          { 'X-Frame-Options': 'DENY' },
+          { 'Referrer-Policy': 'o-referrer' },
+          { 'X-Content-Type-Options': 'nosniff' },
+          {
+            'Strict-Transport-Security':
+              'max-age=2592000; includeSubDomains; preload',
+          },
+        ],
+      },
+    ],
+  } /* module options */,
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
