@@ -75,6 +75,14 @@ export default {
             'Strict-Transport-Security':
               'max-age=2592000; includeSubDomains; preload',
           },
+          {
+            'Feature-Policy':
+              "geolocation 'none'; midi 'none'; sync-xhr 'none';microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'none'; payment 'none'",
+          },
+          {
+            'Content-Security-Policy':
+              "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline'",
+          },
         ],
       },
     ],
