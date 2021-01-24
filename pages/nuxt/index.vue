@@ -21,7 +21,7 @@
         >
           <post-sort></post-sort>
         </div>
-        <post-list :posts="posts" />
+        <post-list :posts="posts" name="nuxt-slug" />
       </div>
     </div>
     <!-- right column -->
@@ -41,8 +41,10 @@ export default {
   components: { RightColumn, PostSort, PostList },
   layout: 'home',
 
-  async asyncData({ $content }) {
-    const posts = await $content('nuxt').sortBy('date', 'desc').fetch()
+  async asyncData({ $content, params }) {
+    const posts = await $content('nuxt', params.slug)
+      .sortBy('date', 'desc')
+      .fetch()
     return {
       posts,
     }

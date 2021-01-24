@@ -13,7 +13,7 @@
         >
           <div class="mb-8">
             <nuxt-link
-              :to="post.slug"
+              :to="{ name: name, params: { slug: post.slug } }"
               class="text-green-700 font-bold text-xl mb-2"
             >
               {{ post.title }}
@@ -36,6 +36,9 @@ export default {
     post: {
       type: Object,
       required: true,
+    },
+    name: {
+      type: String,
     },
   },
 }

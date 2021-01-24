@@ -82,7 +82,7 @@ collections:
       format: 'frontmatter'
       create: true
       slug: "{{slug}}"
-      path: "nuxt/{{slug}}"
+      path: "{{dirname}}/{{slug}}"
       fields:
         - { label: "Title", name: "title", widget: "string", required: true }
         - { label: "Description", name: "description", widget: "string", required: true }

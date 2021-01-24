@@ -21,7 +21,7 @@
         >
           <post-sort></post-sort>
         </div>
-        <post-list :posts="posts" />
+        <post-list :posts="posts" name="slug" />
       </div>
     </div>
     <!-- right column -->
@@ -41,8 +41,11 @@ export default {
   components: { RightColumn, PostSort, PostList },
   layout: 'home',
 
-  async asyncData({ $content }) {
-    const posts = await $content('posts').sortBy('date', 'desc').fetch()
+  async asyncData({ $content, params }) {
+    const posts = await $content('posts', params.slug)
+      .only(['summary', 'feature', 'slug', 'title', 'tags'])
+      .sortBy('date', 'desc')
+      .fetch()
     return {
       posts,
     }

@@ -9,7 +9,7 @@
         <div class="min-w-0 space-y-3">
           <div class="flex items-center space-x-3">
             <span class="block">
-              <post-card :post="post" />
+              <post-card :post="post" :name="name" />
             </span>
           </div>
         </div>
@@ -25,6 +25,9 @@ export default {
     posts: {
       type: Array,
       required: true,
+    },
+    name: {
+      type: String,
     },
   },
 }

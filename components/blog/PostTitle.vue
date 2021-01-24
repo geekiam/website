@@ -44,7 +44,7 @@
       <nuxt-link
         v-for="tag in post.tags"
         :key="tag.id"
-        :to="`${tag}/`"
+        :to="`tags/${tag}/`"
         class="mr-2 lowercase"
         v-html="`#${tag}`"
       >
