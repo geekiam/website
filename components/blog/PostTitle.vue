@@ -29,7 +29,10 @@
           d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z"
         />
       </svg>
-      <nuxt-link class="hover:underline" :to="author.slug">
+      <nuxt-link
+        class="hover:underline"
+        :to="{ name: 'author-slug', params: { slug: author.title } }"
+      >
         <span
           class="text-gray-500 dark:text-gray-100 ml-1"
           v-html="author.name.firstName"
@@ -44,7 +47,7 @@
       <nuxt-link
         v-for="tag in post.tags"
         :key="tag.id"
-        :to="`tags/${tag}/`"
+        :to="{ name: 'tags-slug', params: { slug: tag } }"
         class="mr-2 lowercase"
         v-html="`#${tag}`"
       >

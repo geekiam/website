@@ -1,5 +1,5 @@
 <template>
-  <pre>{{ $route.params.slug }}</pre>
+  <h1>Hello</h1>
 </template>
 
 <script>
@@ -8,5 +8,3 @@ export default {
   layout: 'home',
 }
 </script>
-
-<style scoped></style>
