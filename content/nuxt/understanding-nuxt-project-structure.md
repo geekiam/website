@@ -103,3 +103,10 @@ The `package.json` file is used to contain the dependencies and scripts of the N
 ### The nuxt.config.js 
 
 The `nuxt.config.js` file is used to carry out any custom configuration you would like applied to your application.
+
+### Conclusion
+
+We have discussed and provided a basic overview of the typical directory structure that Nuxt provides out the box. In 
+further tutorial series on [using nuxt for web development](https://geekiam.io "Using Nuxt for web development | Geek.I.Am") 
+we will further explore and provide detailed information on how to make use of the Nuxt Directory structure.
+
