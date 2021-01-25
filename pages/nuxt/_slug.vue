@@ -96,7 +96,7 @@ export default {
           content: this.post.title,
         },
         {
-          hid: 'twitter:title',
+          hid: 'twitter:card',
           name: 'twitter:card',
           content: 'summary_large_image',
         },

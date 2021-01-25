@@ -28,6 +28,7 @@ export default {
     },
     name: {
       type: String,
+      default: 'slug',
     },
   },
 }
