@@ -1,7 +1,7 @@
 ---
 title: What is git
 description: A detailed explanation on git version control system
-summary: A detailed explanation on git version control system
+summary: Git is a popular version control system to help software developers maintain a version history of their code
 keywords:
   - git
   - version control

@@ -18,10 +18,12 @@
             >
               {{ post.title }}
             </nuxt-link>
-            <p
-              class="mt-2 leading-2 text-sm text-gray-500 dark:text-gray-100"
-              v-html="post.summary"
-            ></p>
+            <div class="text-left">
+              <p
+                class="prose prose-xs text-gray-500 dark:text-gray-100 text-left"
+                v-html="post.summary"
+              ></p>
+            </div>
           </div>
         </div>
       </div>
