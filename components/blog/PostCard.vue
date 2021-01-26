@@ -9,7 +9,7 @@
           class="h-48 lg:h-auto lg:w-48 sm:w-auto flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center items-center"
         />
         <div
-          class="border-r border-b border-l dark:border-gray-700 border-grey-light lg:border-l-0 lg:border-t lg:border-gray-500 dark:bg-gray-900 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+          class="border-r border-b border-l dark:border-gray-700 border-grey-light lg:border-l-0 lg:border-t lg:border-gray-100 dark:lg:border-gray-500 dark:bg-gray-900 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
         >
           <div class="mb-8">
             <nuxt-link
@@ -19,7 +19,7 @@
               {{ post.title }}
             </nuxt-link>
             <p
-              class="mt-2 leading-2 text-sm text-gray-100"
+              class="mt-2 leading-2 text-sm text-gray-500 dark:text-gray-100"
               v-html="post.summary"
             ></p>
           </div>

@@ -61,5 +61,27 @@ configuration needed to enable you to create SSR Vue apps easily.
 In `static` files are prepared at the build time and are 'final' - until the next build with updated content or code -
 these file can be served by just a CDN or hosting provider like [Netlify - A powerful serverless platform for Jamstack](https://www.netlify.com/ "netlify").
 
+### The head option
 
+The head option is used to define default meta tags in the <head> block of our app. The default custom head 
+configuration in the Nuxt config file if you use the Nuxt scaffolding tool:
+
+```javascript
+ head: {
+    title: 'geekiam-nuxt-tutorial',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  },
+```
+You can further modify these settings and add additional settings, should you choose but the above provides a good start.
+
+### The components options
+
+The components option is used to set whether the components in the `components` directory should be auto-imported. 
+This option is very useful if you have tons of components to be imported into a layout or a page.  The default setting
+is `true`, you can switch this functionality off by setting it `false`.
 
