@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex-shrink-0 dark:bg-gray-900 bg-gray-100">
+  <header class="flex-shrink-0 dark:bg-gray-900 bg-gray-100">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <!-- Logo section -->
@@ -188,7 +188,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script>

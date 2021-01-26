@@ -1,7 +1,7 @@
 ---
 title: How to use Javascript classes
 description:   JavaScript classes can be primarily thought of as a syntactical sugar over JavaScript's existing prototype-based inheritance. 
-summary: Dive into the depth of the JavaScript class and learn how to use them.  We explore how classes are templates for Javascript functions and how they differ slightly from traditional object oriented programming languages.
+summary: Explore how classes are templates for Javascript functions and how they differ slightly from traditional object-oriented programming languages.
 keywords:
   - JavaScript Class Syntax
   - How to declare javascript classes

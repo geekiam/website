@@ -1,7 +1,7 @@
 ---
 title: How to install git on Linux
 description: A tutorial to guide software developers through the steps required to install and configure Git distributed version control system on Debian based Linux distributions.
-summary: Git is the most popular distributed version control system among developers, especially Linux-based software developers. In this tutorial we'll guide you through the process to install and configure git for use on your Ubuntu and Debian based Linux
+summary:  Walk-through guide to install and configure git for use on your Ubuntu and Debian based Linux
 keywords:
   - git
   - how to install git on ubuntu
