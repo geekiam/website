@@ -1,16 +1,16 @@
 ---
-title: How to build serverless with Netlify, FaunaDB and Gridsome
-description:  A tutorial demonstrating how to build a Gridsome based website with CRUD backend using Netlify serverless functions and FaunaDB as the datastore. 
-summary: Explore how to develop using netlify functions and FaunaDB to develop a CRUD API for a Gridsome Static generated website.
+title: How to build serverless with Netlify and FaunaDB
+description:  A tutorial demonstrating how to build a CRUD backend using Netlify serverless functions and FaunaDB as the datastore. 
+summary: Serverless using netlify functions and FaunaDB to develop a CRUD API.
 keywords:
   - Create a FaunaDB backend for Gridsome
   - Building Serverless CRUD apps with Netlify Functions & FaunaDB
 feature:
   image: /uploads/posts/javascript/javascript-tutorials.svg
-  alt: How to build serverless with Netlify, FaunaDB and Gridsome
+  alt: How to build serverless with Netlify and FaunaDB
 cardImage:
   image: /uploads/posts/code/full-stack-js.png
-  alt: How to build serverless with Netlify, FaunaDB and Gridsome
+  alt: How to build serverless with Netlify and FaunaDB
 date: 2020-11-26T17:31:47.672Z
 author: garywoodfine
 tags:
