@@ -18,7 +18,7 @@
 
       <span
         class="mr-4 text-gray-500 dark:text-gray-100 ml-1"
-        v-html="$moment(post.date).format('d MMMM yyyy')"
+        v-html="$moment(post.date).format('D MMMM yyyy')"
       ></span>
       <svg
         class="h-4 w-4 mr-1 ml-4 fill-current"

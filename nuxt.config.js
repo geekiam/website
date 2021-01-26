@@ -18,7 +18,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: '~plugins/infiniteloading', ssr: false }],
+  plugins: ['~plugins/infiniteloading', '~/plugins/vue-instantsearch'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -29,6 +29,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    'nuxt-content-algolia',
     '@/modules/sitemapRouteGenerator',
   ],
 
@@ -45,6 +46,17 @@ export default {
     '@nuxtjs/google-gtag',
     '@nuxtjs/sitemap',
   ],
+  nuxtContentAlgolia: {
+    appId: process.env.ALGOLIA_APP_ID,
+    apiKey: process.env.ALGOLIA_API_KEY,
+    paths: [
+      {
+        name: 'posts',
+        index: 'site_search',
+        fields: ['title', 'summary', 'description', 'bodyPlainText'],
+      },
+    ],
+  },
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://geekiam.io',
@@ -98,5 +110,15 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    transpile: ['vue-instantsearch', 'instantsearch.js/es'],
+  },
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      const removeMd = require('remove-markdown')
+      if (document.extension === '.md') {
+        document.bodyPlainText = removeMd(document.text)
+      }
+    },
+  },
 }

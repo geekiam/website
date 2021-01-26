@@ -373,7 +373,7 @@ Some typical examples of implementing rules may be:
 # Ignore the node_modules folder in the project directory
 node_modules
 
-## Ignore all named local environment variable files   i.e.  .env.development.local etc
+## Ignore all named local environment variable files   i.e.  .env.local etc
 .env.**.local
 
 ## Ignore all files in the .cache folder
