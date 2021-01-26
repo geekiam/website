@@ -21,9 +21,13 @@ categories:
   - software-development
 ---
 Git is the most popular distributed version control system among developers, especially Linux-based software developers.
- In this tutorial we'll guide you through the process to install and configure git for use on your Ubuntu and Debian based Linux.  
+ In this tutorial we'll guide you through the process to install and configure git for use on your Ubuntu and Debian 
+based Linux.  
 
-You may have previously [learned the basics of version control](https://geekiam.io/learn-the-basics-of-version-control-to-become-a-master/ "Learn The Basics Of Version Control To Become A Master | Geek.I.Am") and read [background information on git](https://geekiam.io/what-is-git/ "What is git | Geek.I.Am"), in this post we are going to learn how to install and configure git on a Debian based Linux distribution.
+You may have previously 
+[learned the basics of version control](https://geekiam.io/learn-the-basics-of-version-control-to-become-a-master/ "Learn The Basics Of Version Control To Become A Master | Geek.I.Am") 
+and read [background information on git](https://geekiam.io/what-is-git/ "What is git | Geek.I.Am"), in this post we 
+are going to learn how to install and configure git on a Debian based Linux distribution.
 
 ### Install Git using a package manager
 The easiet and recommended way to install Git is to install making use of a package manager. The most common package 
@@ -33,7 +37,9 @@ Debian, Ubuntu, Mint, Kali, PopOS etc.
  Depending on your distribution and release version, there may be a possibility that git is already installed, therefore
   it is worth double checking.
  
- To check if git may be already installed, simply using the [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am") to check the version number.
+ To check if git may be already installed, simply using the 
+ [terminal window](https://geekiam.io/what-is-a-terminal-window/ "What is the terminal window | Geek.I.Am") to check 
+ the version number.
  ```shell script
 git --version
 ```
