@@ -21,7 +21,7 @@ tags:
 ---
 
 In our previous tutorial, 
-[getting started with nuxt](https://geekiam.io/getting-started-with-nuxt "Getting started with nuxt | Geek.I.Am") 
+[getting started with nuxt](https://geekiam.io/nuxt/getting-started-with-nuxt "Getting started with nuxt | Geek.I.Am") 
 we explored the basics of getting started with Nuxt the intuitive Vue Framework.  We started the development of a
 Server Rendered Page application. The Nuxt team have focused on making this a stream lined purpose. 
 

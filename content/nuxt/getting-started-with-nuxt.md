@@ -157,4 +157,4 @@ We can now run the following command in our terminal:
 ### Conclusion
 
 We have created our initial Nuxt Application and have it running.  We now proceed to the next tutorial to [understand
-nuxt project structure](https://geekiam.io/understanding-nuxt-project-structure "Understanding the nuxt project structure | Geek.I.Am")
+nuxt project structure](https://geekiam.io/nuxt/understanding-nuxt-project-structure "Understanding the nuxt project structure | Geek.I.Am")
