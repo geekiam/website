@@ -1,5 +1,7 @@
 ---
 title: How to Get started with Nuxt
+menu-title: Getting started with Nuxt
+tutorial-section: getting-started
 description: Learn how to create server-side rendered applications by using
   Nuxt.js, how to configure your application for development.
 summary: In this tutorial, we’re going to learn how to create server-side
@@ -42,7 +44,7 @@ complication which Framework will you use on top your framework.
 We faced this exact same dilemma when we started with the development of Geek.I.Am, although we were always certain we
 were going to use Vue.js, as it is our preferred javascript framework, we were uncertain which vue based framework would
 be best. We initially started developing the website making use of [Gridsome - A Jamstack framework for Vue.Js](https://gridsome.org/ "Gridsome - A Jamstack framework for Vue.Js")
-after a year, we decided to port our website to make use of [NuxtJS - The intuitive Vue Framework](https://nuxtjs.org/ "NuxtJS - The intuitive Vue Framework" )
+after a year, we decided to port our website to make use of [NuxtJS - The intuitive Vue Framework](https://nuxtjs.org/ "NuxtJS - The intuitive Vue Framework")
 for reasons discussed in [Why move to Nuxt from Gridsome?](https://garywoodfine.com/why-move-to-nuxt-from-gridsome/ "Why move to Nuxt from Gridsome?")
 
 In this tutorial, we going to walk through some of the basic steps we went through in starting to create out server-side
@@ -59,19 +61,17 @@ Netlify hosting.
 At it core NuxtJS enables developers to create three types of applications 
 
 1. Static Generated website
-   
+
    Static generated applications do not require API requests to fetch the contents of the pages, i.e. the contents 
    are already included in the HTML file. An example of a static site is a portfolio website or landing pages for 
    for lead generation.
-   
 2. Single Page Application
-   
+
    JavaScript frameworks like React, Angular, Emberjs, Vue, etc are single page application whose contents are 
    dynamically populated with faster transitions. SPAs generally make use of the HTML5 history API or the location Hash
    for routing.
-   
 3. Server Side Rendered Applications (SSR)
-   
+
    Server-Side Rendering is a technique used to fetch and display client-side data on the server to send a fully 
    rendered page to the client. This is a good approach to get good SEO for your application.
 
@@ -81,9 +81,8 @@ Nuxt helps developers to overcome common problems that occur when developing tra
 and Server Side Rendering (SSR) Multi Page Applications (MPA). Nuxt is a hybrid framework to aid developers in developing
 both these types of applications in s single framework, commonly referred to as **Universal** or **Isomorphic**.
 
-
 ### What is a Universal Server-Side Rendered Application
- 
+
 There are both advantage and disadvantages to both traditional server side rendered applications and Single Page 
 applications.  Nuxt helps to leverage all the benefits of both while trying to eliminate the unwanted side effects.
 
@@ -99,7 +98,7 @@ and plumbing code even before the actual development process can begin on the ap
 The aim of Nuxt is to eliminate all this grunt work, by providing all the preset configuration and plumbing needed
 for you to create Vue USSR apps easily.
 
-### Advantages and Disadvantages of USSR 
+### Advantages and Disadvantages of USSR
 
 #### Advantages
 
@@ -133,8 +132,9 @@ We can now proceed to creating our nuxt application using the `create-nuxt-app` 
 
 ```shell
 # use create0nuxt-app and provide a name of your application
-npx create-nuxt-app geekiam-sample
+npx create-nuxt-app geekiam-nuxt-tutorial
 ```
+
 This will initiate a wizard process which will ask several questions regarding the type of application you would like 
 to create. For the purpose of this tutorial, we will install axios, linting and Prettier configurations to create a 
 Server Side Rendered application.
@@ -146,13 +146,14 @@ Once the wizard has completed,  we can then change into the project directory cr
 ![Create nuxt app finish ](/uploads/create-nuxt-finish.png "create nuxt app finish")
 
 We can now run the following command in our terminal:
+
 ```shell
  cd nuxt-tutorial-app
  npm run dev
 ```
 
 ![Create nuxt sample app ](/uploads/create-nuxt-sample.png "create nuxt sample app")
-  
+
 ### Conclusion
 
 We have created our initial Nuxt Application and have it running.  We now proceed to the next tutorial to [understand
