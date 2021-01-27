@@ -21,6 +21,18 @@ tags:
   - javascript
   - vue
   - jamstack
+video:
+  link: asdfsdfasdf
+  description: asdfasdf
+  alt: asdfsdfasdf
+  platform: lbry
+next:
+  next-url: nuxt/understanding-nuxt-project-structure
+  next-title: Understanding the Nuxt project structure
+previous:
+  previous-title: "Nuxt Tutorial "
+  previous-url: nuxt
+order: 0
 ---
 When getting started with developing new applications, developers can often spend a lot of time agonising over which 
 framework is going to be the best choice for their needs.  There are a number of points to consider like which Frontend
