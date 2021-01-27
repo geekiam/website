@@ -5,6 +5,7 @@ publish_mode: editorial_workflow
 site_url: https://geekiam.io
 logo_url: https://geekiam.io/uploads/geekiam-logo.png
 display_url: https://geekiam.io
+show_preview_links: true
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
@@ -80,8 +81,9 @@ collections:
       label: "Nuxt"
       folder: "content/nuxt"
       format: 'frontmatter'
+      preview_path: '{{dirname}}/{{slug}}'
       create: true
-      slug: "{{slug}}"
+      slug: "{{dirname}}/{{slug}}"
       path: "{{dirname}}/{{slug}}"
       fields:
         - { label: "Title", name: "title", widget: "string", required: true }
@@ -123,7 +125,6 @@ collections:
         - label: "Video"
           name: "video"
           widget: "object"
-          required: false
           fields:
             [
               { label: "Link", name: "link", widget: "string" },
