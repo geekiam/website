@@ -50,5 +50,11 @@ export default {
       posts,
     }
   },
+  head() {
+    return {
+      title: 'Learning and Development for Geeks',
+      meta: [{ hid: 'og:type', property: 'og:type', content: 'website' }],
+    }
+  },
 }
 </script>

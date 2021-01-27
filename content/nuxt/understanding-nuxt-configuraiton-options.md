@@ -85,3 +85,19 @@ The components option is used to set whether the components in the `components` 
 This option is very useful if you have tons of components to be imported into a layout or a page.  The default setting
 is `true`, you can switch this functionality off by setting it `false`.
 
+### The buildModules options
+
+The `buildModules` option is used to register built-only modules – modules that are required only for development and 
+build time in your app. 
+
+Some modules are only imported during development and build time. Using buildModules helps to make production startup 
+faster and also significantly decrease the size of your node_modules for production deployments.
+
+### The modules option
+
+The `modules` option is used to add Nuxt modules to your project. Nuxt modules are essentially JavaScript functions, 
+just like plugins.
+
+### The build option
+
+The `build` option is used to customize the webpack configuration for building your Nuxt app the way you prefer. 
