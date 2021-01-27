@@ -49,5 +49,18 @@ export default {
       posts,
     }
   },
+  head() {
+    return {
+      title: 'Learning and Development for Geeks',
+      meta: [
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og:article:section',
+          property: 'og:article:section',
+          content: 'Technology',
+        },
+      ],
+    }
+  },
 }
 </script>

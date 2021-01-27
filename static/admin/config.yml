@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: threenine/geekiam
-
+publish_mode: editorial_workflow
 site_url: https://geekiam.io
 logo_url: https://geekiam.io/uploads/geekiam-logo.png
 display_url: https://geekiam.io
@@ -122,5 +122,31 @@ collections:
           field: { label: "Tag", name: "tag", widget: "string" }
         - label: "Video"
           name: "video"
-          widget: "string"
+          widget: "object"
           required: false
+          fields:
+            [
+              { label: "Link", name: "link", widget: "string" },
+              { label: "Description", name: "description", widget: "string" },
+              { label: "Alt", name: "alt", widget: "string" },
+              { label: "Platform" , name: "platform", widget: "select", options: ["lbry","youtube"]}
+            ]
+        - label: "Next"
+          name : "next"
+          widget: "object"
+          fields:
+            [
+              { label: "Title", name: "next-title", widget: "string" },
+              { label: "Url", name: "next-url", widget: "string" }
+            ]
+          required: false
+        - label: "Previous"
+          name: "previous"
+          widget: "object"
+          fields:
+            [
+              { label: "Title", name: "previous-title", widget: "string" },
+              { label: "Url", name: "previous-url", widget: "string" }
+            ]
+          required: false
+        - { label: "Menu Order", name: "order", widget: "number", value_type: "int" }
