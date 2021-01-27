@@ -139,11 +139,11 @@ This will initiate a wizard process which will ask several questions regarding t
 to create. For the purpose of this tutorial, we will install axios, linting and Prettier configurations to create a 
 Server Side Rendered application.
 
-![Create nuxt app ](/uploads/create-nuxt-app.png "create nuxt app")
+![Create nuxt app ](/uploads/geekiam-nuxt-tutorial-start.png "create nuxt app")
 
 Once the wizard has completed,  we can then change into the project directory created.
 
-![Create nuxt app finish ](/uploads/create-nuxt-finish.png "create nuxt app finish")
+![Create nuxt app finish ](/uploads/geekiam-nuxt-tutorial-finish.png "create nuxt app finish")
 
 We can now run the following command in our terminal:
 ```shell
@@ -151,7 +151,7 @@ We can now run the following command in our terminal:
  npm run dev
 ```
 
-![Create nuxt sample app ](/uploads/create-nuxt-sample.png "create nuxt sample app")
+![Create nuxt sample app ](/uploads/geekiam-nuxt-tutorial-screen.png "create nuxt sample app")
   
 ### Conclusion
 
