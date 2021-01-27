@@ -132,7 +132,7 @@ We can now proceed to creating our nuxt application using the `create-nuxt-app` 
 
 ```shell
 # use create0nuxt-app and provide a name of your application
-npx create-nuxt-app geekiam-sample
+npx create-nuxt-app geekiam-nuxt-tutorial
 ```
 
 This will initiate a wizard process which will ask several questions regarding the type of application you would like 
