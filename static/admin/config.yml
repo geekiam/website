@@ -87,6 +87,8 @@ collections:
       path: "{{dirname}}/{{slug}}"
       fields:
         - { label: "Title", name: "title", widget: "string", required: true }
+        - { label: "Menu Title", name: "menu-title", widget: "string" }
+        - { label: "Tutorial Section", name: "tutorial-section", widget: "select", options: ["getting-started","ui-framework"] }
         - { label: "Description", name: "description", widget: "string", required: true }
         - { label: "Summary" , name: "summary", widget: "text" }
         - label: "Keywords"
