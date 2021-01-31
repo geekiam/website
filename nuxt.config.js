@@ -4,7 +4,7 @@ export default {
   generate: {
     fallback: true,
   },
-
+  dev: process.env.NODE_ENV !== 'production',
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s | Geek.I.Am',
