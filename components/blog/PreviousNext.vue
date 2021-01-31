@@ -17,10 +17,10 @@
         <!-- Next Step -->
         <nuxt-link
           :to="next.url"
-          class="group pl-4 py-2 flex flex-col border-l-4 border-green-600 hover:border-green-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+          class="group pl-4 py-2 flex flex-col border-l-4 border-green-800 hover:border-green-500 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
         >
           <span
-            class="text-xs text-green-600 font-semibold uppercase group-hover:text-green-800"
+            class="text-xs text-green-800 font-semibold uppercase group-hover:text-green-500"
             >{{ next.title }}</span
           >
         </nuxt-link>
