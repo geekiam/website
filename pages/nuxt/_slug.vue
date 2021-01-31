@@ -22,6 +22,7 @@
             class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-700 pb-10 mx-auto text-justify"
             :document="post"
           />
+          <previous-next :previous="post.previous" :next="post.next" />
         </div>
       </div>
     </div>

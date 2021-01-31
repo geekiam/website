@@ -17,7 +17,15 @@ author: garywoodfine
 tags:
   - nuxt
   - javascript
-  - vue
+  - vue 
+
+next:
+ url: understanding-nuxt-configuration-options
+ title: "Understanding The Nuxt Configuration Options"
+previous:
+  title: "Understanding the Nuxt Project structure"
+  url: understanding-nuxt-project-structure
+order: 0
 ---
 
 Nuxt is a highly customisable and configurable application development framework built on top of Vue. It is possible to

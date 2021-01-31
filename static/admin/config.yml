@@ -143,8 +143,8 @@ collections:
           widget: "object"
           fields:
             [
-              { label: "Title", name: "next-title", widget: "string" },
-              { label: "Url", name: "next-url", widget: "string" }
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Url", name: "url", widget: "string" }
             ]
           required: false
         - label: "Previous"
@@ -152,8 +152,8 @@ collections:
           widget: "object"
           fields:
             [
-              { label: "Title", name: "previous-title", widget: "string" },
-              { label: "Url", name: "previous-url", widget: "string" }
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Url", name: "url", widget: "string" }
             ]
           required: false
         - { label: "Menu Order", name: "order", widget: "number", value_type: "int" }

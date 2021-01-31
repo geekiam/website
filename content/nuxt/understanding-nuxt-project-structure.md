@@ -18,6 +18,13 @@ tags:
   - nuxt
   - javascript
   - vue
+next:
+  url: understanding-nuxt-configuraiton-options
+  title: "Understanding the Nuxt Configuration Options"
+previous:
+  title: "Getting Started with Nuxt"
+  url: getting-started-with-nuxt
+order: 1
 ---
 
 In our previous tutorial, 

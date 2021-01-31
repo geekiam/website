@@ -29,11 +29,11 @@ video:
   alt: asdfsdfasdf
   platform: lbry
 next:
-  next-url: nuxt/understanding-nuxt-project-structure
-  next-title: Understanding the Nuxt project structure
+    url: understanding-nuxt-project-structure
+    title: "Understanding the Nuxt project structure"
 previous:
-  previous-title: "Nuxt Tutorial "
-  previous-url: nuxt
+    title: "Getting started with Nuxt"
+    url: getting-started-with-nuxt
 order: 0
 ---
 When getting started with developing new applications, developers can often spend a lot of time agonising over which 

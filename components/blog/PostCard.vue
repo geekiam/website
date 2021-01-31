@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 pt-3 lg:mb-0 lg:min-h-0 lg:min-w-0">
+  <div class="flex-1 lg:mb-0 lg:min-h-0 lg:min-w-0 py-3 px-3">
     <NuxtLink :to="{ name: name, params: { slug: post.slug } }">
       <div class="max-w-2xl w-full lg:flex border shadow-xl mb-5 text-center">
         <img
