@@ -7,7 +7,7 @@
     >
       <label for="search" class="sr-only">Search posts</label>
       <div
-        class="relative text-gray-200 dark:text-gray-200 focus-within:text-gray-400"
+        class="relative text-gray-800 dark:text-gray-200 focus-within:text-gray-400"
       >
         <div
           class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
@@ -32,7 +32,7 @@
           id="search"
           ref="searchInput"
           name="search"
-          class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-green-400 bg-opacity-25 text-green-100 placeholder-green-200 focus:outline-none focus:bg-white focus:ring-0 focus:placeholder-gray-400 focus:text-gray-900 sm:text-sm"
+          class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-green-400 bg-opacity-25 text-green-800 dark:text-green-100 dark:placeholder-green-200 placeholder-green-800 focus:outline-none focus:bg-white focus:ring-0 focus:placeholder-gray-400 focus:text-gray-900 sm:text-sm"
           placeholder="Search"
           type="search"
           autocomplete="off"
