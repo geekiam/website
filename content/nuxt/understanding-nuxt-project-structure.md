@@ -22,7 +22,7 @@ next:
   url: understanding-nuxt-configuraiton-options
   title: "Understanding the Nuxt Configuration Options"
 previous:
-  title: "Getting Started with Nuxt"
+  title: "How to get started with Nuxt framework"
   url: getting-started-with-nuxt
 order: 1
 ---

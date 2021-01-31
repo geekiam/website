@@ -33,7 +33,7 @@ next:
     title: "Understanding the Nuxt project structure"
 previous:
     title: "Getting started with Nuxt"
-    url: getting-started-with-nuxt
+    url: index
 order: 0
 ---
 When getting started with developing new applications, developers can often spend a lot of time agonising over which 
