@@ -20,8 +20,8 @@ tags:
   - vue 
 
 next:
- url: understanding-nuxt-configuration-options
- title: "Understanding The Nuxt Configuration Options"
+ url: understand-nuxt-asset-serving
+ title: "Understanding Nuxt asset serving"
 previous:
   title: "Understanding the Nuxt Project structure"
   url: understanding-nuxt-project-structure
@@ -160,3 +160,99 @@ export default axios.create({
 
 The baseUrl will then be set to make use of your local Netlify-Cli url during development, and then in Production
 it will make use of your Production Url defined in your Production Environment Variables.
+
+### The router property
+The router option is used to overwrite the default Nuxt configuration on the Vue router. The default Vue router 
+configuration is as follows:
+
+```javascript
+{
+  mode: 'history',
+  base: '/',
+  routes: [],
+  routeNameSplitter: '-',
+  middleware: [],
+  linkActiveClass: 'nuxt-link-active',
+  linkExactActiveClass: 'nuxt-link-exact-active',
+  linkPrefetchedClass: false,
+  extendRoutes: null,
+  scrollBehavior: null,
+  parseQuery: false,
+  stringifyQuery: false,
+  fallback: false,
+  prefetchLinks: true
+}
+```
+
+You may for example want to change the base UrL for the application. This can come in useful if you need to serve 
+Nuxt from a different context root, within a larger site. For instance, you may want to use Nuxt to only provide
+the documentation aspect of your site, which has been developed using a different framework.
+
+```javascript
+export default {
+  router: {
+    base: '/documentation/'
+  }
+}
+```
+
+### The dir option
+
+The dir option is used to define custom directories in our Nuxt app. The default directories are as follows:
+```javascript
+{
+  assets: 'assets',
+  layouts: 'layouts',
+  middleware: 'middleware',
+  pages: 'pages',
+  static: 'static',
+  store: 'store'
+}
+```
+
+For instance, as is the case with the above router property, you may have to ensure your Nuxt project uses different 
+directories so they do not get confused with your projects other folders.
+
+```javascript
+// nuxt.config.js
+export default {
+  dir: {
+    assets: 'documentation-assets',
+    layouts: 'documentation-layouts',
+    middleware: 'documentation-middleware',
+    pages: 'documentation-pages',
+    static: 'documentation-static',
+    store: 'documentation-store'
+  }
+}
+```
+
+Your project will now be deployed as follows
+```shell
+-| documentaiton/
+---| documentaiton-assets/
+---| components/
+---| documentaiton-layouts/
+---| documentaiton-middleware/
+---| node_modules/
+---| documentaiton-pages/
+---| plugins/
+---| modules/
+---| documentaiton-static/
+---| documentaiton-store/
+---| nuxt.config.js
+---| package.json
+---| README.md
+```
+
+### The generate property
+
+The generate option is used to tell Nuxt how to generate dynamic routes for a static web app. Dynamic routes are routes 
+that are created by using an underscore in Nuxt. 
+
+## Conclusion 
+
+The above properties are some of the most commonly used properties you should at least be aware of when starting your
+development with Nuxt. Although we have not covered them in depth in this post, we will dive much deeper into these
+properties in further tutorials.
+

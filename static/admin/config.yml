@@ -138,15 +138,6 @@ collections:
               { label: "Alt", name: "alt", widget: "string" },
               { label: "Platform" , name: "platform", widget: "select", options: ["lbry","youtube"]}
             ]
-        - label: "Next"
-          name : "next"
-          widget: "object"
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Url", name: "url", widget: "string" }
-            ]
-          required: false
         - label: "Previous"
           name: "previous"
           widget: "object"
@@ -156,4 +147,13 @@ collections:
               { label: "Url", name: "url", widget: "string" }
             ]
           required: false
+        - label: "Next"
+            name: "next"
+            widget: "object"
+            fields:
+              [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Url", name: "url", widget: "string" }
+              ]
+            required: false
         - { label: "Menu Order", name: "order", widget: "number", value_type: "int" }

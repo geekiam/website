@@ -5,6 +5,9 @@ export default {
     fallback: true,
   },
   dev: process.env.NODE_ENV !== 'production',
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3850',
+  },
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s | Geek.I.Am',
