@@ -152,8 +152,10 @@ export default {
   hooks: {
     'content:file:beforeInsert': (document) => {
       const removeMd = require('remove-markdown')
+      const stats = require('reading-time')(document.text)
       if (document.extension === '.md') {
         document.bodyPlainText = removeMd(document.text)
+        document.readTime = stats
       }
     },
   },
