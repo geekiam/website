@@ -31,7 +31,7 @@ next:
     title: "Understanding the Nuxt Configuration Options"
 previous:
     title: "Understanding the Nuxt Configuration Options"
-    url: understanding-nuxt-configuration-options
+    url: understanding-nuxt-configuraiton-options
 order: 0
 ---
 
@@ -74,3 +74,28 @@ be inlined as a Base64 data URL by `url-loader`
 
 This provides more control over the number of HTTP requests from your app server, because inlined assets reduce the 
 HTTP requests, while larger files are copied to a folder with version hash for improved caching.
+
+### The difference between Webpack assets and static assets
+
+#### assets folder
+Webpack optimises the serving of assets in production. So webpack will transform images and fonts, pre-processed Less,
+Sass or Stylus files and transform them to generic CSS.  Therefore you should only place files that require processing
+by webpack in the `assets` folder.
+
+#### static folder
+
+If you have files that don't require any processing like some image files, plain text files etc. You can place them 
+in the `static` folder.
+
+For instance, you may have an optimised file that you would like to use as you Logo file, so you can place it in the
+static folder and access it as follows
+
+```html
+// pages/index.vue
+<template>
+  <header>
+     <img src="/logo.jpg"/>
+  </header>
+</template>
+```
+
