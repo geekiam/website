@@ -87,6 +87,9 @@ by webpack in the `assets` folder.
 If you have files that don't require any processing like some image files, plain text files etc. You can place them 
 in the `static` folder.
 
+The `static` directory is directly mapped to the server root and contains files that likely won't be changed. All 
+included files will be automatically served by Nuxt and are accessible through your project root URL.
+
 For instance, you may have an optimised file that you would like to use as you Logo file, so you can place it in the
 static folder and access it as follows
 
@@ -99,3 +102,28 @@ static folder and access it as follows
 </template>
 ```
 
+Another example of making use of the static folder, is when you want to use the Fav Icon in the `nuxt.config.js` 
+
+```javascript
+// nuxt.config.js
+export default {
+  head: {
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
+  }
+}
+
+```
+Using the `~` alias to link your assets in the `/static/` directory, webpack will process these assets, just like those 
+in the `/assets/`
+
+
+```html
+<!-- webpacked image from assets directory -->
+<template>
+    <header>
+        <img src="~/assets/my-logo.png" />
+    </header>
+</template>
+```
