@@ -4,7 +4,9 @@
     <!-- Left sidebar & main wrapper -->
     <div class="flex-1 min-w-0 bg-gray-100 dark:bg-gray-900 xl:flex">
       <!-- left column -->
-      <div class="xl:flex-shrink-0 xl:w-32 xl:border-r lg:border-gray-500">
+      <div
+        class="xl:flex-shrink-0 xl:w-32 xl:border-r dark:lg:border-gray-500 lg:border-gray-200"
+      >
         <div class="pl-4 pr-6 py-6 sm:pl-6 lg:pl-8 xl:pl-0">
           <div class="flex items-center justify-between">
             <div class="flex-1 space-y-8">
@@ -19,7 +21,7 @@
         <div class="pl-4 pr-6">
           <post-title :author="author" :post="post" />
           <nuxt-content
-            class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-700 pb-10 mx-auto text-justify"
+            class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-200 pb-10 mx-auto text-justify"
             :document="post"
           />
         </div>
@@ -27,7 +29,7 @@
     </div>
     <!-- right column -->
     <div
-      class="bg-gray-100 dark:bg-gray-900 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l lg:border-gray-500 xl:pr-0"
+      class="bg-gray-100 dark:bg-gray-900 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l dark:lg:border-gray-500 lg:border-gray-200 xl:pr-0"
     >
       <post-right-column></post-right-column>
     </div>

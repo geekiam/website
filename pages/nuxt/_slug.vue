@@ -19,7 +19,7 @@
         <div class="pl-4 pr-6">
           <post-title :author="author" :post="post" />
           <nuxt-content
-            class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-700 pb-10 mx-auto text-justify"
+            class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-200 pb-10 mx-auto text-justify"
             :document="post"
           />
           <previous-next
