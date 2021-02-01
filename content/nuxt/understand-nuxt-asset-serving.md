@@ -79,7 +79,7 @@ HTTP requests, while larger files are copied to a folder with version hash for i
 
 #### assets folder
 Webpack optimises the serving of assets in production. So webpack will transform images and fonts, pre-processed Less,
-Sass or Stylus files and transform them to generic CSS.  Therefore you should only place files that require processing
+Sass or Stylus files and transform them to generic CSS.  Therefore, you should only place files that require processing
 by webpack in the `assets` folder.
 
 #### static folder

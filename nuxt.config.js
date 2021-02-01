@@ -16,7 +16,15 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Geek.I.Am' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'alternate',
+        type: 'application/rss+xml',
+        title: 'Geek.I.Am',
+        href: 'https://geekiam.io/feed.xml',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -46,6 +54,7 @@ export default {
     '@nuxtjs/moment',
     '@nuxtjs/netlify-files',
     '@nuxtjs/google-gtag',
+    '@nuxtjs/feed',
     '@nuxtjs/sitemap',
   ],
   nuxtContentAlgolia: {
@@ -59,6 +68,31 @@ export default {
       },
     ],
   },
+  feed: [
+    // A default feed configuration object
+    {
+      path: '/feed.xml', // The route to your feed.
+      // eslint-disable-next-line require-await
+      async create(feed, data) {
+        feed.options = {
+          title: 'Geek.I.Am',
+        }
+        data.forEach((post) => {
+          feed.addItem({
+            title: post.title,
+            id: post.url,
+            link: post.url,
+            date: new Date(post.date),
+            description: post.description,
+            content: post.body,
+          })
+        })
+      }, // The create function (see below)
+      cacheTime: 1000 * 60 * 15, // How long should the feed be cached
+      type: 'rss2', // Can be: rss2, atom1, json1
+      data: ['Some additional data'], // Will be passed as 2nd argument to `create` function
+    },
+  ],
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://geekiam.io',
