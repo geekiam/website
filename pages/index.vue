@@ -21,7 +21,7 @@
         >
           <post-sort></post-sort>
         </div>
-        <feed :posts="posts" name="slug" />
+        <feed :posts="posts" section="slug" />
       </div>
     </div>
     <!-- right column -->

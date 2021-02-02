@@ -9,7 +9,7 @@
         <div class="min-w-0 space-y-3">
           <div class="flex items-center space-x-3">
             <span class="block">
-              <card :post="post" :name="section" />
+              <card :post="post" :section="section" />
             </span>
           </div>
         </div>
