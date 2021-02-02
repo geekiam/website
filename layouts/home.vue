@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import Header from '@/components/site/Header'
+import Header from '@/components/site/header/Header'
 export default {
   components: { Header },
 }

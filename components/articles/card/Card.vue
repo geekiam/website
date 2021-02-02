@@ -54,9 +54,5 @@ export default {
       default: 'slug',
     },
   },
-  created() {
-    // eslint-disable-next-line no-console
-    console.log(this.section)
-  },
 }
 </script>

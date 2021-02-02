@@ -192,8 +192,8 @@
 </template>
 
 <script>
-import Logo from '../Logo'
-import Searchbox from '../Searchbox'
+import Logo from './microbes/Logo'
+import Searchbox from './microbes/Searchbox'
 export default {
   name: 'Header',
   components: { Searchbox, Logo },

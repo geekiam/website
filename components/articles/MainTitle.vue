@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import Author from './microbes/Author'
-import PublishDate from './microbes/PublishDate'
-import ReadTime from './microbes/ReadTime'
+import Author from './card/microbes/Author'
+import PublishDate from './card/microbes/PublishDate'
+import ReadTime from './card/microbes/ReadTime'
 export default {
   name: 'MainTitle',
   components: { ReadTime, PublishDate, Author },
