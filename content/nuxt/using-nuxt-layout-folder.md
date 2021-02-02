@@ -81,3 +81,34 @@ created some reusable Nuxt components you would want to use in your layout.
   <p>By setting <code>components: true</code> in your <code>nuxt.config.js</code> ensures there is no need to add import statements to them. </p>
   <p>Checkout <a href="/nuxt/understanding-nuxt-configuraiton-options" alt="Undertand nuxt configuration options">Understanding the nuxt configuration options</a></p>
 </div>
+
+### Creating custom layouts
+Any files created or placed files in the top-level layout directory will create a custom layout that can be accessed 
+by setting the `layout` in your page components.
+
+You may be creating a more custom application that will have several sections, requiring a slightly different layout in 
+each, with a different set of components etc.  In a situation such as that creating custom layouts for each site section
+could help.
+
+You can easily create custom layouts with `.vue` files and just put them in the `layouts` directory.   For instance, we
+could create a `Blog.vue` component in the `layout` folder 
+
+```html
+// layouts/blog.vue
+<template>
+  <div>
+    <div>This is my awesome blog page</div>
+    <nuxt/>
+  </div>
+</template>
+```
+
+Then you can use the `layout` property in the page component to assign this custom layout to the page
+
+```javascript
+// pages/blog.vue
+export default {
+  layout: 'blog'
+}
+```
+Nuxt now will use this `/layouts/blog.vue` file as the base layout for this page component
