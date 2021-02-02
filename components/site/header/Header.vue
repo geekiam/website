@@ -4,9 +4,7 @@
       <div class="relative flex items-center justify-between h-16">
         <!-- Logo section -->
         <div class="flex items-center px-2 lg:px-0 xl:w-64">
-          <div class="flex-shrink-0">
-            <Logo />
-          </div>
+          <geek-i-am-logo />
         </div>
 
         <!-- Search section -->
@@ -192,10 +190,10 @@
 </template>
 
 <script>
-import Logo from './microbes/Logo'
 import Searchbox from './microbes/Searchbox'
+
 export default {
   name: 'Header',
-  components: { Searchbox, Logo },
+  components: { Searchbox },
 }
 </script>

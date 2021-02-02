@@ -1,0 +1,83 @@
+---
+title: How to use Nuxt layouts
+menu-title: using nuxt layouts
+tutorial-section: getting-started
+description: Layouts are the backbone of Nuxt Pages and components helping to change the look and feel of your nuxt app
+summary: Layouts are the backbone of Nuxt Pages and components helping to change the look and feel of your nuxt app.
+keywords:
+  - using nuxt layouts
+  - managing different layouts in nuxt
+  - how does nuxt handle layouts
+feature:
+  image: /uploads/posts/javascript/nuxt-logo.svg
+  alt: How to use Nuxt layouts
+cardImage:
+  image: /uploads/twitter/javascript/nuxt-tutorials.png
+  alt: How to use Nuxt layouts
+date: 2021-01-31T17:30:08.937Z
+author: garywoodfine
+tags:
+  - nuxt
+  - javascript
+  - vue
+  - jamstack
+video:
+  link: asdfsdfasdf
+  description: asdfasdf
+  alt: asdfsdfasdf
+  platform: lbry
+next:
+    url: getting-started-with-nuxt
+    title: "Getting started with nuxt"
+previous:
+    title: "Understanding nuxt asset serving"
+    url: understand-nuxt-asset-serving
+order: 4
+---
+
+Layouts are the backbone of your pages and components, you can use to create multiple different layouts in your application.
+Layouts can be used to insert sidebar and different content layouts across your application. You could even use them to 
+provide different layouts for web and mobile.
+
+### Default Layout
+When generating a new nuxt application, as we discussed in [Getting started with Nuxt](/nuxt/getting-started-with-nuxt "How to get started with Nuxt | Geek.I.Am"),
+and inspecting the [basic nuxt project structure](/nuxt/understanding-nuxt-project-structure "Nuxt project structure | Geek.I.Am"), 
+you'll notice there is a file in the `layouts` called `default.vue` generated automatically. It is possible to modify 
+the default layout or create your own custom ones.
+
+The default layout is always used for pages that don't have a specific layout file set. If you open the `layouts/default.vue`
+there are only three nine in the `template`.
+
+```html
+<template>
+  <div>
+    <Nuxt />
+  </div>
+</template>
+```
+
+The key component in this file is the `<Nuxt />`, the nuxt framework will inject your pages into this component, so when
+creating layout files it is important to remember to ensure that this component is present. 
+
+You can place and add any number of additional components and markup in your layout file with your nuxt component.
+For instance, you may want to create a simple three column layout for your app.
+
+```html
+<template>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png"
+    </div>
+    <div class="3-columns">
+      <div class="col-1"></div>
+      <div class="col-2"> <Nuxt /></div>
+      <div class="col-3"></div>
+    </div>
+   <div class="footer"></div>
+  </div>
+</template>
+```
+<div class="bg-green-100 border-l-4 border-green-800 text-gray-900 p-4" role="alert">
+  <p class="font-bold">Be Warned</p>
+  <p>Something not ideal might be happening.</p>
+</div>

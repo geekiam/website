@@ -67,11 +67,15 @@ The `assets` directory is primarily used to store assets such images, fonts, Les
 placed in this directory will be compiled by [Webpack](https://webpack.js.org/ "Webpack") and made available for use 
 in your application.
 
+Serving optimised and processed media from the `assets` folder is discussed in further detail in [Understanding Nuxt asset serving](/nuxt/understand-nuxt-asset-serving "understand nuxt asset serving | Geek.I.Am")
+
 ### The static directory
 
 The `static` directory is used to store files that you don't require or cannot be compiled by webpack.  If you don't 
 want to serve your assets such as images, fonts, styles.  All files in this directory are mapped to the server root 
 directly, therefore they accessible under the root URL directly.
+
+Serving media from the `static` folder is discussed in further detail in [Understanding Nuxt asset serving](/nuxt/understand-nuxt-asset-serving "understand nuxt asset serving | Geek.I.Am")
 
 ### The pages directory
 
@@ -82,6 +86,8 @@ convert all the `.vue` files inside this directory and generate the application 
 
 The `layouts` directory is used to store the layout files for your application. Nuxt generates a `default.vue` by default,
 you can modify this default layout or add new files to the directory.
+
+The `layouts` folder is discussed in further detail in [How to use Nuxt layouts](/nuxt/using-nuxt-layout-folder "How to use Nuxt layouts | Geek.I.Am")
 
 ### The components directory
 

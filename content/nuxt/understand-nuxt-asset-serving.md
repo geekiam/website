@@ -27,12 +27,12 @@ video:
   alt: asdfsdfasdf
   platform: lbry
 next:
-    url: understanding-nuxt-configuration-options
-    title: "Understanding the Nuxt Configuration Options"
+    url: using-nuxt-layout-folder
+    title: "How to use Nuxt layouts"
 previous:
     title: "Understanding the Nuxt Configuration Options"
     url: understanding-nuxt-configuraiton-options
-order: 0
+order: 3
 ---
 
 The `assets` directory contains your uncompiled assets such as Stylus, Sass files, images, or fonts. Nuxt makes use of:
@@ -82,7 +82,7 @@ Webpack optimises the serving of assets in production. So webpack will transform
 Sass or Stylus files and transform them to generic CSS.  Therefore, you should only place files that require processing
 by webpack in the `assets` folder.
 
-#### static folder
+#### <a id="#static"></a> static folder ####
 
 If you have files that don't require any processing like some image files, plain text files etc. You can place them 
 in the `static` folder.
