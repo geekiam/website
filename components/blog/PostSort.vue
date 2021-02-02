@@ -9,7 +9,7 @@
         aria-haspopup="true"
         aria-expanded="false"
       >
-        <!-- Heroicon name: sort-ascending -->
+        <!-- Heroicon section: sort-ascending -->
         <svg
           class="mr-3 h-5 w-5 text-gray-400"
           xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@
           />
         </svg>
         Sort
-        <!-- Heroicon name: chevron-down -->
+        <!-- Heroicon section: chevron-down -->
         <svg
           class="ml-2.5 -mr-1.5 h-5 w-5 text-gray-400"
           xmlns="http://www.w3.org/2000/svg"

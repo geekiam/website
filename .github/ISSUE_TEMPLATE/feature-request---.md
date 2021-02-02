@@ -1,5 +1,5 @@
 ---
-name: "Feature request \U0001F680"
+section: "Feature request \U0001F680"
 about: Suggest an idea for Geek.I.Am
 
 ---

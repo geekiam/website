@@ -57,7 +57,7 @@
 
 <script>
 export default {
-  name: 'PreviousNext',
+  name: 'Flow',
   props: {
     previous: {
       type: Object,

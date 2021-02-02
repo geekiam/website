@@ -131,7 +131,7 @@ npm install -g npx
 We can now proceed to creating our nuxt application using the `create-nuxt-app` command.
 
 ```shell
-# use create0nuxt-app and provide a name of your application
+# use create0nuxt-app and provide a section of your application
 npx create-nuxt-app geekiam-nuxt-tutorial
 ```
 

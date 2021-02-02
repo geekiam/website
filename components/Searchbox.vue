@@ -12,7 +12,7 @@
         <div
           class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
         >
-          <!-- Heroicon name: search -->
+          <!-- Heroicon section: search -->
           <svg
             class="h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"

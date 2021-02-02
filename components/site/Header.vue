@@ -22,7 +22,7 @@
             <span class="sr-only">Open main menu</span>
             <!-- Icon when menu is closed. -->
             <!--
-            Heroicon name: menu-alt-1
+            Heroicon section: menu-alt-1
 
             Menu open: "hidden", Menu closed: "block"
           -->
@@ -43,7 +43,7 @@
             </svg>
             <!-- Icon when menu is open. -->
             <!--
-            Heroicon name: x
+            Heroicon section: x
 
             Menu open: "block", Menu closed: "hidden"
           -->

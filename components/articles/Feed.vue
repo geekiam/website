@@ -9,7 +9,7 @@
         <div class="min-w-0 space-y-3">
           <div class="flex items-center space-x-3">
             <span class="block">
-              <post-card :post="post" :name="name" />
+              <card :post="post" :name="section" />
             </span>
           </div>
         </div>
@@ -20,13 +20,13 @@
 
 <script>
 export default {
-  name: 'PostList',
+  name: 'Feed',
   props: {
     posts: {
       type: Array,
       required: true,
     },
-    name: {
+    section: {
       type: String,
       default: 'slug',
     },

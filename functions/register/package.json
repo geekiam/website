@@ -1,5 +1,5 @@
 {
-  "name": "register",
+  "section": "register",
   "version": "1.0.0",
   "description": "Register a new user using NU_ID",
   "main": "register.js",

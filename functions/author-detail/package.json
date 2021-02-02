@@ -1,5 +1,5 @@
 {
-  "name": "author-detail",
+  "section": "author-detail",
   "version": "1.0.0",
   "description": "Get author detail using Github API",
   "main": "author-detail.js",

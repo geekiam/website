@@ -1,5 +1,5 @@
 {
-  "name": "users-crud",
+  "section": "users-crud",
   "version": "1.0.0",
   "description": "netlify functions to manage user accounts",
   "main": "users.js",

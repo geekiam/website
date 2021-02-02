@@ -1,5 +1,5 @@
 {
-  "name": "auth-fetch",
+  "section": "auth-fetch",
   "version": "1.0.0",
   "description": "netlify functions:create - default template for auth fetch function",
   "main": "authenticate.js",

@@ -21,7 +21,7 @@
         >
           <post-sort></post-sort>
         </div>
-        <post-list :posts="posts" name="nuxt-slug" />
+        <feed :posts="posts" section="nuxt-slug" />
       </div>
     </div>
     <!-- right column -->
@@ -34,11 +34,11 @@
 </template>
 
 <script>
-import PostList from '@/components/blog/PostList'
+import Feed from '@/components/articles/Feed'
 import PostSort from '@/components/blog/PostSort'
 import RightColumn from '@/components/blog/PostRightColumn'
 export default {
-  components: { RightColumn, PostSort, PostList },
+  components: { RightColumn, PostSort, Feed },
   layout: 'home',
 
   async asyncData({ $content, params }) {

@@ -17,16 +17,12 @@
       <!-- Center Column -->
       <div class="bg-white dark:bg-gray-900 lg:min-w-0 lg:flex-1">
         <div class="pl-4 pr-6">
-          <post-title :author="author" :post="post" />
+          <main-title :author="author" :post="post" />
           <nuxt-content
             class="prose sm:prose-sm lg:prose-lg dark:text-gray-100 text-gray-700 pb-10 mx-auto text-justify"
             :document="post"
           />
-          <previous-next
-            :previous="post.previous"
-            :next="post.next"
-            section="nuxt"
-          />
+          <flow :previous="post.previous" :next="post.next" section="nuxt" />
         </div>
       </div>
     </div>
@@ -41,9 +37,9 @@
 
 <script>
 import PostRightColumn from '@/components/blog/PostRightColumn'
-import PostTitle from '@/components/blog/PostTitle'
+import MainTitle from '@/components/articles/MainTitle'
 export default {
-  components: { PostTitle, PostRightColumn },
+  components: { MainTitle, PostRightColumn },
   layout: 'home',
   async asyncData({ $content, params }) {
     const post = await $content('nuxt', params.slug).fetch()

@@ -13,7 +13,7 @@
         >
           <div class="mb-8">
             <nuxt-link
-              :to="{ name: name, params: { slug: post.slug } }"
+              :to="{ name: section, params: { slug: post.slug } }"
               class="text-green-700 font-bold text-xl mb-2"
             >
               {{ post.title }}
@@ -33,13 +33,13 @@
 
 <script>
 export default {
-  name: 'PostCard',
+  name: 'Card',
   props: {
     post: {
       type: Object,
       required: true,
     },
-    name: {
+    section: {
       type: String,
       default: 'slug',
     },
