@@ -60,24 +60,24 @@ The key component in this file is the `<Nuxt />`, the nuxt framework will inject
 creating layout files it is important to remember to ensure that this component is present. 
 
 You can place and add any number of additional components and markup in your layout file with your nuxt component.
-For instance, you may want to create a simple three column layout for your app.
+For instance, you may want to create a simple three column layout for your app. In the example below you may have already
+created some reusable Nuxt components you would want to use in your layout.
 
 ```html
 <template>
   <div class="container">
-    <div class="header">
-      <img src="logo.png"
-    </div>
+    <site-header />
     <div class="3-columns">
       <div class="col-1"></div>
       <div class="col-2"> <Nuxt /></div>
       <div class="col-3"></div>
     </div>
-   <div class="footer"></div>
+   <site-footer />
   </div>
 </template>
 ```
 <div class="bg-green-100 border-l-4 border-green-800 text-gray-900 p-4" role="alert">
-  <p class="font-bold">Be Warned</p>
-  <p>Something not ideal might be happening.</p>
+  <p class="font-bold">Take Note</p>
+  <p>By setting <code>components: true</code> in your <code>nuxt.config.js</code> ensures there is no need to add import statements to them. </p>
+  <p>Checkout <a href="/nuxt/understanding-nuxt-configuraiton-options" alt="Undertand nuxt configuration options">Understanding the nuxt configuration options</a></p>
 </div>
