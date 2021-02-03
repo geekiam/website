@@ -45,9 +45,9 @@ application as easy as possible. If we start with a very simple page example we'
 this tutorial.
 
 ```html
-
+<!-- pages/hello-world.vue -->
 <template>
-  <h1 >Hello World!</h1>
+  <h1>Hello World!</h1>
 </template>
 
 <script>
@@ -57,3 +57,11 @@ this tutorial.
 </script>
 
 ```
+
+If we start our project using `npm run dev`  and then open our brower and visit `http://locahost:3000/hello-world` 
+we'll see our new page in all it glory!
+
+![Hello World Nuxt](~/uploads/hello-worl-nuxt.png "Nuxt Hello World!")
+
+That's great, we've created our first page using nuxt and we can view it. The problem is it doesn't look like much and 
+it does absolutely nothing. However, Nuxt on the other hand has done quite a bit for us in the background. We can now 
