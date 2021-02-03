@@ -530,3 +530,19 @@ export default {
 </script>
 ```
 
+Another key difference between the `fetch` and the `asyncData` functions is that with `fetch`
+you must define the properties you want to populate in the `data()` function. 
+
+Since `fetch` is called after the page component has been initiated, use the `this` keyword to access the object in 
+the data method. 
+
+We'll be digging deeper into the `fetch` method in later tutorials when we start interacting the Vuex Store
+
+### The Head method
+
+The head method is used to set the `<meta>` tags on a page, we'll be covering this in deeper detail when we start
+focusing the SEO functionality that Nuxt provides.
+
+### The layout property
+
+we have previously discussed layout pages in 
