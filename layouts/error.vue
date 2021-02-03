@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div
-      class="h-screen w-screen justify-center content-center flex-wrap bg-gray-100 dark:bg-gray-900"
-    >
+  <div class="bg-gray-100 dark:bg-gray-900">
+    <div class="h-screen w-screen justify-center content-center flex-wrap">
       <div class="max-w-7xl mx-auto mt-3">
         <div
           class="flex-1 justify-center content-center mx-auto mx-w-3xl prose prose-xl"
@@ -14,13 +12,13 @@
           />
         </div>
         <div
-          class="flex-1 justify-center content-center mx-auto mx-w-3xl mt-3 prose prose-xl"
+          class="flex-1 justify-center content-center mx-auto mx-w-3xl mt-3 prose prose-xl dark:text-gray-100 text-gray-700"
         >
           <h2>Well this is rather embarrassing!</h2>
         </div>
         <div
           v-if="error.statusCode === 404"
-          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl"
+          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700"
         >
           <p>
             This is either embarrassing for you or for us. We're going to take
@@ -43,7 +41,7 @@
         </div>
         <div
           v-else
-          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl"
+          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700"
         >
           <p class="text-bold text-xl">It's not you, it's us!</p>
           <p>
@@ -70,7 +68,7 @@
           </p>
         </div>
         <div
-          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl"
+          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700"
         >
           <nuxt-link to="/">Get me out of here pronto!</nuxt-link>
         </div>
