@@ -82,6 +82,8 @@ Serving media from the `static` folder is discussed in further detail in [Unders
 The `pages` directory is used to contain the views and the routes of the application.  Nuxt will read and convert and
 convert all the `.vue` files inside this directory and generate the application router automatically.
 
+The `pages` directory is discussed in further detail [Creating custom pages in nuxt](/how-to-create-custom-pages-in-nuxt "How to create custom pages in nuxt | Geek.I.Am")
+
 ### The layouts directory
 
 The `layouts` directory is used to store the layout files for your application. Nuxt generates a `default.vue` by default,

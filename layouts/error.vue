@@ -1,6 +1,8 @@
 <template>
   <div class="bg-gray-100 dark:bg-gray-900">
-    <div class="h-screen w-screen justify-center content-center flex-wrap">
+    <div
+      class="h-screen w-screen justify-center content-center flex-wrap mb-10"
+    >
       <div class="max-w-7xl mx-auto mt-3">
         <div
           class="flex-1 justify-center content-center mx-auto mx-w-3xl prose prose-xl"
@@ -12,13 +14,13 @@
           />
         </div>
         <div
-          class="flex-1 justify-center content-center mx-auto mx-w-3xl mt-3 prose prose-xl dark:text-gray-100 text-gray-700"
+          class="flex-1 justify-center content-center mx-auto mx-w-3xl mt-3 prose prose-xl dark:text-gray-100 text-gray-700 mb-8"
         >
-          <h2>Well this is rather embarrassing!</h2>
+          <h2 class="mx-3 my-5">Well this is rather embarrassing!</h2>
         </div>
         <div
           v-if="error.statusCode === 404"
-          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700"
+          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700 mb-8"
         >
           <p>
             This is either embarrassing for you or for us. We're going to take
@@ -28,9 +30,9 @@
             <strong>The page you requested cannot be found!</strong>
           </p>
           <p>
-            What this means is that have either deleted the page or moved it
-            somewhere else! or there is the the slightest possibility that you
-            have mis-typed or entered an incorrect Url
+            What this means is that we have either deleted the page or moved it
+            somewhere else! Perhaps there is the the slightest possibility that
+            you have mis-typed or entered an incorrect Url
           </p>
           <p>
             The best way to solve this is to click on the link to get back to
@@ -41,7 +43,7 @@
         </div>
         <div
           v-else
-          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700"
+          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700 mb-8"
         >
           <p class="text-bold text-xl">It's not you, it's us!</p>
           <p>
@@ -68,9 +70,9 @@
           </p>
         </div>
         <div
-          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700"
+          class="flex-1 mx-auto justify-center content-center mx-w-3xl prose prose-xl dark:text-gray-100 text-gray-700 mt-8 mb-10"
         >
-          <nuxt-link to="/">Get me out of here pronto!</nuxt-link>
+          <nuxt-link to="/" class="mb-10">Get me out of here pronto!</nuxt-link>
         </div>
       </div>
     </div>

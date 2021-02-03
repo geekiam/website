@@ -27,12 +27,12 @@ video:
   alt: asdfsdfasdf
   platform: lbry
 next:
-    url: getting-started-with-nuxt
-    title: "Getting started with nuxt"
+    url: how-to-create-custom-pages-in-nuxt
+    title: "Creating custom pages in nuxt"
 previous:
     title: "Understanding nuxt asset serving"
     url: understand-nuxt-asset-serving
-order: 4
+order: 5
 ---
 
 Layouts are the backbone of your pages and components, you can use to create multiple different layouts in your application.
@@ -124,7 +124,6 @@ the following code
 ```html
 <template>
   <div class="container">
-    <
     <h2 v-if="error.statusCode === 404">Page not found</h2>
     <h2 v-else>An error occurred</h2>
     <nuxt-link to="/">Home page</nuxt-link>
@@ -146,4 +145,34 @@ Initially this may seem counter-intuitive and confusing as it is placed inside t
 has been created in the `layout` folder.  This is due to the *special* nature of the error page, you should also note
 that the error page that will be displayed will also include whatever markup defined in the `layouts/defaul.vue`.
 
+You can edit and style the page however you want, add additional messaging etc. The error world is basically your oyster
+at this point.
 
+It is possible to create a layout page for your error layout page,  if you would like to drill down to a granular level
+
+As an example you could create
+```html
+// layouts/layout-error.vue
+<template>
+  <div>
+    <h1>Error!</h1>
+    <nuxt/>
+  </div>
+</template>
+```
+
+Then create and error page to use it
+
+```html
+// layouts/error.vue
+<script>
+export default {
+  layout: 'layout-error'
+}
+</script>
+```
+
+### Conclusion 
+
+That is all basics you need to start working with layouts in Nuxt. The next inward layer in the Nuxt view is pages, 
+and you will learn how to create custom ones for your application in the next section
