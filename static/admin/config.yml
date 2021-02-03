@@ -148,12 +148,12 @@ collections:
             ]
           required: false
         - label: "Next"
-            name: "next"
-            widget: "object"
-            fields:
-              [
-                { label: "Title", name: "title", widget: "string" },
-                { label: "Url", name: "url", widget: "string" }
-              ]
-            required: false
+          name: "next"
+          widget: "object"
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Url", name: "url", widget: "string" }
+            ]
+          required: false
         - { label: "Menu Order", name: "order", widget: "number", value_type: "int" }
