@@ -111,4 +111,34 @@ export default {
   layout: 'blog'
 }
 ```
-Nuxt now will use this `/layouts/blog.vue` file as the base layout for this page component
+Nuxt now will use this `/layouts/blog.vue` file as the base layout for this page component.
+
+### Create Custom error pages in Nuxt
+
+Nuxt provides default error pages, which are found in the `@nuxt` package in the `node_modules` directory. Nuxt uses
+these pages to serve error pages for 404, 500 etc. These may be helpful, but you may want to customise these pages 
+to make them more attractive in your production instance.
+
+To start creating a custom error page simply create a new `error.vue` component in your `layout` directory and place 
+the following code 
+```html
+<template>
+  <div>
+    <h2 v-if="error.statusCode === 404">Page not found</h2>
+    <h2 v-else>An error occurred</h2>
+    <nuxt-link to="/">Home page</nuxt-link>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    error: {
+      type: Object,
+      required: true,
+    },
+  },
+}
+</script>
+```
+Initially this may seem counter-intuitive and confusing as it is placed inside the `layouts` directory instead of the
+`pages` directory.
