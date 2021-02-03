@@ -1,5 +1,5 @@
 ---
-title: How to Get started with Nuxt
+title: How to get started with Nuxt
 menu-title: Getting started with Nuxt
 tutorial-section: getting-started
 description: Learn how to create server-side rendered applications by using
@@ -33,7 +33,7 @@ next:
     title: "Understanding the Nuxt project structure"
 previous:
     title: "Getting started with Nuxt"
-    url: index
+    url: getting-started-with-nuxt
 order: 0
 ---
 When getting started with developing new applications, developers can often spend a lot of time agonising over which 
