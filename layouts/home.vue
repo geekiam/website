@@ -9,14 +9,11 @@
       aria-hidden="true"
     ></div>
     <div class="relative min-h-screen flex flex-col">
-      <Header />
+      <site-header />
       <Nuxt />
     </div>
   </div>
 </template>
 <script>
-import Header from '@/components/site/header/Header'
-export default {
-  components: { Header },
-}
+export default {}
 </script>

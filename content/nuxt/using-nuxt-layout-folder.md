@@ -77,7 +77,7 @@ created some reusable Nuxt components you would want to use in your layout.
 </template>
 ```
 <div class="bg-green-100 border-l-4 border-green-800 text-gray-900 p-4" role="alert">
-  <p class="font-bold">Take Note</p>
+  <p class="font-bold">Important</p>
   <p>By setting <code>components: true</code> in your <code>nuxt.config.js</code> ensures there is no need to add import statements to them. </p>
   <p>Checkout <a href="/nuxt/understanding-nuxt-configuraiton-options" alt="Undertand nuxt configuration options">Understanding the nuxt configuration options</a></p>
 </div>
@@ -123,7 +123,8 @@ To start creating a custom error page simply create a new `error.vue` component 
 the following code 
 ```html
 <template>
-  <div>
+  <div class="container">
+    <
     <h2 v-if="error.statusCode === 404">Page not found</h2>
     <h2 v-else>An error occurred</h2>
     <nuxt-link to="/">Home page</nuxt-link>
@@ -141,4 +142,8 @@ export default {
 </script>
 ```
 Initially this may seem counter-intuitive and confusing as it is placed inside the `layouts` directory instead of the
-`pages` directory.
+`pages` directory, also notice that the `<nuxt>` component has been omitted from the page even though the component
+has been created in the `layout` folder.  This is due to the *special* nature of the error page, you should also note
+that the error page that will be displayed will also include whatever markup defined in the `layouts/defaul.vue`.
+
+
