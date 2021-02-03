@@ -43,7 +43,7 @@ export default {
 
   async asyncData({ $content, params }) {
     const posts = await $content('nuxt', params.slug)
-      .sortBy('date', 'desc')
+      .sortBy('order', 'asc')
       .fetch()
     return {
       posts,
