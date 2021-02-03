@@ -2,8 +2,10 @@
 title: How to create custom pages in nuxt
 menu-title: Creating custom pages in nuxt
 tutorial-section: getting-started
-description: You will spend most of your time working in this directory to create pages for your Nuxt app
-summary: You will spend most of your time working in this directory to create pages for your Nuxt app.
+description: You will spend most of your time working in this directory to
+  create pages for your Nuxt app
+summary: You will spend most of your time working in this directory to create
+  pages for your Nuxt app.
 keywords:
   - using nuxt custom pages in nuxt
   - managing different pages in nuxt
@@ -26,15 +28,14 @@ video:
   description: asdfasdf
   alt: asdfsdfasdf
   platform: lbry
-next:
-    url: getting-started-with-nuxt
-    title: "Getting started with nuxt"
 previous:
-    title: "How to use Nuxt layouts"
-    url: using-nuxt-layout-folder
+  title: How to use Nuxt layouts
+  url: using-nuxt-layout-folder
+next:
+  url: getting-started-with-nuxt
+  title: Getting started with nuxt
 order: 4
 ---
-
 We have previously discussed [how to use and create custom layouts in nuxt](/using-nuxt-layout-folder "How to use Nuxt layouts | Geek.I.Am")
  and we learned how useful how helpful they are in helping you design and change the general look and feel of your 
 website.  The `pages` directory is the directory to create all your application views and routes.  Nuxt iterates 
@@ -55,7 +56,6 @@ this tutorial.
     // page properties go here
   }
 </script>
-
 ```
 
 If we start our project using `npm run dev`  and then open our brower and visit `http://locahost:3000/hello-world` 
@@ -63,5 +63,6 @@ we'll see our new page in all it glory!
 
 ![Hello World Nuxt](/uploads/hello-world-nuxt.png "Nuxt Hello World!")
 
-That's great, we've created our first page using nuxt and we can view it. The problem is it doesn't look like much and 
-it does absolutely nothing. However, Nuxt on the other hand has done quite a bit for us in the background. We can now 
+That's great, we've created our first page using nuxt and we can view it. The problem is it doesn't look like much and  it does absolutely nothing. However, Nuxt on the other hand has done quite a bit for us in the background. 
+
+Let's carry out some modification to the page, to see exactly what Nuxt has done with the page in the background.
