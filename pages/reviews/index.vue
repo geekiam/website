@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  layout: 'ReviewsHome',
+  layout: 'tutorials',
 }
 </script>
