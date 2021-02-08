@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: threenine/geekiam
+  repo: Geek-I-Am/website
 publish_mode: editorial_workflow
 site_url: https://geekiam.io
 logo_url: https://geekiam.io/uploads/geekiam-logo.png
