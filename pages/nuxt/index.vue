@@ -34,11 +34,7 @@
 </template>
 
 <script>
-import Feed from '@/components/articles/Feed'
-import PostSort from '@/components/blog/PostSort'
-import RightColumn from '@/components/blog/PostRightColumn'
 export default {
-  components: { RightColumn, PostSort, Feed },
   layout: 'home',
 
   async asyncData({ $content, params }) {

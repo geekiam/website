@@ -21,7 +21,7 @@ export default {
   name: 'ReadTime',
   props: {
     timeToRead: {
-      type: Object,
+      type: String,
       required: true,
     },
   },

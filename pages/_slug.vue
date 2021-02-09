@@ -30,13 +30,14 @@
     <!-- right column -->
     <div
       class="bg-gray-100 dark:bg-gray-900 pr-4 sm:pr-6 lg:pr-8 lg:flex-shrink-0 lg:border-l dark:lg:border-gray-500 lg:border-gray-200 xl:pr-0"
-    ></div>
+    >
+      <post-right-column></post-right-column>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'home',
   async asyncData({ $content, params }) {
     const post = await $content('posts', params.slug).fetch()
     const author = await $content('authors', post.author).fetch()
