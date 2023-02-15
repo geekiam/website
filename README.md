@@ -1,20 +1,42 @@
-[![Geek.I.Am ](https://github.com/threenine/geekiam/blob/master/resources/logo/geekiam-logo.png)](https://geekiam.io)
+# Nuxt 3 Minimal Starter
 
-Welcome to the code base for [Geek.I.Am community network-based education and social network for software professionals](https://geekiam.io "Geek.I.Am Website").
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## What is Geek.I.Am
+## Setup
 
-Geek.I.Am community network-based education and social network for software professionals.
+Make sure to install the dependencies:
 
-### Contributing to Geek.I.Am
+```bash
+# yarn
+yarn install
 
-[Contributing to Geek.I.Am](https://github.com/threenine/geekiam/blob/master/CONTRIBUTING.md)
+# npm
+npm install
 
-### Current Project Team Members
+# pnpm
+pnpm install
+```
 
-* [Gary Woodfine](https://github.com/garywoodfine) - Project Lead
- 
- 
- ### Developed, Sponsored and Supported 
- 
-[![threenine logo](http://static.threenine.co.uk/img/github_footer.png)](https://threenine.co.uk/)
+## Development Server
+
+Start the development server on http://localhost:3000
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
