@@ -6,7 +6,7 @@
   <div>
   <structure-header />
   <slot />
-
+  <structure-footer />
   </div>
 </template>
 
