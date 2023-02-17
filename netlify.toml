@@ -1,4 +1,4 @@
-title = "Geek.I.Am netlify deployment configuration file"
+title = "geekiam netlify deployment configuration file"
 
 [build]
     publish = "dist"
@@ -12,7 +12,7 @@ title = "Geek.I.Am netlify deployment configuration file"
     autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address in your browser
 
 [build.environment]
-    NODE_VERSION = "18"
+    NODE_VERSION = "18.14.0"
 
 
 
