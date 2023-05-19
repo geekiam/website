@@ -1,16 +1,12 @@
-/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-      'components/**/*.{vue,js}',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'composables/**/*.{js,ts}',
-      'plugins/**/*.{js,ts}',
-      'App.{js,ts,vue}',
-      'app.{js,ts,vue}'
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: ['@tailwindcss/typography','@tailwindcss/aspect-ratio', '@tailwindcss/forms'],
+    content: [],
+    theme: {
+        extend: {},
+    },
+    plugins: [
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/aspect-ratio'),
+        require( '@tailwindcss/forms')
+    ],
 }
