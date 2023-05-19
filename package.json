@@ -15,7 +15,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "@ubclaunchpad/vue-fathom": "^2.0.0",
-    "heroicons": "^2.0.18",
+    "@heroicons/vue": "^2.0.14",
     "nuxt": "^3.2.2",
     "tailwindcss": "^3.3.2"
   }
