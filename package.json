@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@ubclaunchpad/vue-fathom": "^2.0.0"
-
   },
   "devDependencies": {
     "@heroicons/vue": "^2.0.15",
