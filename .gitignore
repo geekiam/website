@@ -11,3 +11,4 @@ dist
 .idea/*
 # Local Netlify folder
 .netlify
+yarn.lock

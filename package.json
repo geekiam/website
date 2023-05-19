@@ -10,10 +10,12 @@
   "dependencies": {
     "@heroicons/vue": "^2.0.15",
     "@nuxtjs/tailwindcss": "^6.4.0",
+    "@ubclaunchpad/vue-fathom": "^2.0.0",
     "nuxt": "^3.2.0",
     "tailwindcss": "^3.2.6"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.6.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9"
