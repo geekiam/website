@@ -1,8 +1,8 @@
 
 <script lang="ts" setup>
 const navigation = [
-  { name: 'Apps', href: 'https://geekiam.app' },
-  { name: 'Blog', href: 'https://geekiam.blog' },
+  { name: 'Apps', href: '#' },
+  { name: 'Blog', href: '#' },
   { name: 'About', href: '#' },
 
 ]
