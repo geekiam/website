@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     app:{
         head: {
             script: [
-                { src: 'https://cdn.usefathom.com/script.js', defer: true, 'data-site': 'RKXXTVSI', 'data-spa': 'auto', 'data-excluded-domains':'localhost' }
+                { src: 'https://cdn.usefathom.com/script.js', defer: true, 'data-site': process.env.fathom_analytics_id, 'data-spa': 'auto', 'data-excluded-domains':'localhost' }
             ],
         }
     },
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         },
         runtimeConfig: {
             public: {
-                fantom_analytics_id: process.env.fantom_analytics_id,
+                fathom_analytics_id: process.env.fathom_analytics_id,
                 production_mode: isProduction
 
             }
