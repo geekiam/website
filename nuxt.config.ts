@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import {isProduction} from "std-env";
 export default defineNuxtConfig({
+    app:{
+        head: {
+            script: [
+                { src: 'https://cdn.usefathom.com/script.js', defer: true, 'data-site': 'RKXXTVSI', 'data-spa': 'auto', 'data-excluded-domains':'localhost' }
+            ],
+        }
+    },
     modules: ['@nuxt/content', '@nuxtjs/tailwindcss'  ],
     tailwindcss: {
         cssPath: '~/assets/css/tailwind.css',
