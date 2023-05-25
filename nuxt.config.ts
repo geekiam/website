@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {isProduction} from "std-env";
 export default defineNuxtConfig({
     content: {
         highlight: {
