@@ -1,11 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import {isProduction} from "std-env";
 export default defineNuxtConfig({
-     modules: ['@nuxt/content', '@nuxtjs/tailwindcss'  ],
-    tailwindcss: {
-        cssPath: '~/assets/css/tailwind.css',
-        configPath: 'tailwind.config',
-    },
     content: {
         highlight: {
 
@@ -18,13 +13,16 @@ export default defineNuxtConfig({
                 sepia: 'monokai'
             }
         },
-        runtimeConfig: {
-            public: {
-                fathom_analytics_id: process.env.fathom_analytics_id,
-                production_mode: isProduction
-
-            }
+    },
+    modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
+    runtimeConfig: {
+        public: {
+            fathom_analytics_id: process.env.fathom_analytics_id,
         }
+    },
+    tailwindcss: {
+        cssPath: '~/assets/css/tailwind.css',
+        configPath: 'tailwind.config',
     }
 });
 
