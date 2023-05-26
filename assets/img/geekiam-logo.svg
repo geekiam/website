@@ -25,12 +25,12 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="2.135"
-     inkscape:cx="147.0726"
-     inkscape:cy="103.0445"
-     inkscape:window-width="1920"
-     inkscape:window-height="947"
-     inkscape:window-x="0"
-     inkscape:window-y="32"
+     inkscape:cx="284.07494"
+     inkscape:cy="74.70726"
+     inkscape:window-width="1870"
+     inkscape:window-height="1016"
+     inkscape:window-x="50"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -59,14 +59,14 @@
        y="257.05475" />
     <text
        id="text3812"
-       y="265.43546"
-       x="40.22263"
-       style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:29.338px;line-height:1.25;font-family:'URW Gothic';-inkscape-font-specification:'URW Gothic, Semi-Bold Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#166534;fill-opacity:1;stroke:none;stroke-width:0.283998"
+       y="265.92133"
+       x="34.874027"
+       style="font-style:oblique;font-weight:600;font-size:29.338px;line-height:1.25;font-family:'URW Gothic';letter-spacing:0px;word-spacing:0px;fill:#ff6500;fill-opacity:1;stroke:none;stroke-width:0.283998;-inkscape-font-specification:'URW Gothic, Semi-Bold Oblique';font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        xml:space="preserve"
-       transform="scale(0.93555293,1.0688866)"><tspan
-         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:29.338px;font-family:'URW Gothic';-inkscape-font-specification:'URW Gothic, Semi-Bold Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#166534;fill-opacity:1;stroke-width:0.283998"
-         y="265.43546"
-         x="40.22263"
+       transform="scale(0.93555292,1.0688866)"><tspan
+         style="font-style:oblique;font-variant:normal;font-weight:600;font-stretch:normal;font-size:29.33799878px;font-family:'URW Gothic';-inkscape-font-specification:'URW Gothic, Semi-Bold Oblique';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ff6500;fill-opacity:1;stroke-width:0.283998"
+         y="265.92133"
+         x="34.874027"
          id="tspan3810">geekiam</tspan></text>
   </g>
 </svg>
