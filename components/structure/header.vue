@@ -21,8 +21,7 @@ const navigation = [
           </div>
         </div>
         <div class="ml-10 space-x-4">
-          <a href="#" class="inline-block rounded-md border border-transparent bg-orange-500 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75">Sign in</a>
-          <a href="#" class="inline-block rounded-md border border-transparent bg-orange-200 dark:bg-orange-100 py-2 px-4 text-base font-medium dark:text-orange-700 text-orange-800 hover:bg-orange-200 dark:hover:bg-orange-50">Sign up</a>
+          <a href="https://geekiam.app" class="inline-block rounded-md border border-transparent bg-orange-500 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75">Sign in</a>
         </div>
       </div>
       <div class="flex flex-wrap justify-center gap-x-6 py-4 lg:hidden">
