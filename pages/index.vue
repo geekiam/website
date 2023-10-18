@@ -6,25 +6,25 @@ const features = [
     name: 'Academic Papers',
     description:
         'Keep up to date with all the latest academic research in your area of interest',
-    icon: AcademicCapIcon,
+    icon: 'solar:square-academic-cap-outline',
   },
   {
     name: 'Podcasts',
     description:
         'Get all the latest updates to all podcasts around your interests.',
-    icon: MicrophoneIcon,
+    icon: 'tdesign:microphone',
   },
   {
     name: 'Blogs & Tutorials',
     description:
         'All relevant opinions, tutorials, tips & tricks shared by members of your community of interest.',
-    icon: RssIcon,
+    icon: 'ri:rss-line',
   },
   {
     name: 'News ',
     description:
         'All the latest news articles and information in subjects you care about.',
-    icon: NewspaperIcon,
+    icon: 'mdi:newspaper-variant-multiple-outline',
   },
 ]
 </script>
@@ -44,7 +44,7 @@ const features = [
               <div v-for="feature in features" :key="feature.name" class="relative pl-16">
                 <dt class="text-base font-semibold leading-7 text-orange-900 dark:text-orange-500">
                   <div class="absolute top-0 left-0 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-600 dark:bg-orange-800">
-                    <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+                    <Icon :name="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
                   </div>
                   {{ feature.name }}
                 </dt>
